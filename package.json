@@ -1,0 +1,13 @@
+{
+  "name": "hanzi-web",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node scripts/serve.mjs 4173",
+    "audio": "node scripts/gen-audio.mjs",
+    "test:e2e": "playwright test"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.65.1"
+  }
+}

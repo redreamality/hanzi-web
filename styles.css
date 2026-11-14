@@ -1,0 +1,122 @@
+:root {
+  --paper: #f2e8d5;
+  --ink: #221d1a;
+  --cinnabar: #b8352a;
+  --kai: "STKaiti", "KaiTi", "Kaiti SC", "楷体", "BiauKai", serif;
+}
+
+* { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+
+html, body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: var(--paper);
+  font-family: var(--kai);
+  color: var(--ink);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: none;
+}
+
+#backdrop, #stage {
+  position: fixed;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#stage {
+  /* 留出底部按钮的位置 */
+  height: calc(100% - 96px);
+}
+
+/* 飞鸟：慢慢从右往左飞过 */
+.bird { animation: fly 46s linear infinite; }
+.b1 { animation-delay: -6s; }
+.b2 { animation-delay: -9s; animation-duration: 52s; }
+.b3 { animation-delay: -30s; animation-duration: 60s; }
+@keyframes fly {
+  0% { transform: translate(1700px, 180px); }
+  50% { transform: translate(800px, 140px); }
+  100% { transform: translate(-100px, 200px); }
+}
+
+/* 开始：一颗朱砂色的「种子」在呼吸 */
+#start {
+  position: fixed;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 28px;
+  border: 0;
+  background: transparent;
+  font: inherit;
+  color: #6b5a4c;
+  cursor: pointer;
+  z-index: 3;
+  transition: opacity .8s;
+}
+#start .seed {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: radial-gradient(circle at 42% 40%, #f08a4b, #d4462c 70%, #b8352a);
+  filter: blur(1.5px);
+  box-shadow: 0 0 60px 20px rgba(224, 90, 51, .25);
+  animation: breathe 2.4s ease-in-out infinite;
+}
+#start .start-text { font-size: 22px; letter-spacing: .3em; opacity: .7; }
+body:not([data-scene="start"]) #start { opacity: 0; pointer-events: none; }
+
+@keyframes breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.12); }
+}
+
+/* 透明的图层也会挡住点击：只有太阳接收点击，描红的手势挂在 #stage 本身上 */
+#stage > g:not(#sun-layer) { pointer-events: none; }
+#sun-layer .sun-body { cursor: pointer; }
+#sun-layer .breathing { animation: sun-breathe 3s ease-in-out infinite; transform-origin: 507px 505px; }
+@keyframes sun-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.035); }
+}
+
+/* 描红时提示起笔的小红点 */
+.start-dot { animation: dot 1.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }
+@keyframes dot {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.35); opacity: .7; }
+}
+
+/* 底部按钮：宣纸圆片上的墨线图标 */
+#controls {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: max(16px, env(safe-area-inset-bottom));
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+  z-index: 2;
+  transition: opacity .6s;
+}
+body[data-scene="start"] #controls,
+body[data-scene="loading"] #controls { opacity: 0; pointer-events: none; }
+
+#controls button {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 2px solid rgba(34, 29, 26, .55);
+  background: rgba(250, 244, 232, .85);
+  box-shadow: 0 2px 10px rgba(80, 60, 40, .15);
+  padding: 14px;
+  cursor: pointer;
+  transition: transform .15s;
+}
+#controls button:active { transform: scale(.9); }
+#controls svg { width: 100%; height: 100%; fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
