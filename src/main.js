@@ -1,10 +1,11 @@
 // 通用的一课流程：实物 → 各个古文字字形 → 楷书 → 笔顺 → 描红。
-// 字由 ?c=<id> 选（默认第一个），每个字的画面在 src/chars/<id>/，接口见 src/chars/README.md。
+// 字由 ?c=<id> 选（src/app.js 已确认它在 data/lessons.json 里），每个字的画面在 src/chars/<id>/，接口见 src/chars/README.md。
 // 当前场景写在 body[data-scene] 上，CSS 和 e2e 测试都靠它。
-import { svg, tween, wait, newRun, Cancelled, lerp } from './util.js';
+import { svg, tween, wait, newRun, Cancelled, lerp, FAST } from './util.js';
 import { say, stopVoice, chime, softKnock, unlockAudio } from './audio.js';
 import { createKaishu, createGhost } from './strokes.js';
 import { startTrace, dataToClient } from './trace.js';
+import { markDone } from './progress.js';
 
 const $ = (id) => document.getElementById(id);
 const stage = $('stage');
@@ -20,9 +21,7 @@ async function loadChar(id) {
   return { ...info, ...strokes };
 }
 
-const lessons = await fetch('data/lessons.json').then((r) => r.json());
-const asked = new URLSearchParams(location.search).get('c');
-const id = lessons.includes(asked) ? asked : lessons[0];
+const id = new URLSearchParams(location.search).get('c');
 
 document.head.append(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: `src/chars/${id}/style.css` }));
 
@@ -167,6 +166,7 @@ async function finale(check) {
   stopTrace?.();
   stopTrace = null;
   setScene('done');
+  markDone(id);
   [523, 659, 784].forEach((f, i) => setTimeout(() => chime(f), i * 160));
   await wait(400, check);
   await both(ghost.hide(900), lesson.finale(check), say(id, 'done'));
@@ -180,6 +180,10 @@ function ignoreCancel(e) {
 $('start').addEventListener('click', () => {
   unlockAudio();
   story().catch(ignoreCancel);
+});
+$('btn-home').addEventListener('click', () => {
+  stopVoice();
+  location.href = FAST ? './?fast' : './';
 });
 $('btn-replay').addEventListener('click', () => story().catch(ignoreCancel));
 $('btn-write').addEventListener('click', () => trace().catch(ignoreCancel));

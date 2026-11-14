@@ -115,3 +115,92 @@ body[data-scene="loading"] #controls { opacity: 0; pointer-events: none; }
 }
 #controls button:active { transform: scale(.9); }
 #controls svg { width: 100%; height: 100%; fill: none; stroke: var(--ink); stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+
+/* ---- 首页：宣纸上一排字卡 ---- */
+#home {
+  position: fixed;
+  inset: 0;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: clamp(24px, 5vh, 56px);
+  padding: 24px;
+  z-index: 3;
+}
+body[data-scene="home"] #home { display: flex; }
+body[data-scene="home"] #stage,
+body[data-scene="home"] #start,
+body[data-scene="home"] #controls { display: none; }
+
+#home .title {
+  margin: 0;
+  font-size: clamp(30px, 5vw, 48px);
+  font-weight: normal;
+  letter-spacing: .4em;
+  padding-left: .4em;
+  color: #3a312b;
+}
+
+#home .shelf {
+  --tile: clamp(120px, 19vw, 200px);
+  display: grid;
+  grid-template-columns: repeat(4, var(--tile));
+  gap: clamp(16px, 3vw, 36px);
+  justify-content: center;
+}
+@media (orientation: portrait) {
+  #home .shelf { --tile: clamp(110px, 36vw, 260px); grid-template-columns: repeat(2, var(--tile)); }
+}
+
+#home .tile {
+  position: relative;
+  width: var(--tile);
+  height: calc(var(--tile) * 1.22);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 10%;
+  border: 2px solid rgba(34, 29, 26, .35);
+  border-radius: 14px;
+  background: rgba(250, 244, 232, .9);
+  box-shadow: 0 3px 14px rgba(80, 60, 40, .16);
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+  transition: transform .2s, box-shadow .2s;
+}
+#home button.tile:active { transform: scale(.94); }
+#home .tile.picked { transform: scale(1.08); box-shadow: 0 0 40px rgba(224, 90, 51, .45); }
+#home .glyph { width: 100%; aspect-ratio: 1; }
+#home .pinyin { margin-top: 4%; font-size: calc(var(--tile) * .15); font-family: Georgia, serif; color: #6b5a4c; }
+
+/* 写会了：右上角一枚小朱印 */
+#home .seal {
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  display: grid;
+  place-items: center;
+  border-radius: 6px;
+  background: var(--cinnabar);
+  color: #f6eddc;
+  font-size: 24px;
+  transform: rotate(-8deg);
+}
+
+/* 还没做的字：一排淡墨小格，不能点 */
+#home .soon-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+#home .soon {
+  width: 60px;
+  height: 60px;
+  display: grid;
+  place-items: center;
+  font-size: 38px;
+  color: rgba(34, 29, 26, .2);
+  border: 2px dashed rgba(34, 29, 26, .15);
+  border-radius: 10px;
+}

@@ -34,9 +34,11 @@
 
 ## 现状
 
-已完成 4 个象形字：日、月、木、人（每个字一课，`/?c=<id>` 选字；月、木、人由独立 subagent 并行制作）。成本记录见 `COSTS.md`。
+已完成 4 个象形字：日、月、木、人（每个字一课，`/?c=<id>` 选字；月、木、人由独立 subagent 并行制作）。
 
-- `src/`：`morph.js` 用超椭圆参数插值做字形变形；`strokes.js` 是笔顺和描红判定；`trace.js` 是手势；`main.js` 是流程。
+首页（不带 `?c` 或 id 不认识时）：学过的字排成字卡，点一下读字音再进课；写完一个字后首页上盖「会」字印（存在 localStorage 的 `hanzi.done`）；`data/upcoming.json` 里还没做的字淡淡排在下面，点不了。课里底部多了一个「回首页」按钮。成本记录见 `COSTS.md`。
+
+- `src/`：`app.js` 是入口，按 `?c` 分到首页 `home.js` 或一课 `main.js`；`progress.js` 记写会了哪些字；`morph.js` 用超椭圆参数插值做字形变形；`strokes.js` 是笔顺和描红判定；`trace.js` 是手势；`main.js` 是流程。
 - `data/chars/<id>.json` 放读音和旁白；`<id>.strokes.json` 是 hanzi-writer-data（源自 Make Me a Hanzi，Arphic 许可）的笔画。
 - `audio/<id>/` 是 edge-tts（zh-CN-XiaoxiaoNeural）预生成的旁白。
 
@@ -44,7 +46,7 @@
 
 1. 用户确认「日」的效果和水墨风格（尤其要在真实平板上听一听、写一写）。
 2. 补齐其余 10 个字的动画、组字交互、描红。
-3. 写小故事，预生成音频，做家长端（档案、导出导入）。
+3. 写小故事，预生成音频，做家长端（档案、导出导入；首页的「会」字印目前不分孩子）。
 4. 部署到 GitHub Pages，交给孩子试玩，再决定怎么扩展字表。
 
 ## 数据来源与许可
@@ -57,7 +59,7 @@
 ```
 pnpm install
 pnpm dev                      # http://localhost:4173/ ，加 ?fast 让动画和语音瞬间结束
-pnpm test:e2e                 # Playwright，横屏和竖屏平板各跑一遍，共 20 项
+pnpm test:e2e                 # Playwright，横屏和竖屏平板各跑一遍，共 92 项（含首页 6 项）
 pnpm audio [字id] [--force]   # 重新生成旁白，需要 uv
 node scripts/shots.mjs        # 先 pnpm dev，再按真实速度截图到 shots/
 ```
