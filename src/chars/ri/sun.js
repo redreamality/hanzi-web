@@ -1,5 +1,5 @@
 // 水彩太阳：几层带不同噪声的朱红圆片叠在一起，边缘积色，外面一圈暖光。
-import { svg, tween, ease, lerp } from './util.js';
+import { svg, tween, ease, lerp } from '../../util.js';
 
 export const CENTER = [507, 505];
 const R = 230;
@@ -23,7 +23,7 @@ export function createSun(layer) {
     root,
     body,
     // 像一滴朱砂落在湿宣纸上，慢慢洇开
-    async bloom(check) {
+    async appear(check) {
       await tween(
         2600,
         (t) => {

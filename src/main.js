@@ -1,17 +1,17 @@
-// 「日」的完整一课：太阳 → 甲骨文 → 小篆 → 楷书 → 笔顺 → 描红。
+// 通用的一课流程：实物 → 各个古文字字形 → 楷书 → 笔顺 → 描红。
+// 字由 ?c=<id> 选（默认第一个），每个字的画面在 src/chars/<id>/，接口见 src/chars/README.md。
 // 当前场景写在 body[data-scene] 上，CSS 和 e2e 测试都靠它。
 import { svg, tween, wait, newRun, Cancelled, lerp } from './util.js';
 import { say, stopVoice, chime, softKnock, unlockAudio } from './audio.js';
-import { createSun } from './sun.js';
-import { createMorph } from './morph.js';
 import { createKaishu, createGhost } from './strokes.js';
 import { startTrace, dataToClient } from './trace.js';
 
 const $ = (id) => document.getElementById(id);
 const stage = $('stage');
 const layers = Object.fromEntries(
-  ['sun', 'grid', 'ghost', 'morph', 'kaishu', 'trace', 'hint', 'stamp'].map((k) => [k, $(`${k}-layer`)]),
+  ['picture', 'grid', 'ghost', 'morph', 'kaishu', 'trace', 'hint', 'stamp'].map((k) => [k, $(`${k}-layer`)]),
 );
+layers.scenery = $('scenery');
 
 async function loadChar(id) {
   const [info, strokes] = await Promise.all(
@@ -20,11 +20,20 @@ async function loadChar(id) {
   return { ...info, ...strokes };
 }
 
-const data = await loadChar('ri');
-const sun = createSun(layers.sun);
-const morph = createMorph(layers.morph);
+const lessons = await fetch('data/lessons.json').then((r) => r.json());
+const asked = new URLSearchParams(location.search).get('c');
+const id = lessons.includes(asked) ? asked : lessons[0];
+
+document.head.append(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: `src/chars/${id}/style.css` }));
+
+const data = await loadChar(id);
+document.title = `${data.char} · 交互式汉字`;
+document.body.dataset.char = id;
+const { createLesson } = await import(`./chars/${id}/index.js`);
 const kaishu = createKaishu(layers.kaishu, data);
 const ghost = createGhost(layers.grid, layers.ghost, data);
+const lesson = createLesson({ layers, data, kaishu });
+const { picture } = lesson;
 
 const setScene = (name) => (document.body.dataset.scene = name);
 const NOTES = [523, 587, 659, 784, 880];
@@ -50,31 +59,32 @@ async function stamp(label) {
   });
 }
 
-// ---- 太阳可以随时点：说「日」 ----
-let onSunTap = null;
-// 太阳还在洇开、开场白还没说完时就摸了，也要算数
+// ---- 实物可以随时点：读这个字 ----
+picture.body.setAttribute('data-testid', 'picture');
+let onPictureTap = null;
+// 实物还在出现、开场白还没说完时就摸了，也要算数
 let earlyTap = false;
-sun.body.addEventListener('click', () => {
+picture.body.addEventListener('click', () => {
   const scene = document.body.dataset.scene;
-  if (scene !== 'sun' && scene !== 'done') return;
-  sun.pulse();
-  if (onSunTap) return onSunTap();
-  if (scene === 'sun') earlyTap = true;
-  say(data.id, 'sound');
+  if (scene !== 'picture' && scene !== 'done') return;
+  picture.pulse();
+  if (onPictureTap) return onPictureTap();
+  if (scene === 'picture') earlyTap = true;
+  say(id, 'sound');
 });
 
-// 等孩子摸太阳；一直没摸就让太阳轻轻跳一下提醒，两次后自己往下走
-async function waitForSunTap(check) {
-  if (earlyTap) return say(data.id, 'sound');
+// 等孩子摸实物；一直没摸就让它轻轻跳一下提醒，两次后自己往下走
+async function waitForTap(check) {
+  if (earlyTap) return say(id, 'sound');
   for (let i = 0; i < 3; i++) {
     const tapped = await new Promise((resolve) => {
-      onSunTap = () => resolve(true);
+      onPictureTap = () => resolve(true);
       wait(9000).then(() => resolve(false));
     });
-    onSunTap = null;
+    onPictureTap = null;
     check();
-    if (tapped) return say(data.id, 'sound');
-    if (i < 2) sun.pulse();
+    if (tapped) return say(id, 'sound');
+    if (i < 2) picture.pulse();
   }
 }
 
@@ -84,11 +94,10 @@ let stopTrace = null;
 function resetAll() {
   stopTrace?.();
   stopTrace = null;
-  onSunTap = null;
+  onPictureTap = null;
   earlyTap = false;
   stopVoice();
-  sun.reset();
-  morph.reset();
+  lesson.reset();
   kaishu.clear();
   ghost.hide(1);
   layers.stamp.replaceChildren();
@@ -100,39 +109,31 @@ const both = (...ps) => Promise.all(ps);
 async function story() {
   const check = newRun();
   resetAll();
-  setScene('sun');
-  await both(sun.bloom(check), wait(600, check).then(() => say(data.id, 'intro')));
+  setScene('picture');
+  await both(picture.appear(check), wait(600, check).then(() => say(id, 'intro')));
   check();
-  await waitForSunTap(check);
+  await waitForTap(check);
   await wait(400, check);
 
-  setScene('oracle');
-  stamp('甲骨文');
-  await both(say(data.id, 'oracle'), morph.drawOracle(check).then(() => sun.fadeTo(0.1, 1600, check)));
-  check();
-
-  setScene('seal');
-  stamp('小篆');
-  await both(say(data.id, 'seal'), morph.to('seal', 2800, check));
-  check();
-
-  setScene('kaishu');
-  stamp('楷书');
-  await both(say(data.id, 'kaishu'), morph.to('kaishu', 2400, check));
-  check();
+  for (const form of data.forms) {
+    setScene(form.id);
+    stamp(form.label);
+    await both(say(id, form.id), lesson.toForm(form.id, check));
+    check();
+  }
   await wait(500, check);
 
   setScene('order');
   await both(
-    say(data.id, 'order'),
+    say(id, 'order'),
     (async () => {
-      await morph.fadeTo(0.12, 700, check);
+      await lesson.fadeForms(0.12, 700, check);
       await kaishu.write(check, { speed: 0.9 });
-      await morph.fadeTo(0, 700, check);
+      await lesson.fadeForms(0, 700, check);
     })(),
   );
   check();
-  await say(data.id, 'sound');
+  await say(id, 'sound');
   await wait(1200, check);
   return trace();
 }
@@ -155,11 +156,11 @@ async function trace() {
     },
     onMiss: (n) => {
       softKnock();
-      if (n === 2) say(data.id, 'retry');
+      if (n === 2) say(id, 'retry');
     },
     onDone: () => finale(check).catch(ignoreCancel),
   });
-  say(data.id, 'trace');
+  say(id, 'trace');
 }
 
 async function finale(check) {
@@ -168,8 +169,7 @@ async function finale(check) {
   setScene('done');
   [523, 659, 784].forEach((f, i) => setTimeout(() => chime(f), i * 160));
   await wait(400, check);
-  // 字写好了，太阳在字后面重新洇开
-  await both(ghost.hide(900), sun.bloom(check).then(() => sun.fadeTo(0.4, 900, check)), say(data.id, 'done'));
+  await both(ghost.hide(900), lesson.finale(check), say(id, 'done'));
 }
 
 function ignoreCancel(e) {
@@ -184,8 +184,8 @@ $('start').addEventListener('click', () => {
 $('btn-replay').addEventListener('click', () => story().catch(ignoreCancel));
 $('btn-write').addEventListener('click', () => trace().catch(ignoreCancel));
 $('btn-sound').addEventListener('click', () => {
-  if (Number(sun.root.getAttribute('opacity')) > 0.3) sun.pulse();
-  say(data.id, 'sound');
+  if (Number(picture.root.getAttribute('opacity')) > 0.3) picture.pulse();
+  say(id, 'sound');
 });
 
 // 给 e2e 测试用：把笔画数据坐标换成屏幕坐标

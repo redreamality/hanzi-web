@@ -76,14 +76,9 @@ body:not([data-scene="start"]) #start { opacity: 0; pointer-events: none; }
   50% { transform: scale(1.12); }
 }
 
-/* 透明的图层也会挡住点击：只有太阳接收点击，描红的手势挂在 #stage 本身上 */
-#stage > g:not(#sun-layer) { pointer-events: none; }
-#sun-layer .sun-body { cursor: pointer; }
-#sun-layer .breathing { animation: sun-breathe 3s ease-in-out infinite; transform-origin: 507px 505px; }
-@keyframes sun-breathe {
-  0%, 100% { transform: scale(1); }
-  50% { transform: scale(1.035); }
-}
+/* 透明的图层也会挡住点击：只有实物接收点击，描红的手势挂在 #stage 本身上 */
+#stage > g:not(#picture-layer) { pointer-events: none; }
+[data-testid="picture"] { cursor: pointer; }
 
 /* 描红时提示起笔的小红点 */
 .start-dot { animation: dot 1.2s ease-in-out infinite; transform-box: fill-box; transform-origin: center; }

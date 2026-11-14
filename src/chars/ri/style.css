@@ -1,0 +1,6 @@
+/* 太阳轻轻呼吸 */
+.sun-body.breathing { animation: sun-breathe 3s ease-in-out infinite; transform-origin: 507px 505px; }
+@keyframes sun-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.035); }
+}

@@ -1,7 +1,7 @@
 // 「日」从太阳到楷书的字形变形。
 // 外框用超椭圆 |x/a|^n + |y/b|^n = 1 描述：n=2 是圆，n 越大越方；
 // 中间是一条线段，半长为 0 时就是一个点。只要对参数插值，字形就能连续地变过去。
-import { svg, tween, lerp } from './util.js';
+import { svg, tween, lerp } from '../../util.js';
 import { CENTER } from './sun.js';
 
 const N = 160;
