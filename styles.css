@@ -150,7 +150,7 @@ body[data-scene="home"] #controls { display: none; }
   justify-content: center;
 }
 @media (orientation: portrait) {
-  #home .shelf { --tile: clamp(110px, 36vw, 260px); grid-template-columns: repeat(2, var(--tile)); }
+  #home .shelf { --tile: clamp(110px, 30vw, 220px); grid-template-columns: repeat(2, var(--tile)); }
 }
 
 #home .tile {

@@ -70,12 +70,12 @@ export function lessonTests(id) {
       await open(page, id);
       await page.getByTestId('start').click();
       await tapPicture(page);
-      await expect(scene(page)).toHaveAttribute('data-scene', 'trace', { timeout: 10_000 });
+      await expect(scene(page)).toHaveAttribute('data-scene', 'trace', { timeout: 20_000 });
     });
 
     test('一直不摸，提醒两次后自己往下走', async ({ page }) => {
       await start(page, id);
-      await expect(scene(page)).toHaveAttribute('data-scene', 'trace', { timeout: 10_000 });
+      await expect(scene(page)).toHaveAttribute('data-scene', 'trace', { timeout: 20_000 });
     });
 
     test('场景按 实物→各字形→笔顺→描红 的顺序走，印章依次出现', async ({ page }) => {

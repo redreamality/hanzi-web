@@ -2,7 +2,7 @@
 import { test, expect } from '@playwright/test';
 import { scene, enterTrace, drawStroke } from './lesson.js';
 
-const lessons = ['ri', 'yue', 'mu', 'ren'];
+const lessons = ['ri', 'yue', 'mu', 'ren', 'lin'];
 
 test('不带 ?c 打开的是首页，学过的字按顺序排好，还没做的字点不了', async ({ page }) => {
   await page.goto('/?fast');

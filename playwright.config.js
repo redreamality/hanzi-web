@@ -5,7 +5,10 @@ const PORT = Number(process.env.PORT || 4173);
 
 export default defineConfig({
   testDir: 'tests/e2e',
-  timeout: 60_000,
+  timeout: 120_000,
+  // 默认 CPU/2 = 8 个 Chromium 同时跑，墨迹滤镜把 CPU 打满，页面 rAF 被饿死、
+  // 快速模式动画在墙上时间被拉得很长，触摸时序类测试就 flake。2 个够用。
+  workers: 2,
   use: {
     baseURL: `http://localhost:${PORT}/`,
     screenshot: 'only-on-failure',
