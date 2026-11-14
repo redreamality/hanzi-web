@@ -1,10 +1,12 @@
 // 按真实速度走一遍某个字，在每个场景截图到 shots/<id>/，用来人工检查画面。
-// 用法：先 node scripts/serve.mjs <端口>，再 node scripts/shots.mjs <字id> [端口]
+// 用法：先 node scripts/serve.mjs <端口>，再 node scripts/shots.mjs <字id> [端口] [终形等待毫秒]
 import { chromium } from '@playwright/test';
 import { mkdirSync } from 'node:fs';
 
 const id = process.argv[2] || 'ri';
 const port = process.argv[3] || 4173;
+// 字形终形截图前再多等多久（毫秒），动画长的字要调大
+const linger = Number(process.argv[4] || 1800);
 const dir = `shots/${id}`;
 mkdirSync(dir, { recursive: true });
 const browser = await chromium.launch();
@@ -28,7 +30,7 @@ await page.getByTestId('picture').click({ force: true });
 // 每个字形截两张：变形中途和快结束时
 for (const f of forms) {
   await at(f, 1200);
-  await page.waitForTimeout(1800);
+  await page.waitForTimeout(linger);
   const path = `${dir}/${n++}-${f}-end.png`;
   await page.screenshot({ path });
   console.log('shot', path);
