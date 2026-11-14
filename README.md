@@ -34,7 +34,7 @@
 
 ## 现状
 
-「日」的原型已完成，等用户看效果：太阳洇开 → 甲骨文 → 小篆 → 楷书（字形连续变形）→ 笔顺动画 → 手指描红。纯静态页面，不需要构建。
+已完成 4 个象形字：日、月、木、人（每个字一课，`/?c=<id>` 选字；月、木、人由独立 subagent 并行制作）。成本记录见 `COSTS.md`。
 
 - `src/`：`morph.js` 用超椭圆参数插值做字形变形；`strokes.js` 是笔顺和描红判定；`trace.js` 是手势；`main.js` 是流程。
 - `data/chars/<id>.json` 放读音和旁白；`<id>.strokes.json` 是 hanzi-writer-data（源自 Make Me a Hanzi，Arphic 许可）的笔画。

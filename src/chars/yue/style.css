@@ -1,0 +1,13 @@
+/* 月亮轻轻呼吸 */
+.moon-body.breathing { animation: moon-breathe 3.6s ease-in-out infinite; transform-origin: 507px 505px; }
+@keyframes moon-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.03); }
+}
+
+/* 星星一明一暗，各颗快慢错开（--d 时长、--o 延迟由 JS 写在元素上） */
+.yue-star { animation: yue-twinkle var(--d, 3s) ease-in-out var(--o, 0s) infinite; }
+@keyframes yue-twinkle {
+  0%, 100% { opacity: 0.95; }
+  50% { opacity: 0.35; }
+}

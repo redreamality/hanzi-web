@@ -1,0 +1,10 @@
+/* 小人轻轻呼吸：从脚底起，上身微微起伏 */
+.person-inner.breathing {
+  animation: ren-breathe 3.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+@keyframes ren-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.012, 1.02); }
+}

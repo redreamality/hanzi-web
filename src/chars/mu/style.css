@@ -1,0 +1,6 @@
+/* 整棵树在微风里轻轻摇（枝叶被摸时的摇晃由 JS 叠加在子层上） */
+.mu-tree { animation: mu-sway 7s ease-in-out infinite; transform-origin: 512px 812px; }
+@keyframes mu-sway {
+  0%, 100% { transform: rotate(0.45deg); }
+  50% { transform: rotate(-0.45deg); }
+}
