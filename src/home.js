@@ -27,10 +27,11 @@ function glyph(parent, data) {
 
 export async function showHome(lessons) {
   document.title = '交互式汉字';
-  const [tiles, upcoming] = await Promise.all([
-    Promise.all(lessons.map(loadTile)),
-    fetch('data/upcoming.json').then((r) => r.json()),
-  ]);
+  // 数据还没造好的字（注册了但 data/chars/<id>.json 缺失）不炸首页：降级留在「即将学」一排
+  const settled = await Promise.allSettled(lessons.map(loadTile));
+  const tiles = settled.filter((r) => r.status === 'fulfilled').map((r) => r.value);
+  const built = new Set(tiles.map((t) => t.char));
+  const upcoming = await fetch('data/upcoming.json').then((r) => r.json());
   const done = doneSet();
 
   const home = document.getElementById('home');
@@ -55,7 +56,7 @@ export async function showHome(lessons) {
     });
     shelf.append(b);
   }
-  for (const char of upcoming) {
+  for (const char of upcoming.filter((c) => !built.has(c))) {
     const s = Object.assign(document.createElement('span'), { className: 'soon', textContent: char });
     s.dataset.testid = 'tile-soon';
     s.setAttribute('aria-hidden', 'true');
