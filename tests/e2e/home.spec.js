@@ -1,16 +1,20 @@
 // 首页：选字、读字音、进课、回首页、写会了盖印。
+// 期望值从 data/ 推导（lessons.json = 已注册字；upcoming.json 里尚未建成的字走「即将学」一排），
+// 不写死字表——加字不用改这里。
 import { test, expect } from '@playwright/test';
 import { scene, enterTrace, drawStroke } from './lesson.js';
 
-const lessons = ['ri', 'yue', 'mu', 'ren'];
-
 test('不带 ?c 打开的是首页，学过的字按顺序排好，还没做的字点不了', async ({ page }) => {
+  const lessons = await page.request.get('/data/lessons.json').then((r) => r.json());
+  const upcoming = await page.request.get('/data/upcoming.json').then((r) => r.json());
   await page.goto('/?fast');
   await expect(scene(page)).toHaveAttribute('data-scene', 'home');
   const tiles = page.getByTestId('tile');
   await expect(tiles).toHaveCount(lessons.length);
   expect(await tiles.evaluateAll((els) => els.map((e) => e.dataset.char))).toEqual(lessons);
-  await expect(page.getByTestId('tile-soon').first()).toBeVisible();
+  const tileChars = await tiles.evaluateAll((els) => els.map((e) => e.getAttribute('aria-label')[0]));
+  const soon = await page.getByTestId('tile-soon').evaluateAll((els) => els.map((e) => e.textContent));
+  expect(soon).toEqual(upcoming.filter((c) => !tileChars.includes(c)));
   await expect(page.getByTestId('start')).toBeHidden();
   await expect(page.getByTestId('btn-write')).toBeHidden();
 });

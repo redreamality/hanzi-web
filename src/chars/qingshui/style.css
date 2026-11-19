@@ -1,0 +1,17 @@
+/* 溪水的活气：两条小鱼慢慢游过，水光一明一暗地闪 */
+.qingshui-fish-a { animation: qingshui-swim-a 26s linear infinite; }
+.qingshui-fish-b { animation: qingshui-swim-b 34s linear infinite; }
+@keyframes qingshui-swim-a {
+  from { transform: translateX(-140px); }
+  to { transform: translateX(1200px); }
+}
+@keyframes qingshui-swim-b {
+  from { transform: translateX(1200px); }
+  to { transform: translateX(-140px); }
+}
+
+.qingshui-glint { animation: qingshui-twinkle var(--qingshui-d, 4s) ease-in-out infinite alternate; }
+@keyframes qingshui-twinkle {
+  from { opacity: 0.15; }
+  to { opacity: 0.75; }
+}

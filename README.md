@@ -36,7 +36,7 @@
 
 ## 现状
 
-已完成 4 个象形字：日、月、木、人（每个字一课，`/?c=<id>` 选字；月、木、人由独立 subagent 并行制作）。
+**第一版 11 个字全部手绘可学**（2026-11-19，change `add-remaining-first-batch` 已归档）：日月木人 + 明、林、森、休、青、清、晴。考据以《说文》与汉典拓片为准（逐字考据表见归档 change 的 `etymology.md`），造字审美与溯源规则固化为 `openspec/sop-char-craft.md`。`src/strokes.js` 增加了短笔画倒写判定（弦向量夹角）。
 
 首页（不带 `?c` 或 id 不认识时）：学过的字排成字卡，点一下读字音再进课；写完一个字后首页上盖「会」字印（存在 localStorage 的 `hanzi.done`）；`data/upcoming.json` 里还没做的字淡淡排在下面，点不了。课里底部多了一个「回首页」按钮。成本记录见 `COSTS.md`。
 

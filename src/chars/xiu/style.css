@@ -1,0 +1,17 @@
+/* 整棵树在微风里轻轻摇（被摸时的摇晃由 JS 叠加在子层上） */
+.xiu-tree { animation: xiu-sway 7s ease-in-out infinite; transform-origin: 640px 812px; }
+@keyframes xiu-sway {
+  0%, 100% { transform: rotate(0.45deg); }
+  50% { transform: rotate(-0.45deg); }
+}
+
+/* 坐着的小人轻轻呼吸：从坐处起，身子微微起伏 */
+.xiu-person.breathing {
+  animation: xiu-breathe 3.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 70% 90%;
+}
+@keyframes xiu-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.012, 1.018); }
+}

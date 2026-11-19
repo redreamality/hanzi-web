@@ -1,17 +1,18 @@
-// 水墨小人：古画里弯着腰、垂着手臂侧身站立的人。
-// 也是两条笔画：一笔从头顿下去，躬着身子，顺势撇出垂下的手臂；
-// 一笔是腿，从腰间搭出踩向右下。跟字形的笔画一一对应，变形时无缝衔接。
+// 水墨小人：古画里侧身直立、手臂自然垂在身前的人。
+// 也是两条笔画：一笔从圆圆的头顿下来，直着身子微微前倾，
+// 到腰间顺势垂下手臂；一笔是腿，从腰间搭出踩向右下，脚落在地上。
+// 跟字形的笔画一一对应，变形时无缝衔接（形态基准见 morph.js 头注）。
 import { svg, tween, lerp, ease } from '../../util.js';
 import { makeStroke, strokePath } from './ribbon.js';
 
 const POSE = {
   body: {
-    anchors: [[490, 168], [484, 262], [522, 392], [506, 500], [452, 580], [374, 650], [290, 700]],
-    w: [[0, 86], [0.25, 58], [0.5, 46], [0.75, 36], [1, 20]],
+    anchors: [[500, 158], [484, 224], [478, 336], [486, 448], [470, 536], [450, 614], [426, 682], [400, 730]],
+    w: [[0, 88], [0.16, 58], [0.4, 46], [0.68, 36], [1, 22]],
   },
   leg: {
-    anchors: [[506, 486], [566, 590], [638, 688], [686, 760], [722, 800]],
-    w: [[0, 54], [0.5, 44], [0.85, 38], [1, 50]],
+    anchors: [[486, 448], [500, 560], [516, 672], [532, 758], [542, 806]],
+    w: [[0, 52], [0.5, 42], [0.85, 36], [1, 48]],
   },
 };
 // 淡墨晕染版：同形放宽，套水彩滤镜
@@ -21,12 +22,12 @@ const HALO = {
   leg: { ...POSE.leg, w: haloW(POSE.leg.w) },
 };
 
-// 点头鞠躬：上身（含头）向前下方压，手顺势抬起。u 是弧长比例
+// 点头致意：头和上身向前下方轻轻点一下，垂着的手顺势微抬。u 是弧长比例
 function nodOffset(u, amp) {
   const bend = amp * Math.min(1, Math.max(0, 1 - u / 0.62)) ** 1.4;
   const nod = amp * 0.9 * Math.max(0, 1 - u / 0.14); // 头多点一下
-  const lift = amp * 0.8 * Math.min(1, Math.max(0, (u - 0.68) / 0.2)); // 手上摆
-  return [-(bend + nod) * 0.55, bend + nod - lift];
+  const lift = amp * 0.8 * Math.min(1, Math.max(0, (u - 0.68) / 0.2)); // 手微抬
+  return [-(bend + nod) * 10, (bend + nod - lift) * 18];
 }
 
 export function createPerson(layer) {
@@ -37,7 +38,7 @@ export function createPerson(layer) {
   const root = svg('g', { class: 'person', opacity: 0 }, layer);
   const scaler = svg('g', {}, root);
   // 透明命中区：孩子戳到小人附近的空白也算摸到了
-  const hit = svg('ellipse', { cx: 494, cy: 486, rx: 252, ry: 330, fill: 'transparent' }, scaler);
+  const hit = svg('ellipse', { cx: 478, cy: 494, rx: 228, ry: 344, fill: 'transparent' }, scaler);
   hit.style.pointerEvents = 'all';
   const halo = svg('g', { opacity: 0, filter: 'url(#wash2)' }, scaler);
   const haloBody = svg('path', { fill: '#4a423a', opacity: 0.5 }, halo);
@@ -45,8 +46,8 @@ export function createPerson(layer) {
   const haloGround = svg('path', { d: groundD, fill: 'none', stroke: '#4a423a', 'stroke-width': 30, 'stroke-linecap': 'round', opacity: 0.4 }, halo);
   const body = svg('g', { class: 'person-inner breathing' }, scaler);
   const ground = svg('path', { d: groundD, fill: 'none', stroke: '#3a332c', 'stroke-width': 16, 'stroke-linecap': 'round', opacity: 0.3 }, body);
-  const bodyPath = svg('path', { fill: '#241f1b' }, body);
-  const legPath = svg('path', { fill: '#241f1b' }, body);
+  const bodyPath = svg('path', { fill: '#241f1b', 'data-part': 'body' }, body);
+  const legPath = svg('path', { fill: '#241f1b', 'data-part': 'leg' }, body);
 
   const amp = { v: 0 }; // 点头幅度，0 表示站直
   const render = () => {
@@ -91,7 +92,7 @@ export function createPerson(layer) {
       await tween(2700, drawInk, { check, easing: ease.inOut });
       await tween(600, (t) => halo.setAttribute('opacity', t * 0.5), { check });
     },
-    // 摸一下：开心地点点头、弯弯腰，手轻轻抬起来
+    // 摸一下：开心地点点头，垂着的手轻轻抬起来
     async pulse() {
       await tween(1100, (t) => {
         amp.v = Math.sin(t * Math.PI * 2) * (1 - 0.3 * t);

@@ -1,0 +1,16 @@
+/* 山间雾带各自慢慢飘（雨后山岚，往复不歇） */
+.qing-mist-a { animation: qing-drift-a 26s ease-in-out infinite alternate; }
+.qing-mist-b { animation: qing-drift-b 34s ease-in-out infinite alternate; }
+.qing-mist-c { animation: qing-drift-c 21s ease-in-out infinite alternate; }
+@keyframes qing-drift-a {
+  from { transform: translateX(-36px); }
+  to { transform: translateX(30px); }
+}
+@keyframes qing-drift-b {
+  from { transform: translateX(26px); }
+  to { transform: translateX(-34px); }
+}
+@keyframes qing-drift-c {
+  from { transform: translateX(-20px); }
+  to { transform: translateX(22px); }
+}

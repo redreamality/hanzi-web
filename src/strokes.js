@@ -127,6 +127,16 @@ export function judgeStroke(user, median) {
   const startD = Math.hypot(u[0][0] - m[0][0], u[0][1] - m[0][1]);
   const endD = Math.hypot(u[23][0] - m[23][0], u[23][1] - m[23][1]);
   if (startD > 210 || endD > 210) return { ok: false, reason: 'direction' };
+  // 短笔画（如「氵」的点）起终点挨得近，端点距离分辨不出倒写：
+  // 补判路径弦向量的夹角——只在孩子的路径确实有推进（弦长过半）时才判，
+  // 来回涂鸦弦长很短，方向无从谈起，保持宽容。
+  const cu = [u[23][0] - u[0][0], u[23][1] - u[0][1]];
+  const cm = [m[23][0] - m[0][0], m[23][1] - m[0][1]];
+  const cuLen = Math.hypot(cu[0], cu[1]);
+  const cmLen = Math.hypot(cm[0], cm[1]);
+  if (cmLen > 0 && cuLen > cmLen * 0.5 && cu[0] * cm[0] + cu[1] * cm[1] < -0.25 * cuLen * cmLen) {
+    return { ok: false, reason: 'direction' };
+  }
   if (mean(u.map((p) => distToPolyline(p, median))) > 110) return { ok: false, reason: 'off' };
   if (mean(m.map((p) => distToPolyline(p, user))) > 130) return { ok: false, reason: 'partial' };
   return { ok: true };

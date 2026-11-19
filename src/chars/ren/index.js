@@ -1,5 +1,6 @@
 // 「人」：水墨小人 → 甲骨文（侧立人形，刀刻）→ 小篆（圆转匀称）→ 楷书（撇捺）。
 // 小人和每个字形都是同样的两条笔画，变形一一对应，见 morph.js。
+// 形态基准（openspec etymology.md「人」条）：侧立直立人形，不躬身。
 // 接口说明见 src/chars/README.md。
 import { createPerson } from './person.js';
 import { createMorph } from './morph.js';

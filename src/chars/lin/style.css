@@ -1,0 +1,7 @@
+/* 两棵树在微风里轻轻摇（枝叶被摸时的摇晃由 JS 叠加在子层上） */
+.lin-tree-a { animation: lin-sway 7s ease-in-out infinite; transform-origin: 282px 818px; }
+.lin-tree-b { animation: lin-sway 8.5s ease-in-out -3.2s infinite; transform-origin: 628px 820px; }
+@keyframes lin-sway {
+  0%, 100% { transform: rotate(0.5deg); }
+  50% { transform: rotate(-0.4deg); }
+}

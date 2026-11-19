@@ -192,8 +192,9 @@ body[data-scene="home"] #controls { display: none; }
   transform: rotate(-8deg);
 }
 
-/* 还没做的字：一排淡墨小格，不能点 */
+/* 还没做的字：一排淡墨小格，不能点；全建成时整行隐藏（不占 gap） */
 #home .soon-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; }
+#home .soon-row:empty { display: none; }
 #home .soon {
   width: 60px;
   height: 60px;

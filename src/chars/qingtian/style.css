@@ -1,0 +1,31 @@
+/* 雨后的太阳轻轻呼吸（云缝里透出来的暖） */
+.qingtian-sun-body.breathing {
+  animation: qingtian-sun-breathe 3.8s ease-in-out infinite;
+  transform-origin: 356px 292px;
+}
+@keyframes qingtian-sun-breathe {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.045); }
+}
+
+/* 乌云各自慢慢游（雨后的云走得慢，各走各的） */
+.qingtian-drift-a { animation: qingtian-drift-a 30s ease-in-out infinite alternate; }
+.qingtian-drift-b { animation: qingtian-drift-b 38s ease-in-out infinite alternate; }
+.qingtian-drift-c { animation: qingtian-drift-c 26s ease-in-out infinite alternate; }
+.qingtian-drift-d { animation: qingtian-drift-d 22s ease-in-out infinite alternate; }
+@keyframes qingtian-drift-a {
+  from { transform: translateX(-26px); }
+  to { transform: translateX(30px); }
+}
+@keyframes qingtian-drift-b {
+  from { transform: translateX(22px); }
+  to { transform: translateX(-26px); }
+}
+@keyframes qingtian-drift-c {
+  from { transform: translateX(-20px); }
+  to { transform: translateX(24px); }
+}
+@keyframes qingtian-drift-d {
+  from { transform: translateX(16px); }
+  to { transform: translateX(-18px); }
+}

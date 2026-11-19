@@ -6,6 +6,9 @@ const PORT = Number(process.env.PORT || 4173);
 export default defineConfig({
   testDir: 'tests/e2e',
   timeout: 60_000,
+  // 单 worker：双 worker 时 SwiftShader 渲染吃满，多笔画字（森/晴 12 画等）的场景断言
+  // 会整批超时（2026-11-19 全量 27 failed 的根因，对照实验见 COSTS.md 本批记录）
+  workers: 1,
   use: {
     baseURL: `http://localhost:${PORT}/`,
     screenshot: 'only-on-failure',

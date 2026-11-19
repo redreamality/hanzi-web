@@ -1,0 +1,22 @@
+/* 三棵树在微风里轻轻摇（枝叶被摸时的摇晃由 JS 叠加在子层上）。
+   只在实物和收尾场景摇：字形、笔顺阶段树影已压淡，摇不摇看不出来，
+   而树一动整幅画面就得每帧重绘，会把后面的笔顺动画拖慢 */
+body[data-scene="picture"] .sen-tree-l,
+body[data-scene="done"] .sen-tree-l {
+  animation: sen-sway 7.5s ease-in-out infinite;
+  transform-origin: 305px 818px;
+}
+body[data-scene="picture"] .sen-tree-r,
+body[data-scene="done"] .sen-tree-r {
+  animation: sen-sway 9s ease-in-out -3.6s infinite;
+  transform-origin: 630px 820px;
+}
+body[data-scene="picture"] .sen-tree-t,
+body[data-scene="done"] .sen-tree-t {
+  animation: sen-sway 8.2s ease-in-out -1.8s infinite;
+  transform-origin: 480px 808px;
+}
+@keyframes sen-sway {
+  0%, 100% { transform: rotate(0.45deg); }
+  50% { transform: rotate(-0.4deg); }
+}
