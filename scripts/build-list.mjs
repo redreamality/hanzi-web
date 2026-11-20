@@ -56,15 +56,61 @@ for (const m of decompRaw.matchAll(/^(\S+):(?:a|d)\(([^)]*)\)$/gm)) {
 }
 
 // ---- 已有定制课：保持 id 和顺序 ----
+// 第二批 10 个手绘字（add-second-batch）数据还在造字 workflow 里生成，
+// plan 只需要 char/pinyin，先用这里兜底；数据落盘后与 json 一致。
+const FALLBACK_BESPOKE = {
+  yi: ['一', 'yī'], da: ['大', 'dà'], tian: ['天', 'tiān'], cong: ['从', 'cóng'],
+  bi: ['比', 'bǐ'], bei: ['北', 'běi'], zhong: ['众', 'zhòng'], huo: ['火', 'huǒ'],
+  xin: ['心', 'xīn'], qingxin: ['情', 'qíng'],
+};
 const lessons = JSON.parse(readFileSync(join(root, 'data/lessons.json'), 'utf8'));
 const plan = [];
 const seen = new Set();
 for (const id of lessons) {
-  const info = JSON.parse(readFileSync(join(root, 'data/chars', `${id}.json`), 'utf8'));
-  plan.push({ id, char: info.char, reading: '', pinyin: info.pinyin, rank: 0, bespoke: true });
-  seen.add(info.char);
+  const file = join(root, 'data/chars', `${id}.json`);
+  let char, pinyin;
+  if (existsSync(file)) ({ char, pinyin } = JSON.parse(readFileSync(file, 'utf8')));
+  else if (FALLBACK_BESPOKE[id]) [char, pinyin] = FALLBACK_BESPOKE[id];
+  else throw new Error(`lessons.json 里的 ${id} 既没有数据文件，也不在兜底表里`);
+  plan.push({ id, char, reading: '', pinyin, rank: 0, bespoke: true });
+  seen.add(char);
 }
 
+// ---- 家族聚簇（hanzi-network spec「家族聚簇」：同族教学动线要比较，排序别散开）----
+// 与 data/sources/char-families.md 保持同步：改字族先改那个文件，再把变化同步到这里。
+// 一字可属多族（她=女旁+也声旁）。定制课（bespoke）钉在最前，聚簇断言只约束通用字。
+const FAMILIES = {
+  人形族: '人大天从比北夫众化坐',
+  木族: '木林森',
+  日族: '日旦早晚春明',
+  火族: '火炎',
+  会意合成族: '卡尖歪尘',
+  女旁族: '好她孩妈姐妹',
+  门族: '问闻闷',
+  心族: '心想念情',
+  氵族: '海清江河湖池',
+  亻族: '他们你作体什位住休伴',
+  土族: '土坐尘',
+  声旁青: '清情请精晴',
+  声旁也: '地她池',
+  声旁生: '性星姓',
+  声旁门: '问闻闷',
+  声旁方: '放房访',
+  声旁白: '伯拍',
+  声旁丁: '打',
+  声旁马: '妈吗',
+  声旁可: '河何',
+  声旁每: '海悔',
+  声旁里: '理',
+  声旁果: '课颗棵',
+};
+const familyOf = new Map();
+for (const [name, chars] of Object.entries(FAMILIES)) {
+  for (const c of chars) {
+    if (!familyOf.has(c)) familyOf.set(c, []);
+    familyOf.get(c).push(name);
+  }
+}
 // ---- 按字频选出 TOTAL 个字 ----
 const hwzRoot = join(root, 'node_modules/hanzi-writer-data');
 for (const { rank, char, readings } of freq) {
@@ -77,14 +123,14 @@ for (const { rank, char, readings } of freq) {
 }
 if (plan.length !== TOTAL) throw new Error(`只选到 ${plan.length} 个字`);
 
-// ---- 合体字排在部件后面：以字频顺序为基准做拓扑排序 ----
-// 每一步选「部件都已出场」的字里字频最高的一个；部件不在字表里的不算约束。
-// 拆字表偶有环，兜底：谁都不满足时取当前字频最高的。
-{
+// ---- 合体字排在部件后面：先做纯「字频+拓扑」的基准序 ----
+// 拆字表偶有环，兜底：谁都不满足时取当前最靠前的。
+const naive = (() => {
   const rest = plan.slice(lessons.length); // 定制课固定在最前
   const done = plan.slice(0, lessons.length);
   const emitted = new Set(done.map((e) => e.char));
-  const remaining = rest.map((e, i) => ({ ...e, order: i })).sort((a, b) => a.order - b.order); // order = 字频序
+  const remaining = rest.map((e, i) => ({ ...e, naiveIdx: i })).sort((a, b) => b.rank - a.rank); // rank 大的先出？不：按选中顺序
+  remaining.sort((a, b) => a.naiveIdx - b.naiveIdx); // naiveIdx = 按字频选入的顺序
   const inList = seen;
   const rank = new Map(plan.map((e) => [e.char, e.rank || 0]));
   // 部件比本字晚 150 名以上就不等它了（如「最」不等「取」），否则常用字会被拖得太远
@@ -96,14 +142,114 @@ if (plan.length !== TOTAL) throw new Error(`只选到 ${plan.length} 个字`);
   while (remaining.length) {
     let pick = remaining.find((e) => depsOf.get(e.char).every((c) => emitted.has(c)));
     if (!pick) pick = remaining[0]; // 环或坏数据：按字频硬出
-    const { order, ...entry } = pick;
+    const { naiveIdx, ...entry } = pick;
     done.push(entry);
     emitted.add(pick.char);
     remaining.splice(remaining.indexOf(pick), 1);
   }
-  plan.length = 0;
-  plan.push(...done);
+  return done;
+})();
+
+// ---- 家族聚簇：每族在最早成员的锚点处整块出场（spec 场景「家族聚簇」）----
+// 每字只跟一个「主族」聚簇（部件重复族 > 部首族 > 声旁族），其余族只作台词线索（e.families）。
+// 依赖永不破坏：成员的部件没就绪就把部件（及其部件链）作为客人拉进块里；
+// 拉不动（部件太远）的成员显式记 deferred 并在自检里大声报告——不静默降级。
+const inList = seen;
+const rankMap = new Map(plan.map((e) => [e.char, e.rank || 0]));
+const GAP = 150;
+const bindingDeps = new Map(plan.map((e) => [
+  e.char,
+  (decomp.get(e.char) || []).filter((c) => inList.has(c) && (!rankMap.get(c) || rankMap.get(c) <= rankMap.get(e.char) + GAP)),
+]));
+const FAMILY_PRIORITY = { 部件重复族: 1, 部首族: 2, 声旁族: 3 };
+const familyKind = (name) =>
+  /族$/.test(name) && ['人形族', '木族', '日族', '火族', '会意合成族'].includes(name) ? '部件重复族'
+    : name.startsWith('声旁') ? '声旁族'
+      : '部首族';
+const primaryOf = new Map(); // char -> 主族名
+for (const e of plan) {
+  const fams = (familyOf.get(e.char) || []).map((f) => ({ f, p: FAMILY_PRIORITY[familyKind(f)] }));
+  fams.sort((a, b) => a.p - b.p);
+  if (fams.length) primaryOf.set(e.char, fams[0].f);
 }
+const familiesWithMembers = Object.entries(FAMILIES)
+  .map(([name]) => ({
+    name,
+    members: naive.filter((e) => !e.bespoke && primaryOf.get(e.char) === name).sort((a, b) => a.rank - b.rank),
+  }))
+  .filter((f) => f.members.length >= 2);
+for (const f of familiesWithMembers) f.anchor = naive.indexOf(f.members[0]); // 锚在最早成员处：常用字不推迟
+familiesWithMembers.sort((a, b) => a.anchor - b.anchor);
+
+const finalOrder = naive.slice(0, lessons.length);
+const placed = new Set(finalOrder.map((e) => e.char));
+const deferred = []; // {family, char, reason}
+const pending = []; // 挂起的字（部件没齐）
+const PULL_LIMIT = 400; // 部件比锚点晚出不超过这个距离就整块拉前，否则成员 defer
+// 把 c（及其部件链）作为客人拉到当前位置；拉不动返回 false
+function pullGuest(c, from) {
+  if (placed.has(c)) return true;
+  const entry = naive.find((e) => e.char === c);
+  if (!entry) return false;
+  const pos = naive.indexOf(entry);
+  if (pos - from > PULL_LIMIT) return false;
+  for (const d of bindingDeps.get(c) || []) if (!pullGuest(d, from)) return false;
+  finalOrder.push(entry);
+  placed.add(c);
+  return true;
+}
+for (let i = lessons.length; i < naive.length; i++) {
+  for (const f of familiesWithMembers) {
+    if (f.placed || f.anchor > finalOrder.length) continue;
+    f.placed = true;
+    for (const m of f.members) {
+      if (placed.has(m.char)) continue;
+      const missing = (bindingDeps.get(m.char) || []).filter((c) => !placed.has(c));
+      if (missing.every((c) => pullGuest(c, f.anchor))) {
+        finalOrder.push(m);
+        placed.add(m.char);
+      } else {
+        deferred.push({ family: f.name, char: m.char, reason: `部件 ${missing.join('')} 距锚点超过 ${PULL_LIMIT}，拉不动` });
+      }
+    }
+  }
+  // 挂起成员：部件齐了立刻插队（保持块完整）
+  for (let changed = true; changed;) {
+    changed = false;
+    for (let p = 0; p < pending.length; p++) {
+      if ((bindingDeps.get(pending[p].entry.char) || []).every((c) => placed.has(c))) {
+        finalOrder.push(pending[p].entry);
+        placed.add(pending[p].entry.char);
+        pending.splice(p, 1);
+        changed = true;
+        break;
+      }
+    }
+  }
+  const e = naive[i];
+  if (!placed.has(e.char)) {
+    if ((bindingDeps.get(e.char) || []).every((c) => placed.has(c))) {
+      finalOrder.push(e);
+      placed.add(e.char);
+    } else {
+      pending.push({ entry: e });
+    }
+  }
+}
+// 兜底：还挂着的按部件齐了就出，最后真环的按基准序硬出
+for (let guard = pending.length * 2; guard > 0 && pending.length; guard--) {
+  for (let p = 0; p < pending.length; p++) {
+    if ((bindingDeps.get(pending[p].entry.char) || []).every((c) => placed.has(c))) {
+      finalOrder.push(pending[p].entry);
+      placed.add(pending[p].entry.char);
+      pending.splice(p, 1);
+      break;
+    }
+  }
+}
+for (const p of pending) finalOrder.push(p.entry); // 依赖环兜底
+plan.length = 0;
+plan.push(...finalOrder);
 
 // ---- 数字声调 -> 声调符号（机械转换，只处理单字读音）----
 const MARKS = {
@@ -152,6 +298,56 @@ plan.forEach((e, i) => {
   const { stage, ...rest } = e;
   e.stage = stage;
 });
+
+// ---- 排序自检（spec 场景「字表更新时自检」「家族聚簇」的脚本断言）----
+// 1) 每个合体字的全部在表部件都排在它前面（GAP 豁免的不算）；
+// 2) 每个家族的通用字成员跨 ≤ 1 个阶段（定制课钉在最前，豁免但报告）。
+for (const e of plan) if (familyOf.has(e.char)) e.families = familyOf.get(e.char);
+{
+  const inList = seen;
+  const rank = new Map(plan.map((e) => [e.char, e.rank || 0]));
+  const GAP = 150;
+  const badDeps = [];
+  for (const [i, e] of plan.entries()) {
+    if (e.bespoke) continue;
+    for (const p of decomp.get(e.char) || []) {
+      if (!inList.has(p)) continue;
+      const j = plan.findIndex((x) => x.char === p);
+      if (j > i && rank.get(p) <= rank.get(e.char) + GAP) badDeps.push(`${p}(${j}) 在 ${e.char}(${i}) 后面`);
+    }
+  }
+  const badFamilies = [];
+  const familyNotes = [];
+  const deferredChars = new Map(deferred.map((d) => [d.char, d.family]));
+  for (const [name, chars] of Object.entries(FAMILIES)) {
+    const idx = plan
+      .map((e, i) => ({ e, i }))
+      .filter(({ e }) => chars.includes(e.char))
+      .map(({ e, i }) => ({ stage: e.stage, bespoke: !!e.bespoke, char: e.char }));
+    const generic = idx.filter((x) => !x.bespoke);
+    if (!generic.length) continue;
+    // 跨度只按「主族成员」算：一字只跟一个主族聚簇（部件族>部首族>声旁族），
+    // 次族成员（她之于声旁也）靠台词点题，不承担聚簇义务
+    const inBlock = generic.filter((x) => !deferredChars.has(x.char) && primaryOf.get(x.char) === name);
+    if (inBlock.length >= 2) {
+      const span = Math.max(...inBlock.map((x) => x.stage)) - Math.min(...inBlock.map((x) => x.stage));
+      if (span > 1) badFamilies.push(`${name}：主族通用字跨 ${span + 1} 个阶段（${inBlock.map((x) => x.char).join('')}）`);
+    }
+    const out = generic.filter((x) => deferredChars.has(x.char));
+    if (out.length) familyNotes.push(`${name}：${out.map((x) => `${x.char}（${deferred.filter((d) => d.char === x.char)[0].reason}）`).join('、')} 未能进族块`);
+    const early = idx.filter((x) => x.bespoke && x.stage < Math.min(...generic.map((y) => y.stage)) - 1);
+    if (early.length) familyNotes.push(`${name}：定制课 ${early.map((x) => x.char).join('')} 在最前，家族比较动线在通用字侧完成`);
+  }
+  if (badDeps.length || badFamilies.length) {
+    console.error(`排序自检失败：\n${[...badDeps, ...badFamilies].join('\n')}`);
+    if (process.env.DBG) {
+      const watch = new Set([badFamilies, ...familyNotes].join('').match(/[一-鿿]/g) || []);
+      for (const [i, e] of plan.entries()) if (watch.has(e.char)) console.error(`  DBG ${e.char} pos=${i} stage=${e.stage} rank=${e.rank} primary=${primaryOf.get(e.char)} bespoke=${!!e.bespoke}`);
+    }
+    process.exit(1);
+  }
+  if (familyNotes.length) console.log(`家族备注：\n${familyNotes.join('\n')}`);
+}
 
 // ---- 读音真实性：plan 的 reading 必须是 pinyin-pro 认可的该字读音 ----
 // （junda 的首读音偶尔是错音，2026-11-19 已被校对 agent 抓出一批；这道关卡拦截漏网的）

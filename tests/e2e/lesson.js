@@ -107,7 +107,10 @@ export function lessonTests(id) {
       await drawStroke(page, 0, { reverse: true });
       await expect(scene(page)).toHaveAttribute('data-last-audio', 'retry');
       await drawStroke(page, 0);
-      await expect(scene(page)).toHaveAttribute('data-stroke-index', '1');
+      // 单笔字（如「一」）没有第 1 笔：写对第 0 笔直接进 done；trace 的 data-stroke-index 在 done 时被删
+      const strokes = await page.evaluate(() => window.hz.data.medians.length);
+      if (strokes > 1) await expect(scene(page)).toHaveAttribute('data-stroke-index', '1');
+      else await expect(scene(page)).toHaveAttribute('data-scene', 'done');
     });
 
     test('点一下不算一笔', async ({ page }) => {

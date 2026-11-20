@@ -143,14 +143,12 @@ body[data-scene="home"] #controls { display: none; }
 }
 
 #home .shelf {
-  --tile: clamp(120px, 19vw, 200px);
-  display: grid;
-  grid-template-columns: repeat(4, var(--tile));
-  gap: clamp(16px, 3vw, 36px);
+  --tile: 120px; /* 实际大小由 home.js 按字卡数量自适应设置 */
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-}
-@media (orientation: portrait) {
-  #home .shelf { --tile: clamp(110px, 36vw, 260px); grid-template-columns: repeat(2, var(--tile)); }
+  gap: clamp(14px, 2.5vw, 30px);
+  max-width: 100%;
 }
 
 #home .tile {
@@ -173,6 +171,25 @@ body[data-scene="home"] #controls { display: none; }
 }
 #home button.tile:active { transform: scale(.94); }
 #home .tile.picked { transform: scale(1.08); box-shadow: 0 0 40px rgba(224, 90, 51, .45); }
+
+/* 下一课：朱红虚线框加一个小名牌，孩子一眼知道点哪里 */
+#home .tile.next {
+  border: 3px dashed rgba(224, 90, 51, .8);
+  box-shadow: 0 0 34px rgba(224, 90, 51, .28);
+}
+#home .tile.next .tag {
+  position: absolute;
+  top: -16px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-3deg);
+  background: var(--cinnabar);
+  color: #f6eddc;
+  font-size: 16px;
+  letter-spacing: .25em;
+  padding: 3px 8px 3px calc(8px + .25em);
+  border-radius: 8px;
+  white-space: nowrap;
+}
 #home .glyph { width: 100%; aspect-ratio: 1; }
 #home .pinyin { margin-top: 4%; font-size: calc(var(--tile) * .15); font-family: Georgia, serif; color: #6b5a4c; }
 

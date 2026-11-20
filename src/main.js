@@ -23,12 +23,22 @@ async function loadChar(id) {
 
 const id = new URLSearchParams(location.search).get('c');
 
-document.head.append(Object.assign(document.createElement('link'), { rel: 'stylesheet', href: `src/chars/${id}/style.css` }));
-
 const data = await loadChar(id);
 document.title = `${data.char} · 交互式汉字`;
 document.body.dataset.char = id;
-const { createLesson } = await import(`./chars/${id}/index.js`);
+let createLesson;
+const css = (href) =>
+  document.head.append(Object.assign(document.createElement('link'), { rel: 'stylesheet', href }));
+// 有定制课目录就用定制画面，否则走通用课（词卡 → 楷书 → 笔顺 → 描红）。
+// 先探一下文件，避免直接 import 404 在控制台刷错误。
+const bespoke = await fetch(`src/chars/${id}/index.js`, { method: 'HEAD' }).then((r) => r.ok).catch(() => false);
+if (bespoke) {
+  ({ createLesson } = await import(`./chars/${id}/index.js`));
+  css(`src/chars/${id}/style.css`);
+} else {
+  ({ createLesson } = await import('./generic.js'));
+  css('src/generic.css');
+}
 const kaishu = createKaishu(layers.kaishu, data);
 const ghost = createGhost(layers.grid, layers.ghost, data);
 const lesson = createLesson({ layers, data, kaishu });

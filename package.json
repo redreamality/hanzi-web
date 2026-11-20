@@ -4,10 +4,12 @@
   "type": "module",
   "scripts": {
     "dev": "node scripts/serve.mjs 4173",
-    "audio": "node scripts/gen-audio.mjs",
+    "audio": "uv run --with edge-tts python scripts/gen_audio.py",
     "test:e2e": "playwright test"
   },
   "devDependencies": {
-    "@playwright/test": "^1.65.1"
+    "@playwright/test": "^1.65.1",
+    "hanzi-writer-data": "^2.0.1",
+    "pinyin-pro": "^3.29.5"
   }
 }
