@@ -1,0 +1,11 @@
+/* 通用课（src/generic.js）的画面。词卡常年轻轻呼吸，页面显得有生气。 */
+.hz-word-breath {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: hz-word-breath 3.6s ease-in-out infinite;
+}
+
+@keyframes hz-word-breath {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.025); }
+}

@@ -1,0 +1,10 @@
+/* 两个小朋友轻轻呼吸：从脚底起，上身微微起伏 */
+.bi-pair .kid-inner.breathing {
+  animation: bi-breathe 3.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+@keyframes bi-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.012, 1.02); }
+}

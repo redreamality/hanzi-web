@@ -1,0 +1,25 @@
+/* 坐着的小朋友轻轻呼吸：从坐处起，身子微微起伏 */
+.qingxin-person.qingxin-breathing {
+  animation: qingxin-breathe 4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 95%;
+}
+@keyframes qingxin-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.014, 1.02); }
+}
+
+/* 手心里的心在慢慢地跳：两小下、歇一下，像真的心跳 */
+.qingxin-beat.qingxin-beating {
+  animation: qingxin-beat 1.7s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes qingxin-beat {
+  0%, 100% { transform: scale(1, 1); }
+  12% { transform: scale(1.045, 1.06); }
+  24% { transform: scale(1.01, 1.015); }
+  36% { transform: scale(1.05, 1.07) translateY(-2px); }
+  52% { transform: scale(1, 1) translateY(-2px); }
+  66% { transform: scale(1, 1); }
+}

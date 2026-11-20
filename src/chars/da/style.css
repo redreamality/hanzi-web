@@ -1,0 +1,21 @@
+/* 小朋友轻轻呼吸：从脚下起，身子微微起伏 */
+.da-kid.breathing {
+  animation: da-breathe 3.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+@keyframes da-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.012, 1.018); }
+}
+
+/* 瓜蒂的小藤在微风里轻轻摇 */
+.da-vine {
+  animation: da-vine-sway 5s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 20% 100%;
+}
+@keyframes da-vine-sway {
+  0%, 100% { transform: rotate(2deg); }
+  50% { transform: rotate(-2deg); }
+}

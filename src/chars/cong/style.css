@@ -1,0 +1,14 @@
+/* 走路的两个人轻轻起伏，从脚底起，相位错开一点，像一前一后迈步 */
+.cong-fig {
+  animation: cong-bob 3.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+.cong-fig.child {
+  animation-duration: 3.1s;
+  animation-delay: -1.4s;
+}
+@keyframes cong-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-5px); }
+}
