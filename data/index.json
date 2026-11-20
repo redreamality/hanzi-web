@@ -1,0 +1,6002 @@
+[
+ {
+  "id": "ri",
+  "char": "日",
+  "pinyin": "rì",
+  "meaning": "太阳"
+ },
+ {
+  "id": "yue",
+  "char": "月",
+  "pinyin": "yuè",
+  "meaning": "月亮"
+ },
+ {
+  "id": "ming",
+  "char": "明",
+  "pinyin": "míng",
+  "meaning": "明亮"
+ },
+ {
+  "id": "mu",
+  "char": "木",
+  "pinyin": "mù",
+  "meaning": "树"
+ },
+ {
+  "id": "lin",
+  "char": "林",
+  "pinyin": "lín",
+  "meaning": "树林"
+ },
+ {
+  "id": "sen",
+  "char": "森",
+  "pinyin": "sēn",
+  "meaning": "森林"
+ },
+ {
+  "id": "ren",
+  "char": "人",
+  "pinyin": "rén",
+  "meaning": "一个人"
+ },
+ {
+  "id": "xiu",
+  "char": "休",
+  "pinyin": "xiū",
+  "meaning": "休息"
+ },
+ {
+  "id": "qing",
+  "char": "青",
+  "pinyin": "qīng",
+  "meaning": "青色"
+ },
+ {
+  "id": "qingshui",
+  "char": "清",
+  "pinyin": "qīng",
+  "meaning": "清水"
+ },
+ {
+  "id": "qingtian",
+  "char": "晴",
+  "pinyin": "qíng",
+  "meaning": "晴天"
+ },
+ {
+  "id": "yi",
+  "char": "一",
+  "pinyin": "yī",
+  "meaning": "一个"
+ },
+ {
+  "id": "da",
+  "char": "大",
+  "pinyin": "dà",
+  "meaning": "大山"
+ },
+ {
+  "id": "tian",
+  "char": "天",
+  "pinyin": "tiān",
+  "meaning": "天空"
+ },
+ {
+  "id": "cong",
+  "char": "从",
+  "pinyin": "cóng",
+  "meaning": "跟从"
+ },
+ {
+  "id": "bi",
+  "char": "比",
+  "pinyin": "bǐ",
+  "meaning": "比一比"
+ },
+ {
+  "id": "bei",
+  "char": "北",
+  "pinyin": "běi",
+  "meaning": "北风"
+ },
+ {
+  "id": "zhong",
+  "char": "众",
+  "pinyin": "zhòng",
+  "meaning": "大家"
+ },
+ {
+  "id": "huo",
+  "char": "火",
+  "pinyin": "huǒ",
+  "meaning": "火苗"
+ },
+ {
+  "id": "xin",
+  "char": "心",
+  "pinyin": "xīn",
+  "meaning": "心情"
+ },
+ {
+  "id": "qingxin",
+  "char": "情",
+  "pinyin": "qíng",
+  "meaning": "心情"
+ },
+ {
+  "id": "de",
+  "char": "的",
+  "pinyin": "de",
+  "meaning": "我的"
+ },
+ {
+  "id": "shi4",
+  "char": "是",
+  "pinyin": "shì",
+  "meaning": "是的"
+ },
+ {
+  "id": "bu4",
+  "char": "不",
+  "pinyin": "bù",
+  "meaning": "不要"
+ },
+ {
+  "id": "le",
+  "char": "了",
+  "pinyin": "le",
+  "meaning": "好了"
+ },
+ {
+  "id": "zai4",
+  "char": "在",
+  "pinyin": "zài",
+  "meaning": "在家"
+ },
+ {
+  "id": "you3",
+  "char": "有",
+  "pinyin": "yǒu",
+  "meaning": "都有"
+ },
+ {
+  "id": "wo3",
+  "char": "我",
+  "pinyin": "wǒ",
+  "meaning": "我们"
+ },
+ {
+  "id": "zhe4",
+  "char": "这",
+  "pinyin": "zhè",
+  "meaning": "这里"
+ },
+ {
+  "id": "ge4",
+  "char": "个",
+  "pinyin": "gè",
+  "meaning": "一个"
+ },
+ {
+  "id": "men",
+  "char": "们",
+  "pinyin": "men",
+  "meaning": "他们"
+ },
+ {
+  "id": "zhong1",
+  "char": "中",
+  "pinyin": "zhōng",
+  "meaning": "中间"
+ },
+ {
+  "id": "lai2",
+  "char": "来",
+  "pinyin": "lái",
+  "meaning": "回来"
+ },
+ {
+  "id": "shang4",
+  "char": "上",
+  "pinyin": "shàng",
+  "meaning": "上山"
+ },
+ {
+  "id": "wei2",
+  "char": "为",
+  "pinyin": "wéi",
+  "meaning": "成为"
+ },
+ {
+  "id": "he2",
+  "char": "和",
+  "pinyin": "hé",
+  "meaning": "和好"
+ },
+ {
+  "id": "guo2",
+  "char": "国",
+  "pinyin": "guó",
+  "meaning": "中国"
+ },
+ {
+  "id": "dao4",
+  "char": "到",
+  "pinyin": "dào",
+  "meaning": "找到"
+ },
+ {
+  "id": "yi3",
+  "char": "以",
+  "pinyin": "yǐ",
+  "meaning": "可以"
+ },
+ {
+  "id": "shuo1",
+  "char": "说",
+  "pinyin": "shuō",
+  "meaning": "说话"
+ },
+ {
+  "id": "shi2",
+  "char": "时",
+  "pinyin": "shí",
+  "meaning": "时间"
+ },
+ {
+  "id": "yao4",
+  "char": "要",
+  "pinyin": "yào",
+  "meaning": "我要"
+ },
+ {
+  "id": "jiu4",
+  "char": "就",
+  "pinyin": "jiù",
+  "meaning": "就是"
+ },
+ {
+  "id": "chu1",
+  "char": "出",
+  "pinyin": "chū",
+  "meaning": "出门"
+ },
+ {
+  "id": "hui4",
+  "char": "会",
+  "pinyin": "huì",
+  "meaning": "学会"
+ },
+ {
+  "id": "ke3",
+  "char": "可",
+  "pinyin": "kě",
+  "meaning": "可以"
+ },
+ {
+  "id": "ye3",
+  "char": "也",
+  "pinyin": "yě",
+  "meaning": "也是"
+ },
+ {
+  "id": "ta1",
+  "char": "他",
+  "pinyin": "tā",
+  "meaning": "他们"
+ },
+ {
+  "id": "ni3",
+  "char": "你",
+  "pinyin": "nǐ",
+  "meaning": "你好"
+ },
+ {
+  "id": "zuo4",
+  "char": "作",
+  "pinyin": "zuò",
+  "meaning": "工作"
+ },
+ {
+  "id": "ben3",
+  "char": "本",
+  "pinyin": "běn",
+  "meaning": "本子"
+ },
+ {
+  "id": "ti3",
+  "char": "体",
+  "pinyin": "tǐ",
+  "meaning": "身体"
+ },
+ {
+  "id": "shi2b",
+  "char": "十",
+  "pinyin": "shí",
+  "meaning": "十个"
+ },
+ {
+  "id": "shen2",
+  "char": "什",
+  "pinyin": "shén",
+  "meaning": "什么"
+ },
+ {
+  "id": "li4",
+  "char": "立",
+  "pinyin": "lì",
+  "meaning": "立正"
+ },
+ {
+  "id": "wei4",
+  "char": "位",
+  "pinyin": "wèi",
+  "meaning": "座位"
+ },
+ {
+  "id": "zhu3",
+  "char": "主",
+  "pinyin": "zhǔ",
+  "meaning": "公主"
+ },
+ {
+  "id": "zhu4",
+  "char": "住",
+  "pinyin": "zhù",
+  "meaning": "住在"
+ },
+ {
+  "id": "di4",
+  "char": "地",
+  "pinyin": "dì",
+  "meaning": "土地"
+ },
+ {
+  "id": "sheng1",
+  "char": "生",
+  "pinyin": "shēng",
+  "meaning": "花生"
+ },
+ {
+  "id": "neng2",
+  "char": "能",
+  "pinyin": "néng",
+  "meaning": "能干"
+ },
+ {
+  "id": "er2",
+  "char": "而",
+  "pinyin": "ér",
+  "meaning": "而且"
+ },
+ {
+  "id": "zi3",
+  "char": "子",
+  "pinyin": "zǐ",
+  "meaning": "孩子"
+ },
+ {
+  "id": "na4",
+  "char": "那",
+  "pinyin": "nà",
+  "meaning": "那边"
+ },
+ {
+  "id": "de2",
+  "char": "得",
+  "pinyin": "dé",
+  "meaning": "得到"
+ },
+ {
+  "id": "yu2",
+  "char": "于",
+  "pinyin": "yú",
+  "meaning": "终于"
+ },
+ {
+  "id": "zhe",
+  "char": "着",
+  "pinyin": "zhe",
+  "meaning": "看着"
+ },
+ {
+  "id": "xia4",
+  "char": "下",
+  "pinyin": "xià",
+  "meaning": "下雨"
+ },
+ {
+  "id": "zi4",
+  "char": "自",
+  "pinyin": "zì",
+  "meaning": "自己"
+ },
+ {
+  "id": "zhi1",
+  "char": "之",
+  "pinyin": "zhī",
+  "meaning": "之后"
+ },
+ {
+  "id": "nian2",
+  "char": "年",
+  "pinyin": "nián",
+  "meaning": "新年"
+ },
+ {
+  "id": "guo4",
+  "char": "过",
+  "pinyin": "guò",
+  "meaning": "过马路"
+ },
+ {
+  "id": "fa1",
+  "char": "发",
+  "pinyin": "fā",
+  "meaning": "出发"
+ },
+ {
+  "id": "hou4",
+  "char": "后",
+  "pinyin": "hòu",
+  "meaning": "后面"
+ },
+ {
+  "id": "li3",
+  "char": "里",
+  "pinyin": "lǐ",
+  "meaning": "里面"
+ },
+ {
+  "id": "yong4",
+  "char": "用",
+  "pinyin": "yòng",
+  "meaning": "有用"
+ },
+ {
+  "id": "dao4b",
+  "char": "道",
+  "pinyin": "dào",
+  "meaning": "道路"
+ },
+ {
+  "id": "xing2",
+  "char": "行",
+  "pinyin": "xíng",
+  "meaning": "自行车"
+ },
+ {
+  "id": "suo3",
+  "char": "所",
+  "pinyin": "suǒ",
+  "meaning": "厕所"
+ },
+ {
+  "id": "ran2",
+  "char": "然",
+  "pinyin": "rán",
+  "meaning": "然后"
+ },
+ {
+  "id": "jia1",
+  "char": "家",
+  "pinyin": "jiā",
+  "meaning": "回家"
+ },
+ {
+  "id": "zhong3",
+  "char": "种",
+  "pinyin": "zhǒng",
+  "meaning": "种子"
+ },
+ {
+  "id": "shi4b",
+  "char": "事",
+  "pinyin": "shì",
+  "meaning": "故事"
+ },
+ {
+  "id": "cheng2",
+  "char": "成",
+  "pinyin": "chéng",
+  "meaning": "完成"
+ },
+ {
+  "id": "fang1",
+  "char": "方",
+  "pinyin": "fāng",
+  "meaning": "方块"
+ },
+ {
+  "id": "duo1",
+  "char": "多",
+  "pinyin": "duō",
+  "meaning": "好多"
+ },
+ {
+  "id": "jing1",
+  "char": "经",
+  "pinyin": "jīng",
+  "meaning": "经过"
+ },
+ {
+  "id": "me",
+  "char": "么",
+  "pinyin": "me",
+  "meaning": "什么"
+ },
+ {
+  "id": "qu4",
+  "char": "去",
+  "pinyin": "qù",
+  "meaning": "出去"
+ },
+ {
+  "id": "fa3",
+  "char": "法",
+  "pinyin": "fǎ",
+  "meaning": "办法"
+ },
+ {
+  "id": "xue2",
+  "char": "学",
+  "pinyin": "xué",
+  "meaning": "上学"
+ },
+ {
+  "id": "tong2",
+  "char": "同",
+  "pinyin": "tóng",
+  "meaning": "同学"
+ },
+ {
+  "id": "dang1",
+  "char": "当",
+  "pinyin": "dāng",
+  "meaning": "当心"
+ },
+ {
+  "id": "mei2",
+  "char": "没",
+  "pinyin": "méi",
+  "meaning": "没有"
+ },
+ {
+  "id": "mian4",
+  "char": "面",
+  "pinyin": "miàn",
+  "meaning": "面条"
+ },
+ {
+  "id": "qi3",
+  "char": "起",
+  "pinyin": "qǐ",
+  "meaning": "起床"
+ },
+ {
+  "id": "kan4",
+  "char": "看",
+  "pinyin": "kàn",
+  "meaning": "看书"
+ },
+ {
+  "id": "ding4",
+  "char": "定",
+  "pinyin": "dìng",
+  "meaning": "一定"
+ },
+ {
+  "id": "fen1",
+  "char": "分",
+  "pinyin": "fēn",
+  "meaning": "分开"
+ },
+ {
+  "id": "hai2",
+  "char": "还",
+  "pinyin": "hái",
+  "meaning": "还有"
+ },
+ {
+  "id": "jin4",
+  "char": "进",
+  "pinyin": "jìn",
+  "meaning": "走进"
+ },
+ {
+  "id": "xiao3",
+  "char": "小",
+  "pinyin": "xiǎo",
+  "meaning": "小手"
+ },
+ {
+  "id": "bu4b",
+  "char": "部",
+  "pinyin": "bù",
+  "meaning": "部队"
+ },
+ {
+  "id": "qi2",
+  "char": "其",
+  "pinyin": "qí",
+  "meaning": "其它"
+ },
+ {
+  "id": "yang4",
+  "char": "样",
+  "pinyin": "yàng",
+  "meaning": "样子"
+ },
+ {
+  "id": "li3b",
+  "char": "理",
+  "pinyin": "lǐ",
+  "meaning": "理发"
+ },
+ {
+  "id": "qian2",
+  "char": "前",
+  "pinyin": "qián",
+  "meaning": "前面"
+ },
+ {
+  "id": "kai1",
+  "char": "开",
+  "pinyin": "kāi",
+  "meaning": "开门"
+ },
+ {
+  "id": "dan4",
+  "char": "但",
+  "pinyin": "dàn",
+  "meaning": "但是"
+ },
+ {
+  "id": "yin1",
+  "char": "因",
+  "pinyin": "yīn",
+  "meaning": "因为"
+ },
+ {
+  "id": "jun1",
+  "char": "军",
+  "pinyin": "jūn",
+  "meaning": "解放军"
+ },
+ {
+  "id": "zhe3",
+  "char": "者",
+  "pinyin": "zhě",
+  "meaning": "作者"
+ },
+ {
+  "id": "dou1",
+  "char": "都",
+  "pinyin": "dōu",
+  "meaning": "都是"
+ },
+ {
+  "id": "yi4",
+  "char": "意",
+  "pinyin": "yì",
+  "meaning": "主意"
+ },
+ {
+  "id": "wu2",
+  "char": "无",
+  "pinyin": "wú",
+  "meaning": "无声"
+ },
+ {
+  "id": "li4b",
+  "char": "力",
+  "pinyin": "lì",
+  "meaning": "力气"
+ },
+ {
+  "id": "dong4",
+  "char": "动",
+  "pinyin": "dòng",
+  "meaning": "动物"
+ },
+ {
+  "id": "ta1b",
+  "char": "它",
+  "pinyin": "tā",
+  "meaning": "它们"
+ },
+ {
+  "id": "yu3",
+  "char": "与",
+  "pinyin": "yǔ",
+  "meaning": "与人分享"
+ },
+ {
+  "id": "chang2",
+  "char": "长",
+  "pinyin": "cháng",
+  "meaning": "长颈鹿"
+ },
+ {
+  "id": "ba3",
+  "char": "把",
+  "pinyin": "bǎ",
+  "meaning": "把手"
+ },
+ {
+  "id": "min2",
+  "char": "民",
+  "pinyin": "mín",
+  "meaning": "人民"
+ },
+ {
+  "id": "di4b",
+  "char": "第",
+  "pinyin": "dì",
+  "meaning": "第一"
+ },
+ {
+  "id": "xing4",
+  "char": "性",
+  "pinyin": "xìng",
+  "meaning": "性格"
+ },
+ {
+  "id": "xing1",
+  "char": "星",
+  "pinyin": "xīng",
+  "meaning": "星星"
+ },
+ {
+  "id": "gong1",
+  "char": "公",
+  "pinyin": "gōng",
+  "meaning": "公园"
+ },
+ {
+  "id": "ci3",
+  "char": "此",
+  "pinyin": "cǐ",
+  "meaning": "从此"
+ },
+ {
+  "id": "yi3b",
+  "char": "已",
+  "pinyin": "yǐ",
+  "meaning": "已经"
+ },
+ {
+  "id": "gong1b",
+  "char": "工",
+  "pinyin": "gōng",
+  "meaning": "工人"
+ },
+ {
+  "id": "shi3",
+  "char": "使",
+  "pinyin": "shǐ",
+  "meaning": "使劲"
+ },
+ {
+  "id": "quan2",
+  "char": "全",
+  "pinyin": "quán",
+  "meaning": "全家"
+ },
+ {
+  "id": "you4",
+  "char": "又",
+  "pinyin": "yòu",
+  "meaning": "又一次"
+ },
+ {
+  "id": "dui4",
+  "char": "对",
+  "pinyin": "duì",
+  "meaning": "对不起"
+ },
+ {
+  "id": "guan1",
+  "char": "关",
+  "pinyin": "guān",
+  "meaning": "关门"
+ },
+ {
+  "id": "dian3",
+  "char": "点",
+  "pinyin": "diǎn",
+  "meaning": "小雨点"
+ },
+ {
+  "id": "zheng4",
+  "char": "正",
+  "pinyin": "zhèng",
+  "meaning": "立正"
+ },
+ {
+  "id": "ye4",
+  "char": "业",
+  "pinyin": "yè",
+  "meaning": "作业"
+ },
+ {
+  "id": "wen4",
+  "char": "问",
+  "pinyin": "wèn",
+  "meaning": "问好"
+ },
+ {
+  "id": "wen2",
+  "char": "闻",
+  "pinyin": "wén",
+  "meaning": "闻一闻"
+ },
+ {
+  "id": "wai4",
+  "char": "外",
+  "pinyin": "wài",
+  "meaning": "外面"
+ },
+ {
+  "id": "jiang1",
+  "char": "将",
+  "pinyin": "jiāng",
+  "meaning": "将军"
+ },
+ {
+  "id": "liang3",
+  "char": "两",
+  "pinyin": "liǎng",
+  "meaning": "两个"
+ },
+ {
+  "id": "gao1",
+  "char": "高",
+  "pinyin": "gāo",
+  "meaning": "高楼"
+ },
+ {
+  "id": "jian1",
+  "char": "间",
+  "pinyin": "jiān",
+  "meaning": "中间"
+ },
+ {
+  "id": "you2",
+  "char": "由",
+  "pinyin": "yóu",
+  "meaning": "自由"
+ },
+ {
+  "id": "hen3",
+  "char": "很",
+  "pinyin": "hěn",
+  "meaning": "很多"
+ },
+ {
+  "id": "zui4",
+  "char": "最",
+  "pinyin": "zuì",
+  "meaning": "最大"
+ },
+ {
+  "id": "zhong4",
+  "char": "重",
+  "pinyin": "zhòng",
+  "meaning": "很重"
+ },
+ {
+  "id": "bing4",
+  "char": "并",
+  "pinyin": "bìng",
+  "meaning": "并排"
+ },
+ {
+  "id": "wu4",
+  "char": "物",
+  "pinyin": "wù",
+  "meaning": "动物"
+ },
+ {
+  "id": "shou3",
+  "char": "手",
+  "pinyin": "shǒu",
+  "meaning": "小手"
+ },
+ {
+  "id": "ying1",
+  "char": "应",
+  "pinyin": "yīng",
+  "meaning": "应该"
+ },
+ {
+  "id": "zhan4",
+  "char": "战",
+  "pinyin": "zhàn",
+  "meaning": "战斗"
+ },
+ {
+  "id": "xiang4",
+  "char": "向",
+  "pinyin": "xiàng",
+  "meaning": "方向"
+ },
+ {
+  "id": "tou2",
+  "char": "头",
+  "pinyin": "tóu",
+  "meaning": "头发"
+ },
+ {
+  "id": "shi2c",
+  "char": "实",
+  "pinyin": "shí",
+  "meaning": "果实"
+ },
+ {
+  "id": "wen2b",
+  "char": "文",
+  "pinyin": "wén",
+  "meaning": "文字"
+ },
+ {
+  "id": "zheng4b",
+  "char": "政",
+  "pinyin": "zhèng",
+  "meaning": "政府"
+ },
+ {
+  "id": "mei3",
+  "char": "美",
+  "pinyin": "měi",
+  "meaning": "美丽"
+ },
+ {
+  "id": "jian4",
+  "char": "见",
+  "pinyin": "jiàn",
+  "meaning": "看见"
+ },
+ {
+  "id": "xian4",
+  "char": "现",
+  "pinyin": "xiàn",
+  "meaning": "发现"
+ },
+ {
+  "id": "bei4",
+  "char": "被",
+  "pinyin": "bèi",
+  "meaning": "被子"
+ },
+ {
+  "id": "li4c",
+  "char": "利",
+  "pinyin": "lì",
+  "meaning": "胜利"
+ },
+ {
+  "id": "er4",
+  "char": "二",
+  "pinyin": "èr",
+  "meaning": "二月"
+ },
+ {
+  "id": "xie1",
+  "char": "些",
+  "pinyin": "xiē",
+  "meaning": "一些"
+ },
+ {
+  "id": "san1",
+  "char": "三",
+  "pinyin": "sān",
+  "meaning": "三角"
+ },
+ {
+  "id": "deng3",
+  "char": "等",
+  "pinyin": "děng",
+  "meaning": "等一等"
+ },
+ {
+  "id": "chan3",
+  "char": "产",
+  "pinyin": "chǎn",
+  "meaning": "生产"
+ },
+ {
+  "id": "huo4",
+  "char": "或",
+  "pinyin": "huò",
+  "meaning": "或者"
+ },
+ {
+  "id": "xin1",
+  "char": "新",
+  "pinyin": "xīn",
+  "meaning": "新年"
+ },
+ {
+  "id": "ji3",
+  "char": "己",
+  "pinyin": "jǐ",
+  "meaning": "自己"
+ },
+ {
+  "id": "zhi4",
+  "char": "制",
+  "pinyin": "zhì",
+  "meaning": "制作"
+ },
+ {
+  "id": "shen1",
+  "char": "身",
+  "pinyin": "shēn",
+  "meaning": "身体"
+ },
+ {
+  "id": "guo3",
+  "char": "果",
+  "pinyin": "guǒ",
+  "meaning": "水果"
+ },
+ {
+  "id": "xi1",
+  "char": "西",
+  "pinyin": "xī",
+  "meaning": "西瓜"
+ },
+ {
+  "id": "si1",
+  "char": "斯",
+  "pinyin": "sī",
+  "meaning": "斯文"
+ },
+ {
+  "id": "hua4",
+  "char": "话",
+  "pinyin": "huà",
+  "meaning": "电话"
+ },
+ {
+  "id": "hui2",
+  "char": "回",
+  "pinyin": "huí",
+  "meaning": "回家"
+ },
+ {
+  "id": "hua4b",
+  "char": "化",
+  "pinyin": "huà",
+  "meaning": "变化"
+ },
+ {
+  "id": "fu1",
+  "char": "夫",
+  "pinyin": "fū",
+  "meaning": "功夫"
+ },
+ {
+  "id": "zuo4b",
+  "char": "坐",
+  "pinyin": "zuò",
+  "meaning": "坐下"
+ },
+ {
+  "id": "te4",
+  "char": "特",
+  "pinyin": "tè",
+  "meaning": "特别"
+ },
+ {
+  "id": "dai4",
+  "char": "代",
+  "pinyin": "dài",
+  "meaning": "古代"
+ },
+ {
+  "id": "nei4",
+  "char": "内",
+  "pinyin": "nèi",
+  "meaning": "内心"
+ },
+ {
+  "id": "xin4",
+  "char": "信",
+  "pinyin": "xìn",
+  "meaning": "相信"
+ },
+ {
+  "id": "biao3",
+  "char": "表",
+  "pinyin": "biǎo",
+  "meaning": "手表"
+ },
+ {
+  "id": "lao3",
+  "char": "老",
+  "pinyin": "lǎo",
+  "meaning": "老虎"
+ },
+ {
+  "id": "hai3",
+  "char": "海",
+  "pinyin": "hǎi",
+  "meaning": "大海"
+ },
+ {
+  "id": "he2b",
+  "char": "河",
+  "pinyin": "hé",
+  "meaning": "小河"
+ },
+ {
+  "id": "jiang1b",
+  "char": "江",
+  "pinyin": "jiāng",
+  "meaning": "长江"
+ },
+ {
+  "id": "shi4c",
+  "char": "世",
+  "pinyin": "shì",
+  "meaning": "世界"
+ },
+ {
+  "id": "ci4",
+  "char": "次",
+  "pinyin": "cì",
+  "meaning": "第一次"
+ },
+ {
+  "id": "du4",
+  "char": "度",
+  "pinyin": "dù",
+  "meaning": "温度"
+ },
+ {
+  "id": "men2",
+  "char": "门",
+  "pinyin": "mén",
+  "meaning": "大门"
+ },
+ {
+  "id": "ren4",
+  "char": "任",
+  "pinyin": "rèn",
+  "meaning": "任选"
+ },
+ {
+  "id": "chang2b",
+  "char": "常",
+  "pinyin": "cháng",
+  "meaning": "常常"
+ },
+ {
+  "id": "xian1",
+  "char": "先",
+  "pinyin": "xiān",
+  "meaning": "先吃"
+ },
+ {
+  "id": "tong1",
+  "char": "通",
+  "pinyin": "tōng",
+  "meaning": "交通"
+ },
+ {
+  "id": "jiao1",
+  "char": "教",
+  "pinyin": "jiāo",
+  "meaning": "教我"
+ },
+ {
+  "id": "er2b",
+  "char": "儿",
+  "pinyin": "ér",
+  "meaning": "儿童"
+ },
+ {
+  "id": "yuan2",
+  "char": "原",
+  "pinyin": "yuán",
+  "meaning": "草原"
+ },
+ {
+  "id": "dong1",
+  "char": "东",
+  "pinyin": "dōng",
+  "meaning": "东西"
+ },
+ {
+  "id": "sheng1b",
+  "char": "声",
+  "pinyin": "shēng",
+  "meaning": "声音"
+ },
+ {
+  "id": "ti2",
+  "char": "提",
+  "pinyin": "tí",
+  "meaning": "提水"
+ },
+ {
+  "id": "ji2",
+  "char": "及",
+  "pinyin": "jí",
+  "meaning": "来得及"
+ },
+ {
+  "id": "jie3",
+  "char": "解",
+  "pinyin": "jiě",
+  "meaning": "解开"
+ },
+ {
+  "id": "shui3",
+  "char": "水",
+  "pinyin": "shuǐ",
+  "meaning": "喝水"
+ },
+ {
+  "id": "ming2",
+  "char": "名",
+  "pinyin": "míng",
+  "meaning": "名字"
+ },
+ {
+  "id": "zhen1",
+  "char": "真",
+  "pinyin": "zhēn",
+  "meaning": "真的"
+ },
+ {
+  "id": "lun4",
+  "char": "论",
+  "pinyin": "lùn",
+  "meaning": "讨论"
+ },
+ {
+  "id": "chu4",
+  "char": "处",
+  "pinyin": "chù",
+  "meaning": "到处"
+ },
+ {
+  "id": "zou3",
+  "char": "走",
+  "pinyin": "zǒu",
+  "meaning": "走路"
+ },
+ {
+  "id": "yi4b",
+  "char": "义",
+  "pinyin": "yì",
+  "meaning": "正义"
+ },
+ {
+  "id": "ru4",
+  "char": "入",
+  "pinyin": "rù",
+  "meaning": "进入"
+ },
+ {
+  "id": "ji3b",
+  "char": "几",
+  "pinyin": "jǐ",
+  "meaning": "几个"
+ },
+ {
+  "id": "ji1",
+  "char": "机",
+  "pinyin": "jī",
+  "meaning": "飞机"
+ },
+ {
+  "id": "kou3",
+  "char": "口",
+  "pinyin": "kǒu",
+  "meaning": "口水"
+ },
+ {
+  "id": "ru2",
+  "char": "如",
+  "pinyin": "rú",
+  "meaning": "如果"
+ },
+ {
+  "id": "zhi1b",
+  "char": "只",
+  "pinyin": "zhī",
+  "meaning": "一只"
+ },
+ {
+  "id": "zhi1c",
+  "char": "知",
+  "pinyin": "zhī",
+  "meaning": "知道"
+ },
+ {
+  "id": "jia1b",
+  "char": "加",
+  "pinyin": "jiā",
+  "meaning": "加法"
+ },
+ {
+  "id": "he2c",
+  "char": "合",
+  "pinyin": "hé",
+  "meaning": "合唱"
+ },
+ {
+  "id": "gei3",
+  "char": "给",
+  "pinyin": "gěi",
+  "meaning": "给你"
+ },
+ {
+  "id": "yuan2b",
+  "char": "员",
+  "pinyin": "yuán",
+  "meaning": "运动员"
+ },
+ {
+  "id": "ge4b",
+  "char": "各",
+  "pinyin": "gè",
+  "meaning": "各种各样"
+ },
+ {
+  "id": "ren4b",
+  "char": "认",
+  "pinyin": "rèn",
+  "meaning": "认识"
+ },
+ {
+  "id": "tiao2",
+  "char": "条",
+  "pinyin": "tiáo",
+  "meaning": "面条"
+ },
+ {
+  "id": "ping2",
+  "char": "平",
+  "pinyin": "píng",
+  "meaning": "平地"
+ },
+ {
+  "id": "xi4",
+  "char": "系",
+  "pinyin": "xì",
+  "meaning": "没关系"
+ },
+ {
+  "id": "qi4",
+  "char": "气",
+  "pinyin": "qì",
+  "meaning": "气球"
+ },
+ {
+  "id": "nv3",
+  "char": "女",
+  "pinyin": "nǚ",
+  "meaning": "女孩"
+ },
+ {
+  "id": "hao3",
+  "char": "好",
+  "pinyin": "hǎo",
+  "meaning": "好吃"
+ },
+ {
+  "id": "ta1c",
+  "char": "她",
+  "pinyin": "tā",
+  "meaning": "她们"
+ },
+ {
+  "id": "hai2b",
+  "char": "孩",
+  "pinyin": "hái",
+  "meaning": "孩子"
+ },
+ {
+  "id": "ma3",
+  "char": "马",
+  "pinyin": "mǎ",
+  "meaning": "小马"
+ },
+ {
+  "id": "ma1",
+  "char": "妈",
+  "pinyin": "mā",
+  "meaning": "妈妈"
+ },
+ {
+  "id": "qie3",
+  "char": "且",
+  "pinyin": "qiě",
+  "meaning": "而且"
+ },
+ {
+  "id": "jie3b",
+  "char": "姐",
+  "pinyin": "jiě",
+  "meaning": "姐姐"
+ },
+ {
+  "id": "ti2b",
+  "char": "题",
+  "pinyin": "tí",
+  "meaning": "问题"
+ },
+ {
+  "id": "huo2",
+  "char": "活",
+  "pinyin": "huó",
+  "meaning": "活动"
+ },
+ {
+  "id": "er3",
+  "char": "尔",
+  "pinyin": "ěr",
+  "meaning": "偶尔"
+ },
+ {
+  "id": "geng4",
+  "char": "更",
+  "pinyin": "gèng",
+  "meaning": "更多"
+ },
+ {
+  "id": "bie2",
+  "char": "别",
+  "pinyin": "bié",
+  "meaning": "告别"
+ },
+ {
+  "id": "da3",
+  "char": "打",
+  "pinyin": "dǎ",
+  "meaning": "打球"
+ },
+ {
+  "id": "bian4",
+  "char": "变",
+  "pinyin": "biàn",
+  "meaning": "变魔术"
+ },
+ {
+  "id": "si4",
+  "char": "四",
+  "pinyin": "sì",
+  "meaning": "四个"
+ },
+ {
+  "id": "shen2b",
+  "char": "神",
+  "pinyin": "shén",
+  "meaning": "神话"
+ },
+ {
+  "id": "zong3",
+  "char": "总",
+  "pinyin": "zǒng",
+  "meaning": "总共"
+ },
+ {
+  "id": "mu4",
+  "char": "目",
+  "pinyin": "mù",
+  "meaning": "节目"
+ },
+ {
+  "id": "xiang1",
+  "char": "相",
+  "pinyin": "xiāng",
+  "meaning": "相同"
+ },
+ {
+  "id": "xiang3",
+  "char": "想",
+  "pinyin": "xiǎng",
+  "meaning": "想念"
+ },
+ {
+  "id": "jin1",
+  "char": "今",
+  "pinyin": "jīn",
+  "meaning": "今天"
+ },
+ {
+  "id": "nian4",
+  "char": "念",
+  "pinyin": "niàn",
+  "meaning": "想念"
+ },
+ {
+  "id": "he2d",
+  "char": "何",
+  "pinyin": "hé",
+  "meaning": "为何"
+ },
+ {
+  "id": "dian4",
+  "char": "电",
+  "pinyin": "diàn",
+  "meaning": "闪电"
+ },
+ {
+  "id": "shu3",
+  "char": "数",
+  "pinyin": "shǔ",
+  "meaning": "数星星"
+ },
+ {
+  "id": "an1",
+  "char": "安",
+  "pinyin": "ān",
+  "meaning": "平安"
+ },
+ {
+  "id": "shao3",
+  "char": "少",
+  "pinyin": "shǎo",
+  "meaning": "多少"
+ },
+ {
+  "id": "bao4",
+  "char": "报",
+  "pinyin": "bào",
+  "meaning": "报纸"
+ },
+ {
+  "id": "cai2",
+  "char": "才",
+  "pinyin": "cái",
+  "meaning": "天才"
+ },
+ {
+  "id": "jie1",
+  "char": "结",
+  "pinyin": "jiē",
+  "meaning": "结果子"
+ },
+ {
+  "id": "fan3",
+  "char": "反",
+  "pinyin": "fǎn",
+  "meaning": "反面"
+ },
+ {
+  "id": "shou4",
+  "char": "受",
+  "pinyin": "shòu",
+  "meaning": "受伤"
+ },
+ {
+  "id": "tai4",
+  "char": "太",
+  "pinyin": "tài",
+  "meaning": "太阳"
+ },
+ {
+  "id": "liang2",
+  "char": "量",
+  "pinyin": "liáng",
+  "meaning": "量身高"
+ },
+ {
+  "id": "zai4b",
+  "char": "再",
+  "pinyin": "zài",
+  "meaning": "再见"
+ },
+ {
+  "id": "gan3",
+  "char": "感",
+  "pinyin": "gǎn",
+  "meaning": "感冒"
+ },
+ {
+  "id": "jian4b",
+  "char": "建",
+  "pinyin": "jiàn",
+  "meaning": "建房子"
+ },
+ {
+  "id": "wu4b",
+  "char": "务",
+  "pinyin": "wù",
+  "meaning": "家务"
+ },
+ {
+  "id": "zuo4c",
+  "char": "做",
+  "pinyin": "zuò",
+  "meaning": "做饭"
+ },
+ {
+  "id": "jie1b",
+  "char": "接",
+  "pinyin": "jiē",
+  "meaning": "接住"
+ },
+ {
+  "id": "bi4",
+  "char": "必",
+  "pinyin": "bì",
+  "meaning": "必须"
+ },
+ {
+  "id": "chang3",
+  "char": "场",
+  "pinyin": "chǎng",
+  "meaning": "操场"
+ },
+ {
+  "id": "jian4c",
+  "char": "件",
+  "pinyin": "jiàn",
+  "meaning": "一件"
+ },
+ {
+  "id": "ji4",
+  "char": "计",
+  "pinyin": "jì",
+  "meaning": "计算"
+ },
+ {
+  "id": "guan3",
+  "char": "管",
+  "pinyin": "guǎn",
+  "meaning": "水管"
+ },
+ {
+  "id": "qi1",
+  "char": "期",
+  "pinyin": "qī",
+  "meaning": "星期"
+ },
+ {
+  "id": "shi4d",
+  "char": "市",
+  "pinyin": "shì",
+  "meaning": "城市"
+ },
+ {
+  "id": "zhi2",
+  "char": "直",
+  "pinyin": "zhí",
+  "meaning": "笔直"
+ },
+ {
+  "id": "de2b",
+  "char": "德",
+  "pinyin": "dé",
+  "meaning": "美德"
+ },
+ {
+  "id": "zi1",
+  "char": "资",
+  "pinyin": "zī",
+  "meaning": "工资"
+ },
+ {
+  "id": "ming4",
+  "char": "命",
+  "pinyin": "mìng",
+  "meaning": "命令"
+ },
+ {
+  "id": "shan1",
+  "char": "山",
+  "pinyin": "shān",
+  "meaning": "大山"
+ },
+ {
+  "id": "jin1b",
+  "char": "金",
+  "pinyin": "jīn",
+  "meaning": "金色"
+ },
+ {
+  "id": "zhi3",
+  "char": "指",
+  "pinyin": "zhǐ",
+  "meaning": "手指"
+ },
+ {
+  "id": "ke4",
+  "char": "克",
+  "pinyin": "kè",
+  "meaning": "坦克"
+ },
+ {
+  "id": "xu3",
+  "char": "许",
+  "pinyin": "xǔ",
+  "meaning": "许愿"
+ },
+ {
+  "id": "tong3",
+  "char": "统",
+  "pinyin": "tǒng",
+  "meaning": "统统"
+ },
+ {
+  "id": "qu1",
+  "char": "区",
+  "pinyin": "qū",
+  "meaning": "小区"
+ },
+ {
+  "id": "bao3",
+  "char": "保",
+  "pinyin": "bǎo",
+  "meaning": "保护"
+ },
+ {
+  "id": "zhi4b",
+  "char": "至",
+  "pinyin": "zhì",
+  "meaning": "冬至"
+ },
+ {
+  "id": "dui4b",
+  "char": "队",
+  "pinyin": "duì",
+  "meaning": "排队"
+ },
+ {
+  "id": "xing2b",
+  "char": "形",
+  "pinyin": "xíng",
+  "meaning": "图形"
+ },
+ {
+  "id": "she4",
+  "char": "社",
+  "pinyin": "shè",
+  "meaning": "社区"
+ },
+ {
+  "id": "bian4b",
+  "char": "便",
+  "pinyin": "biàn",
+  "meaning": "方便"
+ },
+ {
+  "id": "kong1",
+  "char": "空",
+  "pinyin": "kōng",
+  "meaning": "天空"
+ },
+ {
+  "id": "jue2",
+  "char": "决",
+  "pinyin": "jué",
+  "meaning": "决定"
+ },
+ {
+  "id": "zhan3",
+  "char": "展",
+  "pinyin": "zhǎn",
+  "meaning": "展开"
+ },
+ {
+  "id": "ke1",
+  "char": "科",
+  "pinyin": "kē",
+  "meaning": "科学"
+ },
+ {
+  "id": "fang4",
+  "char": "放",
+  "pinyin": "fàng",
+  "meaning": "放学"
+ },
+ {
+  "id": "fang2",
+  "char": "房",
+  "pinyin": "fáng",
+  "meaning": "房子"
+ },
+ {
+  "id": "si1b",
+  "char": "司",
+  "pinyin": "sī",
+  "meaning": "司机"
+ },
+ {
+  "id": "wu3",
+  "char": "五",
+  "pinyin": "wǔ",
+  "meaning": "五角星"
+ },
+ {
+  "id": "ji1b",
+  "char": "基",
+  "pinyin": "jī",
+  "meaning": "地基"
+ },
+ {
+  "id": "yan3",
+  "char": "眼",
+  "pinyin": "yǎn",
+  "meaning": "眼睛"
+ },
+ {
+  "id": "shu1",
+  "char": "书",
+  "pinyin": "shū",
+  "meaning": "读书"
+ },
+ {
+  "id": "fei1",
+  "char": "非",
+  "pinyin": "fēi",
+  "meaning": "非常"
+ },
+ {
+  "id": "ze2",
+  "char": "则",
+  "pinyin": "zé",
+  "meaning": "规则"
+ },
+ {
+  "id": "ting1",
+  "char": "听",
+  "pinyin": "tīng",
+  "meaning": "听故事"
+ },
+ {
+  "id": "bai2",
+  "char": "白",
+  "pinyin": "bái",
+  "meaning": "白云"
+ },
+ {
+  "id": "que4",
+  "char": "却",
+  "pinyin": "què",
+  "meaning": "冷却"
+ },
+ {
+  "id": "jie4",
+  "char": "界",
+  "pinyin": "jiè",
+  "meaning": "世界"
+ },
+ {
+  "id": "da2",
+  "char": "达",
+  "pinyin": "dá",
+  "meaning": "到达"
+ },
+ {
+  "id": "guang1",
+  "char": "光",
+  "pinyin": "guāng",
+  "meaning": "阳光"
+ },
+ {
+  "id": "qiang2",
+  "char": "强",
+  "pinyin": "qiáng",
+  "meaning": "强壮"
+ },
+ {
+  "id": "ji2b",
+  "char": "即",
+  "pinyin": "jí",
+  "meaning": "立即"
+ },
+ {
+  "id": "nan2",
+  "char": "难",
+  "pinyin": "nán",
+  "meaning": "难题"
+ },
+ {
+  "id": "quan2b",
+  "char": "权",
+  "pinyin": "quán",
+  "meaning": "权力"
+ },
+ {
+  "id": "si1c",
+  "char": "思",
+  "pinyin": "sī",
+  "meaning": "意思"
+ },
+ {
+  "id": "wang2",
+  "char": "王",
+  "pinyin": "wáng",
+  "meaning": "国王"
+ },
+ {
+  "id": "xiang4b",
+  "char": "象",
+  "pinyin": "xiàng",
+  "meaning": "大象"
+ },
+ {
+  "id": "xiang4c",
+  "char": "像",
+  "pinyin": "xiàng",
+  "meaning": "好像"
+ },
+ {
+  "id": "she4b",
+  "char": "设",
+  "pinyin": "shè",
+  "meaning": "设计"
+ },
+ {
+  "id": "shi4e",
+  "char": "式",
+  "pinyin": "shì",
+  "meaning": "样式"
+ },
+ {
+  "id": "se4",
+  "char": "色",
+  "pinyin": "sè",
+  "meaning": "颜色"
+ },
+ {
+  "id": "lu4",
+  "char": "路",
+  "pinyin": "lù",
+  "meaning": "马路"
+ },
+ {
+  "id": "ji4b",
+  "char": "记",
+  "pinyin": "jì",
+  "meaning": "日记"
+ },
+ {
+  "id": "nan2b",
+  "char": "南",
+  "pinyin": "nán",
+  "meaning": "南瓜"
+ },
+ {
+  "id": "pin3",
+  "char": "品",
+  "pinyin": "pǐn",
+  "meaning": "作品"
+ },
+ {
+  "id": "gao4",
+  "char": "告",
+  "pinyin": "gào",
+  "meaning": "告诉"
+ },
+ {
+  "id": "lei4",
+  "char": "类",
+  "pinyin": "lèi",
+  "meaning": "分类"
+ },
+ {
+  "id": "qiu2",
+  "char": "求",
+  "pinyin": "qiú",
+  "meaning": "求求你"
+ },
+ {
+  "id": "ju4",
+  "char": "据",
+  "pinyin": "jù",
+  "meaning": "据说"
+ },
+ {
+  "id": "cheng2b",
+  "char": "程",
+  "pinyin": "chéng",
+  "meaning": "路程"
+ },
+ {
+  "id": "bian1",
+  "char": "边",
+  "pinyin": "biān",
+  "meaning": "旁边"
+ },
+ {
+  "id": "si3",
+  "char": "死",
+  "pinyin": "sǐ",
+  "meaning": "死了"
+ },
+ {
+  "id": "zhang1",
+  "char": "张",
+  "pinyin": "zhāng",
+  "meaning": "张开"
+ },
+ {
+  "id": "gai1",
+  "char": "该",
+  "pinyin": "gāi",
+  "meaning": "该你了"
+ },
+ {
+  "id": "jiao1b",
+  "char": "交",
+  "pinyin": "jiāo",
+  "meaning": "交朋友"
+ },
+ {
+  "id": "wan4",
+  "char": "万",
+  "pinyin": "wàn",
+  "meaning": "一万"
+ },
+ {
+  "id": "qu3",
+  "char": "取",
+  "pinyin": "qǔ",
+  "meaning": "取快递"
+ },
+ {
+  "id": "la1",
+  "char": "拉",
+  "pinyin": "lā",
+  "meaning": "拉手"
+ },
+ {
+  "id": "ge2",
+  "char": "格",
+  "pinyin": "gé",
+  "meaning": "格子"
+ },
+ {
+  "id": "wang4",
+  "char": "望",
+  "pinyin": "wàng",
+  "meaning": "看望"
+ },
+ {
+  "id": "jiao4",
+  "char": "觉",
+  "pinyin": "jiào",
+  "meaning": "睡觉"
+ },
+ {
+  "id": "shu4",
+  "char": "术",
+  "pinyin": "shù",
+  "meaning": "魔术"
+ },
+ {
+  "id": "chuan2",
+  "char": "传",
+  "pinyin": "chuán",
+  "meaning": "传球"
+ },
+ {
+  "id": "shi1",
+  "char": "师",
+  "pinyin": "shī",
+  "meaning": "老师"
+ },
+ {
+  "id": "guan1b",
+  "char": "观",
+  "pinyin": "guān",
+  "meaning": "观察"
+ },
+ {
+  "id": "qie1",
+  "char": "切",
+  "pinyin": "qiē",
+  "meaning": "切西瓜"
+ },
+ {
+  "id": "rang4",
+  "char": "让",
+  "pinyin": "ràng",
+  "meaning": "让座"
+ },
+ {
+  "id": "shi2d",
+  "char": "识",
+  "pinyin": "shí",
+  "meaning": "认识"
+ },
+ {
+  "id": "hou4b",
+  "char": "候",
+  "pinyin": "hòu",
+  "meaning": "时候"
+ },
+ {
+  "id": "dai4b",
+  "char": "带",
+  "pinyin": "dài",
+  "meaning": "皮带"
+ },
+ {
+  "id": "dao3",
+  "char": "导",
+  "pinyin": "dǎo",
+  "meaning": "导航"
+ },
+ {
+  "id": "zheng1",
+  "char": "争",
+  "pinyin": "zhēng",
+  "meaning": "争第一"
+ },
+ {
+  "id": "yun4",
+  "char": "运",
+  "pinyin": "yùn",
+  "meaning": "运动"
+ },
+ {
+  "id": "xiao4",
+  "char": "笑",
+  "pinyin": "xiào",
+  "meaning": "笑脸"
+ },
+ {
+  "id": "fei1b",
+  "char": "飞",
+  "pinyin": "fēi",
+  "meaning": "飞机"
+ },
+ {
+  "id": "feng1",
+  "char": "风",
+  "pinyin": "fēng",
+  "meaning": "大风"
+ },
+ {
+  "id": "bu4c",
+  "char": "步",
+  "pinyin": "bù",
+  "meaning": "脚步"
+ },
+ {
+  "id": "gai3",
+  "char": "改",
+  "pinyin": "gǎi",
+  "meaning": "改错"
+ },
+ {
+  "id": "shou1",
+  "char": "收",
+  "pinyin": "shōu",
+  "meaning": "收玩具"
+ },
+ {
+  "id": "gen1",
+  "char": "根",
+  "pinyin": "gēn",
+  "meaning": "树根"
+ },
+ {
+  "id": "gan1",
+  "char": "干",
+  "pinyin": "gān",
+  "meaning": "干净"
+ },
+ {
+  "id": "zao4",
+  "char": "造",
+  "pinyin": "zào",
+  "meaning": "造房子"
+ },
+ {
+  "id": "yan2",
+  "char": "言",
+  "pinyin": "yán",
+  "meaning": "发言"
+ },
+ {
+  "id": "lian2",
+  "char": "联",
+  "pinyin": "lián",
+  "meaning": "春联"
+ },
+ {
+  "id": "chi2",
+  "char": "持",
+  "pinyin": "chí",
+  "meaning": "坚持"
+ },
+ {
+  "id": "zu3",
+  "char": "组",
+  "pinyin": "zǔ",
+  "meaning": "小组"
+ },
+ {
+  "id": "mei3b",
+  "char": "每",
+  "pinyin": "měi",
+  "meaning": "每天"
+ },
+ {
+  "id": "ji4c",
+  "char": "济",
+  "pinyin": "jì",
+  "meaning": "同舟共济"
+ },
+ {
+  "id": "che1",
+  "char": "车",
+  "pinyin": "chē",
+  "meaning": "汽车"
+ },
+ {
+  "id": "qin1",
+  "char": "亲",
+  "pinyin": "qīn",
+  "meaning": "亲人"
+ },
+ {
+  "id": "ji2c",
+  "char": "极",
+  "pinyin": "jí",
+  "meaning": "北极"
+ },
+ {
+  "id": "fu2",
+  "char": "服",
+  "pinyin": "fú",
+  "meaning": "衣服"
+ },
+ {
+  "id": "kuai4",
+  "char": "快",
+  "pinyin": "kuài",
+  "meaning": "快乐"
+ },
+ {
+  "id": "ban4",
+  "char": "办",
+  "pinyin": "bàn",
+  "meaning": "办法"
+ },
+ {
+  "id": "yi4c",
+  "char": "议",
+  "pinyin": "yì",
+  "meaning": "建议"
+ },
+ {
+  "id": "wang3",
+  "char": "往",
+  "pinyin": "wǎng",
+  "meaning": "来来往往"
+ },
+ {
+  "id": "yuan2c",
+  "char": "元",
+  "pinyin": "yuán",
+  "meaning": "元宵"
+ },
+ {
+  "id": "wan2",
+  "char": "完",
+  "pinyin": "wán",
+  "meaning": "写完"
+ },
+ {
+  "id": "yuan4",
+  "char": "院",
+  "pinyin": "yuàn",
+  "meaning": "院子"
+ },
+ {
+  "id": "ying1b",
+  "char": "英",
+  "pinyin": "yīng",
+  "meaning": "英雄"
+ },
+ {
+  "id": "shi4f",
+  "char": "士",
+  "pinyin": "shì",
+  "meaning": "士兵"
+ },
+ {
+  "id": "zheng4c",
+  "char": "证",
+  "pinyin": "zhèng",
+  "meaning": "证据"
+ },
+ {
+  "id": "jin4b",
+  "char": "近",
+  "pinyin": "jìn",
+  "meaning": "附近"
+ },
+ {
+  "id": "shi1b",
+  "char": "失",
+  "pinyin": "shī",
+  "meaning": "消失"
+ },
+ {
+  "id": "gui1",
+  "char": "规",
+  "pinyin": "guī",
+  "meaning": "规矩"
+ },
+ {
+  "id": "ling4",
+  "char": "令",
+  "pinyin": "lìng",
+  "meaning": "命令"
+ },
+ {
+  "id": "ling3",
+  "char": "领",
+  "pinyin": "lǐng",
+  "meaning": "衣领"
+ },
+ {
+  "id": "zhun3",
+  "char": "准",
+  "pinyin": "zhǔn",
+  "meaning": "准备"
+ },
+ {
+  "id": "bu4d",
+  "char": "布",
+  "pinyin": "bù",
+  "meaning": "花布"
+ },
+ {
+  "id": "zen3",
+  "char": "怎",
+  "pinyin": "zěn",
+  "meaning": "怎么"
+ },
+ {
+  "id": "ne",
+  "char": "呢",
+  "pinyin": "ne",
+  "meaning": "妈妈呢"
+ },
+ {
+  "id": "cun2",
+  "char": "存",
+  "pinyin": "cún",
+  "meaning": "存钱"
+ },
+ {
+  "id": "wei4b",
+  "char": "未",
+  "pinyin": "wèi",
+  "meaning": "未来"
+ },
+ {
+  "id": "yuan3",
+  "char": "远",
+  "pinyin": "yuǎn",
+  "meaning": "远方"
+ },
+ {
+  "id": "jiao4b",
+  "char": "叫",
+  "pinyin": "jiào",
+  "meaning": "叫声"
+ },
+ {
+  "id": "tai2",
+  "char": "台",
+  "pinyin": "tái",
+  "meaning": "台灯"
+ },
+ {
+  "id": "zhi4c",
+  "char": "治",
+  "pinyin": "zhì",
+  "meaning": "治病"
+ },
+ {
+  "id": "shi3b",
+  "char": "始",
+  "pinyin": "shǐ",
+  "meaning": "开始"
+ },
+ {
+  "id": "dan1",
+  "char": "单",
+  "pinyin": "dān",
+  "meaning": "床单"
+ },
+ {
+  "id": "ying3",
+  "char": "影",
+  "pinyin": "yǐng",
+  "meaning": "影子"
+ },
+ {
+  "id": "ju4b",
+  "char": "具",
+  "pinyin": "jù",
+  "meaning": "玩具"
+ },
+ {
+  "id": "luo2",
+  "char": "罗",
+  "pinyin": "luó",
+  "meaning": "罗汉"
+ },
+ {
+  "id": "zi4b",
+  "char": "字",
+  "pinyin": "zì",
+  "meaning": "写字"
+ },
+ {
+  "id": "ai4",
+  "char": "爱",
+  "pinyin": "ài",
+  "meaning": "爱心"
+ },
+ {
+  "id": "ji1c",
+  "char": "击",
+  "pinyin": "jī",
+  "meaning": "击掌"
+ },
+ {
+  "id": "liu2",
+  "char": "流",
+  "pinyin": "liú",
+  "meaning": "流水"
+ },
+ {
+  "id": "bei4b",
+  "char": "备",
+  "pinyin": "bèi",
+  "meaning": "准备"
+ },
+ {
+  "id": "bing1",
+  "char": "兵",
+  "pinyin": "bīng",
+  "meaning": "小兵"
+ },
+ {
+  "id": "lian2b",
+  "char": "连",
+  "pinyin": "lián",
+  "meaning": "连线"
+ },
+ {
+  "id": "shen1b",
+  "char": "深",
+  "pinyin": "shēn",
+  "meaning": "深海"
+ },
+ {
+  "id": "shang1",
+  "char": "商",
+  "pinyin": "shāng",
+  "meaning": "商店"
+ },
+ {
+  "id": "suan4",
+  "char": "算",
+  "pinyin": "suàn",
+  "meaning": "算术"
+ },
+ {
+  "id": "zhi4d",
+  "char": "质",
+  "pinyin": "zhì",
+  "meaning": "质量"
+ },
+ {
+  "id": "tuan2",
+  "char": "团",
+  "pinyin": "tuán",
+  "meaning": "饭团"
+ },
+ {
+  "id": "ji2d",
+  "char": "集",
+  "pinyin": "jí",
+  "meaning": "集合"
+ },
+ {
+  "id": "bai3",
+  "char": "百",
+  "pinyin": "bǎi",
+  "meaning": "一百"
+ },
+ {
+  "id": "xu1",
+  "char": "需",
+  "pinyin": "xū",
+  "meaning": "需要"
+ },
+ {
+  "id": "jia4",
+  "char": "价",
+  "pinyin": "jià",
+  "meaning": "价钱"
+ },
+ {
+  "id": "hua1",
+  "char": "花",
+  "pinyin": "huā",
+  "meaning": "花朵"
+ },
+ {
+  "id": "qing3",
+  "char": "请",
+  "pinyin": "qǐng",
+  "meaning": "请坐"
+ },
+ {
+  "id": "mi3",
+  "char": "米",
+  "pinyin": "mǐ",
+  "meaning": "大米"
+ },
+ {
+  "id": "jing1b",
+  "char": "精",
+  "pinyin": "jīng",
+  "meaning": "精彩"
+ },
+ {
+  "id": "dang3",
+  "char": "党",
+  "pinyin": "dǎng",
+  "meaning": "党旗"
+ },
+ {
+  "id": "hua2",
+  "char": "华",
+  "pinyin": "huá",
+  "meaning": "华丽"
+ },
+ {
+  "id": "shi2e",
+  "char": "石",
+  "pinyin": "shí",
+  "meaning": "石头"
+ },
+ {
+  "id": "que4b",
+  "char": "确",
+  "pinyin": "què",
+  "meaning": "正确"
+ },
+ {
+  "id": "ji2e",
+  "char": "级",
+  "pinyin": "jí",
+  "meaning": "年级"
+ },
+ {
+  "id": "zheng3",
+  "char": "整",
+  "pinyin": "zhěng",
+  "meaning": "整齐"
+ },
+ {
+  "id": "fu3",
+  "char": "府",
+  "pinyin": "fǔ",
+  "meaning": "政府"
+ },
+ {
+  "id": "li2",
+  "char": "离",
+  "pinyin": "lí",
+  "meaning": "离开"
+ },
+ {
+  "id": "kuang4",
+  "char": "况",
+  "pinyin": "kuàng",
+  "meaning": "情况"
+ },
+ {
+  "id": "ya4",
+  "char": "亚",
+  "pinyin": "yà",
+  "meaning": "亚军"
+ },
+ {
+  "id": "yue1",
+  "char": "约",
+  "pinyin": "yuē",
+  "meaning": "约定"
+ },
+ {
+  "id": "shi4g",
+  "char": "示",
+  "pinyin": "shì",
+  "meaning": "示范"
+ },
+ {
+  "id": "ji4d",
+  "char": "际",
+  "pinyin": "jì",
+  "meaning": "国际"
+ },
+ {
+  "id": "fu4",
+  "char": "复",
+  "pinyin": "fù",
+  "meaning": "复习"
+ },
+ {
+  "id": "bing4b",
+  "char": "病",
+  "pinyin": "bìng",
+  "meaning": "生病"
+ },
+ {
+  "id": "xi1b",
+  "char": "息",
+  "pinyin": "xī",
+  "meaning": "休息"
+ },
+ {
+  "id": "xian4b",
+  "char": "线",
+  "pinyin": "xiàn",
+  "meaning": "毛线"
+ },
+ {
+  "id": "si4b",
+  "char": "似",
+  "pinyin": "sì",
+  "meaning": "相似"
+ },
+ {
+  "id": "guan1c",
+  "char": "官",
+  "pinyin": "guān",
+  "meaning": "警官"
+ },
+ {
+  "id": "duan4",
+  "char": "断",
+  "pinyin": "duàn",
+  "meaning": "折断"
+ },
+ {
+  "id": "man3",
+  "char": "满",
+  "pinyin": "mǎn",
+  "meaning": "装满"
+ },
+ {
+  "id": "zhi1d",
+  "char": "支",
+  "pinyin": "zhī",
+  "meaning": "一支笔"
+ },
+ {
+  "id": "ji4e",
+  "char": "技",
+  "pinyin": "jì",
+  "meaning": "杂技"
+ },
+ {
+  "id": "shi4h",
+  "char": "视",
+  "pinyin": "shì",
+  "meaning": "电视"
+ },
+ {
+  "id": "xiao1",
+  "char": "消",
+  "pinyin": "xiāo",
+  "meaning": "消失"
+ },
+ {
+  "id": "yue4",
+  "char": "越",
+  "pinyin": "yuè",
+  "meaning": "越过"
+ },
+ {
+  "id": "qi4b",
+  "char": "器",
+  "pinyin": "qì",
+  "meaning": "机器"
+ },
+ {
+  "id": "rong2",
+  "char": "容",
+  "pinyin": "róng",
+  "meaning": "笑容"
+ },
+ {
+  "id": "zhao4",
+  "char": "照",
+  "pinyin": "zhào",
+  "meaning": "照相"
+ },
+ {
+  "id": "xu1b",
+  "char": "须",
+  "pinyin": "xū",
+  "meaning": "胡须"
+ },
+ {
+  "id": "jiu3",
+  "char": "九",
+  "pinyin": "jiǔ",
+  "meaning": "九个"
+ },
+ {
+  "id": "jiu1",
+  "char": "究",
+  "pinyin": "jiū",
+  "meaning": "研究"
+ },
+ {
+  "id": "yan2b",
+  "char": "研",
+  "pinyin": "yán",
+  "meaning": "研究"
+ },
+ {
+  "id": "xie3",
+  "char": "写",
+  "pinyin": "xiě",
+  "meaning": "写字"
+ },
+ {
+  "id": "cheng1",
+  "char": "称",
+  "pinyin": "chēng",
+  "meaning": "称一称"
+ },
+ {
+  "id": "zao3",
+  "char": "早",
+  "pinyin": "zǎo",
+  "meaning": "早上"
+ },
+ {
+  "id": "mian3",
+  "char": "免",
+  "pinyin": "miǎn",
+  "meaning": "免费"
+ },
+ {
+  "id": "wan3",
+  "char": "晚",
+  "pinyin": "wǎn",
+  "meaning": "晚上"
+ },
+ {
+  "id": "chun1",
+  "char": "春",
+  "pinyin": "chūn",
+  "meaning": "春天"
+ },
+ {
+  "id": "ba1",
+  "char": "八",
+  "pinyin": "bā",
+  "meaning": "八个"
+ },
+ {
+  "id": "gong4",
+  "char": "共",
+  "pinyin": "gòng",
+  "meaning": "一共"
+ },
+ {
+  "id": "gong1c",
+  "char": "功",
+  "pinyin": "gōng",
+  "meaning": "功夫"
+ },
+ {
+  "id": "ma",
+  "char": "吗",
+  "pinyin": "ma",
+  "meaning": "好吗"
+ },
+ {
+  "id": "bao1",
+  "char": "包",
+  "pinyin": "bāo",
+  "meaning": "书包"
+ },
+ {
+  "id": "pian4",
+  "char": "片",
+  "pinyin": "piàn",
+  "meaning": "卡片"
+ },
+ {
+  "id": "shi3c",
+  "char": "史",
+  "pinyin": "shǐ",
+  "meaning": "历史"
+ },
+ {
+  "id": "wei3",
+  "char": "委",
+  "pinyin": "wěi",
+  "meaning": "委屈"
+ },
+ {
+  "id": "hu1",
+  "char": "乎",
+  "pinyin": "hū",
+  "meaning": "胖乎乎"
+ },
+ {
+  "id": "cha2",
+  "char": "查",
+  "pinyin": "chá",
+  "meaning": "查一查"
+ },
+ {
+  "id": "qing1",
+  "char": "轻",
+  "pinyin": "qīng",
+  "meaning": "轻轻"
+ },
+ {
+  "id": "yi4d",
+  "char": "易",
+  "pinyin": "yì",
+  "meaning": "容易"
+ },
+ {
+  "id": "ceng2",
+  "char": "曾",
+  "pinyin": "céng",
+  "meaning": "曾经"
+ },
+ {
+  "id": "chu2",
+  "char": "除",
+  "pinyin": "chú",
+  "meaning": "大扫除"
+ },
+ {
+  "id": "nong2",
+  "char": "农",
+  "pinyin": "nóng",
+  "meaning": "农民"
+ },
+ {
+  "id": "zhao3",
+  "char": "找",
+  "pinyin": "zhǎo",
+  "meaning": "找一找"
+ },
+ {
+  "id": "zhuang1",
+  "char": "装",
+  "pinyin": "zhuāng",
+  "meaning": "装满"
+ },
+ {
+  "id": "guang3",
+  "char": "广",
+  "pinyin": "guǎng",
+  "meaning": "广场"
+ },
+ {
+  "id": "xian3",
+  "char": "显",
+  "pinyin": "xiǎn",
+  "meaning": "显微镜"
+ },
+ {
+  "id": "a1",
+  "char": "阿",
+  "pinyin": "ā",
+  "meaning": "阿姨"
+ },
+ {
+  "id": "li3c",
+  "char": "李",
+  "pinyin": "lǐ",
+  "meaning": "李子"
+ },
+ {
+  "id": "biao1",
+  "char": "标",
+  "pinyin": "biāo",
+  "meaning": "标签"
+ },
+ {
+  "id": "tan2",
+  "char": "谈",
+  "pinyin": "tán",
+  "meaning": "谈话"
+ },
+ {
+  "id": "chi1",
+  "char": "吃",
+  "pinyin": "chī",
+  "meaning": "吃饭"
+ },
+ {
+  "id": "tu2",
+  "char": "图",
+  "pinyin": "tú",
+  "meaning": "图画"
+ },
+ {
+  "id": "liu4",
+  "char": "六",
+  "pinyin": "liù",
+  "meaning": "六岁"
+ },
+ {
+  "id": "yin3",
+  "char": "引",
+  "pinyin": "yǐn",
+  "meaning": "吸引"
+ },
+ {
+  "id": "li4d",
+  "char": "历",
+  "pinyin": "lì",
+  "meaning": "日历"
+ },
+ {
+  "id": "shou3b",
+  "char": "首",
+  "pinyin": "shǒu",
+  "meaning": "首都"
+ },
+ {
+  "id": "yi1",
+  "char": "医",
+  "pinyin": "yī",
+  "meaning": "医生"
+ },
+ {
+  "id": "ju2",
+  "char": "局",
+  "pinyin": "jú",
+  "meaning": "结局"
+ },
+ {
+  "id": "tu1",
+  "char": "突",
+  "pinyin": "tū",
+  "meaning": "突然"
+ },
+ {
+  "id": "zhuan1",
+  "char": "专",
+  "pinyin": "zhuān",
+  "meaning": "专心"
+ },
+ {
+  "id": "zhuan3",
+  "char": "转",
+  "pinyin": "zhuǎn",
+  "meaning": "转圈"
+ },
+ {
+  "id": "fei4",
+  "char": "费",
+  "pinyin": "fèi",
+  "meaning": "浪费"
+ },
+ {
+  "id": "hao4",
+  "char": "号",
+  "pinyin": "hào",
+  "meaning": "号码"
+ },
+ {
+  "id": "jin4c",
+  "char": "尽",
+  "pinyin": "jìn",
+  "meaning": "尽头"
+ },
+ {
+  "id": "ling4b",
+  "char": "另",
+  "pinyin": "lìng",
+  "meaning": "另一个"
+ },
+ {
+  "id": "zhou1",
+  "char": "周",
+  "pinyin": "zhōu",
+  "meaning": "四周"
+ },
+ {
+  "id": "tiao2b",
+  "char": "调",
+  "pinyin": "tiáo",
+  "meaning": "调皮"
+ },
+ {
+  "id": "jiao4c",
+  "char": "较",
+  "pinyin": "jiào",
+  "meaning": "比较"
+ },
+ {
+  "id": "zhu4b",
+  "char": "注",
+  "pinyin": "zhù",
+  "meaning": "注意"
+ },
+ {
+  "id": "yu3b",
+  "char": "语",
+  "pinyin": "yǔ",
+  "meaning": "谜语"
+ },
+ {
+  "id": "jin3",
+  "char": "仅",
+  "pinyin": "jǐn",
+  "meaning": "仅仅"
+ },
+ {
+  "id": "kao3",
+  "char": "考",
+  "pinyin": "kǎo",
+  "meaning": "考试"
+ },
+ {
+  "id": "luo4",
+  "char": "落",
+  "pinyin": "luò",
+  "meaning": "落叶"
+ },
+ {
+  "id": "sui2",
+  "char": "随",
+  "pinyin": "suí",
+  "meaning": "跟随"
+ },
+ {
+  "id": "xuan3",
+  "char": "选",
+  "pinyin": "xuǎn",
+  "meaning": "挑选"
+ },
+ {
+  "id": "lie4",
+  "char": "列",
+  "pinyin": "liè",
+  "meaning": "一列"
+ },
+ {
+  "id": "wu3b",
+  "char": "武",
+  "pinyin": "wǔ",
+  "meaning": "武术"
+ },
+ {
+  "id": "hong2",
+  "char": "红",
+  "pinyin": "hóng",
+  "meaning": "红色"
+ },
+ {
+  "id": "xiang3b",
+  "char": "响",
+  "pinyin": "xiǎng",
+  "meaning": "响声"
+ },
+ {
+  "id": "sui1",
+  "char": "虽",
+  "pinyin": "suī",
+  "meaning": "虽然"
+ },
+ {
+  "id": "tui1",
+  "char": "推",
+  "pinyin": "tuī",
+  "meaning": "推车"
+ },
+ {
+  "id": "shi4i",
+  "char": "势",
+  "pinyin": "shì",
+  "meaning": "手势"
+ },
+ {
+  "id": "can1",
+  "char": "参",
+  "pinyin": "cān",
+  "meaning": "参加"
+ },
+ {
+  "id": "xi1c",
+  "char": "希",
+  "pinyin": "xī",
+  "meaning": "希望"
+ },
+ {
+  "id": "gu3",
+  "char": "古",
+  "pinyin": "gǔ",
+  "meaning": "古诗"
+ },
+ {
+  "id": "gou4",
+  "char": "构",
+  "pinyin": "gòu",
+  "meaning": "结构"
+ },
+ {
+  "id": "ban4b",
+  "char": "半",
+  "pinyin": "bàn",
+  "meaning": "一半"
+ },
+ {
+  "id": "jie2",
+  "char": "节",
+  "pinyin": "jié",
+  "meaning": "节日"
+ },
+ {
+  "id": "tu3",
+  "char": "土",
+  "pinyin": "tǔ",
+  "meaning": "泥土"
+ },
+ {
+  "id": "cheng2c",
+  "char": "城",
+  "pinyin": "chéng",
+  "meaning": "城市"
+ },
+ {
+  "id": "zeng1",
+  "char": "增",
+  "pinyin": "zēng",
+  "meaning": "增加"
+ },
+ {
+  "id": "tou2b",
+  "char": "投",
+  "pinyin": "tóu",
+  "meaning": "投球"
+ },
+ {
+  "id": "mou3",
+  "char": "某",
+  "pinyin": "mǒu",
+  "meaning": "某人"
+ },
+ {
+  "id": "an4",
+  "char": "案",
+  "pinyin": "àn",
+  "meaning": "图案"
+ },
+ {
+  "id": "hei1",
+  "char": "黑",
+  "pinyin": "hēi",
+  "meaning": "黑色"
+ },
+ {
+  "id": "wei2b",
+  "char": "维",
+  "pinyin": "wéi",
+  "meaning": "维生素"
+ },
+ {
+  "id": "ge2b",
+  "char": "革",
+  "pinyin": "gé",
+  "meaning": "皮革"
+ },
+ {
+  "id": "hua2b",
+  "char": "划",
+  "pinyin": "huá",
+  "meaning": "划船"
+ },
+ {
+  "id": "di2",
+  "char": "敌",
+  "pinyin": "dí",
+  "meaning": "敌人"
+ },
+ {
+  "id": "zhi4e",
+  "char": "致",
+  "pinyin": "zhì",
+  "meaning": "致敬"
+ },
+ {
+  "id": "chen2",
+  "char": "陈",
+  "pinyin": "chén",
+  "meaning": "陈老师"
+ },
+ {
+  "id": "lv4",
+  "char": "律",
+  "pinyin": "lǜ",
+  "meaning": "纪律"
+ },
+ {
+  "id": "zu2",
+  "char": "足",
+  "pinyin": "zú",
+  "meaning": "足球"
+ },
+ {
+  "id": "tai4b",
+  "char": "态",
+  "pinyin": "tài",
+  "meaning": "态度"
+ },
+ {
+  "id": "hu4",
+  "char": "护",
+  "pinyin": "hù",
+  "meaning": "保护"
+ },
+ {
+  "id": "qi1b",
+  "char": "七",
+  "pinyin": "qī",
+  "meaning": "七颗"
+ },
+ {
+  "id": "xing1b",
+  "char": "兴",
+  "pinyin": "xīng",
+  "meaning": "兴奋"
+ },
+ {
+  "id": "pai4",
+  "char": "派",
+  "pinyin": "pài",
+  "meaning": "派对"
+ },
+ {
+  "id": "yan4",
+  "char": "验",
+  "pinyin": "yàn",
+  "meaning": "实验"
+ },
+ {
+  "id": "ze2b",
+  "char": "责",
+  "pinyin": "zé",
+  "meaning": "负责"
+ },
+ {
+  "id": "ying2",
+  "char": "营",
+  "pinyin": "yíng",
+  "meaning": "营养"
+ },
+ {
+  "id": "gou4b",
+  "char": "够",
+  "pinyin": "gòu",
+  "meaning": "够了"
+ },
+ {
+  "id": "zhang1b",
+  "char": "章",
+  "pinyin": "zhāng",
+  "meaning": "文章"
+ },
+ {
+  "id": "yin1b",
+  "char": "音",
+  "pinyin": "yīn",
+  "meaning": "音乐"
+ },
+ {
+  "id": "gen1b",
+  "char": "跟",
+  "pinyin": "gēn",
+  "meaning": "脚后跟"
+ },
+ {
+  "id": "zhi4f",
+  "char": "志",
+  "pinyin": "zhì",
+  "meaning": "标志"
+ },
+ {
+  "id": "di3",
+  "char": "底",
+  "pinyin": "dǐ",
+  "meaning": "底下"
+ },
+ {
+  "id": "zhan4b",
+  "char": "站",
+  "pinyin": "zhàn",
+  "meaning": "车站"
+ },
+ {
+  "id": "yan2c",
+  "char": "严",
+  "pinyin": "yán",
+  "meaning": "严格"
+ },
+ {
+  "id": "ba1b",
+  "char": "巴",
+  "pinyin": "bā",
+  "meaning": "尾巴"
+ },
+ {
+  "id": "ba",
+  "char": "吧",
+  "pinyin": "ba",
+  "meaning": "好吧"
+ },
+ {
+  "id": "li4e",
+  "char": "例",
+  "pinyin": "lì",
+  "meaning": "例子"
+ },
+ {
+  "id": "fang2b",
+  "char": "防",
+  "pinyin": "fáng",
+  "meaning": "消防"
+ },
+ {
+  "id": "zu2b",
+  "char": "族",
+  "pinyin": "zú",
+  "meaning": "家族"
+ },
+ {
+  "id": "gong1d",
+  "char": "供",
+  "pinyin": "gōng",
+  "meaning": "供电"
+ },
+ {
+  "id": "xiao4b",
+  "char": "效",
+  "pinyin": "xiào",
+  "meaning": "特效"
+ },
+ {
+  "id": "xu4",
+  "char": "续",
+  "pinyin": "xù",
+  "meaning": "继续"
+ },
+ {
+  "id": "shi1c",
+  "char": "施",
+  "pinyin": "shī",
+  "meaning": "施工"
+ },
+ {
+  "id": "liu2b",
+  "char": "留",
+  "pinyin": "liú",
+  "meaning": "留下"
+ },
+ {
+  "id": "jiang3",
+  "char": "讲",
+  "pinyin": "jiǎng",
+  "meaning": "讲故事"
+ },
+ {
+  "id": "xing2c",
+  "char": "型",
+  "pinyin": "xíng",
+  "meaning": "模型"
+ },
+ {
+  "id": "zhong1b",
+  "char": "终",
+  "pinyin": "zhōng",
+  "meaning": "终点"
+ },
+ {
+  "id": "da1",
+  "char": "答",
+  "pinyin": "dā",
+  "meaning": "答应"
+ },
+ {
+  "id": "jin3b",
+  "char": "紧",
+  "pinyin": "jǐn",
+  "meaning": "抓紧"
+ },
+ {
+  "id": "huang2",
+  "char": "黄",
+  "pinyin": "huáng",
+  "meaning": "黄色"
+ },
+ {
+  "id": "jue2b",
+  "char": "绝",
+  "pinyin": "jué",
+  "meaning": "绝招"
+ },
+ {
+  "id": "qi2b",
+  "char": "奇",
+  "pinyin": "qí",
+  "meaning": "奇怪"
+ },
+ {
+  "id": "cha2b",
+  "char": "察",
+  "pinyin": "chá",
+  "meaning": "警察"
+ },
+ {
+  "id": "mu3",
+  "char": "母",
+  "pinyin": "mǔ",
+  "meaning": "母鸡"
+ },
+ {
+  "id": "jing1c",
+  "char": "京",
+  "pinyin": "jīng",
+  "meaning": "北京"
+ },
+ {
+  "id": "duan4b",
+  "char": "段",
+  "pinyin": "duàn",
+  "meaning": "一段"
+ },
+ {
+  "id": "yi1b",
+  "char": "依",
+  "pinyin": "yī",
+  "meaning": "依偎"
+ },
+ {
+  "id": "pi1",
+  "char": "批",
+  "pinyin": "pī",
+  "meaning": "批改"
+ },
+ {
+  "id": "qun2",
+  "char": "群",
+  "pinyin": "qún",
+  "meaning": "羊群"
+ },
+ {
+  "id": "xiang4d",
+  "char": "项",
+  "pinyin": "xiàng",
+  "meaning": "项链"
+ },
+ {
+  "id": "gu4",
+  "char": "故",
+  "pinyin": "gù",
+  "meaning": "故事"
+ },
+ {
+  "id": "an4b",
+  "char": "按",
+  "pinyin": "àn",
+  "meaning": "按钮"
+ },
+ {
+  "id": "wei2c",
+  "char": "围",
+  "pinyin": "wéi",
+  "meaning": "围巾"
+ },
+ {
+  "id": "zhi1e",
+  "char": "织",
+  "pinyin": "zhī",
+  "meaning": "织网"
+ },
+ {
+  "id": "hai4",
+  "char": "害",
+  "pinyin": "hài",
+  "meaning": "害虫"
+ },
+ {
+  "id": "dou3",
+  "char": "斗",
+  "pinyin": "dǒu",
+  "meaning": "北斗星"
+ },
+ {
+  "id": "liao4",
+  "char": "料",
+  "pinyin": "liào",
+  "meaning": "塑料"
+ },
+ {
+  "id": "shuang1",
+  "char": "双",
+  "pinyin": "shuāng",
+  "meaning": "双手"
+ },
+ {
+  "id": "ke4b",
+  "char": "客",
+  "pinyin": "kè",
+  "meaning": "客人"
+ },
+ {
+  "id": "ji4f",
+  "char": "纪",
+  "pinyin": "jì",
+  "meaning": "纪念"
+ },
+ {
+  "id": "cai3",
+  "char": "采",
+  "pinyin": "cǎi",
+  "meaning": "采蘑菇"
+ },
+ {
+  "id": "ju3",
+  "char": "举",
+  "pinyin": "jǔ",
+  "meaning": "举手"
+ },
+ {
+  "id": "gong1e",
+  "char": "攻",
+  "pinyin": "gōng",
+  "meaning": "进攻"
+ },
+ {
+  "id": "fu4b",
+  "char": "父",
+  "pinyin": "fù",
+  "meaning": "父亲"
+ },
+ {
+  "id": "su1",
+  "char": "苏",
+  "pinyin": "sū",
+  "meaning": "苏醒"
+ },
+ {
+  "id": "mi4",
+  "char": "密",
+  "pinyin": "mì",
+  "meaning": "秘密"
+ },
+ {
+  "id": "di1",
+  "char": "低",
+  "pinyin": "dī",
+  "meaning": "低头"
+ },
+ {
+  "id": "chao2",
+  "char": "朝",
+  "pinyin": "cháo",
+  "meaning": "朝前"
+ },
+ {
+  "id": "you3b",
+  "char": "友",
+  "pinyin": "yǒu",
+  "meaning": "朋友"
+ },
+ {
+  "id": "su4",
+  "char": "诉",
+  "pinyin": "sù",
+  "meaning": "告诉"
+ },
+ {
+  "id": "zhi3b",
+  "char": "止",
+  "pinyin": "zhǐ",
+  "meaning": "停止"
+ },
+ {
+  "id": "qi3b",
+  "char": "企",
+  "pinyin": "qǐ",
+  "meaning": "企鹅"
+ },
+ {
+  "id": "xi4b",
+  "char": "细",
+  "pinyin": "xì",
+  "meaning": "细小"
+ },
+ {
+  "id": "yuan4b",
+  "char": "愿",
+  "pinyin": "yuàn",
+  "meaning": "心愿"
+ },
+ {
+  "id": "qian1",
+  "char": "千",
+  "pinyin": "qiān",
+  "meaning": "秋千"
+ },
+ {
+  "id": "zhi2b",
+  "char": "值",
+  "pinyin": "zhí",
+  "meaning": "值日"
+ },
+ {
+  "id": "reng2",
+  "char": "仍",
+  "pinyin": "réng",
+  "meaning": "仍然"
+ },
+ {
+  "id": "nan2c",
+  "char": "男",
+  "pinyin": "nán",
+  "meaning": "男孩"
+ },
+ {
+  "id": "qian2b",
+  "char": "钱",
+  "pinyin": "qián",
+  "meaning": "零花钱"
+ },
+ {
+  "id": "wang3b",
+  "char": "网",
+  "pinyin": "wǎng",
+  "meaning": "蜘蛛网"
+ },
+ {
+  "id": "re4",
+  "char": "热",
+  "pinyin": "rè",
+  "meaning": "热水"
+ },
+ {
+  "id": "zhu4c",
+  "char": "助",
+  "pinyin": "zhù",
+  "meaning": "帮助"
+ },
+ {
+  "id": "dao3b",
+  "char": "倒",
+  "pinyin": "dǎo",
+  "meaning": "摔倒"
+ },
+ {
+  "id": "yu4",
+  "char": "育",
+  "pinyin": "yù",
+  "meaning": "体育"
+ },
+ {
+  "id": "shu3b",
+  "char": "属",
+  "pinyin": "shǔ",
+  "meaning": "属相"
+ },
+ {
+  "id": "di4c",
+  "char": "帝",
+  "pinyin": "dì",
+  "meaning": "皇帝"
+ },
+ {
+  "id": "xian4c",
+  "char": "限",
+  "pinyin": "xiàn",
+  "meaning": "限高"
+ },
+ {
+  "id": "chuan2b",
+  "char": "船",
+  "pinyin": "chuán",
+  "meaning": "小船"
+ },
+ {
+  "id": "lian3",
+  "char": "脸",
+  "pinyin": "liǎn",
+  "meaning": "笑脸"
+ },
+ {
+  "id": "zhi2c",
+  "char": "职",
+  "pinyin": "zhí",
+  "meaning": "职业"
+ },
+ {
+  "id": "su4b",
+  "char": "速",
+  "pinyin": "sù",
+  "meaning": "速度"
+ },
+ {
+  "id": "ke4c",
+  "char": "刻",
+  "pinyin": "kè",
+  "meaning": "雕刻"
+ },
+ {
+  "id": "le4",
+  "char": "乐",
+  "pinyin": "lè",
+  "meaning": "快乐"
+ },
+ {
+  "id": "fou3",
+  "char": "否",
+  "pinyin": "fǒu",
+  "meaning": "否定"
+ },
+ {
+  "id": "gang1",
+  "char": "刚",
+  "pinyin": "gāng",
+  "meaning": "刚才"
+ },
+ {
+  "id": "wei1",
+  "char": "威",
+  "pinyin": "wēi",
+  "meaning": "威风"
+ },
+ {
+  "id": "mao2",
+  "char": "毛",
+  "pinyin": "máo",
+  "meaning": "毛巾"
+ },
+ {
+  "id": "zhuang4",
+  "char": "状",
+  "pinyin": "zhuàng",
+  "meaning": "奖状"
+ },
+ {
+  "id": "lv4b",
+  "char": "率",
+  "pinyin": "lǜ",
+  "meaning": "效率"
+ },
+ {
+  "id": "shen4",
+  "char": "甚",
+  "pinyin": "shèn",
+  "meaning": "甚至"
+ },
+ {
+  "id": "du2",
+  "char": "独",
+  "pinyin": "dú",
+  "meaning": "独木桥"
+ },
+ {
+  "id": "qiu2b",
+  "char": "球",
+  "pinyin": "qiú",
+  "meaning": "皮球"
+ },
+ {
+  "id": "ban1",
+  "char": "般",
+  "pinyin": "bān",
+  "meaning": "一般"
+ },
+ {
+  "id": "pu3",
+  "char": "普",
+  "pinyin": "pǔ",
+  "meaning": "普通话"
+ },
+ {
+  "id": "pa4",
+  "char": "怕",
+  "pinyin": "pà",
+  "meaning": "害怕"
+ },
+ {
+  "id": "tan2b",
+  "char": "弹",
+  "pinyin": "tán",
+  "meaning": "弹琴"
+ },
+ {
+  "id": "xiao4c",
+  "char": "校",
+  "pinyin": "xiào",
+  "meaning": "学校"
+ },
+ {
+  "id": "ku3",
+  "char": "苦",
+  "pinyin": "kǔ",
+  "meaning": "苦瓜"
+ },
+ {
+  "id": "chuang4",
+  "char": "创",
+  "pinyin": "chuàng",
+  "meaning": "创造"
+ },
+ {
+  "id": "jia3",
+  "char": "假",
+  "pinyin": "jiǎ",
+  "meaning": "假山"
+ },
+ {
+  "id": "jiu3b",
+  "char": "久",
+  "pinyin": "jiǔ",
+  "meaning": "好久"
+ },
+ {
+  "id": "cuo4",
+  "char": "错",
+  "pinyin": "cuò",
+  "meaning": "错字"
+ },
+ {
+  "id": "cheng2d",
+  "char": "承",
+  "pinyin": "chéng",
+  "meaning": "承认"
+ },
+ {
+  "id": "yin4",
+  "char": "印",
+  "pinyin": "yìn",
+  "meaning": "脚印"
+ },
+ {
+  "id": "lan2",
+  "char": "兰",
+  "pinyin": "lán",
+  "meaning": "兰花"
+ },
+ {
+  "id": "shi4j",
+  "char": "试",
+  "pinyin": "shì",
+  "meaning": "试试"
+ },
+ {
+  "id": "gu3b",
+  "char": "股",
+  "pinyin": "gǔ",
+  "meaning": "屁股"
+ },
+ {
+  "id": "na2",
+  "char": "拿",
+  "pinyin": "ná",
+  "meaning": "拿来"
+ },
+ {
+  "id": "nao3",
+  "char": "脑",
+  "pinyin": "nǎo",
+  "meaning": "脑袋"
+ },
+ {
+  "id": "yu4b",
+  "char": "预",
+  "pinyin": "yù",
+  "meaning": "天气预报"
+ },
+ {
+  "id": "shei2",
+  "char": "谁",
+  "pinyin": "shéi",
+  "meaning": "谁呀"
+ },
+ {
+  "id": "yi4e",
+  "char": "益",
+  "pinyin": "yì",
+  "meaning": "益生菌"
+ },
+ {
+  "id": "yang2",
+  "char": "阳",
+  "pinyin": "yáng",
+  "meaning": "太阳"
+ },
+ {
+  "id": "na3",
+  "char": "哪",
+  "pinyin": "nǎ",
+  "meaning": "哪里"
+ },
+ {
+  "id": "wei1b",
+  "char": "微",
+  "pinyin": "wēi",
+  "meaning": "微风"
+ },
+ {
+  "id": "ni2",
+  "char": "尼",
+  "pinyin": "ní",
+  "meaning": "迪士尼"
+ },
+ {
+  "id": "ji4g",
+  "char": "继",
+  "pinyin": "jì",
+  "meaning": "继续"
+ },
+ {
+  "id": "song4",
+  "char": "送",
+  "pinyin": "sòng",
+  "meaning": "送礼物"
+ },
+ {
+  "id": "ji2f",
+  "char": "急",
+  "pinyin": "jí",
+  "meaning": "着急"
+ },
+ {
+  "id": "xie3b",
+  "char": "血",
+  "pinyin": "xiě",
+  "meaning": "流血"
+ },
+ {
+  "id": "jing1d",
+  "char": "惊",
+  "pinyin": "jīng",
+  "meaning": "吃惊"
+ },
+ {
+  "id": "shang1b",
+  "char": "伤",
+  "pinyin": "shāng",
+  "meaning": "受伤"
+ },
+ {
+  "id": "su4c",
+  "char": "素",
+  "pinyin": "sù",
+  "meaning": "素菜"
+ },
+ {
+  "id": "yao4b",
+  "char": "药",
+  "pinyin": "yào",
+  "meaning": "吃药"
+ },
+ {
+  "id": "shi4k",
+  "char": "适",
+  "pinyin": "shì",
+  "meaning": "合适"
+ },
+ {
+  "id": "ye4b",
+  "char": "夜",
+  "pinyin": "yè",
+  "meaning": "夜晚"
+ },
+ {
+  "id": "sheng3",
+  "char": "省",
+  "pinyin": "shěng",
+  "meaning": "省份"
+ },
+ {
+  "id": "chu1b",
+  "char": "初",
+  "pinyin": "chū",
+  "meaning": "大年初一"
+ },
+ {
+  "id": "xi3",
+  "char": "喜",
+  "pinyin": "xǐ",
+  "meaning": "喜欢"
+ },
+ {
+  "id": "wei4c",
+  "char": "卫",
+  "pinyin": "wèi",
+  "meaning": "卫生"
+ },
+ {
+  "id": "yuan2d",
+  "char": "源",
+  "pinyin": "yuán",
+  "meaning": "源头"
+ },
+ {
+  "id": "shi2f",
+  "char": "食",
+  "pinyin": "shí",
+  "meaning": "零食"
+ },
+ {
+  "id": "xian3b",
+  "char": "险",
+  "pinyin": "xiǎn",
+  "meaning": "危险"
+ },
+ {
+  "id": "dai1",
+  "char": "待",
+  "pinyin": "dāi",
+  "meaning": "待一会儿"
+ },
+ {
+  "id": "shu4b",
+  "char": "述",
+  "pinyin": "shù",
+  "meaning": "讲述"
+ },
+ {
+  "id": "lu4b",
+  "char": "陆",
+  "pinyin": "lù",
+  "meaning": "陆地"
+ },
+ {
+  "id": "xi2",
+  "char": "习",
+  "pinyin": "xí",
+  "meaning": "学习"
+ },
+ {
+  "id": "zhi4g",
+  "char": "置",
+  "pinyin": "zhì",
+  "meaning": "位置"
+ },
+ {
+  "id": "ju1",
+  "char": "居",
+  "pinyin": "jū",
+  "meaning": "邻居"
+ },
+ {
+  "id": "lao2",
+  "char": "劳",
+  "pinyin": "láo",
+  "meaning": "劳动"
+ },
+ {
+  "id": "cai2b",
+  "char": "财",
+  "pinyin": "cái",
+  "meaning": "财宝"
+ },
+ {
+  "id": "huan2",
+  "char": "环",
+  "pinyin": "huán",
+  "meaning": "耳环"
+ },
+ {
+  "id": "pai2",
+  "char": "排",
+  "pinyin": "pái",
+  "meaning": "排队"
+ },
+ {
+  "id": "fu2b",
+  "char": "福",
+  "pinyin": "fú",
+  "meaning": "幸福"
+ },
+ {
+  "id": "na4b",
+  "char": "纳",
+  "pinyin": "nà",
+  "meaning": "收纳"
+ },
+ {
+  "id": "huan1",
+  "char": "欢",
+  "pinyin": "huān",
+  "meaning": "喜欢"
+ },
+ {
+  "id": "jing3",
+  "char": "警",
+  "pinyin": "jǐng",
+  "meaning": "警察"
+ },
+ {
+  "id": "huo4b",
+  "char": "获",
+  "pinyin": "huò",
+  "meaning": "收获"
+ },
+ {
+  "id": "mo2",
+  "char": "模",
+  "pinyin": "mó",
+  "meaning": "模型"
+ },
+ {
+  "id": "chong1",
+  "char": "充",
+  "pinyin": "chōng",
+  "meaning": "充电"
+ },
+ {
+  "id": "fu4c",
+  "char": "负",
+  "pinyin": "fù",
+  "meaning": "负责"
+ },
+ {
+  "id": "yun2",
+  "char": "云",
+  "pinyin": "yún",
+  "meaning": "云朵"
+ },
+ {
+  "id": "ting2",
+  "char": "停",
+  "pinyin": "tíng",
+  "meaning": "停车"
+ },
+ {
+  "id": "you2b",
+  "char": "游",
+  "pinyin": "yóu",
+  "meaning": "游泳"
+ },
+ {
+  "id": "long2",
+  "char": "龙",
+  "pinyin": "lóng",
+  "meaning": "恐龙"
+ },
+ {
+  "id": "shu4c",
+  "char": "树",
+  "pinyin": "shù",
+  "meaning": "大树"
+ },
+ {
+  "id": "yi2",
+  "char": "疑",
+  "pinyin": "yí",
+  "meaning": "疑问"
+ },
+ {
+  "id": "ceng2b",
+  "char": "层",
+  "pinyin": "céng",
+  "meaning": "楼层"
+ },
+ {
+  "id": "leng3",
+  "char": "冷",
+  "pinyin": "lěng",
+  "meaning": "冷天"
+ },
+ {
+  "id": "chong1b",
+  "char": "冲",
+  "pinyin": "chōng",
+  "meaning": "冲水"
+ },
+ {
+  "id": "she4c",
+  "char": "射",
+  "pinyin": "shè",
+  "meaning": "射箭"
+ },
+ {
+  "id": "fan4",
+  "char": "范",
+  "pinyin": "fàn",
+  "meaning": "模范"
+ },
+ {
+  "id": "jing4",
+  "char": "竟",
+  "pinyin": "jìng",
+  "meaning": "竟然"
+ },
+ {
+  "id": "jing4b",
+  "char": "境",
+  "pinyin": "jìng",
+  "meaning": "环境"
+ },
+ {
+  "id": "ju4c",
+  "char": "句",
+  "pinyin": "jù",
+  "meaning": "句子"
+ },
+ {
+  "id": "shi4l",
+  "char": "室",
+  "pinyin": "shì",
+  "meaning": "教室"
+ },
+ {
+  "id": "yi4f",
+  "char": "异",
+  "pinyin": "yì",
+  "meaning": "奇异果"
+ },
+ {
+  "id": "ji1d",
+  "char": "激",
+  "pinyin": "jī",
+  "meaning": "激动"
+ },
+ {
+  "id": "han4",
+  "char": "汉",
+  "pinyin": "hàn",
+  "meaning": "汉字"
+ },
+ {
+  "id": "cun1",
+  "char": "村",
+  "pinyin": "cūn",
+  "meaning": "村子"
+ },
+ {
+  "id": "ha1",
+  "char": "哈",
+  "pinyin": "hā",
+  "meaning": "哈欠"
+ },
+ {
+  "id": "ce4",
+  "char": "策",
+  "pinyin": "cè",
+  "meaning": "计策"
+ },
+ {
+  "id": "yan3b",
+  "char": "演",
+  "pinyin": "yǎn",
+  "meaning": "演出"
+ },
+ {
+  "id": "jian3",
+  "char": "简",
+  "pinyin": "jiǎn",
+  "meaning": "简单"
+ },
+ {
+  "id": "ka3",
+  "char": "卡",
+  "pinyin": "kǎ",
+  "meaning": "卡片"
+ },
+ {
+  "id": "zui4b",
+  "char": "罪",
+  "pinyin": "zuì",
+  "meaning": "罪犯"
+ },
+ {
+  "id": "pan4",
+  "char": "判",
+  "pinyin": "pàn",
+  "meaning": "裁判"
+ },
+ {
+  "id": "dan1b",
+  "char": "担",
+  "pinyin": "dān",
+  "meaning": "担心"
+ },
+ {
+  "id": "zhou1b",
+  "char": "州",
+  "pinyin": "zhōu",
+  "meaning": "广州"
+ },
+ {
+  "id": "zhou1c",
+  "char": "洲",
+  "pinyin": "zhōu",
+  "meaning": "绿洲"
+ },
+ {
+  "id": "jing4c",
+  "char": "静",
+  "pinyin": "jìng",
+  "meaning": "安静"
+ },
+ {
+  "id": "tui4",
+  "char": "退",
+  "pinyin": "tuì",
+  "meaning": "后退"
+ },
+ {
+  "id": "ji4h",
+  "char": "既",
+  "pinyin": "jì",
+  "meaning": "既然"
+ },
+ {
+  "id": "yi1c",
+  "char": "衣",
+  "pinyin": "yī",
+  "meaning": "衣服"
+ },
+ {
+  "id": "nin2",
+  "char": "您",
+  "pinyin": "nín",
+  "meaning": "您好"
+ },
+ {
+  "id": "zong1",
+  "char": "宗",
+  "pinyin": "zōng",
+  "meaning": "祖宗"
+ },
+ {
+  "id": "ji1e",
+  "char": "积",
+  "pinyin": "jī",
+  "meaning": "积木"
+ },
+ {
+  "id": "yu2b",
+  "char": "余",
+  "pinyin": "yú",
+  "meaning": "多余"
+ },
+ {
+  "id": "tong4",
+  "char": "痛",
+  "pinyin": "tòng",
+  "meaning": "头痛"
+ },
+ {
+  "id": "jian3b",
+  "char": "检",
+  "pinyin": "jiǎn",
+  "meaning": "体检"
+ },
+ {
+  "id": "cha1",
+  "char": "差",
+  "pinyin": "chā",
+  "meaning": "差别"
+ },
+ {
+  "id": "fu4d",
+  "char": "富",
+  "pinyin": "fù",
+  "meaning": "丰富"
+ },
+ {
+  "id": "ling2",
+  "char": "灵",
+  "pinyin": "líng",
+  "meaning": "机灵"
+ },
+ {
+  "id": "xie2",
+  "char": "协",
+  "pinyin": "xié",
+  "meaning": "齐心协力"
+ },
+ {
+  "id": "jiao3",
+  "char": "角",
+  "pinyin": "jiǎo",
+  "meaning": "牛角"
+ },
+ {
+  "id": "zhan4c",
+  "char": "占",
+  "pinyin": "zhàn",
+  "meaning": "霸占"
+ },
+ {
+  "id": "pei4",
+  "char": "配",
+  "pinyin": "pèi",
+  "meaning": "配对"
+ },
+ {
+  "id": "zheng1b",
+  "char": "征",
+  "pinyin": "zhēng",
+  "meaning": "长征"
+ },
+ {
+  "id": "xiu1",
+  "char": "修",
+  "pinyin": "xiū",
+  "meaning": "修车"
+ },
+ {
+  "id": "pi2",
+  "char": "皮",
+  "pinyin": "pí",
+  "meaning": "皮球"
+ },
+ {
+  "id": "po4",
+  "char": "破",
+  "pinyin": "pò",
+  "meaning": "打破"
+ },
+ {
+  "id": "bo1",
+  "char": "波",
+  "pinyin": "bō",
+  "meaning": "波浪"
+ },
+ {
+  "id": "hui1",
+  "char": "挥",
+  "pinyin": "huī",
+  "meaning": "挥手"
+ },
+ {
+  "id": "sheng4",
+  "char": "胜",
+  "pinyin": "shèng",
+  "meaning": "胜利"
+ },
+ {
+  "id": "jiang4",
+  "char": "降",
+  "pinyin": "jiàng",
+  "meaning": "降落"
+ },
+ {
+  "id": "shen3",
+  "char": "审",
+  "pinyin": "shěn",
+  "meaning": "审问"
+ },
+ {
+  "id": "chen2b",
+  "char": "沉",
+  "pinyin": "chén",
+  "meaning": "下沉"
+ },
+ {
+  "id": "jian1b",
+  "char": "坚",
+  "pinyin": "jiān",
+  "meaning": "坚果"
+ },
+ {
+  "id": "shan4",
+  "char": "善",
+  "pinyin": "shàn",
+  "meaning": "善良"
+ },
+ {
+  "id": "liu2c",
+  "char": "刘",
+  "pinyin": "liú",
+  "meaning": "刘海"
+ },
+ {
+  "id": "du2b",
+  "char": "读",
+  "pinyin": "dú",
+  "meaning": "读书"
+ },
+ {
+  "id": "a",
+  "char": "啊",
+  "pinyin": "a",
+  "meaning": "啊呀"
+ },
+ {
+  "id": "chao1",
+  "char": "超",
+  "pinyin": "chāo",
+  "meaning": "超人"
+ },
+ {
+  "id": "ya1",
+  "char": "压",
+  "pinyin": "yā",
+  "meaning": "压扁"
+ },
+ {
+  "id": "yin2",
+  "char": "银",
+  "pinyin": "yín",
+  "meaning": "银色"
+ },
+ {
+  "id": "mai3",
+  "char": "买",
+  "pinyin": "mǎi",
+  "meaning": "买东西"
+ },
+ {
+  "id": "huang2b",
+  "char": "皇",
+  "pinyin": "huáng",
+  "meaning": "皇帝"
+ },
+ {
+  "id": "yang3",
+  "char": "养",
+  "pinyin": "yǎng",
+  "meaning": "养宠物"
+ },
+ {
+  "id": "yi1d",
+  "char": "伊",
+  "pinyin": "yī",
+  "meaning": "伊索寓言"
+ },
+ {
+  "id": "huai2",
+  "char": "怀",
+  "pinyin": "huái",
+  "meaning": "怀抱"
+ },
+ {
+  "id": "zhi2d",
+  "char": "执",
+  "pinyin": "zhí",
+  "meaning": "执行任务"
+ },
+ {
+  "id": "fu4e",
+  "char": "副",
+  "pinyin": "fù",
+  "meaning": "一副手套"
+ },
+ {
+  "id": "luan4",
+  "char": "乱",
+  "pinyin": "luàn",
+  "meaning": "乱糟糟"
+ },
+ {
+  "id": "kang4",
+  "char": "抗",
+  "pinyin": "kàng",
+  "meaning": "抗议"
+ },
+ {
+  "id": "fan4b",
+  "char": "犯",
+  "pinyin": "fàn",
+  "meaning": "犯错误"
+ },
+ {
+  "id": "zhui1",
+  "char": "追",
+  "pinyin": "zhuī",
+  "meaning": "追赶"
+ },
+ {
+  "id": "bang1",
+  "char": "帮",
+  "pinyin": "bāng",
+  "meaning": "帮忙"
+ },
+ {
+  "id": "xuan1",
+  "char": "宣",
+  "pinyin": "xuān",
+  "meaning": "宣布"
+ },
+ {
+  "id": "fo2",
+  "char": "佛",
+  "pinyin": "fó",
+  "meaning": "大佛"
+ },
+ {
+  "id": "sui4",
+  "char": "岁",
+  "pinyin": "suì",
+  "meaning": "长一岁"
+ },
+ {
+  "id": "hang2",
+  "char": "航",
+  "pinyin": "háng",
+  "meaning": "航天"
+ },
+ {
+  "id": "you1",
+  "char": "优",
+  "pinyin": "yōu",
+  "meaning": "优秀"
+ },
+ {
+  "id": "guai4",
+  "char": "怪",
+  "pinyin": "guài",
+  "meaning": "奇怪"
+ },
+ {
+  "id": "xiang1b",
+  "char": "香",
+  "pinyin": "xiāng",
+  "meaning": "香味"
+ },
+ {
+  "id": "zhu4d",
+  "char": "著",
+  "pinyin": "zhù",
+  "meaning": "著名"
+ },
+ {
+  "id": "tian2",
+  "char": "田",
+  "pinyin": "tián",
+  "meaning": "田地"
+ },
+ {
+  "id": "lei2",
+  "char": "雷",
+  "pinyin": "léi",
+  "meaning": "打雷"
+ },
+ {
+  "id": "lve4",
+  "char": "略",
+  "pinyin": "lüè",
+  "meaning": "省略号"
+ },
+ {
+  "id": "tie3",
+  "char": "铁",
+  "pinyin": "tiě",
+  "meaning": "磁铁"
+ },
+ {
+  "id": "kong4",
+  "char": "控",
+  "pinyin": "kòng",
+  "meaning": "遥控器"
+ },
+ {
+  "id": "shui4",
+  "char": "税",
+  "pinyin": "shuì",
+  "meaning": "交税"
+ },
+ {
+  "id": "zuo3",
+  "char": "左",
+  "pinyin": "zuǒ",
+  "meaning": "左边"
+ },
+ {
+  "id": "you4b",
+  "char": "右",
+  "pinyin": "yòu",
+  "meaning": "右边"
+ },
+ {
+  "id": "ruo4",
+  "char": "若",
+  "pinyin": "ruò",
+  "meaning": "假若"
+ },
+ {
+  "id": "fen4",
+  "char": "份",
+  "pinyin": "fèn",
+  "meaning": "一份"
+ },
+ {
+  "id": "chuan1",
+  "char": "穿",
+  "pinyin": "chuān",
+  "meaning": "穿衣服"
+ },
+ {
+  "id": "yi4g",
+  "char": "艺",
+  "pinyin": "yì",
+  "meaning": "艺术"
+ },
+ {
+  "id": "bei1",
+  "char": "背",
+  "pinyin": "bēi",
+  "meaning": "背包"
+ },
+ {
+  "id": "zhen4",
+  "char": "阵",
+  "pinyin": "zhèn",
+  "meaning": "一阵风"
+ },
+ {
+  "id": "cao3",
+  "char": "草",
+  "pinyin": "cǎo",
+  "meaning": "小草"
+ },
+ {
+  "id": "jiao3b",
+  "char": "脚",
+  "pinyin": "jiǎo",
+  "meaning": "脚丫"
+ },
+ {
+  "id": "gai4",
+  "char": "概",
+  "pinyin": "gài",
+  "meaning": "大概"
+ },
+ {
+  "id": "e3",
+  "char": "恶",
+  "pinyin": "ě",
+  "meaning": "恶心"
+ },
+ {
+  "id": "kuai4b",
+  "char": "块",
+  "pinyin": "kuài",
+  "meaning": "一块糖"
+ },
+ {
+  "id": "dun4",
+  "char": "顿",
+  "pinyin": "dùn",
+  "meaning": "一顿饭"
+ },
+ {
+  "id": "gan3b",
+  "char": "敢",
+  "pinyin": "gǎn",
+  "meaning": "勇敢"
+ },
+ {
+  "id": "shou3c",
+  "char": "守",
+  "pinyin": "shǒu",
+  "meaning": "守门"
+ },
+ {
+  "id": "jiu3c",
+  "char": "酒",
+  "pinyin": "jiǔ",
+  "meaning": "酒杯"
+ },
+ {
+  "id": "dao3c",
+  "char": "岛",
+  "pinyin": "dǎo",
+  "meaning": "小岛"
+ },
+ {
+  "id": "tuo1",
+  "char": "托",
+  "pinyin": "tuō",
+  "meaning": "托住"
+ },
+ {
+  "id": "yang1",
+  "char": "央",
+  "pinyin": "yāng",
+  "meaning": "中央"
+ },
+ {
+  "id": "hu4b",
+  "char": "户",
+  "pinyin": "hù",
+  "meaning": "窗户"
+ },
+ {
+  "id": "lie4b",
+  "char": "烈",
+  "pinyin": "liè",
+  "meaning": "烈日"
+ },
+ {
+  "id": "yang2b",
+  "char": "洋",
+  "pinyin": "yáng",
+  "meaning": "海洋"
+ },
+ {
+  "id": "ge1",
+  "char": "哥",
+  "pinyin": "gē",
+  "meaning": "哥哥"
+ },
+ {
+  "id": "suo3b",
+  "char": "索",
+  "pinyin": "suǒ",
+  "meaning": "绳索"
+ },
+ {
+  "id": "hu2",
+  "char": "胡",
+  "pinyin": "hú",
+  "meaning": "胡子"
+ },
+ {
+  "id": "kuan3",
+  "char": "款",
+  "pinyin": "kuǎn",
+  "meaning": "付款"
+ },
+ {
+  "id": "kao4",
+  "char": "靠",
+  "pinyin": "kào",
+  "meaning": "靠垫"
+ },
+ {
+  "id": "ping2b",
+  "char": "评",
+  "pinyin": "píng",
+  "meaning": "评奖"
+ },
+ {
+  "id": "ban3",
+  "char": "版",
+  "pinyin": "bǎn",
+  "meaning": "版画"
+ },
+ {
+  "id": "bao3b",
+  "char": "宝",
+  "pinyin": "bǎo",
+  "meaning": "宝贝"
+ },
+ {
+  "id": "zuo4d",
+  "char": "座",
+  "pinyin": "zuò",
+  "meaning": "座位"
+ },
+ {
+  "id": "shi4m",
+  "char": "释",
+  "pinyin": "shì",
+  "meaning": "解释"
+ },
+ {
+  "id": "jing3b",
+  "char": "景",
+  "pinyin": "jǐng",
+  "meaning": "风景"
+ },
+ {
+  "id": "gu4b",
+  "char": "顾",
+  "pinyin": "gù",
+  "meaning": "照顾"
+ },
+ {
+  "id": "di4d",
+  "char": "弟",
+  "pinyin": "dì",
+  "meaning": "弟弟"
+ },
+ {
+  "id": "deng1",
+  "char": "登",
+  "pinyin": "dēng",
+  "meaning": "登山"
+ },
+ {
+  "id": "huo4c",
+  "char": "货",
+  "pinyin": "huò",
+  "meaning": "货车"
+ },
+ {
+  "id": "hu4c",
+  "char": "互",
+  "pinyin": "hù",
+  "meaning": "互相"
+ },
+ {
+  "id": "fu4f",
+  "char": "付",
+  "pinyin": "fù",
+  "meaning": "付钱"
+ },
+ {
+  "id": "bo2",
+  "char": "伯",
+  "pinyin": "bó",
+  "meaning": "伯伯"
+ },
+ {
+  "id": "man4",
+  "char": "慢",
+  "pinyin": "màn",
+  "meaning": "慢慢"
+ },
+ {
+  "id": "ou1",
+  "char": "欧",
+  "pinyin": "ōu",
+  "meaning": "欧洲"
+ },
+ {
+  "id": "huan4",
+  "char": "换",
+  "pinyin": "huàn",
+  "meaning": "换牙"
+ },
+ {
+  "id": "wei1c",
+  "char": "危",
+  "pinyin": "wēi",
+  "meaning": "危险"
+ },
+ {
+  "id": "he2e",
+  "char": "核",
+  "pinyin": "hé",
+  "meaning": "果核"
+ },
+ {
+  "id": "an4c",
+  "char": "暗",
+  "pinyin": "àn",
+  "meaning": "黑暗"
+ },
+ {
+  "id": "jie4b",
+  "char": "介",
+  "pinyin": "jiè",
+  "meaning": "介绍"
+ },
+ {
+  "id": "jie1c",
+  "char": "阶",
+  "pinyin": "jiē",
+  "meaning": "台阶"
+ },
+ {
+  "id": "huai4",
+  "char": "坏",
+  "pinyin": "huài",
+  "meaning": "坏了"
+ },
+ {
+  "id": "tao3",
+  "char": "讨",
+  "pinyin": "tǎo",
+  "meaning": "讨厌"
+ },
+ {
+  "id": "li4f",
+  "char": "丽",
+  "pinyin": "lì",
+  "meaning": "美丽"
+ },
+ {
+  "id": "liang2b",
+  "char": "良",
+  "pinyin": "liáng",
+  "meaning": "善良"
+ },
+ {
+  "id": "xu4b",
+  "char": "序",
+  "pinyin": "xù",
+  "meaning": "顺序"
+ },
+ {
+  "id": "sheng1c",
+  "char": "升",
+  "pinyin": "shēng",
+  "meaning": "升旗"
+ },
+ {
+  "id": "jian1c",
+  "char": "监",
+  "pinyin": "jiān",
+  "meaning": "监控"
+ },
+ {
+  "id": "lin2",
+  "char": "临",
+  "pinyin": "lín",
+  "meaning": "临睡前"
+ },
+ {
+  "id": "liang4",
+  "char": "亮",
+  "pinyin": "liàng",
+  "meaning": "月亮"
+ },
+ {
+  "id": "yong3",
+  "char": "永",
+  "pinyin": "yǒng",
+  "meaning": "永远"
+ },
+ {
+  "id": "hu1b",
+  "char": "呼",
+  "pinyin": "hū",
+  "meaning": "呼吸"
+ },
+ {
+  "id": "wei4d",
+  "char": "味",
+  "pinyin": "wèi",
+  "meaning": "味道"
+ },
+ {
+  "id": "jia4b",
+  "char": "架",
+  "pinyin": "jià",
+  "meaning": "书架"
+ },
+ {
+  "id": "yu4c",
+  "char": "域",
+  "pinyin": "yù",
+  "meaning": "区域"
+ },
+ {
+  "id": "sha1",
+  "char": "沙",
+  "pinyin": "shā",
+  "meaning": "沙子"
+ },
+ {
+  "id": "diao4",
+  "char": "掉",
+  "pinyin": "diào",
+  "meaning": "掉落"
+ },
+ {
+  "id": "kuo4",
+  "char": "括",
+  "pinyin": "kuò",
+  "meaning": "包括"
+ },
+ {
+  "id": "jian4d",
+  "char": "舰",
+  "pinyin": "jiàn",
+  "meaning": "军舰"
+ },
+ {
+  "id": "yu2c",
+  "char": "鱼",
+  "pinyin": "yú",
+  "meaning": "小鱼"
+ },
+ {
+  "id": "za2",
+  "char": "杂",
+  "pinyin": "zá",
+  "meaning": "杂技"
+ },
+ {
+  "id": "wu4c",
+  "char": "误",
+  "pinyin": "wù",
+  "meaning": "错误"
+ },
+ {
+  "id": "wan1",
+  "char": "湾",
+  "pinyin": "wān",
+  "meaning": "海湾"
+ },
+ {
+  "id": "ji2g",
+  "char": "吉",
+  "pinyin": "jí",
+  "meaning": "吉利"
+ },
+ {
+  "id": "jian3c",
+  "char": "减",
+  "pinyin": "jiǎn",
+  "meaning": "减少"
+ },
+ {
+  "id": "bian1b",
+  "char": "编",
+  "pinyin": "biān",
+  "meaning": "编故事"
+ },
+ {
+  "id": "chu3",
+  "char": "楚",
+  "pinyin": "chǔ",
+  "meaning": "清楚"
+ },
+ {
+  "id": "ken3",
+  "char": "肯",
+  "pinyin": "kěn",
+  "meaning": "肯定"
+ },
+ {
+  "id": "ce4b",
+  "char": "测",
+  "pinyin": "cè",
+  "meaning": "测视力"
+ },
+ {
+  "id": "bai4",
+  "char": "败",
+  "pinyin": "bài",
+  "meaning": "失败"
+ },
+ {
+  "id": "wu1",
+  "char": "屋",
+  "pinyin": "wū",
+  "meaning": "屋子"
+ },
+ {
+  "id": "pao3",
+  "char": "跑",
+  "pinyin": "pǎo",
+  "meaning": "跑步"
+ },
+ {
+  "id": "meng4",
+  "char": "梦",
+  "pinyin": "mèng",
+  "meaning": "做梦"
+ },
+ {
+  "id": "san4",
+  "char": "散",
+  "pinyin": "sàn",
+  "meaning": "散步"
+ },
+ {
+  "id": "wen1",
+  "char": "温",
+  "pinyin": "wēn",
+  "meaning": "温暖"
+ },
+ {
+  "id": "kun4",
+  "char": "困",
+  "pinyin": "kùn",
+  "meaning": "困了"
+ },
+ {
+  "id": "jian4e",
+  "char": "剑",
+  "pinyin": "jiàn",
+  "meaning": "宝剑"
+ },
+ {
+  "id": "jian4f",
+  "char": "渐",
+  "pinyin": "jiàn",
+  "meaning": "渐渐"
+ },
+ {
+  "id": "feng1b",
+  "char": "封",
+  "pinyin": "fēng",
+  "meaning": "信封"
+ },
+ {
+  "id": "jiu4b",
+  "char": "救",
+  "pinyin": "jiù",
+  "meaning": "救人"
+ },
+ {
+  "id": "gui4",
+  "char": "贵",
+  "pinyin": "guì",
+  "meaning": "珍贵"
+ },
+ {
+  "id": "qiang1",
+  "char": "枪",
+  "pinyin": "qiāng",
+  "meaning": "水枪"
+ },
+ {
+  "id": "que1",
+  "char": "缺",
+  "pinyin": "quē",
+  "meaning": "缺口"
+ },
+ {
+  "id": "lou2",
+  "char": "楼",
+  "pinyin": "lóu",
+  "meaning": "大楼"
+ },
+ {
+  "id": "xian4d",
+  "char": "县",
+  "pinyin": "xiàn",
+  "meaning": "县城"
+ },
+ {
+  "id": "shang4b",
+  "char": "尚",
+  "pinyin": "shàng",
+  "meaning": "和尚"
+ },
+ {
+  "id": "hao2",
+  "char": "毫",
+  "pinyin": "háo",
+  "meaning": "毫米"
+ },
+ {
+  "id": "yi2b",
+  "char": "移",
+  "pinyin": "yí",
+  "meaning": "移动"
+ },
+ {
+  "id": "niang2",
+  "char": "娘",
+  "pinyin": "niáng",
+  "meaning": "新娘"
+ },
+ {
+  "id": "peng2",
+  "char": "朋",
+  "pinyin": "péng",
+  "meaning": "朋友"
+ },
+ {
+  "id": "hua4c",
+  "char": "画",
+  "pinyin": "huà",
+  "meaning": "画画"
+ },
+ {
+  "id": "ban1b",
+  "char": "班",
+  "pinyin": "bān",
+  "meaning": "我们班"
+ },
+ {
+  "id": "zhi4h",
+  "char": "智",
+  "pinyin": "zhì",
+  "meaning": "智慧"
+ },
+ {
+  "id": "yi4h",
+  "char": "亦",
+  "pinyin": "yì",
+  "meaning": "亦是"
+ },
+ {
+  "id": "er3b",
+  "char": "耳",
+  "pinyin": "ěr",
+  "meaning": "耳朵"
+ },
+ {
+  "id": "en1",
+  "char": "恩",
+  "pinyin": "ēn",
+  "meaning": "感恩"
+ },
+ {
+  "id": "duan3",
+  "char": "短",
+  "pinyin": "duǎn",
+  "meaning": "短裤"
+ },
+ {
+  "id": "zhang3",
+  "char": "掌",
+  "pinyin": "zhǎng",
+  "meaning": "手掌"
+ },
+ {
+  "id": "kong3",
+  "char": "恐",
+  "pinyin": "kǒng",
+  "meaning": "恐龙"
+ },
+ {
+  "id": "yi2c",
+  "char": "遗",
+  "pinyin": "yí",
+  "meaning": "遗憾"
+ },
+ {
+  "id": "gu4c",
+  "char": "固",
+  "pinyin": "gù",
+  "meaning": "固定"
+ },
+ {
+  "id": "xi2b",
+  "char": "席",
+  "pinyin": "xí",
+  "meaning": "凉席"
+ },
+ {
+  "id": "song1",
+  "char": "松",
+  "pinyin": "sōng",
+  "meaning": "松树"
+ },
+ {
+  "id": "mi4b",
+  "char": "秘",
+  "pinyin": "mì",
+  "meaning": "秘密"
+ },
+ {
+  "id": "xie4",
+  "char": "谢",
+  "pinyin": "xiè",
+  "meaning": "谢谢"
+ },
+ {
+  "id": "lu3",
+  "char": "鲁",
+  "pinyin": "lǔ",
+  "meaning": "粗鲁"
+ },
+ {
+  "id": "yu4d",
+  "char": "遇",
+  "pinyin": "yù",
+  "meaning": "遇见"
+ },
+ {
+  "id": "kang1",
+  "char": "康",
+  "pinyin": "kāng",
+  "meaning": "健康"
+ },
+ {
+  "id": "lv4c",
+  "char": "虑",
+  "pinyin": "lǜ",
+  "meaning": "考虑"
+ },
+ {
+  "id": "xing4b",
+  "char": "幸",
+  "pinyin": "xìng",
+  "meaning": "幸福"
+ },
+ {
+  "id": "jun1b",
+  "char": "均",
+  "pinyin": "jūn",
+  "meaning": "平均"
+ },
+ {
+  "id": "xiao1b",
+  "char": "销",
+  "pinyin": "xiāo",
+  "meaning": "销售"
+ },
+ {
+  "id": "zhong1c",
+  "char": "钟",
+  "pinyin": "zhōng",
+  "meaning": "闹钟"
+ },
+ {
+  "id": "shi1d",
+  "char": "诗",
+  "pinyin": "shī",
+  "meaning": "古诗"
+ },
+ {
+  "id": "cang2",
+  "char": "藏",
+  "pinyin": "cáng",
+  "meaning": "捉迷藏"
+ },
+ {
+  "id": "gan3c",
+  "char": "赶",
+  "pinyin": "gǎn",
+  "meaning": "赶快"
+ },
+ {
+  "id": "ju4d",
+  "char": "剧",
+  "pinyin": "jù",
+  "meaning": "电视剧"
+ },
+ {
+  "id": "piao4",
+  "char": "票",
+  "pinyin": "piào",
+  "meaning": "车票"
+ },
+ {
+  "id": "sun3",
+  "char": "损",
+  "pinyin": "sǔn",
+  "meaning": "损坏"
+ },
+ {
+  "id": "hu1c",
+  "char": "忽",
+  "pinyin": "hū",
+  "meaning": "忽然"
+ },
+ {
+  "id": "ju4e",
+  "char": "巨",
+  "pinyin": "jù",
+  "meaning": "巨人"
+ },
+ {
+  "id": "pao4",
+  "char": "炮",
+  "pinyin": "pào",
+  "meaning": "花炮"
+ },
+ {
+  "id": "jiu4c",
+  "char": "旧",
+  "pinyin": "jiù",
+  "meaning": "旧书"
+ },
+ {
+  "id": "duan1",
+  "char": "端",
+  "pinyin": "duān",
+  "meaning": "端午"
+ },
+ {
+  "id": "tan4",
+  "char": "探",
+  "pinyin": "tàn",
+  "meaning": "侦探"
+ },
+ {
+  "id": "hu2b",
+  "char": "湖",
+  "pinyin": "hú",
+  "meaning": "湖水"
+ },
+ {
+  "id": "lu4c",
+  "char": "录",
+  "pinyin": "lù",
+  "meaning": "录音"
+ },
+ {
+  "id": "ye4c",
+  "char": "叶",
+  "pinyin": "yè",
+  "meaning": "叶子"
+ },
+ {
+  "id": "xiang1c",
+  "char": "乡",
+  "pinyin": "xiāng",
+  "meaning": "家乡"
+ },
+ {
+  "id": "fu4g",
+  "char": "附",
+  "pinyin": "fù",
+  "meaning": "附近"
+ },
+ {
+  "id": "xi1d",
+  "char": "吸",
+  "pinyin": "xī",
+  "meaning": "吸管"
+ },
+ {
+  "id": "yu3c",
+  "char": "予",
+  "pinyin": "yǔ",
+  "meaning": "给予"
+ },
+ {
+  "id": "ye3b",
+  "char": "野",
+  "pinyin": "yě",
+  "meaning": "田野"
+ },
+ {
+  "id": "li3d",
+  "char": "礼",
+  "pinyin": "lǐ",
+  "meaning": "礼物"
+ },
+ {
+  "id": "gang3",
+  "char": "港",
+  "pinyin": "gǎng",
+  "meaning": "海港"
+ },
+ {
+  "id": "yu3d",
+  "char": "雨",
+  "pinyin": "yǔ",
+  "meaning": "下雨"
+ },
+ {
+  "id": "lu4d",
+  "char": "露",
+  "pinyin": "lù",
+  "meaning": "露珠"
+ },
+ {
+  "id": "ban3b",
+  "char": "板",
+  "pinyin": "bǎn",
+  "meaning": "黑板"
+ },
+ {
+  "id": "ting2b",
+  "char": "庭",
+  "pinyin": "tíng",
+  "meaning": "家庭"
+ },
+ {
+  "id": "fu4h",
+  "char": "妇",
+  "pinyin": "fù",
+  "meaning": "妇女"
+ },
+ {
+  "id": "gui1b",
+  "char": "归",
+  "pinyin": "guī",
+  "meaning": "归还"
+ },
+ {
+  "id": "jing1e",
+  "char": "睛",
+  "pinyin": "jīng",
+  "meaning": "眼睛"
+ },
+ {
+  "id": "fan4c",
+  "char": "饭",
+  "pinyin": "fàn",
+  "meaning": "米饭"
+ },
+ {
+  "id": "e2",
+  "char": "额",
+  "pinyin": "é",
+  "meaning": "额头"
+ },
+ {
+  "id": "han2",
+  "char": "含",
+  "pinyin": "hán",
+  "meaning": "含着糖"
+ },
+ {
+  "id": "shun4",
+  "char": "顺",
+  "pinyin": "shùn",
+  "meaning": "顺着"
+ },
+ {
+  "id": "shu1b",
+  "char": "输",
+  "pinyin": "shū",
+  "meaning": "输了"
+ },
+ {
+  "id": "yao2",
+  "char": "摇",
+  "pinyin": "yáo",
+  "meaning": "摇摇马"
+ },
+ {
+  "id": "zhao1",
+  "char": "招",
+  "pinyin": "zhāo",
+  "meaning": "招手"
+ },
+ {
+  "id": "hun1",
+  "char": "婚",
+  "pinyin": "hūn",
+  "meaning": "婚礼"
+ },
+ {
+  "id": "tuo1b",
+  "char": "脱",
+  "pinyin": "tuō",
+  "meaning": "脱鞋"
+ },
+ {
+  "id": "bu3",
+  "char": "补",
+  "pinyin": "bǔ",
+  "meaning": "补衣服"
+ },
+ {
+  "id": "wei4e",
+  "char": "谓",
+  "pinyin": "wèi",
+  "meaning": "无所谓"
+ },
+ {
+  "id": "du1",
+  "char": "督",
+  "pinyin": "dū",
+  "meaning": "监督"
+ },
+ {
+  "id": "du2c",
+  "char": "毒",
+  "pinyin": "dú",
+  "meaning": "毒蘑菇"
+ },
+ {
+  "id": "you2c",
+  "char": "油",
+  "pinyin": "yóu",
+  "meaning": "加油"
+ },
+ {
+  "id": "liao2",
+  "char": "疗",
+  "pinyin": "liáo",
+  "meaning": "治疗"
+ },
+ {
+  "id": "lv3",
+  "char": "旅",
+  "pinyin": "lǚ",
+  "meaning": "旅游"
+ },
+ {
+  "id": "ze2c",
+  "char": "泽",
+  "pinyin": "zé",
+  "meaning": "光泽"
+ },
+ {
+  "id": "cai2c",
+  "char": "材",
+  "pinyin": "cái",
+  "meaning": "木材"
+ },
+ {
+  "id": "mie4",
+  "char": "灭",
+  "pinyin": "miè",
+  "meaning": "灭火"
+ },
+ {
+  "id": "zhu2",
+  "char": "逐",
+  "pinyin": "zhú",
+  "meaning": "追逐"
+ },
+ {
+  "id": "mo4",
+  "char": "莫",
+  "pinyin": "mò",
+  "meaning": "莫非"
+ },
+ {
+  "id": "bi3",
+  "char": "笔",
+  "pinyin": "bǐ",
+  "meaning": "铅笔"
+ },
+ {
+  "id": "wang2b",
+  "char": "亡",
+  "pinyin": "wáng",
+  "meaning": "亡羊补牢"
+ },
+ {
+  "id": "mang2",
+  "char": "忙",
+  "pinyin": "máng",
+  "meaning": "帮忙"
+ },
+ {
+  "id": "xian1b",
+  "char": "鲜",
+  "pinyin": "xiān",
+  "meaning": "新鲜"
+ },
+ {
+  "id": "ci2",
+  "char": "词",
+  "pinyin": "cí",
+  "meaning": "歌词"
+ },
+ {
+  "id": "sheng4b",
+  "char": "圣",
+  "pinyin": "shèng",
+  "meaning": "圣诞老人"
+ },
+ {
+  "id": "ze2d",
+  "char": "择",
+  "pinyin": "zé",
+  "meaning": "选择"
+ },
+ {
+  "id": "xun2",
+  "char": "寻",
+  "pinyin": "xún",
+  "meaning": "寻找"
+ },
+ {
+  "id": "chang3b",
+  "char": "厂",
+  "pinyin": "chǎng",
+  "meaning": "工厂"
+ },
+ {
+  "id": "shui4b",
+  "char": "睡",
+  "pinyin": "shuì",
+  "meaning": "睡觉"
+ },
+ {
+  "id": "bo2b",
+  "char": "博",
+  "pinyin": "bó",
+  "meaning": "博物馆"
+ },
+ {
+  "id": "le4b",
+  "char": "勒",
+  "pinyin": "lè",
+  "meaning": "勒住"
+ },
+ {
+  "id": "yan1",
+  "char": "烟",
+  "pinyin": "yān",
+  "meaning": "烟花"
+ },
+ {
+  "id": "shou4b",
+  "char": "授",
+  "pinyin": "shòu",
+  "meaning": "传授"
+ },
+ {
+  "id": "nuo4",
+  "char": "诺",
+  "pinyin": "nuò",
+  "meaning": "承诺"
+ },
+ {
+  "id": "lun2",
+  "char": "伦",
+  "pinyin": "lún",
+  "meaning": "无与伦比"
+ },
+ {
+  "id": "an4d",
+  "char": "岸",
+  "pinyin": "àn",
+  "meaning": "河岸"
+ },
+ {
+  "id": "ao4",
+  "char": "奥",
+  "pinyin": "ào",
+  "meaning": "奥秘"
+ },
+ {
+  "id": "tang2",
+  "char": "唐",
+  "pinyin": "táng",
+  "meaning": "唐诗"
+ },
+ {
+  "id": "mai4",
+  "char": "卖",
+  "pinyin": "mài",
+  "meaning": "卖东西"
+ },
+ {
+  "id": "e2b",
+  "char": "俄",
+  "pinyin": "é",
+  "meaning": "俄罗斯"
+ },
+ {
+  "id": "zha2",
+  "char": "炸",
+  "pinyin": "zhá",
+  "meaning": "炸鸡"
+ },
+ {
+  "id": "zai3",
+  "char": "载",
+  "pinyin": "zǎi",
+  "meaning": "一年半载"
+ },
+ {
+  "id": "luo4b",
+  "char": "洛",
+  "pinyin": "luò",
+  "meaning": "洛河"
+ },
+ {
+  "id": "jian4g",
+  "char": "健",
+  "pinyin": "jiàn",
+  "meaning": "健康"
+ },
+ {
+  "id": "tang2b",
+  "char": "堂",
+  "pinyin": "táng",
+  "meaning": "食堂"
+ },
+ {
+  "id": "pang2",
+  "char": "旁",
+  "pinyin": "páng",
+  "meaning": "旁边"
+ },
+ {
+  "id": "gong1f",
+  "char": "宫",
+  "pinyin": "gōng",
+  "meaning": "宫殿"
+ },
+ {
+  "id": "he1",
+  "char": "喝",
+  "pinyin": "hē",
+  "meaning": "喝水"
+ },
+ {
+  "id": "jie4c",
+  "char": "借",
+  "pinyin": "jiè",
+  "meaning": "借书"
+ },
+ {
+  "id": "jun1c",
+  "char": "君",
+  "pinyin": "jūn",
+  "meaning": "国君"
+ },
+ {
+  "id": "jin4d",
+  "char": "禁",
+  "pinyin": "jìn",
+  "meaning": "禁止"
+ },
+ {
+  "id": "yin1c",
+  "char": "阴",
+  "pinyin": "yīn",
+  "meaning": "阴天"
+ },
+ {
+  "id": "yuan2e",
+  "char": "园",
+  "pinyin": "yuán",
+  "meaning": "公园"
+ },
+ {
+  "id": "mou2",
+  "char": "谋",
+  "pinyin": "móu",
+  "meaning": "计谋"
+ },
+ {
+  "id": "song4b",
+  "char": "宋",
+  "pinyin": "sòng",
+  "meaning": "姓宋"
+ },
+ {
+  "id": "bi4b",
+  "char": "避",
+  "pinyin": "bì",
+  "meaning": "躲避"
+ },
+ {
+  "id": "zhua1",
+  "char": "抓",
+  "pinyin": "zhuā",
+  "meaning": "抓住"
+ },
+ {
+  "id": "rong2b",
+  "char": "荣",
+  "pinyin": "róng",
+  "meaning": "光荣"
+ },
+ {
+  "id": "gu1",
+  "char": "姑",
+  "pinyin": "gū",
+  "meaning": "姑姑"
+ },
+ {
+  "id": "sun1",
+  "char": "孙",
+  "pinyin": "sūn",
+  "meaning": "孙子"
+ },
+ {
+  "id": "tao2",
+  "char": "逃",
+  "pinyin": "táo",
+  "meaning": "逃跑"
+ },
+ {
+  "id": "ya2",
+  "char": "牙",
+  "pinyin": "yá",
+  "meaning": "牙齿"
+ },
+ {
+  "id": "ya",
+  "char": "呀",
+  "pinyin": "ya",
+  "meaning": "好呀"
+ },
+ {
+  "id": "shu4d",
+  "char": "束",
+  "pinyin": "shù",
+  "meaning": "一束花"
+ }
+]

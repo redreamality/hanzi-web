@@ -1,0 +1,8212 @@
+{
+ "total": 1000,
+ "order": [
+  {
+   "id": "ri",
+   "char": "日",
+   "reading": "",
+   "pinyin": "rì",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "日族"
+   ]
+  },
+  {
+   "id": "yue",
+   "char": "月",
+   "reading": "",
+   "pinyin": "yuè",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1
+  },
+  {
+   "id": "ming",
+   "char": "明",
+   "reading": "",
+   "pinyin": "míng",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "日族"
+   ]
+  },
+  {
+   "id": "mu",
+   "char": "木",
+   "reading": "",
+   "pinyin": "mù",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "木族"
+   ]
+  },
+  {
+   "id": "lin",
+   "char": "林",
+   "reading": "",
+   "pinyin": "lín",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "木族"
+   ]
+  },
+  {
+   "id": "sen",
+   "char": "森",
+   "reading": "",
+   "pinyin": "sēn",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "木族"
+   ]
+  },
+  {
+   "id": "ren",
+   "char": "人",
+   "reading": "",
+   "pinyin": "rén",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "人形族"
+   ]
+  },
+  {
+   "id": "xiu",
+   "char": "休",
+   "reading": "",
+   "pinyin": "xiū",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "亻族"
+   ]
+  },
+  {
+   "id": "qing",
+   "char": "青",
+   "reading": "",
+   "pinyin": "qīng",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1
+  },
+  {
+   "id": "qingshui",
+   "char": "清",
+   "reading": "",
+   "pinyin": "qīng",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "氵族",
+    "声旁青"
+   ]
+  },
+  {
+   "id": "qingtian",
+   "char": "晴",
+   "reading": "",
+   "pinyin": "qíng",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "声旁青"
+   ]
+  },
+  {
+   "id": "yi",
+   "char": "一",
+   "reading": "",
+   "pinyin": "yī",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1
+  },
+  {
+   "id": "da",
+   "char": "大",
+   "reading": "",
+   "pinyin": "dà",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "人形族"
+   ]
+  },
+  {
+   "id": "tian",
+   "char": "天",
+   "reading": "",
+   "pinyin": "tiān",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "人形族"
+   ]
+  },
+  {
+   "id": "cong",
+   "char": "从",
+   "reading": "",
+   "pinyin": "cóng",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "人形族"
+   ]
+  },
+  {
+   "id": "bi",
+   "char": "比",
+   "reading": "",
+   "pinyin": "bǐ",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "人形族"
+   ]
+  },
+  {
+   "id": "bei",
+   "char": "北",
+   "reading": "",
+   "pinyin": "běi",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "人形族"
+   ]
+  },
+  {
+   "id": "zhong",
+   "char": "众",
+   "reading": "",
+   "pinyin": "zhòng",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "人形族"
+   ]
+  },
+  {
+   "id": "huo",
+   "char": "火",
+   "reading": "",
+   "pinyin": "huǒ",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "火族"
+   ]
+  },
+  {
+   "id": "xin",
+   "char": "心",
+   "reading": "",
+   "pinyin": "xīn",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "心族"
+   ]
+  },
+  {
+   "id": "qingxin",
+   "char": "情",
+   "reading": "",
+   "pinyin": "qíng",
+   "rank": 0,
+   "bespoke": true,
+   "stage": 1,
+   "families": [
+    "心族",
+    "声旁青"
+   ]
+  },
+  {
+   "rank": 1,
+   "char": "的",
+   "reading": "de",
+   "id": "de",
+   "pinyin": "de",
+   "stage": 1
+  },
+  {
+   "rank": 3,
+   "char": "是",
+   "reading": "shi4",
+   "id": "shi4",
+   "pinyin": "shì",
+   "stage": 1
+  },
+  {
+   "rank": 4,
+   "char": "不",
+   "reading": "bu4",
+   "id": "bu4",
+   "pinyin": "bù",
+   "stage": 1
+  },
+  {
+   "rank": 5,
+   "char": "了",
+   "reading": "le",
+   "id": "le",
+   "pinyin": "le",
+   "stage": 1
+  },
+  {
+   "rank": 6,
+   "char": "在",
+   "reading": "zai4",
+   "id": "zai4",
+   "pinyin": "zài",
+   "stage": 1
+  },
+  {
+   "rank": 8,
+   "char": "有",
+   "reading": "you3",
+   "id": "you3",
+   "pinyin": "yǒu",
+   "stage": 1
+  },
+  {
+   "rank": 9,
+   "char": "我",
+   "reading": "wo3",
+   "id": "wo3",
+   "pinyin": "wǒ",
+   "stage": 1
+  },
+  {
+   "rank": 11,
+   "char": "这",
+   "reading": "zhe4",
+   "id": "zhe4",
+   "pinyin": "zhè",
+   "stage": 1
+  },
+  {
+   "rank": 12,
+   "char": "个",
+   "reading": "ge4",
+   "id": "ge4",
+   "pinyin": "gè",
+   "stage": 1
+  },
+  {
+   "rank": 13,
+   "char": "们",
+   "reading": "men",
+   "id": "men",
+   "pinyin": "men",
+   "stage": 1,
+   "families": [
+    "亻族"
+   ]
+  },
+  {
+   "rank": 14,
+   "char": "中",
+   "reading": "zhong1",
+   "id": "zhong1",
+   "pinyin": "zhōng",
+   "stage": 1
+  },
+  {
+   "rank": 15,
+   "char": "来",
+   "reading": "lai2",
+   "id": "lai2",
+   "pinyin": "lái",
+   "stage": 1
+  },
+  {
+   "rank": 16,
+   "char": "上",
+   "reading": "shang4",
+   "id": "shang4",
+   "pinyin": "shàng",
+   "stage": 1
+  },
+  {
+   "rank": 18,
+   "char": "为",
+   "reading": "wei2",
+   "id": "wei2",
+   "pinyin": "wéi",
+   "stage": 1
+  },
+  {
+   "rank": 19,
+   "char": "和",
+   "reading": "he2",
+   "id": "he2",
+   "pinyin": "hé",
+   "stage": 1
+  },
+  {
+   "rank": 20,
+   "char": "国",
+   "reading": "guo2",
+   "id": "guo2",
+   "pinyin": "guó",
+   "stage": 1
+  },
+  {
+   "rank": 22,
+   "char": "到",
+   "reading": "dao4",
+   "id": "dao4",
+   "pinyin": "dào",
+   "stage": 1
+  },
+  {
+   "rank": 23,
+   "char": "以",
+   "reading": "yi3",
+   "id": "yi3",
+   "pinyin": "yǐ",
+   "stage": 1
+  },
+  {
+   "rank": 24,
+   "char": "说",
+   "reading": "shuo1",
+   "id": "shuo1",
+   "pinyin": "shuō",
+   "stage": 1
+  },
+  {
+   "rank": 25,
+   "char": "时",
+   "reading": "shi2",
+   "id": "shi2",
+   "pinyin": "shí",
+   "stage": 1
+  },
+  {
+   "rank": 26,
+   "char": "要",
+   "reading": "yao4",
+   "id": "yao4",
+   "pinyin": "yào",
+   "stage": 1
+  },
+  {
+   "rank": 27,
+   "char": "就",
+   "reading": "jiu4",
+   "id": "jiu4",
+   "pinyin": "jiù",
+   "stage": 1
+  },
+  {
+   "rank": 28,
+   "char": "出",
+   "reading": "chu1",
+   "id": "chu1",
+   "pinyin": "chū",
+   "stage": 1
+  },
+  {
+   "rank": 29,
+   "char": "会",
+   "reading": "hui4",
+   "id": "hui4",
+   "pinyin": "huì",
+   "stage": 1
+  },
+  {
+   "rank": 30,
+   "char": "可",
+   "reading": "ke3",
+   "id": "ke3",
+   "pinyin": "kě",
+   "stage": 1
+  },
+  {
+   "rank": 31,
+   "char": "也",
+   "reading": "ye3",
+   "id": "ye3",
+   "pinyin": "yě",
+   "stage": 1
+  },
+  {
+   "rank": 10,
+   "char": "他",
+   "reading": "ta1",
+   "id": "ta1",
+   "pinyin": "tā",
+   "stage": 1,
+   "families": [
+    "亻族"
+   ]
+  },
+  {
+   "rank": 32,
+   "char": "你",
+   "reading": "ni3",
+   "id": "ni3",
+   "pinyin": "nǐ",
+   "stage": 1,
+   "families": [
+    "亻族"
+   ]
+  },
+  {
+   "rank": 49,
+   "char": "作",
+   "reading": "zuo4",
+   "id": "zuo4",
+   "pinyin": "zuò",
+   "stage": 1,
+   "families": [
+    "亻族"
+   ]
+  },
+  {
+   "rank": 92,
+   "char": "本",
+   "reading": "ben3",
+   "id": "ben3",
+   "pinyin": "běn",
+   "stage": 2
+  },
+  {
+   "rank": 149,
+   "char": "体",
+   "reading": "ti3",
+   "id": "ti3",
+   "pinyin": "tǐ",
+   "stage": 2,
+   "families": [
+    "亻族"
+   ]
+  },
+  {
+   "rank": 112,
+   "char": "十",
+   "reading": "shi2",
+   "id": "shi2b",
+   "pinyin": "shí",
+   "stage": 2
+  },
+  {
+   "rank": 156,
+   "char": "什",
+   "reading": "shen2",
+   "id": "shen2",
+   "pinyin": "shén",
+   "stage": 2,
+   "families": [
+    "亻族"
+   ]
+  },
+  {
+   "rank": 197,
+   "char": "立",
+   "reading": "li4",
+   "id": "li4",
+   "pinyin": "lì",
+   "stage": 2
+  },
+  {
+   "rank": 182,
+   "char": "位",
+   "reading": "wei4",
+   "id": "wei4",
+   "pinyin": "wèi",
+   "stage": 2,
+   "families": [
+    "亻族"
+   ]
+  },
+  {
+   "rank": 87,
+   "char": "主",
+   "reading": "zhu3",
+   "id": "zhu3",
+   "pinyin": "zhǔ",
+   "stage": 2
+  },
+  {
+   "rank": 309,
+   "char": "住",
+   "reading": "zhu4",
+   "id": "zhu4",
+   "pinyin": "zhù",
+   "stage": 2,
+   "families": [
+    "亻族"
+   ]
+  },
+  {
+   "rank": 21,
+   "char": "地",
+   "reading": "di4",
+   "id": "di4",
+   "pinyin": "dì",
+   "stage": 2,
+   "families": [
+    "声旁也"
+   ]
+  },
+  {
+   "rank": 34,
+   "char": "生",
+   "reading": "sheng1",
+   "id": "sheng1",
+   "pinyin": "shēng",
+   "stage": 2
+  },
+  {
+   "rank": 35,
+   "char": "能",
+   "reading": "neng2",
+   "id": "neng2",
+   "pinyin": "néng",
+   "stage": 2
+  },
+  {
+   "rank": 36,
+   "char": "而",
+   "reading": "er2",
+   "id": "er2",
+   "pinyin": "ér",
+   "stage": 2
+  },
+  {
+   "rank": 37,
+   "char": "子",
+   "reading": "zi3",
+   "id": "zi3",
+   "pinyin": "zǐ",
+   "stage": 2
+  },
+  {
+   "rank": 38,
+   "char": "那",
+   "reading": "na4",
+   "id": "na4",
+   "pinyin": "nà",
+   "stage": 2
+  },
+  {
+   "rank": 39,
+   "char": "得",
+   "reading": "de2",
+   "id": "de2",
+   "pinyin": "dé",
+   "stage": 2
+  },
+  {
+   "rank": 40,
+   "char": "于",
+   "reading": "yu2",
+   "id": "yu2",
+   "pinyin": "yú",
+   "stage": 2
+  },
+  {
+   "rank": 41,
+   "char": "着",
+   "reading": "zhe",
+   "id": "zhe",
+   "pinyin": "zhe",
+   "stage": 2
+  },
+  {
+   "rank": 42,
+   "char": "下",
+   "reading": "xia4",
+   "id": "xia4",
+   "pinyin": "xià",
+   "stage": 2
+  },
+  {
+   "rank": 43,
+   "char": "自",
+   "reading": "zi4",
+   "id": "zi4",
+   "pinyin": "zì",
+   "stage": 2
+  },
+  {
+   "rank": 44,
+   "char": "之",
+   "reading": "zhi1",
+   "id": "zhi1",
+   "pinyin": "zhī",
+   "stage": 2
+  },
+  {
+   "rank": 45,
+   "char": "年",
+   "reading": "nian2",
+   "id": "nian2",
+   "pinyin": "nián",
+   "stage": 2
+  },
+  {
+   "rank": 46,
+   "char": "过",
+   "reading": "guo4",
+   "id": "guo4",
+   "pinyin": "guò",
+   "stage": 2
+  },
+  {
+   "rank": 47,
+   "char": "发",
+   "reading": "fa1",
+   "id": "fa1",
+   "pinyin": "fā",
+   "stage": 2
+  },
+  {
+   "rank": 48,
+   "char": "后",
+   "reading": "hou4",
+   "id": "hou4",
+   "pinyin": "hòu",
+   "stage": 2
+  },
+  {
+   "rank": 50,
+   "char": "里",
+   "reading": "li3",
+   "id": "li3",
+   "pinyin": "lǐ",
+   "stage": 2
+  },
+  {
+   "rank": 51,
+   "char": "用",
+   "reading": "yong4",
+   "id": "yong4",
+   "pinyin": "yòng",
+   "stage": 2
+  },
+  {
+   "rank": 52,
+   "char": "道",
+   "reading": "dao4",
+   "id": "dao4b",
+   "pinyin": "dào",
+   "stage": 2
+  },
+  {
+   "rank": 53,
+   "char": "行",
+   "reading": "xing2",
+   "id": "xing2",
+   "pinyin": "xíng",
+   "stage": 2
+  },
+  {
+   "rank": 54,
+   "char": "所",
+   "reading": "suo3",
+   "id": "suo3",
+   "pinyin": "suǒ",
+   "stage": 2
+  },
+  {
+   "rank": 55,
+   "char": "然",
+   "reading": "ran2",
+   "id": "ran2",
+   "pinyin": "rán",
+   "stage": 2
+  },
+  {
+   "rank": 56,
+   "char": "家",
+   "reading": "jia1",
+   "id": "jia1",
+   "pinyin": "jiā",
+   "stage": 2
+  },
+  {
+   "rank": 57,
+   "char": "种",
+   "reading": "zhong3",
+   "id": "zhong3",
+   "pinyin": "zhǒng",
+   "stage": 2
+  },
+  {
+   "rank": 58,
+   "char": "事",
+   "reading": "shi4",
+   "id": "shi4b",
+   "pinyin": "shì",
+   "stage": 2
+  },
+  {
+   "rank": 59,
+   "char": "成",
+   "reading": "cheng2",
+   "id": "cheng2",
+   "pinyin": "chéng",
+   "stage": 2
+  },
+  {
+   "rank": 60,
+   "char": "方",
+   "reading": "fang1",
+   "id": "fang1",
+   "pinyin": "fāng",
+   "stage": 2
+  },
+  {
+   "rank": 61,
+   "char": "多",
+   "reading": "duo1",
+   "id": "duo1",
+   "pinyin": "duō",
+   "stage": 2
+  },
+  {
+   "rank": 62,
+   "char": "经",
+   "reading": "jing1",
+   "id": "jing1",
+   "pinyin": "jīng",
+   "stage": 2
+  },
+  {
+   "rank": 63,
+   "char": "么",
+   "reading": "me",
+   "id": "me",
+   "pinyin": "me",
+   "stage": 2
+  },
+  {
+   "rank": 64,
+   "char": "去",
+   "reading": "qu4",
+   "id": "qu4",
+   "pinyin": "qù",
+   "stage": 2
+  },
+  {
+   "rank": 65,
+   "char": "法",
+   "reading": "fa3",
+   "id": "fa3",
+   "pinyin": "fǎ",
+   "stage": 2
+  },
+  {
+   "rank": 66,
+   "char": "学",
+   "reading": "xue2",
+   "id": "xue2",
+   "pinyin": "xué",
+   "stage": 2
+  },
+  {
+   "rank": 69,
+   "char": "同",
+   "reading": "tong2",
+   "id": "tong2",
+   "pinyin": "tóng",
+   "stage": 2
+  },
+  {
+   "rank": 71,
+   "char": "当",
+   "reading": "dang1",
+   "id": "dang1",
+   "pinyin": "dāng",
+   "stage": 2
+  },
+  {
+   "rank": 72,
+   "char": "没",
+   "reading": "mei2",
+   "id": "mei2",
+   "pinyin": "méi",
+   "stage": 2
+  },
+  {
+   "rank": 74,
+   "char": "面",
+   "reading": "mian4",
+   "id": "mian4",
+   "pinyin": "miàn",
+   "stage": 2
+  },
+  {
+   "rank": 75,
+   "char": "起",
+   "reading": "qi3",
+   "id": "qi3",
+   "pinyin": "qǐ",
+   "stage": 2
+  },
+  {
+   "rank": 76,
+   "char": "看",
+   "reading": "kan4",
+   "id": "kan4",
+   "pinyin": "kàn",
+   "stage": 2
+  },
+  {
+   "rank": 77,
+   "char": "定",
+   "reading": "ding4",
+   "id": "ding4",
+   "pinyin": "dìng",
+   "stage": 2
+  },
+  {
+   "rank": 79,
+   "char": "分",
+   "reading": "fen1",
+   "id": "fen1",
+   "pinyin": "fēn",
+   "stage": 2
+  },
+  {
+   "rank": 80,
+   "char": "还",
+   "reading": "hai2",
+   "id": "hai2",
+   "pinyin": "hái",
+   "stage": 2
+  },
+  {
+   "rank": 81,
+   "char": "进",
+   "reading": "jin4",
+   "id": "jin4",
+   "pinyin": "jìn",
+   "stage": 3
+  },
+  {
+   "rank": 83,
+   "char": "小",
+   "reading": "xiao3",
+   "id": "xiao3",
+   "pinyin": "xiǎo",
+   "stage": 3
+  },
+  {
+   "rank": 84,
+   "char": "部",
+   "reading": "bu4",
+   "id": "bu4b",
+   "pinyin": "bù",
+   "stage": 3
+  },
+  {
+   "rank": 85,
+   "char": "其",
+   "reading": "qi2",
+   "id": "qi2",
+   "pinyin": "qí",
+   "stage": 3
+  },
+  {
+   "rank": 88,
+   "char": "样",
+   "reading": "yang4",
+   "id": "yang4",
+   "pinyin": "yàng",
+   "stage": 3
+  },
+  {
+   "rank": 89,
+   "char": "理",
+   "reading": "li3",
+   "id": "li3b",
+   "pinyin": "lǐ",
+   "stage": 3,
+   "families": [
+    "声旁里"
+   ]
+  },
+  {
+   "rank": 93,
+   "char": "前",
+   "reading": "qian2",
+   "id": "qian2",
+   "pinyin": "qián",
+   "stage": 3
+  },
+  {
+   "rank": 94,
+   "char": "开",
+   "reading": "kai1",
+   "id": "kai1",
+   "pinyin": "kāi",
+   "stage": 3
+  },
+  {
+   "rank": 95,
+   "char": "但",
+   "reading": "dan4",
+   "id": "dan4",
+   "pinyin": "dàn",
+   "stage": 3
+  },
+  {
+   "rank": 96,
+   "char": "因",
+   "reading": "yin1",
+   "id": "yin1",
+   "pinyin": "yīn",
+   "stage": 3
+  },
+  {
+   "rank": 102,
+   "char": "军",
+   "reading": "jun1",
+   "id": "jun1",
+   "pinyin": "jūn",
+   "stage": 3
+  },
+  {
+   "rank": 103,
+   "char": "者",
+   "reading": "zhe3",
+   "id": "zhe3",
+   "pinyin": "zhě",
+   "stage": 3
+  },
+  {
+   "rank": 68,
+   "char": "都",
+   "reading": "dou1",
+   "id": "dou1",
+   "pinyin": "dōu",
+   "stage": 3
+  },
+  {
+   "rank": 104,
+   "char": "意",
+   "reading": "yi4",
+   "id": "yi4",
+   "pinyin": "yì",
+   "stage": 3
+  },
+  {
+   "rank": 105,
+   "char": "无",
+   "reading": "wu2",
+   "id": "wu2",
+   "pinyin": "wú",
+   "stage": 3
+  },
+  {
+   "rank": 106,
+   "char": "力",
+   "reading": "li4",
+   "id": "li4b",
+   "pinyin": "lì",
+   "stage": 3
+  },
+  {
+   "rank": 73,
+   "char": "动",
+   "reading": "dong4",
+   "id": "dong4",
+   "pinyin": "dòng",
+   "stage": 3
+  },
+  {
+   "rank": 107,
+   "char": "它",
+   "reading": "ta1",
+   "id": "ta1b",
+   "pinyin": "tā",
+   "stage": 3
+  },
+  {
+   "rank": 108,
+   "char": "与",
+   "reading": "yu3",
+   "id": "yu3",
+   "pinyin": "yǔ",
+   "stage": 3
+  },
+  {
+   "rank": 109,
+   "char": "长",
+   "reading": "chang2",
+   "id": "chang2",
+   "pinyin": "cháng",
+   "stage": 3
+  },
+  {
+   "rank": 110,
+   "char": "把",
+   "reading": "ba3",
+   "id": "ba3",
+   "pinyin": "bǎ",
+   "stage": 3
+  },
+  {
+   "rank": 113,
+   "char": "民",
+   "reading": "min2",
+   "id": "min2",
+   "pinyin": "mín",
+   "stage": 3
+  },
+  {
+   "rank": 114,
+   "char": "第",
+   "reading": "di4",
+   "id": "di4b",
+   "pinyin": "dì",
+   "stage": 3
+  },
+  {
+   "rank": 122,
+   "char": "性",
+   "reading": "xing4",
+   "id": "xing4",
+   "pinyin": "xìng",
+   "stage": 3,
+   "families": [
+    "声旁生"
+   ]
+  },
+  {
+   "rank": 537,
+   "char": "星",
+   "reading": "xing1",
+   "id": "xing1",
+   "pinyin": "xīng",
+   "stage": 3,
+   "families": [
+    "声旁生"
+   ]
+  },
+  {
+   "rank": 115,
+   "char": "公",
+   "reading": "gong1",
+   "id": "gong1",
+   "pinyin": "gōng",
+   "stage": 3
+  },
+  {
+   "rank": 116,
+   "char": "此",
+   "reading": "ci3",
+   "id": "ci3",
+   "pinyin": "cǐ",
+   "stage": 3
+  },
+  {
+   "rank": 117,
+   "char": "已",
+   "reading": "yi3",
+   "id": "yi3b",
+   "pinyin": "yǐ",
+   "stage": 3
+  },
+  {
+   "rank": 118,
+   "char": "工",
+   "reading": "gong1",
+   "id": "gong1b",
+   "pinyin": "gōng",
+   "stage": 3
+  },
+  {
+   "rank": 119,
+   "char": "使",
+   "reading": "shi3",
+   "id": "shi3",
+   "pinyin": "shǐ",
+   "stage": 3
+  },
+  {
+   "rank": 124,
+   "char": "全",
+   "reading": "quan2",
+   "id": "quan2",
+   "pinyin": "quán",
+   "stage": 3
+  },
+  {
+   "rank": 126,
+   "char": "又",
+   "reading": "you4",
+   "id": "you4",
+   "pinyin": "yòu",
+   "stage": 3
+  },
+  {
+   "rank": 33,
+   "char": "对",
+   "reading": "dui4",
+   "id": "dui4",
+   "pinyin": "duì",
+   "stage": 3
+  },
+  {
+   "rank": 127,
+   "char": "关",
+   "reading": "guan1",
+   "id": "guan1",
+   "pinyin": "guān",
+   "stage": 3
+  },
+  {
+   "rank": 128,
+   "char": "点",
+   "reading": "dian3",
+   "id": "dian3",
+   "pinyin": "diǎn",
+   "stage": 3
+  },
+  {
+   "rank": 129,
+   "char": "正",
+   "reading": "zheng4",
+   "id": "zheng4",
+   "pinyin": "zhèng",
+   "stage": 3
+  },
+  {
+   "rank": 130,
+   "char": "业",
+   "reading": "ye4",
+   "id": "ye4",
+   "pinyin": "yè",
+   "stage": 3
+  },
+  {
+   "rank": 137,
+   "char": "问",
+   "reading": "wen4",
+   "id": "wen4",
+   "pinyin": "wèn",
+   "stage": 3,
+   "families": [
+    "门族",
+    "声旁门"
+   ]
+  },
+  {
+   "rank": 825,
+   "char": "闻",
+   "reading": "wen2",
+   "id": "wen2",
+   "pinyin": "wén",
+   "stage": 3,
+   "families": [
+    "门族",
+    "声旁门"
+   ]
+  },
+  {
+   "rank": 131,
+   "char": "外",
+   "reading": "wai4",
+   "id": "wai4",
+   "pinyin": "wài",
+   "stage": 3
+  },
+  {
+   "rank": 132,
+   "char": "将",
+   "reading": "jiang1",
+   "id": "jiang1",
+   "pinyin": "jiāng",
+   "stage": 3
+  },
+  {
+   "rank": 133,
+   "char": "两",
+   "reading": "liang3",
+   "id": "liang3",
+   "pinyin": "liǎng",
+   "stage": 3
+  },
+  {
+   "rank": 134,
+   "char": "高",
+   "reading": "gao1",
+   "id": "gao1",
+   "pinyin": "gāo",
+   "stage": 3
+  },
+  {
+   "rank": 135,
+   "char": "间",
+   "reading": "jian1",
+   "id": "jian1",
+   "pinyin": "jiān",
+   "stage": 3
+  },
+  {
+   "rank": 136,
+   "char": "由",
+   "reading": "you2",
+   "id": "you2",
+   "pinyin": "yóu",
+   "stage": 3
+  },
+  {
+   "rank": 138,
+   "char": "很",
+   "reading": "hen3",
+   "id": "hen3",
+   "pinyin": "hěn",
+   "stage": 3
+  },
+  {
+   "rank": 139,
+   "char": "最",
+   "reading": "zui4",
+   "id": "zui4",
+   "pinyin": "zuì",
+   "stage": 3
+  },
+  {
+   "rank": 140,
+   "char": "重",
+   "reading": "zhong4",
+   "id": "zhong4",
+   "pinyin": "zhòng",
+   "stage": 3
+  },
+  {
+   "rank": 141,
+   "char": "并",
+   "reading": "bing4",
+   "id": "bing4",
+   "pinyin": "bìng",
+   "stage": 3
+  },
+  {
+   "rank": 142,
+   "char": "物",
+   "reading": "wu4",
+   "id": "wu4",
+   "pinyin": "wù",
+   "stage": 3
+  },
+  {
+   "rank": 143,
+   "char": "手",
+   "reading": "shou3",
+   "id": "shou3",
+   "pinyin": "shǒu",
+   "stage": 4
+  },
+  {
+   "rank": 144,
+   "char": "应",
+   "reading": "ying1",
+   "id": "ying1",
+   "pinyin": "yīng",
+   "stage": 4
+  },
+  {
+   "rank": 145,
+   "char": "战",
+   "reading": "zhan4",
+   "id": "zhan4",
+   "pinyin": "zhàn",
+   "stage": 4
+  },
+  {
+   "rank": 146,
+   "char": "向",
+   "reading": "xiang4",
+   "id": "xiang4",
+   "pinyin": "xiàng",
+   "stage": 4
+  },
+  {
+   "rank": 147,
+   "char": "头",
+   "reading": "tou2",
+   "id": "tou2",
+   "pinyin": "tóu",
+   "stage": 4
+  },
+  {
+   "rank": 100,
+   "char": "实",
+   "reading": "shi2",
+   "id": "shi2c",
+   "pinyin": "shí",
+   "stage": 4
+  },
+  {
+   "rank": 148,
+   "char": "文",
+   "reading": "wen2",
+   "id": "wen2b",
+   "pinyin": "wén",
+   "stage": 4
+  },
+  {
+   "rank": 150,
+   "char": "政",
+   "reading": "zheng4",
+   "id": "zheng4b",
+   "pinyin": "zhèng",
+   "stage": 4
+  },
+  {
+   "rank": 151,
+   "char": "美",
+   "reading": "mei3",
+   "id": "mei3",
+   "pinyin": "měi",
+   "stage": 4
+  },
+  {
+   "rank": 153,
+   "char": "见",
+   "reading": "jian4",
+   "id": "jian4",
+   "pinyin": "jiàn",
+   "stage": 4
+  },
+  {
+   "rank": 70,
+   "char": "现",
+   "reading": "xian4",
+   "id": "xian4",
+   "pinyin": "xiàn",
+   "stage": 4
+  },
+  {
+   "rank": 154,
+   "char": "被",
+   "reading": "bei4",
+   "id": "bei4",
+   "pinyin": "bèi",
+   "stage": 4
+  },
+  {
+   "rank": 155,
+   "char": "利",
+   "reading": "li4",
+   "id": "li4c",
+   "pinyin": "lì",
+   "stage": 4
+  },
+  {
+   "rank": 157,
+   "char": "二",
+   "reading": "er4",
+   "id": "er4",
+   "pinyin": "èr",
+   "stage": 4
+  },
+  {
+   "rank": 86,
+   "char": "些",
+   "reading": "xie1",
+   "id": "xie1",
+   "pinyin": "xiē",
+   "stage": 4
+  },
+  {
+   "rank": 125,
+   "char": "三",
+   "reading": "san1",
+   "id": "san1",
+   "pinyin": "sān",
+   "stage": 4
+  },
+  {
+   "rank": 158,
+   "char": "等",
+   "reading": "deng3",
+   "id": "deng3",
+   "pinyin": "děng",
+   "stage": 4
+  },
+  {
+   "rank": 159,
+   "char": "产",
+   "reading": "chan3",
+   "id": "chan3",
+   "pinyin": "chǎn",
+   "stage": 4
+  },
+  {
+   "rank": 160,
+   "char": "或",
+   "reading": "huo4",
+   "id": "huo4",
+   "pinyin": "huò",
+   "stage": 4
+  },
+  {
+   "rank": 161,
+   "char": "新",
+   "reading": "xin1",
+   "id": "xin1",
+   "pinyin": "xīn",
+   "stage": 4
+  },
+  {
+   "rank": 162,
+   "char": "己",
+   "reading": "ji3",
+   "id": "ji3",
+   "pinyin": "jǐ",
+   "stage": 4
+  },
+  {
+   "rank": 163,
+   "char": "制",
+   "reading": "zhi4",
+   "id": "zhi4",
+   "pinyin": "zhì",
+   "stage": 4
+  },
+  {
+   "rank": 164,
+   "char": "身",
+   "reading": "shen1",
+   "id": "shen1",
+   "pinyin": "shēn",
+   "stage": 4
+  },
+  {
+   "rank": 165,
+   "char": "果",
+   "reading": "guo3",
+   "id": "guo3",
+   "pinyin": "guǒ",
+   "stage": 4
+  },
+  {
+   "rank": 167,
+   "char": "西",
+   "reading": "xi1",
+   "id": "xi1",
+   "pinyin": "xī",
+   "stage": 4
+  },
+  {
+   "rank": 168,
+   "char": "斯",
+   "reading": "si1",
+   "id": "si1",
+   "pinyin": "sī",
+   "stage": 4
+  },
+  {
+   "rank": 170,
+   "char": "话",
+   "reading": "hua4",
+   "id": "hua4",
+   "pinyin": "huà",
+   "stage": 4
+  },
+  {
+   "rank": 172,
+   "char": "回",
+   "reading": "hui2",
+   "id": "hui2",
+   "pinyin": "huí",
+   "stage": 4
+  },
+  {
+   "rank": 178,
+   "char": "化",
+   "reading": "hua4",
+   "id": "hua4b",
+   "pinyin": "huà",
+   "stage": 4,
+   "families": [
+    "人形族"
+   ]
+  },
+  {
+   "rank": 377,
+   "char": "夫",
+   "reading": "fu1",
+   "id": "fu1",
+   "pinyin": "fū",
+   "stage": 4,
+   "families": [
+    "人形族"
+   ]
+  },
+  {
+   "rank": 611,
+   "char": "坐",
+   "reading": "zuo4",
+   "id": "zuo4b",
+   "pinyin": "zuò",
+   "stage": 4,
+   "families": [
+    "人形族",
+    "土族"
+   ]
+  },
+  {
+   "rank": 173,
+   "char": "特",
+   "reading": "te4",
+   "id": "te4",
+   "pinyin": "tè",
+   "stage": 4
+  },
+  {
+   "rank": 174,
+   "char": "代",
+   "reading": "dai4",
+   "id": "dai4",
+   "pinyin": "dài",
+   "stage": 4
+  },
+  {
+   "rank": 175,
+   "char": "内",
+   "reading": "nei4",
+   "id": "nei4",
+   "pinyin": "nèi",
+   "stage": 4
+  },
+  {
+   "rank": 176,
+   "char": "信",
+   "reading": "xin4",
+   "id": "xin4",
+   "pinyin": "xìn",
+   "stage": 4
+  },
+  {
+   "rank": 177,
+   "char": "表",
+   "reading": "biao3",
+   "id": "biao3",
+   "pinyin": "biǎo",
+   "stage": 4
+  },
+  {
+   "rank": 179,
+   "char": "老",
+   "reading": "lao3",
+   "id": "lao3",
+   "pinyin": "lǎo",
+   "stage": 4
+  },
+  {
+   "rank": 189,
+   "char": "海",
+   "reading": "hai3",
+   "id": "hai3",
+   "pinyin": "hǎi",
+   "stage": 4,
+   "families": [
+    "氵族",
+    "声旁每"
+   ]
+  },
+  {
+   "rank": 574,
+   "char": "河",
+   "reading": "he2",
+   "id": "he2b",
+   "pinyin": "hé",
+   "stage": 4,
+   "families": [
+    "氵族",
+    "声旁可"
+   ]
+  },
+  {
+   "rank": 577,
+   "char": "江",
+   "reading": "jiang1",
+   "id": "jiang1b",
+   "pinyin": "jiāng",
+   "stage": 4,
+   "families": [
+    "氵族"
+   ]
+  },
+  {
+   "rank": 181,
+   "char": "世",
+   "reading": "shi4",
+   "id": "shi4c",
+   "pinyin": "shì",
+   "stage": 4
+  },
+  {
+   "rank": 183,
+   "char": "次",
+   "reading": "ci4",
+   "id": "ci4",
+   "pinyin": "cì",
+   "stage": 4
+  },
+  {
+   "rank": 184,
+   "char": "度",
+   "reading": "du4",
+   "id": "du4",
+   "pinyin": "dù",
+   "stage": 4
+  },
+  {
+   "rank": 185,
+   "char": "门",
+   "reading": "men2",
+   "id": "men2",
+   "pinyin": "mén",
+   "stage": 4
+  },
+  {
+   "rank": 186,
+   "char": "任",
+   "reading": "ren4",
+   "id": "ren4",
+   "pinyin": "rèn",
+   "stage": 4
+  },
+  {
+   "rank": 187,
+   "char": "常",
+   "reading": "chang2",
+   "id": "chang2b",
+   "pinyin": "cháng",
+   "stage": 4
+  },
+  {
+   "rank": 188,
+   "char": "先",
+   "reading": "xian1",
+   "id": "xian1",
+   "pinyin": "xiān",
+   "stage": 4
+  },
+  {
+   "rank": 190,
+   "char": "通",
+   "reading": "tong1",
+   "id": "tong1",
+   "pinyin": "tōng",
+   "stage": 4
+  },
+  {
+   "rank": 191,
+   "char": "教",
+   "reading": "jiao1",
+   "id": "jiao1",
+   "pinyin": "jiāo",
+   "stage": 4
+  },
+  {
+   "rank": 192,
+   "char": "儿",
+   "reading": "er2",
+   "id": "er2b",
+   "pinyin": "ér",
+   "stage": 4
+  },
+  {
+   "rank": 193,
+   "char": "原",
+   "reading": "yuan2",
+   "id": "yuan2",
+   "pinyin": "yuán",
+   "stage": 5
+  },
+  {
+   "rank": 194,
+   "char": "东",
+   "reading": "dong1",
+   "id": "dong1",
+   "pinyin": "dōng",
+   "stage": 5
+  },
+  {
+   "rank": 195,
+   "char": "声",
+   "reading": "sheng1",
+   "id": "sheng1b",
+   "pinyin": "shēng",
+   "stage": 5
+  },
+  {
+   "rank": 196,
+   "char": "提",
+   "reading": "ti2",
+   "id": "ti2",
+   "pinyin": "tí",
+   "stage": 5
+  },
+  {
+   "rank": 198,
+   "char": "及",
+   "reading": "ji2",
+   "id": "ji2",
+   "pinyin": "jí",
+   "stage": 5
+  },
+  {
+   "rank": 201,
+   "char": "解",
+   "reading": "jie3",
+   "id": "jie3",
+   "pinyin": "jiě",
+   "stage": 5
+  },
+  {
+   "rank": 202,
+   "char": "水",
+   "reading": "shui3",
+   "id": "shui3",
+   "pinyin": "shuǐ",
+   "stage": 5
+  },
+  {
+   "rank": 203,
+   "char": "名",
+   "reading": "ming2",
+   "id": "ming2",
+   "pinyin": "míng",
+   "stage": 5
+  },
+  {
+   "rank": 204,
+   "char": "真",
+   "reading": "zhen1",
+   "id": "zhen1",
+   "pinyin": "zhēn",
+   "stage": 5
+  },
+  {
+   "rank": 205,
+   "char": "论",
+   "reading": "lun4",
+   "id": "lun4",
+   "pinyin": "lùn",
+   "stage": 5
+  },
+  {
+   "rank": 206,
+   "char": "处",
+   "reading": "chu4",
+   "id": "chu4",
+   "pinyin": "chù",
+   "stage": 5
+  },
+  {
+   "rank": 207,
+   "char": "走",
+   "reading": "zou3",
+   "id": "zou3",
+   "pinyin": "zǒu",
+   "stage": 5
+  },
+  {
+   "rank": 208,
+   "char": "义",
+   "reading": "yi4",
+   "id": "yi4b",
+   "pinyin": "yì",
+   "stage": 5
+  },
+  {
+   "rank": 210,
+   "char": "入",
+   "reading": "ru4",
+   "id": "ru4",
+   "pinyin": "rù",
+   "stage": 5
+  },
+  {
+   "rank": 211,
+   "char": "几",
+   "reading": "ji3",
+   "id": "ji3b",
+   "pinyin": "jǐ",
+   "stage": 5
+  },
+  {
+   "rank": 111,
+   "char": "机",
+   "reading": "ji1",
+   "id": "ji1",
+   "pinyin": "jī",
+   "stage": 5
+  },
+  {
+   "rank": 212,
+   "char": "口",
+   "reading": "kou3",
+   "id": "kou3",
+   "pinyin": "kǒu",
+   "stage": 5
+  },
+  {
+   "rank": 67,
+   "char": "如",
+   "reading": "ru2",
+   "id": "ru2",
+   "pinyin": "rú",
+   "stage": 5
+  },
+  {
+   "rank": 97,
+   "char": "只",
+   "reading": "zhi1",
+   "id": "zhi1b",
+   "pinyin": "zhī",
+   "stage": 5
+  },
+  {
+   "rank": 123,
+   "char": "知",
+   "reading": "zhi1",
+   "id": "zhi1c",
+   "pinyin": "zhī",
+   "stage": 5
+  },
+  {
+   "rank": 166,
+   "char": "加",
+   "reading": "jia1",
+   "id": "jia1b",
+   "pinyin": "jiā",
+   "stage": 5
+  },
+  {
+   "rank": 171,
+   "char": "合",
+   "reading": "he2",
+   "id": "he2c",
+   "pinyin": "hé",
+   "stage": 5
+  },
+  {
+   "rank": 180,
+   "char": "给",
+   "reading": "gei3",
+   "id": "gei3",
+   "pinyin": "gěi",
+   "stage": 5
+  },
+  {
+   "rank": 200,
+   "char": "员",
+   "reading": "yuan2",
+   "id": "yuan2b",
+   "pinyin": "yuán",
+   "stage": 5
+  },
+  {
+   "rank": 209,
+   "char": "各",
+   "reading": "ge4",
+   "id": "ge4b",
+   "pinyin": "gè",
+   "stage": 5
+  },
+  {
+   "rank": 213,
+   "char": "认",
+   "reading": "ren4",
+   "id": "ren4b",
+   "pinyin": "rèn",
+   "stage": 5
+  },
+  {
+   "rank": 214,
+   "char": "条",
+   "reading": "tiao2",
+   "id": "tiao2",
+   "pinyin": "tiáo",
+   "stage": 5
+  },
+  {
+   "rank": 215,
+   "char": "平",
+   "reading": "ping2",
+   "id": "ping2",
+   "pinyin": "píng",
+   "stage": 5
+  },
+  {
+   "rank": 216,
+   "char": "系",
+   "reading": "xi4",
+   "id": "xi4",
+   "pinyin": "xì",
+   "stage": 5
+  },
+  {
+   "rank": 217,
+   "char": "气",
+   "reading": "qi4",
+   "id": "qi4",
+   "pinyin": "qì",
+   "stage": 5
+  },
+  {
+   "rank": 224,
+   "char": "女",
+   "reading": "nv3",
+   "id": "nv3",
+   "pinyin": "nǚ",
+   "stage": 5
+  },
+  {
+   "rank": 82,
+   "char": "好",
+   "reading": "hao3",
+   "id": "hao3",
+   "pinyin": "hǎo",
+   "stage": 5,
+   "families": [
+    "女旁族"
+   ]
+  },
+  {
+   "rank": 91,
+   "char": "她",
+   "reading": "ta1",
+   "id": "ta1c",
+   "pinyin": "tā",
+   "stage": 5,
+   "families": [
+    "女旁族",
+    "声旁也"
+   ]
+  },
+  {
+   "rank": 533,
+   "char": "孩",
+   "reading": "hai2",
+   "id": "hai2b",
+   "pinyin": "hái",
+   "stage": 5,
+   "families": [
+    "女旁族"
+   ]
+  },
+  {
+   "rank": 276,
+   "char": "马",
+   "reading": "ma3",
+   "id": "ma3",
+   "pinyin": "mǎ",
+   "stage": 5
+  },
+  {
+   "rank": 750,
+   "char": "妈",
+   "reading": "ma1",
+   "id": "ma1",
+   "pinyin": "mā",
+   "stage": 5,
+   "families": [
+    "女旁族",
+    "声旁马"
+   ]
+  },
+  {
+   "rank": 296,
+   "char": "且",
+   "reading": "qie3",
+   "id": "qie3",
+   "pinyin": "qiě",
+   "stage": 5
+  },
+  {
+   "rank": 830,
+   "char": "姐",
+   "reading": "jie3",
+   "id": "jie3b",
+   "pinyin": "jiě",
+   "stage": 5,
+   "families": [
+    "女旁族"
+   ]
+  },
+  {
+   "rank": 218,
+   "char": "题",
+   "reading": "ti2",
+   "id": "ti2b",
+   "pinyin": "tí",
+   "stage": 5
+  },
+  {
+   "rank": 219,
+   "char": "活",
+   "reading": "huo2",
+   "id": "huo2",
+   "pinyin": "huó",
+   "stage": 5
+  },
+  {
+   "rank": 220,
+   "char": "尔",
+   "reading": "er3",
+   "id": "er3",
+   "pinyin": "ěr",
+   "stage": 5
+  },
+  {
+   "rank": 221,
+   "char": "更",
+   "reading": "geng4",
+   "id": "geng4",
+   "pinyin": "gèng",
+   "stage": 5
+  },
+  {
+   "rank": 222,
+   "char": "别",
+   "reading": "bie2",
+   "id": "bie2",
+   "pinyin": "bié",
+   "stage": 5
+  },
+  {
+   "rank": 223,
+   "char": "打",
+   "reading": "da3",
+   "id": "da3",
+   "pinyin": "dǎ",
+   "stage": 5,
+   "families": [
+    "声旁丁"
+   ]
+  },
+  {
+   "rank": 225,
+   "char": "变",
+   "reading": "bian4",
+   "id": "bian4",
+   "pinyin": "biàn",
+   "stage": 5
+  },
+  {
+   "rank": 226,
+   "char": "四",
+   "reading": "si4",
+   "id": "si4",
+   "pinyin": "sì",
+   "stage": 5
+  },
+  {
+   "rank": 227,
+   "char": "神",
+   "reading": "shen2",
+   "id": "shen2b",
+   "pinyin": "shén",
+   "stage": 5
+  },
+  {
+   "rank": 228,
+   "char": "总",
+   "reading": "zong3",
+   "id": "zong3",
+   "pinyin": "zǒng",
+   "stage": 5
+  },
+  {
+   "rank": 239,
+   "char": "目",
+   "reading": "mu4",
+   "id": "mu4",
+   "pinyin": "mù",
+   "stage": 5
+  },
+  {
+   "rank": 152,
+   "char": "相",
+   "reading": "xiang1",
+   "id": "xiang1",
+   "pinyin": "xiāng",
+   "stage": 5
+  },
+  {
+   "rank": 99,
+   "char": "想",
+   "reading": "xiang3",
+   "id": "xiang3",
+   "pinyin": "xiǎng",
+   "stage": 6,
+   "families": [
+    "心族"
+   ]
+  },
+  {
+   "rank": 336,
+   "char": "今",
+   "reading": "jin1",
+   "id": "jin1",
+   "pinyin": "jīn",
+   "stage": 6
+  },
+  {
+   "rank": 477,
+   "char": "念",
+   "reading": "nian4",
+   "id": "nian4",
+   "pinyin": "niàn",
+   "stage": 6,
+   "families": [
+    "心族"
+   ]
+  },
+  {
+   "rank": 229,
+   "char": "何",
+   "reading": "he2",
+   "id": "he2d",
+   "pinyin": "hé",
+   "stage": 6,
+   "families": [
+    "声旁可"
+   ]
+  },
+  {
+   "rank": 230,
+   "char": "电",
+   "reading": "dian4",
+   "id": "dian4",
+   "pinyin": "diàn",
+   "stage": 6
+  },
+  {
+   "rank": 231,
+   "char": "数",
+   "reading": "shu3",
+   "id": "shu3",
+   "pinyin": "shǔ",
+   "stage": 6
+  },
+  {
+   "rank": 232,
+   "char": "安",
+   "reading": "an1",
+   "id": "an1",
+   "pinyin": "ān",
+   "stage": 6
+  },
+  {
+   "rank": 233,
+   "char": "少",
+   "reading": "shao3",
+   "id": "shao3",
+   "pinyin": "shǎo",
+   "stage": 6
+  },
+  {
+   "rank": 234,
+   "char": "报",
+   "reading": "bao4",
+   "id": "bao4",
+   "pinyin": "bào",
+   "stage": 6
+  },
+  {
+   "rank": 235,
+   "char": "才",
+   "reading": "cai2",
+   "id": "cai2",
+   "pinyin": "cái",
+   "stage": 6
+  },
+  {
+   "rank": 236,
+   "char": "结",
+   "reading": "jie1",
+   "id": "jie1",
+   "pinyin": "jiē",
+   "stage": 6
+  },
+  {
+   "rank": 237,
+   "char": "反",
+   "reading": "fan3",
+   "id": "fan3",
+   "pinyin": "fǎn",
+   "stage": 6
+  },
+  {
+   "rank": 238,
+   "char": "受",
+   "reading": "shou4",
+   "id": "shou4",
+   "pinyin": "shòu",
+   "stage": 6
+  },
+  {
+   "rank": 240,
+   "char": "太",
+   "reading": "tai4",
+   "id": "tai4",
+   "pinyin": "tài",
+   "stage": 6
+  },
+  {
+   "rank": 241,
+   "char": "量",
+   "reading": "liang2",
+   "id": "liang2",
+   "pinyin": "liáng",
+   "stage": 6
+  },
+  {
+   "rank": 242,
+   "char": "再",
+   "reading": "zai4",
+   "id": "zai4b",
+   "pinyin": "zài",
+   "stage": 6
+  },
+  {
+   "rank": 243,
+   "char": "感",
+   "reading": "gan3",
+   "id": "gan3",
+   "pinyin": "gǎn",
+   "stage": 6
+  },
+  {
+   "rank": 244,
+   "char": "建",
+   "reading": "jian4",
+   "id": "jian4b",
+   "pinyin": "jiàn",
+   "stage": 6
+  },
+  {
+   "rank": 245,
+   "char": "务",
+   "reading": "wu4",
+   "id": "wu4b",
+   "pinyin": "wù",
+   "stage": 6
+  },
+  {
+   "rank": 246,
+   "char": "做",
+   "reading": "zuo4",
+   "id": "zuo4c",
+   "pinyin": "zuò",
+   "stage": 6
+  },
+  {
+   "rank": 247,
+   "char": "接",
+   "reading": "jie1",
+   "id": "jie1b",
+   "pinyin": "jiē",
+   "stage": 6
+  },
+  {
+   "rank": 248,
+   "char": "必",
+   "reading": "bi4",
+   "id": "bi4",
+   "pinyin": "bì",
+   "stage": 6
+  },
+  {
+   "rank": 249,
+   "char": "场",
+   "reading": "chang3",
+   "id": "chang3",
+   "pinyin": "chǎng",
+   "stage": 6
+  },
+  {
+   "rank": 250,
+   "char": "件",
+   "reading": "jian4",
+   "id": "jian4c",
+   "pinyin": "jiàn",
+   "stage": 6
+  },
+  {
+   "rank": 251,
+   "char": "计",
+   "reading": "ji4",
+   "id": "ji4",
+   "pinyin": "jì",
+   "stage": 6
+  },
+  {
+   "rank": 252,
+   "char": "管",
+   "reading": "guan3",
+   "id": "guan3",
+   "pinyin": "guǎn",
+   "stage": 6
+  },
+  {
+   "rank": 253,
+   "char": "期",
+   "reading": "qi1",
+   "id": "qi1",
+   "pinyin": "qī",
+   "stage": 6
+  },
+  {
+   "rank": 254,
+   "char": "市",
+   "reading": "shi4",
+   "id": "shi4d",
+   "pinyin": "shì",
+   "stage": 6
+  },
+  {
+   "rank": 255,
+   "char": "直",
+   "reading": "zhi2",
+   "id": "zhi2",
+   "pinyin": "zhí",
+   "stage": 6
+  },
+  {
+   "rank": 256,
+   "char": "德",
+   "reading": "de2",
+   "id": "de2b",
+   "pinyin": "dé",
+   "stage": 6
+  },
+  {
+   "rank": 257,
+   "char": "资",
+   "reading": "zi1",
+   "id": "zi1",
+   "pinyin": "zī",
+   "stage": 6
+  },
+  {
+   "rank": 258,
+   "char": "命",
+   "reading": "ming4",
+   "id": "ming4",
+   "pinyin": "mìng",
+   "stage": 6
+  },
+  {
+   "rank": 259,
+   "char": "山",
+   "reading": "shan1",
+   "id": "shan1",
+   "pinyin": "shān",
+   "stage": 6
+  },
+  {
+   "rank": 260,
+   "char": "金",
+   "reading": "jin1",
+   "id": "jin1b",
+   "pinyin": "jīn",
+   "stage": 6
+  },
+  {
+   "rank": 261,
+   "char": "指",
+   "reading": "zhi3",
+   "id": "zhi3",
+   "pinyin": "zhǐ",
+   "stage": 6
+  },
+  {
+   "rank": 262,
+   "char": "克",
+   "reading": "ke4",
+   "id": "ke4",
+   "pinyin": "kè",
+   "stage": 6
+  },
+  {
+   "rank": 263,
+   "char": "许",
+   "reading": "xu3",
+   "id": "xu3",
+   "pinyin": "xǔ",
+   "stage": 6
+  },
+  {
+   "rank": 264,
+   "char": "统",
+   "reading": "tong3",
+   "id": "tong3",
+   "pinyin": "tǒng",
+   "stage": 6
+  },
+  {
+   "rank": 265,
+   "char": "区",
+   "reading": "qu1",
+   "id": "qu1",
+   "pinyin": "qū",
+   "stage": 6
+  },
+  {
+   "rank": 266,
+   "char": "保",
+   "reading": "bao3",
+   "id": "bao3",
+   "pinyin": "bǎo",
+   "stage": 6
+  },
+  {
+   "rank": 267,
+   "char": "至",
+   "reading": "zhi4",
+   "id": "zhi4b",
+   "pinyin": "zhì",
+   "stage": 6
+  },
+  {
+   "rank": 268,
+   "char": "队",
+   "reading": "dui4",
+   "id": "dui4b",
+   "pinyin": "duì",
+   "stage": 6
+  },
+  {
+   "rank": 269,
+   "char": "形",
+   "reading": "xing2",
+   "id": "xing2b",
+   "pinyin": "xíng",
+   "stage": 6
+  },
+  {
+   "rank": 270,
+   "char": "社",
+   "reading": "she4",
+   "id": "she4",
+   "pinyin": "shè",
+   "stage": 6
+  },
+  {
+   "rank": 271,
+   "char": "便",
+   "reading": "bian4",
+   "id": "bian4b",
+   "pinyin": "biàn",
+   "stage": 6
+  },
+  {
+   "rank": 272,
+   "char": "空",
+   "reading": "kong1",
+   "id": "kong1",
+   "pinyin": "kōng",
+   "stage": 6
+  },
+  {
+   "rank": 273,
+   "char": "决",
+   "reading": "jue2",
+   "id": "jue2",
+   "pinyin": "jué",
+   "stage": 6
+  },
+  {
+   "rank": 275,
+   "char": "展",
+   "reading": "zhan3",
+   "id": "zhan3",
+   "pinyin": "zhǎn",
+   "stage": 6
+  },
+  {
+   "rank": 277,
+   "char": "科",
+   "reading": "ke1",
+   "id": "ke1",
+   "pinyin": "kē",
+   "stage": 6
+  },
+  {
+   "rank": 291,
+   "char": "放",
+   "reading": "fang4",
+   "id": "fang4",
+   "pinyin": "fàng",
+   "stage": 6,
+   "families": [
+    "声旁方"
+   ]
+  },
+  {
+   "rank": 512,
+   "char": "房",
+   "reading": "fang2",
+   "id": "fang2",
+   "pinyin": "fáng",
+   "stage": 7,
+   "families": [
+    "声旁方"
+   ]
+  },
+  {
+   "rank": 278,
+   "char": "司",
+   "reading": "si1",
+   "id": "si1b",
+   "pinyin": "sī",
+   "stage": 7
+  },
+  {
+   "rank": 279,
+   "char": "五",
+   "reading": "wu3",
+   "id": "wu3",
+   "pinyin": "wǔ",
+   "stage": 7
+  },
+  {
+   "rank": 280,
+   "char": "基",
+   "reading": "ji1",
+   "id": "ji1b",
+   "pinyin": "jī",
+   "stage": 7
+  },
+  {
+   "rank": 281,
+   "char": "眼",
+   "reading": "yan3",
+   "id": "yan3",
+   "pinyin": "yǎn",
+   "stage": 7
+  },
+  {
+   "rank": 282,
+   "char": "书",
+   "reading": "shu1",
+   "id": "shu1",
+   "pinyin": "shū",
+   "stage": 7
+  },
+  {
+   "rank": 283,
+   "char": "非",
+   "reading": "fei1",
+   "id": "fei1",
+   "pinyin": "fēi",
+   "stage": 7
+  },
+  {
+   "rank": 284,
+   "char": "则",
+   "reading": "ze2",
+   "id": "ze2",
+   "pinyin": "zé",
+   "stage": 7
+  },
+  {
+   "rank": 285,
+   "char": "听",
+   "reading": "ting1",
+   "id": "ting1",
+   "pinyin": "tīng",
+   "stage": 7
+  },
+  {
+   "rank": 286,
+   "char": "白",
+   "reading": "bai2",
+   "id": "bai2",
+   "pinyin": "bái",
+   "stage": 7
+  },
+  {
+   "rank": 287,
+   "char": "却",
+   "reading": "que4",
+   "id": "que4",
+   "pinyin": "què",
+   "stage": 7
+  },
+  {
+   "rank": 288,
+   "char": "界",
+   "reading": "jie4",
+   "id": "jie4",
+   "pinyin": "jiè",
+   "stage": 7
+  },
+  {
+   "rank": 289,
+   "char": "达",
+   "reading": "da2",
+   "id": "da2",
+   "pinyin": "dá",
+   "stage": 7
+  },
+  {
+   "rank": 290,
+   "char": "光",
+   "reading": "guang1",
+   "id": "guang1",
+   "pinyin": "guāng",
+   "stage": 7
+  },
+  {
+   "rank": 292,
+   "char": "强",
+   "reading": "qiang2",
+   "id": "qiang2",
+   "pinyin": "qiáng",
+   "stage": 7
+  },
+  {
+   "rank": 293,
+   "char": "即",
+   "reading": "ji2",
+   "id": "ji2b",
+   "pinyin": "jí",
+   "stage": 7
+  },
+  {
+   "rank": 295,
+   "char": "难",
+   "reading": "nan2",
+   "id": "nan2",
+   "pinyin": "nán",
+   "stage": 7
+  },
+  {
+   "rank": 297,
+   "char": "权",
+   "reading": "quan2",
+   "id": "quan2b",
+   "pinyin": "quán",
+   "stage": 7
+  },
+  {
+   "rank": 298,
+   "char": "思",
+   "reading": "si1",
+   "id": "si1c",
+   "pinyin": "sī",
+   "stage": 7
+  },
+  {
+   "rank": 299,
+   "char": "王",
+   "reading": "wang2",
+   "id": "wang2",
+   "pinyin": "wáng",
+   "stage": 7
+  },
+  {
+   "rank": 300,
+   "char": "象",
+   "reading": "xiang4",
+   "id": "xiang4b",
+   "pinyin": "xiàng",
+   "stage": 7
+  },
+  {
+   "rank": 294,
+   "char": "像",
+   "reading": "xiang4",
+   "id": "xiang4c",
+   "pinyin": "xiàng",
+   "stage": 7
+  },
+  {
+   "rank": 302,
+   "char": "设",
+   "reading": "she4",
+   "id": "she4b",
+   "pinyin": "shè",
+   "stage": 7
+  },
+  {
+   "rank": 303,
+   "char": "式",
+   "reading": "shi4",
+   "id": "shi4e",
+   "pinyin": "shì",
+   "stage": 7
+  },
+  {
+   "rank": 304,
+   "char": "色",
+   "reading": "se4",
+   "id": "se4",
+   "pinyin": "sè",
+   "stage": 7
+  },
+  {
+   "rank": 305,
+   "char": "路",
+   "reading": "lu4",
+   "id": "lu4",
+   "pinyin": "lù",
+   "stage": 7
+  },
+  {
+   "rank": 306,
+   "char": "记",
+   "reading": "ji4",
+   "id": "ji4b",
+   "pinyin": "jì",
+   "stage": 7
+  },
+  {
+   "rank": 307,
+   "char": "南",
+   "reading": "nan2",
+   "id": "nan2b",
+   "pinyin": "nán",
+   "stage": 7
+  },
+  {
+   "rank": 308,
+   "char": "品",
+   "reading": "pin3",
+   "id": "pin3",
+   "pinyin": "pǐn",
+   "stage": 7
+  },
+  {
+   "rank": 310,
+   "char": "告",
+   "reading": "gao4",
+   "id": "gao4",
+   "pinyin": "gào",
+   "stage": 7
+  },
+  {
+   "rank": 311,
+   "char": "类",
+   "reading": "lei4",
+   "id": "lei4",
+   "pinyin": "lèi",
+   "stage": 7
+  },
+  {
+   "rank": 312,
+   "char": "求",
+   "reading": "qiu2",
+   "id": "qiu2",
+   "pinyin": "qiú",
+   "stage": 7
+  },
+  {
+   "rank": 313,
+   "char": "据",
+   "reading": "ju4",
+   "id": "ju4",
+   "pinyin": "jù",
+   "stage": 7
+  },
+  {
+   "rank": 314,
+   "char": "程",
+   "reading": "cheng2",
+   "id": "cheng2b",
+   "pinyin": "chéng",
+   "stage": 7
+  },
+  {
+   "rank": 316,
+   "char": "边",
+   "reading": "bian1",
+   "id": "bian1",
+   "pinyin": "biān",
+   "stage": 7
+  },
+  {
+   "rank": 317,
+   "char": "死",
+   "reading": "si3",
+   "id": "si3",
+   "pinyin": "sǐ",
+   "stage": 7
+  },
+  {
+   "rank": 318,
+   "char": "张",
+   "reading": "zhang1",
+   "id": "zhang1",
+   "pinyin": "zhāng",
+   "stage": 7
+  },
+  {
+   "rank": 319,
+   "char": "该",
+   "reading": "gai1",
+   "id": "gai1",
+   "pinyin": "gāi",
+   "stage": 7
+  },
+  {
+   "rank": 320,
+   "char": "交",
+   "reading": "jiao1",
+   "id": "jiao1b",
+   "pinyin": "jiāo",
+   "stage": 7
+  },
+  {
+   "rank": 322,
+   "char": "万",
+   "reading": "wan4",
+   "id": "wan4",
+   "pinyin": "wàn",
+   "stage": 7
+  },
+  {
+   "rank": 323,
+   "char": "取",
+   "reading": "qu3",
+   "id": "qu3",
+   "pinyin": "qǔ",
+   "stage": 7
+  },
+  {
+   "rank": 324,
+   "char": "拉",
+   "reading": "la1",
+   "id": "la1",
+   "pinyin": "lā",
+   "stage": 7
+  },
+  {
+   "rank": 325,
+   "char": "格",
+   "reading": "ge2",
+   "id": "ge2",
+   "pinyin": "gé",
+   "stage": 7
+  },
+  {
+   "rank": 326,
+   "char": "望",
+   "reading": "wang4",
+   "id": "wang4",
+   "pinyin": "wàng",
+   "stage": 7
+  },
+  {
+   "rank": 327,
+   "char": "觉",
+   "reading": "jiao4",
+   "id": "jiao4",
+   "pinyin": "jiào",
+   "stage": 7
+  },
+  {
+   "rank": 328,
+   "char": "术",
+   "reading": "shu4",
+   "id": "shu4",
+   "pinyin": "shù",
+   "stage": 7
+  },
+  {
+   "rank": 332,
+   "char": "传",
+   "reading": "chuan2",
+   "id": "chuan2",
+   "pinyin": "chuán",
+   "stage": 7
+  },
+  {
+   "rank": 333,
+   "char": "师",
+   "reading": "shi1",
+   "id": "shi1",
+   "pinyin": "shī",
+   "stage": 7
+  },
+  {
+   "rank": 334,
+   "char": "观",
+   "reading": "guan1",
+   "id": "guan1b",
+   "pinyin": "guān",
+   "stage": 7
+  },
+  {
+   "rank": 337,
+   "char": "切",
+   "reading": "qie1",
+   "id": "qie1",
+   "pinyin": "qiē",
+   "stage": 7
+  },
+  {
+   "rank": 339,
+   "char": "让",
+   "reading": "rang4",
+   "id": "rang4",
+   "pinyin": "ràng",
+   "stage": 8
+  },
+  {
+   "rank": 340,
+   "char": "识",
+   "reading": "shi2",
+   "id": "shi2d",
+   "pinyin": "shí",
+   "stage": 8
+  },
+  {
+   "rank": 341,
+   "char": "候",
+   "reading": "hou4",
+   "id": "hou4b",
+   "pinyin": "hòu",
+   "stage": 8
+  },
+  {
+   "rank": 342,
+   "char": "带",
+   "reading": "dai4",
+   "id": "dai4b",
+   "pinyin": "dài",
+   "stage": 8
+  },
+  {
+   "rank": 343,
+   "char": "导",
+   "reading": "dao3",
+   "id": "dao3",
+   "pinyin": "dǎo",
+   "stage": 8
+  },
+  {
+   "rank": 344,
+   "char": "争",
+   "reading": "zheng1",
+   "id": "zheng1",
+   "pinyin": "zhēng",
+   "stage": 8
+  },
+  {
+   "rank": 345,
+   "char": "运",
+   "reading": "yun4",
+   "id": "yun4",
+   "pinyin": "yùn",
+   "stage": 8
+  },
+  {
+   "rank": 346,
+   "char": "笑",
+   "reading": "xiao4",
+   "id": "xiao4",
+   "pinyin": "xiào",
+   "stage": 8
+  },
+  {
+   "rank": 347,
+   "char": "飞",
+   "reading": "fei1",
+   "id": "fei1b",
+   "pinyin": "fēi",
+   "stage": 8
+  },
+  {
+   "rank": 348,
+   "char": "风",
+   "reading": "feng1",
+   "id": "feng1",
+   "pinyin": "fēng",
+   "stage": 8
+  },
+  {
+   "rank": 349,
+   "char": "步",
+   "reading": "bu4",
+   "id": "bu4c",
+   "pinyin": "bù",
+   "stage": 8
+  },
+  {
+   "rank": 350,
+   "char": "改",
+   "reading": "gai3",
+   "id": "gai3",
+   "pinyin": "gǎi",
+   "stage": 8
+  },
+  {
+   "rank": 351,
+   "char": "收",
+   "reading": "shou1",
+   "id": "shou1",
+   "pinyin": "shōu",
+   "stage": 8
+  },
+  {
+   "rank": 352,
+   "char": "根",
+   "reading": "gen1",
+   "id": "gen1",
+   "pinyin": "gēn",
+   "stage": 8
+  },
+  {
+   "rank": 353,
+   "char": "干",
+   "reading": "gan1",
+   "id": "gan1",
+   "pinyin": "gān",
+   "stage": 8
+  },
+  {
+   "rank": 354,
+   "char": "造",
+   "reading": "zao4",
+   "id": "zao4",
+   "pinyin": "zào",
+   "stage": 8
+  },
+  {
+   "rank": 355,
+   "char": "言",
+   "reading": "yan2",
+   "id": "yan2",
+   "pinyin": "yán",
+   "stage": 8
+  },
+  {
+   "rank": 356,
+   "char": "联",
+   "reading": "lian2",
+   "id": "lian2",
+   "pinyin": "lián",
+   "stage": 8
+  },
+  {
+   "rank": 357,
+   "char": "持",
+   "reading": "chi2",
+   "id": "chi2",
+   "pinyin": "chí",
+   "stage": 8
+  },
+  {
+   "rank": 358,
+   "char": "组",
+   "reading": "zu3",
+   "id": "zu3",
+   "pinyin": "zǔ",
+   "stage": 8
+  },
+  {
+   "rank": 359,
+   "char": "每",
+   "reading": "mei3",
+   "id": "mei3b",
+   "pinyin": "měi",
+   "stage": 8
+  },
+  {
+   "rank": 360,
+   "char": "济",
+   "reading": "ji4",
+   "id": "ji4c",
+   "pinyin": "jì",
+   "stage": 8
+  },
+  {
+   "rank": 361,
+   "char": "车",
+   "reading": "che1",
+   "id": "che1",
+   "pinyin": "chē",
+   "stage": 8
+  },
+  {
+   "rank": 362,
+   "char": "亲",
+   "reading": "qin1",
+   "id": "qin1",
+   "pinyin": "qīn",
+   "stage": 8
+  },
+  {
+   "rank": 363,
+   "char": "极",
+   "reading": "ji2",
+   "id": "ji2c",
+   "pinyin": "jí",
+   "stage": 8
+  },
+  {
+   "rank": 365,
+   "char": "服",
+   "reading": "fu2",
+   "id": "fu2",
+   "pinyin": "fú",
+   "stage": 8
+  },
+  {
+   "rank": 366,
+   "char": "快",
+   "reading": "kuai4",
+   "id": "kuai4",
+   "pinyin": "kuài",
+   "stage": 8
+  },
+  {
+   "rank": 367,
+   "char": "办",
+   "reading": "ban4",
+   "id": "ban4",
+   "pinyin": "bàn",
+   "stage": 8
+  },
+  {
+   "rank": 368,
+   "char": "议",
+   "reading": "yi4",
+   "id": "yi4c",
+   "pinyin": "yì",
+   "stage": 8
+  },
+  {
+   "rank": 369,
+   "char": "往",
+   "reading": "wang3",
+   "id": "wang3",
+   "pinyin": "wǎng",
+   "stage": 8
+  },
+  {
+   "rank": 370,
+   "char": "元",
+   "reading": "yuan2",
+   "id": "yuan2c",
+   "pinyin": "yuán",
+   "stage": 8
+  },
+  {
+   "rank": 301,
+   "char": "完",
+   "reading": "wan2",
+   "id": "wan2",
+   "pinyin": "wán",
+   "stage": 8
+  },
+  {
+   "rank": 338,
+   "char": "院",
+   "reading": "yuan4",
+   "id": "yuan4",
+   "pinyin": "yuàn",
+   "stage": 8
+  },
+  {
+   "rank": 371,
+   "char": "英",
+   "reading": "ying1",
+   "id": "ying1b",
+   "pinyin": "yīng",
+   "stage": 8
+  },
+  {
+   "rank": 372,
+   "char": "士",
+   "reading": "shi4",
+   "id": "shi4f",
+   "pinyin": "shì",
+   "stage": 8
+  },
+  {
+   "rank": 373,
+   "char": "证",
+   "reading": "zheng4",
+   "id": "zheng4c",
+   "pinyin": "zhèng",
+   "stage": 8
+  },
+  {
+   "rank": 374,
+   "char": "近",
+   "reading": "jin4",
+   "id": "jin4b",
+   "pinyin": "jìn",
+   "stage": 8
+  },
+  {
+   "rank": 375,
+   "char": "失",
+   "reading": "shi1",
+   "id": "shi1b",
+   "pinyin": "shī",
+   "stage": 8
+  },
+  {
+   "rank": 321,
+   "char": "规",
+   "reading": "gui1",
+   "id": "gui1",
+   "pinyin": "guī",
+   "stage": 8
+  },
+  {
+   "rank": 378,
+   "char": "令",
+   "reading": "ling4",
+   "id": "ling4",
+   "pinyin": "lìng",
+   "stage": 8
+  },
+  {
+   "rank": 329,
+   "char": "领",
+   "reading": "ling3",
+   "id": "ling3",
+   "pinyin": "lǐng",
+   "stage": 8
+  },
+  {
+   "rank": 379,
+   "char": "准",
+   "reading": "zhun3",
+   "id": "zhun3",
+   "pinyin": "zhǔn",
+   "stage": 8
+  },
+  {
+   "rank": 380,
+   "char": "布",
+   "reading": "bu4",
+   "id": "bu4d",
+   "pinyin": "bù",
+   "stage": 8
+  },
+  {
+   "rank": 382,
+   "char": "怎",
+   "reading": "zen3",
+   "id": "zen3",
+   "pinyin": "zěn",
+   "stage": 8
+  },
+  {
+   "rank": 383,
+   "char": "呢",
+   "reading": "ne",
+   "id": "ne",
+   "pinyin": "ne",
+   "stage": 8
+  },
+  {
+   "rank": 384,
+   "char": "存",
+   "reading": "cun2",
+   "id": "cun2",
+   "pinyin": "cún",
+   "stage": 8
+  },
+  {
+   "rank": 385,
+   "char": "未",
+   "reading": "wei4",
+   "id": "wei4b",
+   "pinyin": "wèi",
+   "stage": 8
+  },
+  {
+   "rank": 386,
+   "char": "远",
+   "reading": "yuan3",
+   "id": "yuan3",
+   "pinyin": "yuǎn",
+   "stage": 8
+  },
+  {
+   "rank": 387,
+   "char": "叫",
+   "reading": "jiao4",
+   "id": "jiao4b",
+   "pinyin": "jiào",
+   "stage": 8
+  },
+  {
+   "rank": 388,
+   "char": "台",
+   "reading": "tai2",
+   "id": "tai2",
+   "pinyin": "tái",
+   "stage": 8
+  },
+  {
+   "rank": 274,
+   "char": "治",
+   "reading": "zhi4",
+   "id": "zhi4c",
+   "pinyin": "zhì",
+   "stage": 9
+  },
+  {
+   "rank": 381,
+   "char": "始",
+   "reading": "shi3",
+   "id": "shi3b",
+   "pinyin": "shǐ",
+   "stage": 9
+  },
+  {
+   "rank": 389,
+   "char": "单",
+   "reading": "dan1",
+   "id": "dan1",
+   "pinyin": "dān",
+   "stage": 9
+  },
+  {
+   "rank": 390,
+   "char": "影",
+   "reading": "ying3",
+   "id": "ying3",
+   "pinyin": "yǐng",
+   "stage": 9
+  },
+  {
+   "rank": 391,
+   "char": "具",
+   "reading": "ju4",
+   "id": "ju4b",
+   "pinyin": "jù",
+   "stage": 9
+  },
+  {
+   "rank": 392,
+   "char": "罗",
+   "reading": "luo2",
+   "id": "luo2",
+   "pinyin": "luó",
+   "stage": 9
+  },
+  {
+   "rank": 393,
+   "char": "字",
+   "reading": "zi4",
+   "id": "zi4b",
+   "pinyin": "zì",
+   "stage": 9
+  },
+  {
+   "rank": 394,
+   "char": "爱",
+   "reading": "ai4",
+   "id": "ai4",
+   "pinyin": "ài",
+   "stage": 9
+  },
+  {
+   "rank": 395,
+   "char": "击",
+   "reading": "ji1",
+   "id": "ji1c",
+   "pinyin": "jī",
+   "stage": 9
+  },
+  {
+   "rank": 396,
+   "char": "流",
+   "reading": "liu2",
+   "id": "liu2",
+   "pinyin": "liú",
+   "stage": 9
+  },
+  {
+   "rank": 397,
+   "char": "备",
+   "reading": "bei4",
+   "id": "bei4b",
+   "pinyin": "bèi",
+   "stage": 9
+  },
+  {
+   "rank": 398,
+   "char": "兵",
+   "reading": "bing1",
+   "id": "bing1",
+   "pinyin": "bīng",
+   "stage": 9
+  },
+  {
+   "rank": 399,
+   "char": "连",
+   "reading": "lian2",
+   "id": "lian2b",
+   "pinyin": "lián",
+   "stage": 9
+  },
+  {
+   "rank": 401,
+   "char": "深",
+   "reading": "shen1",
+   "id": "shen1b",
+   "pinyin": "shēn",
+   "stage": 9
+  },
+  {
+   "rank": 402,
+   "char": "商",
+   "reading": "shang1",
+   "id": "shang1",
+   "pinyin": "shāng",
+   "stage": 9
+  },
+  {
+   "rank": 403,
+   "char": "算",
+   "reading": "suan4",
+   "id": "suan4",
+   "pinyin": "suàn",
+   "stage": 9
+  },
+  {
+   "rank": 404,
+   "char": "质",
+   "reading": "zhi4",
+   "id": "zhi4d",
+   "pinyin": "zhì",
+   "stage": 9
+  },
+  {
+   "rank": 405,
+   "char": "团",
+   "reading": "tuan2",
+   "id": "tuan2",
+   "pinyin": "tuán",
+   "stage": 9
+  },
+  {
+   "rank": 406,
+   "char": "集",
+   "reading": "ji2",
+   "id": "ji2d",
+   "pinyin": "jí",
+   "stage": 9
+  },
+  {
+   "rank": 407,
+   "char": "百",
+   "reading": "bai3",
+   "id": "bai3",
+   "pinyin": "bǎi",
+   "stage": 9
+  },
+  {
+   "rank": 408,
+   "char": "需",
+   "reading": "xu1",
+   "id": "xu1",
+   "pinyin": "xū",
+   "stage": 9
+  },
+  {
+   "rank": 409,
+   "char": "价",
+   "reading": "jia4",
+   "id": "jia4",
+   "pinyin": "jià",
+   "stage": 9
+  },
+  {
+   "rank": 410,
+   "char": "花",
+   "reading": "hua1",
+   "id": "hua1",
+   "pinyin": "huā",
+   "stage": 9
+  },
+  {
+   "rank": 421,
+   "char": "请",
+   "reading": "qing3",
+   "id": "qing3",
+   "pinyin": "qǐng",
+   "stage": 9,
+   "families": [
+    "声旁青"
+   ]
+  },
+  {
+   "rank": 575,
+   "char": "米",
+   "reading": "mi3",
+   "id": "mi3",
+   "pinyin": "mǐ",
+   "stage": 9
+  },
+  {
+   "rank": 435,
+   "char": "精",
+   "reading": "jing1",
+   "id": "jing1b",
+   "pinyin": "jīng",
+   "stage": 9,
+   "families": [
+    "声旁青"
+   ]
+  },
+  {
+   "rank": 411,
+   "char": "党",
+   "reading": "dang3",
+   "id": "dang3",
+   "pinyin": "dǎng",
+   "stage": 9
+  },
+  {
+   "rank": 412,
+   "char": "华",
+   "reading": "hua2",
+   "id": "hua2",
+   "pinyin": "huá",
+   "stage": 9
+  },
+  {
+   "rank": 414,
+   "char": "石",
+   "reading": "shi2",
+   "id": "shi2e",
+   "pinyin": "shí",
+   "stage": 9
+  },
+  {
+   "rank": 331,
+   "char": "确",
+   "reading": "que4",
+   "id": "que4b",
+   "pinyin": "què",
+   "stage": 9
+  },
+  {
+   "rank": 415,
+   "char": "级",
+   "reading": "ji2",
+   "id": "ji2e",
+   "pinyin": "jí",
+   "stage": 9
+  },
+  {
+   "rank": 416,
+   "char": "整",
+   "reading": "zheng3",
+   "id": "zheng3",
+   "pinyin": "zhěng",
+   "stage": 9
+  },
+  {
+   "rank": 417,
+   "char": "府",
+   "reading": "fu3",
+   "id": "fu3",
+   "pinyin": "fǔ",
+   "stage": 9
+  },
+  {
+   "rank": 418,
+   "char": "离",
+   "reading": "li2",
+   "id": "li2",
+   "pinyin": "lí",
+   "stage": 9
+  },
+  {
+   "rank": 419,
+   "char": "况",
+   "reading": "kuang4",
+   "id": "kuang4",
+   "pinyin": "kuàng",
+   "stage": 9
+  },
+  {
+   "rank": 420,
+   "char": "亚",
+   "reading": "ya4",
+   "id": "ya4",
+   "pinyin": "yà",
+   "stage": 9
+  },
+  {
+   "rank": 424,
+   "char": "约",
+   "reading": "yue1",
+   "id": "yue1",
+   "pinyin": "yuē",
+   "stage": 9
+  },
+  {
+   "rank": 425,
+   "char": "示",
+   "reading": "shi4",
+   "id": "shi4g",
+   "pinyin": "shì",
+   "stage": 9
+  },
+  {
+   "rank": 423,
+   "char": "际",
+   "reading": "ji4",
+   "id": "ji4d",
+   "pinyin": "jì",
+   "stage": 9
+  },
+  {
+   "rank": 426,
+   "char": "复",
+   "reading": "fu4",
+   "id": "fu4",
+   "pinyin": "fù",
+   "stage": 9
+  },
+  {
+   "rank": 427,
+   "char": "病",
+   "reading": "bing4",
+   "id": "bing4b",
+   "pinyin": "bìng",
+   "stage": 9
+  },
+  {
+   "rank": 428,
+   "char": "息",
+   "reading": "xi1",
+   "id": "xi1b",
+   "pinyin": "xī",
+   "stage": 9
+  },
+  {
+   "rank": 430,
+   "char": "线",
+   "reading": "xian4",
+   "id": "xian4b",
+   "pinyin": "xiàn",
+   "stage": 9
+  },
+  {
+   "rank": 431,
+   "char": "似",
+   "reading": "si4",
+   "id": "si4b",
+   "pinyin": "sì",
+   "stage": 9
+  },
+  {
+   "rank": 432,
+   "char": "官",
+   "reading": "guan1",
+   "id": "guan1c",
+   "pinyin": "guān",
+   "stage": 9
+  },
+  {
+   "rank": 434,
+   "char": "断",
+   "reading": "duan4",
+   "id": "duan4",
+   "pinyin": "duàn",
+   "stage": 9
+  },
+  {
+   "rank": 436,
+   "char": "满",
+   "reading": "man3",
+   "id": "man3",
+   "pinyin": "mǎn",
+   "stage": 9
+  },
+  {
+   "rank": 437,
+   "char": "支",
+   "reading": "zhi1",
+   "id": "zhi1d",
+   "pinyin": "zhī",
+   "stage": 9
+  },
+  {
+   "rank": 422,
+   "char": "技",
+   "reading": "ji4",
+   "id": "ji4e",
+   "pinyin": "jì",
+   "stage": 9
+  },
+  {
+   "rank": 438,
+   "char": "视",
+   "reading": "shi4",
+   "id": "shi4h",
+   "pinyin": "shì",
+   "stage": 9
+  },
+  {
+   "rank": 439,
+   "char": "消",
+   "reading": "xiao1",
+   "id": "xiao1",
+   "pinyin": "xiāo",
+   "stage": 10
+  },
+  {
+   "rank": 440,
+   "char": "越",
+   "reading": "yue4",
+   "id": "yue4",
+   "pinyin": "yuè",
+   "stage": 10
+  },
+  {
+   "rank": 441,
+   "char": "器",
+   "reading": "qi4",
+   "id": "qi4b",
+   "pinyin": "qì",
+   "stage": 10
+  },
+  {
+   "rank": 442,
+   "char": "容",
+   "reading": "rong2",
+   "id": "rong2",
+   "pinyin": "róng",
+   "stage": 10
+  },
+  {
+   "rank": 443,
+   "char": "照",
+   "reading": "zhao4",
+   "id": "zhao4",
+   "pinyin": "zhào",
+   "stage": 10
+  },
+  {
+   "rank": 444,
+   "char": "须",
+   "reading": "xu1",
+   "id": "xu1b",
+   "pinyin": "xū",
+   "stage": 10
+  },
+  {
+   "rank": 445,
+   "char": "九",
+   "reading": "jiu3",
+   "id": "jiu3",
+   "pinyin": "jiǔ",
+   "stage": 10
+  },
+  {
+   "rank": 429,
+   "char": "究",
+   "reading": "jiu1",
+   "id": "jiu1",
+   "pinyin": "jiū",
+   "stage": 10
+  },
+  {
+   "rank": 447,
+   "char": "研",
+   "reading": "yan2",
+   "id": "yan2b",
+   "pinyin": "yán",
+   "stage": 10
+  },
+  {
+   "rank": 448,
+   "char": "写",
+   "reading": "xie3",
+   "id": "xie3",
+   "pinyin": "xiě",
+   "stage": 10
+  },
+  {
+   "rank": 449,
+   "char": "称",
+   "reading": "cheng1",
+   "id": "cheng1",
+   "pinyin": "chēng",
+   "stage": 10
+  },
+  {
+   "rank": 462,
+   "char": "早",
+   "reading": "zao3",
+   "id": "zao3",
+   "pinyin": "zǎo",
+   "stage": 10,
+   "families": [
+    "日族"
+   ]
+  },
+  {
+   "rank": 755,
+   "char": "免",
+   "reading": "mian3",
+   "id": "mian3",
+   "pinyin": "miǎn",
+   "stage": 10
+  },
+  {
+   "rank": 641,
+   "char": "晚",
+   "reading": "wan3",
+   "id": "wan3",
+   "pinyin": "wǎn",
+   "stage": 10,
+   "families": [
+    "日族"
+   ]
+  },
+  {
+   "rank": 921,
+   "char": "春",
+   "reading": "chun1",
+   "id": "chun1",
+   "pinyin": "chūn",
+   "stage": 10,
+   "families": [
+    "日族"
+   ]
+  },
+  {
+   "rank": 451,
+   "char": "八",
+   "reading": "ba1",
+   "id": "ba1",
+   "pinyin": "bā",
+   "stage": 10
+  },
+  {
+   "rank": 330,
+   "char": "共",
+   "reading": "gong4",
+   "id": "gong4",
+   "pinyin": "gòng",
+   "stage": 10
+  },
+  {
+   "rank": 452,
+   "char": "功",
+   "reading": "gong1",
+   "id": "gong1c",
+   "pinyin": "gōng",
+   "stage": 10
+  },
+  {
+   "rank": 453,
+   "char": "吗",
+   "reading": "ma",
+   "id": "ma",
+   "pinyin": "ma",
+   "stage": 10,
+   "families": [
+    "声旁马"
+   ]
+  },
+  {
+   "rank": 454,
+   "char": "包",
+   "reading": "bao1",
+   "id": "bao1",
+   "pinyin": "bāo",
+   "stage": 10
+  },
+  {
+   "rank": 455,
+   "char": "片",
+   "reading": "pian4",
+   "id": "pian4",
+   "pinyin": "piàn",
+   "stage": 10
+  },
+  {
+   "rank": 456,
+   "char": "史",
+   "reading": "shi3",
+   "id": "shi3c",
+   "pinyin": "shǐ",
+   "stage": 10
+  },
+  {
+   "rank": 457,
+   "char": "委",
+   "reading": "wei3",
+   "id": "wei3",
+   "pinyin": "wěi",
+   "stage": 10
+  },
+  {
+   "rank": 458,
+   "char": "乎",
+   "reading": "hu1",
+   "id": "hu1",
+   "pinyin": "hū",
+   "stage": 10
+  },
+  {
+   "rank": 459,
+   "char": "查",
+   "reading": "cha2",
+   "id": "cha2",
+   "pinyin": "chá",
+   "stage": 10
+  },
+  {
+   "rank": 460,
+   "char": "轻",
+   "reading": "qing1",
+   "id": "qing1",
+   "pinyin": "qīng",
+   "stage": 10
+  },
+  {
+   "rank": 461,
+   "char": "易",
+   "reading": "yi4",
+   "id": "yi4d",
+   "pinyin": "yì",
+   "stage": 10
+  },
+  {
+   "rank": 463,
+   "char": "曾",
+   "reading": "ceng2",
+   "id": "ceng2",
+   "pinyin": "céng",
+   "stage": 10
+  },
+  {
+   "rank": 464,
+   "char": "除",
+   "reading": "chu2",
+   "id": "chu2",
+   "pinyin": "chú",
+   "stage": 10
+  },
+  {
+   "rank": 465,
+   "char": "农",
+   "reading": "nong2",
+   "id": "nong2",
+   "pinyin": "nóng",
+   "stage": 10
+  },
+  {
+   "rank": 466,
+   "char": "找",
+   "reading": "zhao3",
+   "id": "zhao3",
+   "pinyin": "zhǎo",
+   "stage": 10
+  },
+  {
+   "rank": 467,
+   "char": "装",
+   "reading": "zhuang1",
+   "id": "zhuang1",
+   "pinyin": "zhuāng",
+   "stage": 10
+  },
+  {
+   "rank": 468,
+   "char": "广",
+   "reading": "guang3",
+   "id": "guang3",
+   "pinyin": "guǎng",
+   "stage": 10
+  },
+  {
+   "rank": 469,
+   "char": "显",
+   "reading": "xian3",
+   "id": "xian3",
+   "pinyin": "xiǎn",
+   "stage": 10
+  },
+  {
+   "rank": 471,
+   "char": "阿",
+   "reading": "a1",
+   "id": "a1",
+   "pinyin": "ā",
+   "stage": 10
+  },
+  {
+   "rank": 472,
+   "char": "李",
+   "reading": "li3",
+   "id": "li3c",
+   "pinyin": "lǐ",
+   "stage": 10
+  },
+  {
+   "rank": 473,
+   "char": "标",
+   "reading": "biao1",
+   "id": "biao1",
+   "pinyin": "biāo",
+   "stage": 10
+  },
+  {
+   "rank": 474,
+   "char": "谈",
+   "reading": "tan2",
+   "id": "tan2",
+   "pinyin": "tán",
+   "stage": 10
+  },
+  {
+   "rank": 475,
+   "char": "吃",
+   "reading": "chi1",
+   "id": "chi1",
+   "pinyin": "chī",
+   "stage": 10
+  },
+  {
+   "rank": 476,
+   "char": "图",
+   "reading": "tu2",
+   "id": "tu2",
+   "pinyin": "tú",
+   "stage": 10
+  },
+  {
+   "rank": 478,
+   "char": "六",
+   "reading": "liu4",
+   "id": "liu4",
+   "pinyin": "liù",
+   "stage": 10
+  },
+  {
+   "rank": 479,
+   "char": "引",
+   "reading": "yin3",
+   "id": "yin3",
+   "pinyin": "yǐn",
+   "stage": 10
+  },
+  {
+   "rank": 480,
+   "char": "历",
+   "reading": "li4",
+   "id": "li4d",
+   "pinyin": "lì",
+   "stage": 10
+  },
+  {
+   "rank": 481,
+   "char": "首",
+   "reading": "shou3",
+   "id": "shou3b",
+   "pinyin": "shǒu",
+   "stage": 10
+  },
+  {
+   "rank": 482,
+   "char": "医",
+   "reading": "yi1",
+   "id": "yi1",
+   "pinyin": "yī",
+   "stage": 10
+  },
+  {
+   "rank": 483,
+   "char": "局",
+   "reading": "ju2",
+   "id": "ju2",
+   "pinyin": "jú",
+   "stage": 10
+  },
+  {
+   "rank": 484,
+   "char": "突",
+   "reading": "tu1",
+   "id": "tu1",
+   "pinyin": "tū",
+   "stage": 10
+  },
+  {
+   "rank": 485,
+   "char": "专",
+   "reading": "zhuan1",
+   "id": "zhuan1",
+   "pinyin": "zhuān",
+   "stage": 10
+  },
+  {
+   "rank": 376,
+   "char": "转",
+   "reading": "zhuan3",
+   "id": "zhuan3",
+   "pinyin": "zhuǎn",
+   "stage": 10
+  },
+  {
+   "rank": 486,
+   "char": "费",
+   "reading": "fei4",
+   "id": "fei4",
+   "pinyin": "fèi",
+   "stage": 10
+  },
+  {
+   "rank": 487,
+   "char": "号",
+   "reading": "hao4",
+   "id": "hao4",
+   "pinyin": "hào",
+   "stage": 11
+  },
+  {
+   "rank": 488,
+   "char": "尽",
+   "reading": "jin4",
+   "id": "jin4c",
+   "pinyin": "jìn",
+   "stage": 11
+  },
+  {
+   "rank": 489,
+   "char": "另",
+   "reading": "ling4",
+   "id": "ling4b",
+   "pinyin": "lìng",
+   "stage": 11
+  },
+  {
+   "rank": 490,
+   "char": "周",
+   "reading": "zhou1",
+   "id": "zhou1",
+   "pinyin": "zhōu",
+   "stage": 11
+  },
+  {
+   "rank": 400,
+   "char": "调",
+   "reading": "tiao2",
+   "id": "tiao2b",
+   "pinyin": "tiáo",
+   "stage": 11
+  },
+  {
+   "rank": 491,
+   "char": "较",
+   "reading": "jiao4",
+   "id": "jiao4c",
+   "pinyin": "jiào",
+   "stage": 11
+  },
+  {
+   "rank": 492,
+   "char": "注",
+   "reading": "zhu4",
+   "id": "zhu4b",
+   "pinyin": "zhù",
+   "stage": 11
+  },
+  {
+   "rank": 493,
+   "char": "语",
+   "reading": "yu3",
+   "id": "yu3b",
+   "pinyin": "yǔ",
+   "stage": 11
+  },
+  {
+   "rank": 494,
+   "char": "仅",
+   "reading": "jin3",
+   "id": "jin3",
+   "pinyin": "jǐn",
+   "stage": 11
+  },
+  {
+   "rank": 495,
+   "char": "考",
+   "reading": "kao3",
+   "id": "kao3",
+   "pinyin": "kǎo",
+   "stage": 11
+  },
+  {
+   "rank": 496,
+   "char": "落",
+   "reading": "luo4",
+   "id": "luo4",
+   "pinyin": "luò",
+   "stage": 11
+  },
+  {
+   "rank": 498,
+   "char": "随",
+   "reading": "sui2",
+   "id": "sui2",
+   "pinyin": "suí",
+   "stage": 11
+  },
+  {
+   "rank": 499,
+   "char": "选",
+   "reading": "xuan3",
+   "id": "xuan3",
+   "pinyin": "xuǎn",
+   "stage": 11
+  },
+  {
+   "rank": 500,
+   "char": "列",
+   "reading": "lie4",
+   "id": "lie4",
+   "pinyin": "liè",
+   "stage": 11
+  },
+  {
+   "rank": 501,
+   "char": "武",
+   "reading": "wu3",
+   "id": "wu3b",
+   "pinyin": "wǔ",
+   "stage": 11
+  },
+  {
+   "rank": 502,
+   "char": "红",
+   "reading": "hong2",
+   "id": "hong2",
+   "pinyin": "hóng",
+   "stage": 11
+  },
+  {
+   "rank": 503,
+   "char": "响",
+   "reading": "xiang3",
+   "id": "xiang3b",
+   "pinyin": "xiǎng",
+   "stage": 11
+  },
+  {
+   "rank": 504,
+   "char": "虽",
+   "reading": "sui1",
+   "id": "sui1",
+   "pinyin": "suī",
+   "stage": 11
+  },
+  {
+   "rank": 505,
+   "char": "推",
+   "reading": "tui1",
+   "id": "tui1",
+   "pinyin": "tuī",
+   "stage": 11
+  },
+  {
+   "rank": 506,
+   "char": "势",
+   "reading": "shi4",
+   "id": "shi4i",
+   "pinyin": "shì",
+   "stage": 11
+  },
+  {
+   "rank": 507,
+   "char": "参",
+   "reading": "can1",
+   "id": "can1",
+   "pinyin": "cān",
+   "stage": 11
+  },
+  {
+   "rank": 508,
+   "char": "希",
+   "reading": "xi1",
+   "id": "xi1c",
+   "pinyin": "xī",
+   "stage": 11
+  },
+  {
+   "rank": 509,
+   "char": "古",
+   "reading": "gu3",
+   "id": "gu3",
+   "pinyin": "gǔ",
+   "stage": 11
+  },
+  {
+   "rank": 511,
+   "char": "构",
+   "reading": "gou4",
+   "id": "gou4",
+   "pinyin": "gòu",
+   "stage": 11
+  },
+  {
+   "rank": 513,
+   "char": "半",
+   "reading": "ban4",
+   "id": "ban4b",
+   "pinyin": "bàn",
+   "stage": 11
+  },
+  {
+   "rank": 514,
+   "char": "节",
+   "reading": "jie2",
+   "id": "jie2",
+   "pinyin": "jié",
+   "stage": 11
+  },
+  {
+   "rank": 515,
+   "char": "土",
+   "reading": "tu3",
+   "id": "tu3",
+   "pinyin": "tǔ",
+   "stage": 11,
+   "families": [
+    "土族"
+   ]
+  },
+  {
+   "rank": 413,
+   "char": "城",
+   "reading": "cheng2",
+   "id": "cheng2c",
+   "pinyin": "chéng",
+   "stage": 11
+  },
+  {
+   "rank": 446,
+   "char": "增",
+   "reading": "zeng1",
+   "id": "zeng1",
+   "pinyin": "zēng",
+   "stage": 11
+  },
+  {
+   "rank": 516,
+   "char": "投",
+   "reading": "tou2",
+   "id": "tou2b",
+   "pinyin": "tóu",
+   "stage": 11
+  },
+  {
+   "rank": 517,
+   "char": "某",
+   "reading": "mou3",
+   "id": "mou3",
+   "pinyin": "mǒu",
+   "stage": 11
+  },
+  {
+   "rank": 518,
+   "char": "案",
+   "reading": "an4",
+   "id": "an4",
+   "pinyin": "àn",
+   "stage": 11
+  },
+  {
+   "rank": 519,
+   "char": "黑",
+   "reading": "hei1",
+   "id": "hei1",
+   "pinyin": "hēi",
+   "stage": 11
+  },
+  {
+   "rank": 520,
+   "char": "维",
+   "reading": "wei2",
+   "id": "wei2b",
+   "pinyin": "wéi",
+   "stage": 11
+  },
+  {
+   "rank": 521,
+   "char": "革",
+   "reading": "ge2",
+   "id": "ge2b",
+   "pinyin": "gé",
+   "stage": 11
+  },
+  {
+   "rank": 522,
+   "char": "划",
+   "reading": "hua2",
+   "id": "hua2b",
+   "pinyin": "huá",
+   "stage": 11
+  },
+  {
+   "rank": 523,
+   "char": "敌",
+   "reading": "di2",
+   "id": "di2",
+   "pinyin": "dí",
+   "stage": 11
+  },
+  {
+   "rank": 524,
+   "char": "致",
+   "reading": "zhi4",
+   "id": "zhi4e",
+   "pinyin": "zhì",
+   "stage": 11
+  },
+  {
+   "rank": 525,
+   "char": "陈",
+   "reading": "chen2",
+   "id": "chen2",
+   "pinyin": "chén",
+   "stage": 11
+  },
+  {
+   "rank": 526,
+   "char": "律",
+   "reading": "lv4",
+   "id": "lv4",
+   "pinyin": "lǜ",
+   "stage": 11
+  },
+  {
+   "rank": 527,
+   "char": "足",
+   "reading": "zu2",
+   "id": "zu2",
+   "pinyin": "zú",
+   "stage": 11
+  },
+  {
+   "rank": 528,
+   "char": "态",
+   "reading": "tai4",
+   "id": "tai4b",
+   "pinyin": "tài",
+   "stage": 11
+  },
+  {
+   "rank": 529,
+   "char": "护",
+   "reading": "hu4",
+   "id": "hu4",
+   "pinyin": "hù",
+   "stage": 11
+  },
+  {
+   "rank": 530,
+   "char": "七",
+   "reading": "qi1",
+   "id": "qi1b",
+   "pinyin": "qī",
+   "stage": 11
+  },
+  {
+   "rank": 531,
+   "char": "兴",
+   "reading": "xing1",
+   "id": "xing1b",
+   "pinyin": "xīng",
+   "stage": 11
+  },
+  {
+   "rank": 532,
+   "char": "派",
+   "reading": "pai4",
+   "id": "pai4",
+   "pinyin": "pài",
+   "stage": 11
+  },
+  {
+   "rank": 534,
+   "char": "验",
+   "reading": "yan4",
+   "id": "yan4",
+   "pinyin": "yàn",
+   "stage": 11
+  },
+  {
+   "rank": 535,
+   "char": "责",
+   "reading": "ze2",
+   "id": "ze2b",
+   "pinyin": "zé",
+   "stage": 11
+  },
+  {
+   "rank": 536,
+   "char": "营",
+   "reading": "ying2",
+   "id": "ying2",
+   "pinyin": "yíng",
+   "stage": 11
+  },
+  {
+   "rank": 538,
+   "char": "够",
+   "reading": "gou4",
+   "id": "gou4b",
+   "pinyin": "gòu",
+   "stage": 11
+  },
+  {
+   "rank": 539,
+   "char": "章",
+   "reading": "zhang1",
+   "id": "zhang1b",
+   "pinyin": "zhāng",
+   "stage": 12
+  },
+  {
+   "rank": 540,
+   "char": "音",
+   "reading": "yin1",
+   "id": "yin1b",
+   "pinyin": "yīn",
+   "stage": 12
+  },
+  {
+   "rank": 541,
+   "char": "跟",
+   "reading": "gen1",
+   "id": "gen1b",
+   "pinyin": "gēn",
+   "stage": 12
+  },
+  {
+   "rank": 542,
+   "char": "志",
+   "reading": "zhi4",
+   "id": "zhi4f",
+   "pinyin": "zhì",
+   "stage": 12
+  },
+  {
+   "rank": 543,
+   "char": "底",
+   "reading": "di3",
+   "id": "di3",
+   "pinyin": "dǐ",
+   "stage": 12
+  },
+  {
+   "rank": 544,
+   "char": "站",
+   "reading": "zhan4",
+   "id": "zhan4b",
+   "pinyin": "zhàn",
+   "stage": 12
+  },
+  {
+   "rank": 545,
+   "char": "严",
+   "reading": "yan2",
+   "id": "yan2c",
+   "pinyin": "yán",
+   "stage": 12
+  },
+  {
+   "rank": 546,
+   "char": "巴",
+   "reading": "ba1",
+   "id": "ba1b",
+   "pinyin": "bā",
+   "stage": 12
+  },
+  {
+   "rank": 470,
+   "char": "吧",
+   "reading": "ba",
+   "id": "ba",
+   "pinyin": "ba",
+   "stage": 12
+  },
+  {
+   "rank": 547,
+   "char": "例",
+   "reading": "li4",
+   "id": "li4e",
+   "pinyin": "lì",
+   "stage": 12
+  },
+  {
+   "rank": 548,
+   "char": "防",
+   "reading": "fang2",
+   "id": "fang2b",
+   "pinyin": "fáng",
+   "stage": 12
+  },
+  {
+   "rank": 549,
+   "char": "族",
+   "reading": "zu2",
+   "id": "zu2b",
+   "pinyin": "zú",
+   "stage": 12
+  },
+  {
+   "rank": 550,
+   "char": "供",
+   "reading": "gong1",
+   "id": "gong1d",
+   "pinyin": "gōng",
+   "stage": 12
+  },
+  {
+   "rank": 551,
+   "char": "效",
+   "reading": "xiao4",
+   "id": "xiao4b",
+   "pinyin": "xiào",
+   "stage": 12
+  },
+  {
+   "rank": 552,
+   "char": "续",
+   "reading": "xu4",
+   "id": "xu4",
+   "pinyin": "xù",
+   "stage": 12
+  },
+  {
+   "rank": 553,
+   "char": "施",
+   "reading": "shi1",
+   "id": "shi1c",
+   "pinyin": "shī",
+   "stage": 12
+  },
+  {
+   "rank": 554,
+   "char": "留",
+   "reading": "liu2",
+   "id": "liu2b",
+   "pinyin": "liú",
+   "stage": 12
+  },
+  {
+   "rank": 555,
+   "char": "讲",
+   "reading": "jiang3",
+   "id": "jiang3",
+   "pinyin": "jiǎng",
+   "stage": 12
+  },
+  {
+   "rank": 556,
+   "char": "型",
+   "reading": "xing2",
+   "id": "xing2c",
+   "pinyin": "xíng",
+   "stage": 12
+  },
+  {
+   "rank": 558,
+   "char": "终",
+   "reading": "zhong1",
+   "id": "zhong1b",
+   "pinyin": "zhōng",
+   "stage": 12
+  },
+  {
+   "rank": 559,
+   "char": "答",
+   "reading": "da1",
+   "id": "da1",
+   "pinyin": "dā",
+   "stage": 12
+  },
+  {
+   "rank": 560,
+   "char": "紧",
+   "reading": "jin3",
+   "id": "jin3b",
+   "pinyin": "jǐn",
+   "stage": 12
+  },
+  {
+   "rank": 561,
+   "char": "黄",
+   "reading": "huang2",
+   "id": "huang2",
+   "pinyin": "huáng",
+   "stage": 12
+  },
+  {
+   "rank": 562,
+   "char": "绝",
+   "reading": "jue2",
+   "id": "jue2b",
+   "pinyin": "jué",
+   "stage": 12
+  },
+  {
+   "rank": 563,
+   "char": "奇",
+   "reading": "qi2",
+   "id": "qi2b",
+   "pinyin": "qí",
+   "stage": 12
+  },
+  {
+   "rank": 564,
+   "char": "察",
+   "reading": "cha2",
+   "id": "cha2b",
+   "pinyin": "chá",
+   "stage": 12
+  },
+  {
+   "rank": 565,
+   "char": "母",
+   "reading": "mu3",
+   "id": "mu3",
+   "pinyin": "mǔ",
+   "stage": 12
+  },
+  {
+   "rank": 566,
+   "char": "京",
+   "reading": "jing1",
+   "id": "jing1c",
+   "pinyin": "jīng",
+   "stage": 12
+  },
+  {
+   "rank": 567,
+   "char": "段",
+   "reading": "duan4",
+   "id": "duan4b",
+   "pinyin": "duàn",
+   "stage": 12
+  },
+  {
+   "rank": 568,
+   "char": "依",
+   "reading": "yi1",
+   "id": "yi1b",
+   "pinyin": "yī",
+   "stage": 12
+  },
+  {
+   "rank": 569,
+   "char": "批",
+   "reading": "pi1",
+   "id": "pi1",
+   "pinyin": "pī",
+   "stage": 12
+  },
+  {
+   "rank": 570,
+   "char": "群",
+   "reading": "qun2",
+   "id": "qun2",
+   "pinyin": "qún",
+   "stage": 12
+  },
+  {
+   "rank": 571,
+   "char": "项",
+   "reading": "xiang4",
+   "id": "xiang4d",
+   "pinyin": "xiàng",
+   "stage": 12
+  },
+  {
+   "rank": 572,
+   "char": "故",
+   "reading": "gu4",
+   "id": "gu4",
+   "pinyin": "gù",
+   "stage": 12
+  },
+  {
+   "rank": 573,
+   "char": "按",
+   "reading": "an4",
+   "id": "an4b",
+   "pinyin": "àn",
+   "stage": 12
+  },
+  {
+   "rank": 576,
+   "char": "围",
+   "reading": "wei2",
+   "id": "wei2c",
+   "pinyin": "wéi",
+   "stage": 12
+  },
+  {
+   "rank": 578,
+   "char": "织",
+   "reading": "zhi1",
+   "id": "zhi1e",
+   "pinyin": "zhī",
+   "stage": 12
+  },
+  {
+   "rank": 579,
+   "char": "害",
+   "reading": "hai4",
+   "id": "hai4",
+   "pinyin": "hài",
+   "stage": 12
+  },
+  {
+   "rank": 580,
+   "char": "斗",
+   "reading": "dou3",
+   "id": "dou3",
+   "pinyin": "dǒu",
+   "stage": 12
+  },
+  {
+   "rank": 557,
+   "char": "料",
+   "reading": "liao4",
+   "id": "liao4",
+   "pinyin": "liào",
+   "stage": 12
+  },
+  {
+   "rank": 581,
+   "char": "双",
+   "reading": "shuang1",
+   "id": "shuang1",
+   "pinyin": "shuāng",
+   "stage": 12
+  },
+  {
+   "rank": 583,
+   "char": "客",
+   "reading": "ke4",
+   "id": "ke4b",
+   "pinyin": "kè",
+   "stage": 12
+  },
+  {
+   "rank": 584,
+   "char": "纪",
+   "reading": "ji4",
+   "id": "ji4f",
+   "pinyin": "jì",
+   "stage": 12
+  },
+  {
+   "rank": 585,
+   "char": "采",
+   "reading": "cai3",
+   "id": "cai3",
+   "pinyin": "cǎi",
+   "stage": 12
+  },
+  {
+   "rank": 586,
+   "char": "举",
+   "reading": "ju3",
+   "id": "ju3",
+   "pinyin": "jǔ",
+   "stage": 12
+  },
+  {
+   "rank": 588,
+   "char": "攻",
+   "reading": "gong1",
+   "id": "gong1e",
+   "pinyin": "gōng",
+   "stage": 12
+  },
+  {
+   "rank": 589,
+   "char": "父",
+   "reading": "fu4",
+   "id": "fu4b",
+   "pinyin": "fù",
+   "stage": 12
+  },
+  {
+   "rank": 590,
+   "char": "苏",
+   "reading": "su1",
+   "id": "su1",
+   "pinyin": "sū",
+   "stage": 12
+  },
+  {
+   "rank": 591,
+   "char": "密",
+   "reading": "mi4",
+   "id": "mi4",
+   "pinyin": "mì",
+   "stage": 12
+  },
+  {
+   "rank": 592,
+   "char": "低",
+   "reading": "di1",
+   "id": "di1",
+   "pinyin": "dī",
+   "stage": 12
+  },
+  {
+   "rank": 593,
+   "char": "朝",
+   "reading": "chao2",
+   "id": "chao2",
+   "pinyin": "cháo",
+   "stage": 13
+  },
+  {
+   "rank": 594,
+   "char": "友",
+   "reading": "you3",
+   "id": "you3b",
+   "pinyin": "yǒu",
+   "stage": 13
+  },
+  {
+   "rank": 595,
+   "char": "诉",
+   "reading": "su4",
+   "id": "su4",
+   "pinyin": "sù",
+   "stage": 13
+  },
+  {
+   "rank": 596,
+   "char": "止",
+   "reading": "zhi3",
+   "id": "zhi3b",
+   "pinyin": "zhǐ",
+   "stage": 13
+  },
+  {
+   "rank": 450,
+   "char": "企",
+   "reading": "qi3",
+   "id": "qi3b",
+   "pinyin": "qǐ",
+   "stage": 13
+  },
+  {
+   "rank": 597,
+   "char": "细",
+   "reading": "xi4",
+   "id": "xi4b",
+   "pinyin": "xì",
+   "stage": 13
+  },
+  {
+   "rank": 598,
+   "char": "愿",
+   "reading": "yuan4",
+   "id": "yuan4b",
+   "pinyin": "yuàn",
+   "stage": 13
+  },
+  {
+   "rank": 599,
+   "char": "千",
+   "reading": "qian1",
+   "id": "qian1",
+   "pinyin": "qiān",
+   "stage": 13
+  },
+  {
+   "rank": 600,
+   "char": "值",
+   "reading": "zhi2",
+   "id": "zhi2b",
+   "pinyin": "zhí",
+   "stage": 13
+  },
+  {
+   "rank": 601,
+   "char": "仍",
+   "reading": "reng2",
+   "id": "reng2",
+   "pinyin": "réng",
+   "stage": 13
+  },
+  {
+   "rank": 602,
+   "char": "男",
+   "reading": "nan2",
+   "id": "nan2c",
+   "pinyin": "nán",
+   "stage": 13
+  },
+  {
+   "rank": 603,
+   "char": "钱",
+   "reading": "qian2",
+   "id": "qian2b",
+   "pinyin": "qián",
+   "stage": 13
+  },
+  {
+   "rank": 605,
+   "char": "网",
+   "reading": "wang3",
+   "id": "wang3b",
+   "pinyin": "wǎng",
+   "stage": 13
+  },
+  {
+   "rank": 606,
+   "char": "热",
+   "reading": "re4",
+   "id": "re4",
+   "pinyin": "rè",
+   "stage": 13
+  },
+  {
+   "rank": 607,
+   "char": "助",
+   "reading": "zhu4",
+   "id": "zhu4c",
+   "pinyin": "zhù",
+   "stage": 13
+  },
+  {
+   "rank": 608,
+   "char": "倒",
+   "reading": "dao3",
+   "id": "dao3b",
+   "pinyin": "dǎo",
+   "stage": 13
+  },
+  {
+   "rank": 609,
+   "char": "育",
+   "reading": "yu4",
+   "id": "yu4",
+   "pinyin": "yù",
+   "stage": 13
+  },
+  {
+   "rank": 610,
+   "char": "属",
+   "reading": "shu3",
+   "id": "shu3b",
+   "pinyin": "shǔ",
+   "stage": 13
+  },
+  {
+   "rank": 612,
+   "char": "帝",
+   "reading": "di4",
+   "id": "di4c",
+   "pinyin": "dì",
+   "stage": 13
+  },
+  {
+   "rank": 613,
+   "char": "限",
+   "reading": "xian4",
+   "id": "xian4c",
+   "pinyin": "xiàn",
+   "stage": 13
+  },
+  {
+   "rank": 614,
+   "char": "船",
+   "reading": "chuan2",
+   "id": "chuan2b",
+   "pinyin": "chuán",
+   "stage": 13
+  },
+  {
+   "rank": 615,
+   "char": "脸",
+   "reading": "lian3",
+   "id": "lian3",
+   "pinyin": "liǎn",
+   "stage": 13
+  },
+  {
+   "rank": 616,
+   "char": "职",
+   "reading": "zhi2",
+   "id": "zhi2c",
+   "pinyin": "zhí",
+   "stage": 13
+  },
+  {
+   "rank": 617,
+   "char": "速",
+   "reading": "su4",
+   "id": "su4b",
+   "pinyin": "sù",
+   "stage": 13
+  },
+  {
+   "rank": 618,
+   "char": "刻",
+   "reading": "ke4",
+   "id": "ke4c",
+   "pinyin": "kè",
+   "stage": 13
+  },
+  {
+   "rank": 619,
+   "char": "乐",
+   "reading": "le4",
+   "id": "le4",
+   "pinyin": "lè",
+   "stage": 13
+  },
+  {
+   "rank": 620,
+   "char": "否",
+   "reading": "fou3",
+   "id": "fou3",
+   "pinyin": "fǒu",
+   "stage": 13
+  },
+  {
+   "rank": 621,
+   "char": "刚",
+   "reading": "gang1",
+   "id": "gang1",
+   "pinyin": "gāng",
+   "stage": 13
+  },
+  {
+   "rank": 622,
+   "char": "威",
+   "reading": "wei1",
+   "id": "wei1",
+   "pinyin": "wēi",
+   "stage": 13
+  },
+  {
+   "rank": 623,
+   "char": "毛",
+   "reading": "mao2",
+   "id": "mao2",
+   "pinyin": "máo",
+   "stage": 13
+  },
+  {
+   "rank": 624,
+   "char": "状",
+   "reading": "zhuang4",
+   "id": "zhuang4",
+   "pinyin": "zhuàng",
+   "stage": 13
+  },
+  {
+   "rank": 625,
+   "char": "率",
+   "reading": "lv4",
+   "id": "lv4b",
+   "pinyin": "lǜ",
+   "stage": 13
+  },
+  {
+   "rank": 626,
+   "char": "甚",
+   "reading": "shen4",
+   "id": "shen4",
+   "pinyin": "shèn",
+   "stage": 13
+  },
+  {
+   "rank": 627,
+   "char": "独",
+   "reading": "du2",
+   "id": "du2",
+   "pinyin": "dú",
+   "stage": 13
+  },
+  {
+   "rank": 628,
+   "char": "球",
+   "reading": "qiu2",
+   "id": "qiu2b",
+   "pinyin": "qiú",
+   "stage": 13
+  },
+  {
+   "rank": 629,
+   "char": "般",
+   "reading": "ban1",
+   "id": "ban1",
+   "pinyin": "bān",
+   "stage": 13
+  },
+  {
+   "rank": 630,
+   "char": "普",
+   "reading": "pu3",
+   "id": "pu3",
+   "pinyin": "pǔ",
+   "stage": 13
+  },
+  {
+   "rank": 631,
+   "char": "怕",
+   "reading": "pa4",
+   "id": "pa4",
+   "pinyin": "pà",
+   "stage": 13
+  },
+  {
+   "rank": 632,
+   "char": "弹",
+   "reading": "tan2",
+   "id": "tan2b",
+   "pinyin": "tán",
+   "stage": 13
+  },
+  {
+   "rank": 633,
+   "char": "校",
+   "reading": "xiao4",
+   "id": "xiao4c",
+   "pinyin": "xiào",
+   "stage": 13
+  },
+  {
+   "rank": 634,
+   "char": "苦",
+   "reading": "ku3",
+   "id": "ku3",
+   "pinyin": "kǔ",
+   "stage": 13
+  },
+  {
+   "rank": 635,
+   "char": "创",
+   "reading": "chuang4",
+   "id": "chuang4",
+   "pinyin": "chuàng",
+   "stage": 13
+  },
+  {
+   "rank": 636,
+   "char": "假",
+   "reading": "jia3",
+   "id": "jia3",
+   "pinyin": "jiǎ",
+   "stage": 13
+  },
+  {
+   "rank": 637,
+   "char": "久",
+   "reading": "jiu3",
+   "id": "jiu3b",
+   "pinyin": "jiǔ",
+   "stage": 13
+  },
+  {
+   "rank": 638,
+   "char": "错",
+   "reading": "cuo4",
+   "id": "cuo4",
+   "pinyin": "cuò",
+   "stage": 13
+  },
+  {
+   "rank": 639,
+   "char": "承",
+   "reading": "cheng2",
+   "id": "cheng2d",
+   "pinyin": "chéng",
+   "stage": 13
+  },
+  {
+   "rank": 640,
+   "char": "印",
+   "reading": "yin4",
+   "id": "yin4",
+   "pinyin": "yìn",
+   "stage": 13
+  },
+  {
+   "rank": 642,
+   "char": "兰",
+   "reading": "lan2",
+   "id": "lan2",
+   "pinyin": "lán",
+   "stage": 13
+  },
+  {
+   "rank": 643,
+   "char": "试",
+   "reading": "shi4",
+   "id": "shi4j",
+   "pinyin": "shì",
+   "stage": 13
+  },
+  {
+   "rank": 644,
+   "char": "股",
+   "reading": "gu3",
+   "id": "gu3b",
+   "pinyin": "gǔ",
+   "stage": 13
+  },
+  {
+   "rank": 645,
+   "char": "拿",
+   "reading": "na2",
+   "id": "na2",
+   "pinyin": "ná",
+   "stage": 14
+  },
+  {
+   "rank": 646,
+   "char": "脑",
+   "reading": "nao3",
+   "id": "nao3",
+   "pinyin": "nǎo",
+   "stage": 14
+  },
+  {
+   "rank": 647,
+   "char": "预",
+   "reading": "yu4",
+   "id": "yu4b",
+   "pinyin": "yù",
+   "stage": 14
+  },
+  {
+   "rank": 648,
+   "char": "谁",
+   "reading": "shei2",
+   "id": "shei2",
+   "pinyin": "shéi",
+   "stage": 14
+  },
+  {
+   "rank": 649,
+   "char": "益",
+   "reading": "yi4",
+   "id": "yi4e",
+   "pinyin": "yì",
+   "stage": 14
+  },
+  {
+   "rank": 650,
+   "char": "阳",
+   "reading": "yang2",
+   "id": "yang2",
+   "pinyin": "yáng",
+   "stage": 14
+  },
+  {
+   "rank": 652,
+   "char": "哪",
+   "reading": "na3",
+   "id": "na3",
+   "pinyin": "nǎ",
+   "stage": 14
+  },
+  {
+   "rank": 653,
+   "char": "微",
+   "reading": "wei1",
+   "id": "wei1b",
+   "pinyin": "wēi",
+   "stage": 14
+  },
+  {
+   "rank": 654,
+   "char": "尼",
+   "reading": "ni2",
+   "id": "ni2",
+   "pinyin": "ní",
+   "stage": 14
+  },
+  {
+   "rank": 655,
+   "char": "继",
+   "reading": "ji4",
+   "id": "ji4g",
+   "pinyin": "jì",
+   "stage": 14
+  },
+  {
+   "rank": 656,
+   "char": "送",
+   "reading": "song4",
+   "id": "song4",
+   "pinyin": "sòng",
+   "stage": 14
+  },
+  {
+   "rank": 657,
+   "char": "急",
+   "reading": "ji2",
+   "id": "ji2f",
+   "pinyin": "jí",
+   "stage": 14
+  },
+  {
+   "rank": 658,
+   "char": "血",
+   "reading": "xie3",
+   "id": "xie3b",
+   "pinyin": "xiě",
+   "stage": 14
+  },
+  {
+   "rank": 659,
+   "char": "惊",
+   "reading": "jing1",
+   "id": "jing1d",
+   "pinyin": "jīng",
+   "stage": 14
+  },
+  {
+   "rank": 660,
+   "char": "伤",
+   "reading": "shang1",
+   "id": "shang1b",
+   "pinyin": "shāng",
+   "stage": 14
+  },
+  {
+   "rank": 661,
+   "char": "素",
+   "reading": "su4",
+   "id": "su4c",
+   "pinyin": "sù",
+   "stage": 14
+  },
+  {
+   "rank": 662,
+   "char": "药",
+   "reading": "yao4",
+   "id": "yao4b",
+   "pinyin": "yào",
+   "stage": 14
+  },
+  {
+   "rank": 663,
+   "char": "适",
+   "reading": "shi4",
+   "id": "shi4k",
+   "pinyin": "shì",
+   "stage": 14
+  },
+  {
+   "rank": 665,
+   "char": "夜",
+   "reading": "ye4",
+   "id": "ye4b",
+   "pinyin": "yè",
+   "stage": 14
+  },
+  {
+   "rank": 666,
+   "char": "省",
+   "reading": "sheng3",
+   "id": "sheng3",
+   "pinyin": "shěng",
+   "stage": 14
+  },
+  {
+   "rank": 667,
+   "char": "初",
+   "reading": "chu1",
+   "id": "chu1b",
+   "pinyin": "chū",
+   "stage": 14
+  },
+  {
+   "rank": 668,
+   "char": "喜",
+   "reading": "xi3",
+   "id": "xi3",
+   "pinyin": "xǐ",
+   "stage": 14
+  },
+  {
+   "rank": 669,
+   "char": "卫",
+   "reading": "wei4",
+   "id": "wei4c",
+   "pinyin": "wèi",
+   "stage": 14
+  },
+  {
+   "rank": 670,
+   "char": "源",
+   "reading": "yuan2",
+   "id": "yuan2d",
+   "pinyin": "yuán",
+   "stage": 14
+  },
+  {
+   "rank": 671,
+   "char": "食",
+   "reading": "shi2",
+   "id": "shi2f",
+   "pinyin": "shí",
+   "stage": 14
+  },
+  {
+   "rank": 672,
+   "char": "险",
+   "reading": "xian3",
+   "id": "xian3b",
+   "pinyin": "xiǎn",
+   "stage": 14
+  },
+  {
+   "rank": 673,
+   "char": "待",
+   "reading": "dai1",
+   "id": "dai1",
+   "pinyin": "dāi",
+   "stage": 14
+  },
+  {
+   "rank": 674,
+   "char": "述",
+   "reading": "shu4",
+   "id": "shu4b",
+   "pinyin": "shù",
+   "stage": 14
+  },
+  {
+   "rank": 675,
+   "char": "陆",
+   "reading": "lu4",
+   "id": "lu4b",
+   "pinyin": "lù",
+   "stage": 14
+  },
+  {
+   "rank": 676,
+   "char": "习",
+   "reading": "xi2",
+   "id": "xi2",
+   "pinyin": "xí",
+   "stage": 14
+  },
+  {
+   "rank": 677,
+   "char": "置",
+   "reading": "zhi4",
+   "id": "zhi4g",
+   "pinyin": "zhì",
+   "stage": 14
+  },
+  {
+   "rank": 678,
+   "char": "居",
+   "reading": "ju1",
+   "id": "ju1",
+   "pinyin": "jū",
+   "stage": 14
+  },
+  {
+   "rank": 679,
+   "char": "劳",
+   "reading": "lao2",
+   "id": "lao2",
+   "pinyin": "láo",
+   "stage": 14
+  },
+  {
+   "rank": 680,
+   "char": "财",
+   "reading": "cai2",
+   "id": "cai2b",
+   "pinyin": "cái",
+   "stage": 14
+  },
+  {
+   "rank": 681,
+   "char": "环",
+   "reading": "huan2",
+   "id": "huan2",
+   "pinyin": "huán",
+   "stage": 14
+  },
+  {
+   "rank": 682,
+   "char": "排",
+   "reading": "pai2",
+   "id": "pai2",
+   "pinyin": "pái",
+   "stage": 14
+  },
+  {
+   "rank": 683,
+   "char": "福",
+   "reading": "fu2",
+   "id": "fu2b",
+   "pinyin": "fú",
+   "stage": 14
+  },
+  {
+   "rank": 684,
+   "char": "纳",
+   "reading": "na4",
+   "id": "na4b",
+   "pinyin": "nà",
+   "stage": 14
+  },
+  {
+   "rank": 685,
+   "char": "欢",
+   "reading": "huan1",
+   "id": "huan1",
+   "pinyin": "huān",
+   "stage": 14
+  },
+  {
+   "rank": 687,
+   "char": "警",
+   "reading": "jing3",
+   "id": "jing3",
+   "pinyin": "jǐng",
+   "stage": 14
+  },
+  {
+   "rank": 688,
+   "char": "获",
+   "reading": "huo4",
+   "id": "huo4b",
+   "pinyin": "huò",
+   "stage": 14
+  },
+  {
+   "rank": 689,
+   "char": "模",
+   "reading": "mo2",
+   "id": "mo2",
+   "pinyin": "mó",
+   "stage": 14
+  },
+  {
+   "rank": 690,
+   "char": "充",
+   "reading": "chong1",
+   "id": "chong1",
+   "pinyin": "chōng",
+   "stage": 14
+  },
+  {
+   "rank": 691,
+   "char": "负",
+   "reading": "fu4",
+   "id": "fu4c",
+   "pinyin": "fù",
+   "stage": 14
+  },
+  {
+   "rank": 692,
+   "char": "云",
+   "reading": "yun2",
+   "id": "yun2",
+   "pinyin": "yún",
+   "stage": 14
+  },
+  {
+   "rank": 693,
+   "char": "停",
+   "reading": "ting2",
+   "id": "ting2",
+   "pinyin": "tíng",
+   "stage": 14
+  },
+  {
+   "rank": 695,
+   "char": "游",
+   "reading": "you2",
+   "id": "you2b",
+   "pinyin": "yóu",
+   "stage": 14
+  },
+  {
+   "rank": 696,
+   "char": "龙",
+   "reading": "long2",
+   "id": "long2",
+   "pinyin": "lóng",
+   "stage": 14
+  },
+  {
+   "rank": 697,
+   "char": "树",
+   "reading": "shu4",
+   "id": "shu4c",
+   "pinyin": "shù",
+   "stage": 14
+  },
+  {
+   "rank": 698,
+   "char": "疑",
+   "reading": "yi2",
+   "id": "yi2",
+   "pinyin": "yí",
+   "stage": 14
+  },
+  {
+   "rank": 699,
+   "char": "层",
+   "reading": "ceng2",
+   "id": "ceng2b",
+   "pinyin": "céng",
+   "stage": 15
+  },
+  {
+   "rank": 700,
+   "char": "冷",
+   "reading": "leng3",
+   "id": "leng3",
+   "pinyin": "lěng",
+   "stage": 15
+  },
+  {
+   "rank": 702,
+   "char": "冲",
+   "reading": "chong1",
+   "id": "chong1b",
+   "pinyin": "chōng",
+   "stage": 15
+  },
+  {
+   "rank": 703,
+   "char": "射",
+   "reading": "she4",
+   "id": "she4c",
+   "pinyin": "shè",
+   "stage": 15
+  },
+  {
+   "rank": 705,
+   "char": "范",
+   "reading": "fan4",
+   "id": "fan4",
+   "pinyin": "fàn",
+   "stage": 15
+  },
+  {
+   "rank": 706,
+   "char": "竟",
+   "reading": "jing4",
+   "id": "jing4",
+   "pinyin": "jìng",
+   "stage": 15
+  },
+  {
+   "rank": 582,
+   "char": "境",
+   "reading": "jing4",
+   "id": "jing4b",
+   "pinyin": "jìng",
+   "stage": 15
+  },
+  {
+   "rank": 707,
+   "char": "句",
+   "reading": "ju4",
+   "id": "ju4c",
+   "pinyin": "jù",
+   "stage": 15
+  },
+  {
+   "rank": 708,
+   "char": "室",
+   "reading": "shi4",
+   "id": "shi4l",
+   "pinyin": "shì",
+   "stage": 15
+  },
+  {
+   "rank": 709,
+   "char": "异",
+   "reading": "yi4",
+   "id": "yi4f",
+   "pinyin": "yì",
+   "stage": 15
+  },
+  {
+   "rank": 710,
+   "char": "激",
+   "reading": "ji1",
+   "id": "ji1d",
+   "pinyin": "jī",
+   "stage": 15
+  },
+  {
+   "rank": 711,
+   "char": "汉",
+   "reading": "han4",
+   "id": "han4",
+   "pinyin": "hàn",
+   "stage": 15
+  },
+  {
+   "rank": 712,
+   "char": "村",
+   "reading": "cun1",
+   "id": "cun1",
+   "pinyin": "cūn",
+   "stage": 15
+  },
+  {
+   "rank": 713,
+   "char": "哈",
+   "reading": "ha1",
+   "id": "ha1",
+   "pinyin": "hā",
+   "stage": 15
+  },
+  {
+   "rank": 714,
+   "char": "策",
+   "reading": "ce4",
+   "id": "ce4",
+   "pinyin": "cè",
+   "stage": 15
+  },
+  {
+   "rank": 715,
+   "char": "演",
+   "reading": "yan3",
+   "id": "yan3b",
+   "pinyin": "yǎn",
+   "stage": 15
+  },
+  {
+   "rank": 716,
+   "char": "简",
+   "reading": "jian3",
+   "id": "jian3",
+   "pinyin": "jiǎn",
+   "stage": 15
+  },
+  {
+   "rank": 717,
+   "char": "卡",
+   "reading": "ka3",
+   "id": "ka3",
+   "pinyin": "kǎ",
+   "stage": 15,
+   "families": [
+    "会意合成族"
+   ]
+  },
+  {
+   "rank": 718,
+   "char": "罪",
+   "reading": "zui4",
+   "id": "zui4b",
+   "pinyin": "zuì",
+   "stage": 15
+  },
+  {
+   "rank": 719,
+   "char": "判",
+   "reading": "pan4",
+   "id": "pan4",
+   "pinyin": "pàn",
+   "stage": 15
+  },
+  {
+   "rank": 720,
+   "char": "担",
+   "reading": "dan1",
+   "id": "dan1b",
+   "pinyin": "dān",
+   "stage": 15
+  },
+  {
+   "rank": 721,
+   "char": "州",
+   "reading": "zhou1",
+   "id": "zhou1b",
+   "pinyin": "zhōu",
+   "stage": 15
+  },
+  {
+   "rank": 701,
+   "char": "洲",
+   "reading": "zhou1",
+   "id": "zhou1c",
+   "pinyin": "zhōu",
+   "stage": 15
+  },
+  {
+   "rank": 722,
+   "char": "静",
+   "reading": "jing4",
+   "id": "jing4c",
+   "pinyin": "jìng",
+   "stage": 15
+  },
+  {
+   "rank": 723,
+   "char": "退",
+   "reading": "tui4",
+   "id": "tui4",
+   "pinyin": "tuì",
+   "stage": 15
+  },
+  {
+   "rank": 724,
+   "char": "既",
+   "reading": "ji4",
+   "id": "ji4h",
+   "pinyin": "jì",
+   "stage": 15
+  },
+  {
+   "rank": 725,
+   "char": "衣",
+   "reading": "yi1",
+   "id": "yi1c",
+   "pinyin": "yī",
+   "stage": 15
+  },
+  {
+   "rank": 726,
+   "char": "您",
+   "reading": "nin2",
+   "id": "nin2",
+   "pinyin": "nín",
+   "stage": 15
+  },
+  {
+   "rank": 727,
+   "char": "宗",
+   "reading": "zong1",
+   "id": "zong1",
+   "pinyin": "zōng",
+   "stage": 15
+  },
+  {
+   "rank": 728,
+   "char": "积",
+   "reading": "ji1",
+   "id": "ji1e",
+   "pinyin": "jī",
+   "stage": 15
+  },
+  {
+   "rank": 729,
+   "char": "余",
+   "reading": "yu2",
+   "id": "yu2b",
+   "pinyin": "yú",
+   "stage": 15
+  },
+  {
+   "rank": 730,
+   "char": "痛",
+   "reading": "tong4",
+   "id": "tong4",
+   "pinyin": "tòng",
+   "stage": 15
+  },
+  {
+   "rank": 731,
+   "char": "检",
+   "reading": "jian3",
+   "id": "jian3b",
+   "pinyin": "jiǎn",
+   "stage": 15
+  },
+  {
+   "rank": 732,
+   "char": "差",
+   "reading": "cha1",
+   "id": "cha1",
+   "pinyin": "chā",
+   "stage": 15
+  },
+  {
+   "rank": 733,
+   "char": "富",
+   "reading": "fu4",
+   "id": "fu4d",
+   "pinyin": "fù",
+   "stage": 15
+  },
+  {
+   "rank": 734,
+   "char": "灵",
+   "reading": "ling2",
+   "id": "ling2",
+   "pinyin": "líng",
+   "stage": 15
+  },
+  {
+   "rank": 735,
+   "char": "协",
+   "reading": "xie2",
+   "id": "xie2",
+   "pinyin": "xié",
+   "stage": 15
+  },
+  {
+   "rank": 736,
+   "char": "角",
+   "reading": "jiao3",
+   "id": "jiao3",
+   "pinyin": "jiǎo",
+   "stage": 15
+  },
+  {
+   "rank": 737,
+   "char": "占",
+   "reading": "zhan4",
+   "id": "zhan4c",
+   "pinyin": "zhàn",
+   "stage": 15
+  },
+  {
+   "rank": 738,
+   "char": "配",
+   "reading": "pei4",
+   "id": "pei4",
+   "pinyin": "pèi",
+   "stage": 15
+  },
+  {
+   "rank": 739,
+   "char": "征",
+   "reading": "zheng1",
+   "id": "zheng1b",
+   "pinyin": "zhēng",
+   "stage": 15
+  },
+  {
+   "rank": 740,
+   "char": "修",
+   "reading": "xiu1",
+   "id": "xiu1",
+   "pinyin": "xiū",
+   "stage": 15
+  },
+  {
+   "rank": 741,
+   "char": "皮",
+   "reading": "pi2",
+   "id": "pi2",
+   "pinyin": "pí",
+   "stage": 15
+  },
+  {
+   "rank": 604,
+   "char": "破",
+   "reading": "po4",
+   "id": "po4",
+   "pinyin": "pò",
+   "stage": 15
+  },
+  {
+   "rank": 664,
+   "char": "波",
+   "reading": "bo1",
+   "id": "bo1",
+   "pinyin": "bō",
+   "stage": 15
+  },
+  {
+   "rank": 742,
+   "char": "挥",
+   "reading": "hui1",
+   "id": "hui1",
+   "pinyin": "huī",
+   "stage": 15
+  },
+  {
+   "rank": 743,
+   "char": "胜",
+   "reading": "sheng4",
+   "id": "sheng4",
+   "pinyin": "shèng",
+   "stage": 15
+  },
+  {
+   "rank": 744,
+   "char": "降",
+   "reading": "jiang4",
+   "id": "jiang4",
+   "pinyin": "jiàng",
+   "stage": 15
+  },
+  {
+   "rank": 746,
+   "char": "审",
+   "reading": "shen3",
+   "id": "shen3",
+   "pinyin": "shěn",
+   "stage": 15
+  },
+  {
+   "rank": 747,
+   "char": "沉",
+   "reading": "chen2",
+   "id": "chen2b",
+   "pinyin": "chén",
+   "stage": 15
+  },
+  {
+   "rank": 748,
+   "char": "坚",
+   "reading": "jian1",
+   "id": "jian1b",
+   "pinyin": "jiān",
+   "stage": 16
+  },
+  {
+   "rank": 749,
+   "char": "善",
+   "reading": "shan4",
+   "id": "shan4",
+   "pinyin": "shàn",
+   "stage": 16
+  },
+  {
+   "rank": 751,
+   "char": "刘",
+   "reading": "liu2",
+   "id": "liu2c",
+   "pinyin": "liú",
+   "stage": 16
+  },
+  {
+   "rank": 752,
+   "char": "读",
+   "reading": "du2",
+   "id": "du2b",
+   "pinyin": "dú",
+   "stage": 16
+  },
+  {
+   "rank": 753,
+   "char": "啊",
+   "reading": "a",
+   "id": "a",
+   "pinyin": "a",
+   "stage": 16
+  },
+  {
+   "rank": 754,
+   "char": "超",
+   "reading": "chao1",
+   "id": "chao1",
+   "pinyin": "chāo",
+   "stage": 16
+  },
+  {
+   "rank": 756,
+   "char": "压",
+   "reading": "ya1",
+   "id": "ya1",
+   "pinyin": "yā",
+   "stage": 16
+  },
+  {
+   "rank": 757,
+   "char": "银",
+   "reading": "yin2",
+   "id": "yin2",
+   "pinyin": "yín",
+   "stage": 16
+  },
+  {
+   "rank": 758,
+   "char": "买",
+   "reading": "mai3",
+   "id": "mai3",
+   "pinyin": "mǎi",
+   "stage": 16
+  },
+  {
+   "rank": 759,
+   "char": "皇",
+   "reading": "huang2",
+   "id": "huang2b",
+   "pinyin": "huáng",
+   "stage": 16
+  },
+  {
+   "rank": 760,
+   "char": "养",
+   "reading": "yang3",
+   "id": "yang3",
+   "pinyin": "yǎng",
+   "stage": 16
+  },
+  {
+   "rank": 761,
+   "char": "伊",
+   "reading": "yi1",
+   "id": "yi1d",
+   "pinyin": "yī",
+   "stage": 16
+  },
+  {
+   "rank": 762,
+   "char": "怀",
+   "reading": "huai2",
+   "id": "huai2",
+   "pinyin": "huái",
+   "stage": 16
+  },
+  {
+   "rank": 763,
+   "char": "执",
+   "reading": "zhi2",
+   "id": "zhi2d",
+   "pinyin": "zhí",
+   "stage": 16
+  },
+  {
+   "rank": 764,
+   "char": "副",
+   "reading": "fu4",
+   "id": "fu4e",
+   "pinyin": "fù",
+   "stage": 16
+  },
+  {
+   "rank": 765,
+   "char": "乱",
+   "reading": "luan4",
+   "id": "luan4",
+   "pinyin": "luàn",
+   "stage": 16
+  },
+  {
+   "rank": 766,
+   "char": "抗",
+   "reading": "kang4",
+   "id": "kang4",
+   "pinyin": "kàng",
+   "stage": 16
+  },
+  {
+   "rank": 767,
+   "char": "犯",
+   "reading": "fan4",
+   "id": "fan4b",
+   "pinyin": "fàn",
+   "stage": 16
+  },
+  {
+   "rank": 768,
+   "char": "追",
+   "reading": "zhui1",
+   "id": "zhui1",
+   "pinyin": "zhuī",
+   "stage": 16
+  },
+  {
+   "rank": 769,
+   "char": "帮",
+   "reading": "bang1",
+   "id": "bang1",
+   "pinyin": "bāng",
+   "stage": 16
+  },
+  {
+   "rank": 770,
+   "char": "宣",
+   "reading": "xuan1",
+   "id": "xuan1",
+   "pinyin": "xuān",
+   "stage": 16
+  },
+  {
+   "rank": 771,
+   "char": "佛",
+   "reading": "fo2",
+   "id": "fo2",
+   "pinyin": "fó",
+   "stage": 16
+  },
+  {
+   "rank": 772,
+   "char": "岁",
+   "reading": "sui4",
+   "id": "sui4",
+   "pinyin": "suì",
+   "stage": 16
+  },
+  {
+   "rank": 773,
+   "char": "航",
+   "reading": "hang2",
+   "id": "hang2",
+   "pinyin": "háng",
+   "stage": 16
+  },
+  {
+   "rank": 774,
+   "char": "优",
+   "reading": "you1",
+   "id": "you1",
+   "pinyin": "yōu",
+   "stage": 16
+  },
+  {
+   "rank": 775,
+   "char": "怪",
+   "reading": "guai4",
+   "id": "guai4",
+   "pinyin": "guài",
+   "stage": 16
+  },
+  {
+   "rank": 776,
+   "char": "香",
+   "reading": "xiang1",
+   "id": "xiang1b",
+   "pinyin": "xiāng",
+   "stage": 16
+  },
+  {
+   "rank": 777,
+   "char": "著",
+   "reading": "zhu4",
+   "id": "zhu4d",
+   "pinyin": "zhù",
+   "stage": 16
+  },
+  {
+   "rank": 778,
+   "char": "田",
+   "reading": "tian2",
+   "id": "tian2",
+   "pinyin": "tián",
+   "stage": 16
+  },
+  {
+   "rank": 686,
+   "char": "雷",
+   "reading": "lei2",
+   "id": "lei2",
+   "pinyin": "léi",
+   "stage": 16
+  },
+  {
+   "rank": 704,
+   "char": "略",
+   "reading": "lve4",
+   "id": "lve4",
+   "pinyin": "lüè",
+   "stage": 16
+  },
+  {
+   "rank": 779,
+   "char": "铁",
+   "reading": "tie3",
+   "id": "tie3",
+   "pinyin": "tiě",
+   "stage": 16
+  },
+  {
+   "rank": 780,
+   "char": "控",
+   "reading": "kong4",
+   "id": "kong4",
+   "pinyin": "kòng",
+   "stage": 16
+  },
+  {
+   "rank": 781,
+   "char": "税",
+   "reading": "shui4",
+   "id": "shui4",
+   "pinyin": "shuì",
+   "stage": 16
+  },
+  {
+   "rank": 782,
+   "char": "左",
+   "reading": "zuo3",
+   "id": "zuo3",
+   "pinyin": "zuǒ",
+   "stage": 16
+  },
+  {
+   "rank": 783,
+   "char": "右",
+   "reading": "you4",
+   "id": "you4b",
+   "pinyin": "yòu",
+   "stage": 16
+  },
+  {
+   "rank": 651,
+   "char": "若",
+   "reading": "ruo4",
+   "id": "ruo4",
+   "pinyin": "ruò",
+   "stage": 16
+  },
+  {
+   "rank": 784,
+   "char": "份",
+   "reading": "fen4",
+   "id": "fen4",
+   "pinyin": "fèn",
+   "stage": 16
+  },
+  {
+   "rank": 785,
+   "char": "穿",
+   "reading": "chuan1",
+   "id": "chuan1",
+   "pinyin": "chuān",
+   "stage": 16
+  },
+  {
+   "rank": 786,
+   "char": "艺",
+   "reading": "yi4",
+   "id": "yi4g",
+   "pinyin": "yì",
+   "stage": 16
+  },
+  {
+   "rank": 787,
+   "char": "背",
+   "reading": "bei1",
+   "id": "bei1",
+   "pinyin": "bēi",
+   "stage": 16
+  },
+  {
+   "rank": 788,
+   "char": "阵",
+   "reading": "zhen4",
+   "id": "zhen4",
+   "pinyin": "zhèn",
+   "stage": 16
+  },
+  {
+   "rank": 789,
+   "char": "草",
+   "reading": "cao3",
+   "id": "cao3",
+   "pinyin": "cǎo",
+   "stage": 16
+  },
+  {
+   "rank": 790,
+   "char": "脚",
+   "reading": "jiao3",
+   "id": "jiao3b",
+   "pinyin": "jiǎo",
+   "stage": 16
+  },
+  {
+   "rank": 791,
+   "char": "概",
+   "reading": "gai4",
+   "id": "gai4",
+   "pinyin": "gài",
+   "stage": 16
+  },
+  {
+   "rank": 792,
+   "char": "恶",
+   "reading": "e3",
+   "id": "e3",
+   "pinyin": "ě",
+   "stage": 16
+  },
+  {
+   "rank": 793,
+   "char": "块",
+   "reading": "kuai4",
+   "id": "kuai4b",
+   "pinyin": "kuài",
+   "stage": 16
+  },
+  {
+   "rank": 794,
+   "char": "顿",
+   "reading": "dun4",
+   "id": "dun4",
+   "pinyin": "dùn",
+   "stage": 16
+  },
+  {
+   "rank": 795,
+   "char": "敢",
+   "reading": "gan3",
+   "id": "gan3b",
+   "pinyin": "gǎn",
+   "stage": 16
+  },
+  {
+   "rank": 796,
+   "char": "守",
+   "reading": "shou3",
+   "id": "shou3c",
+   "pinyin": "shǒu",
+   "stage": 16
+  },
+  {
+   "rank": 797,
+   "char": "酒",
+   "reading": "jiu3",
+   "id": "jiu3c",
+   "pinyin": "jiǔ",
+   "stage": 17
+  },
+  {
+   "rank": 798,
+   "char": "岛",
+   "reading": "dao3",
+   "id": "dao3c",
+   "pinyin": "dǎo",
+   "stage": 17
+  },
+  {
+   "rank": 799,
+   "char": "托",
+   "reading": "tuo1",
+   "id": "tuo1",
+   "pinyin": "tuō",
+   "stage": 17
+  },
+  {
+   "rank": 800,
+   "char": "央",
+   "reading": "yang1",
+   "id": "yang1",
+   "pinyin": "yāng",
+   "stage": 17
+  },
+  {
+   "rank": 801,
+   "char": "户",
+   "reading": "hu4",
+   "id": "hu4b",
+   "pinyin": "hù",
+   "stage": 17
+  },
+  {
+   "rank": 802,
+   "char": "烈",
+   "reading": "lie4",
+   "id": "lie4b",
+   "pinyin": "liè",
+   "stage": 17
+  },
+  {
+   "rank": 803,
+   "char": "洋",
+   "reading": "yang2",
+   "id": "yang2b",
+   "pinyin": "yáng",
+   "stage": 17
+  },
+  {
+   "rank": 804,
+   "char": "哥",
+   "reading": "ge1",
+   "id": "ge1",
+   "pinyin": "gē",
+   "stage": 17
+  },
+  {
+   "rank": 805,
+   "char": "索",
+   "reading": "suo3",
+   "id": "suo3b",
+   "pinyin": "suǒ",
+   "stage": 17
+  },
+  {
+   "rank": 806,
+   "char": "胡",
+   "reading": "hu2",
+   "id": "hu2",
+   "pinyin": "hú",
+   "stage": 17
+  },
+  {
+   "rank": 807,
+   "char": "款",
+   "reading": "kuan3",
+   "id": "kuan3",
+   "pinyin": "kuǎn",
+   "stage": 17
+  },
+  {
+   "rank": 808,
+   "char": "靠",
+   "reading": "kao4",
+   "id": "kao4",
+   "pinyin": "kào",
+   "stage": 17
+  },
+  {
+   "rank": 809,
+   "char": "评",
+   "reading": "ping2",
+   "id": "ping2b",
+   "pinyin": "píng",
+   "stage": 17
+  },
+  {
+   "rank": 810,
+   "char": "版",
+   "reading": "ban3",
+   "id": "ban3",
+   "pinyin": "bǎn",
+   "stage": 17
+  },
+  {
+   "rank": 811,
+   "char": "宝",
+   "reading": "bao3",
+   "id": "bao3b",
+   "pinyin": "bǎo",
+   "stage": 17
+  },
+  {
+   "rank": 812,
+   "char": "座",
+   "reading": "zuo4",
+   "id": "zuo4d",
+   "pinyin": "zuò",
+   "stage": 17
+  },
+  {
+   "rank": 813,
+   "char": "释",
+   "reading": "shi4",
+   "id": "shi4m",
+   "pinyin": "shì",
+   "stage": 17
+  },
+  {
+   "rank": 814,
+   "char": "景",
+   "reading": "jing3",
+   "id": "jing3b",
+   "pinyin": "jǐng",
+   "stage": 17
+  },
+  {
+   "rank": 815,
+   "char": "顾",
+   "reading": "gu4",
+   "id": "gu4b",
+   "pinyin": "gù",
+   "stage": 17
+  },
+  {
+   "rank": 816,
+   "char": "弟",
+   "reading": "di4",
+   "id": "di4d",
+   "pinyin": "dì",
+   "stage": 17
+  },
+  {
+   "rank": 817,
+   "char": "登",
+   "reading": "deng1",
+   "id": "deng1",
+   "pinyin": "dēng",
+   "stage": 17
+  },
+  {
+   "rank": 818,
+   "char": "货",
+   "reading": "huo4",
+   "id": "huo4c",
+   "pinyin": "huò",
+   "stage": 17
+  },
+  {
+   "rank": 819,
+   "char": "互",
+   "reading": "hu4",
+   "id": "hu4c",
+   "pinyin": "hù",
+   "stage": 17
+  },
+  {
+   "rank": 820,
+   "char": "付",
+   "reading": "fu4",
+   "id": "fu4f",
+   "pinyin": "fù",
+   "stage": 17
+  },
+  {
+   "rank": 821,
+   "char": "伯",
+   "reading": "bo2",
+   "id": "bo2",
+   "pinyin": "bó",
+   "stage": 17,
+   "families": [
+    "声旁白"
+   ]
+  },
+  {
+   "rank": 822,
+   "char": "慢",
+   "reading": "man4",
+   "id": "man4",
+   "pinyin": "màn",
+   "stage": 17
+  },
+  {
+   "rank": 823,
+   "char": "欧",
+   "reading": "ou1",
+   "id": "ou1",
+   "pinyin": "ōu",
+   "stage": 17
+  },
+  {
+   "rank": 824,
+   "char": "换",
+   "reading": "huan4",
+   "id": "huan4",
+   "pinyin": "huàn",
+   "stage": 17
+  },
+  {
+   "rank": 826,
+   "char": "危",
+   "reading": "wei1",
+   "id": "wei1c",
+   "pinyin": "wēi",
+   "stage": 17
+  },
+  {
+   "rank": 828,
+   "char": "核",
+   "reading": "he2",
+   "id": "he2e",
+   "pinyin": "hé",
+   "stage": 17
+  },
+  {
+   "rank": 829,
+   "char": "暗",
+   "reading": "an4",
+   "id": "an4c",
+   "pinyin": "àn",
+   "stage": 17
+  },
+  {
+   "rank": 831,
+   "char": "介",
+   "reading": "jie4",
+   "id": "jie4b",
+   "pinyin": "jiè",
+   "stage": 17
+  },
+  {
+   "rank": 745,
+   "char": "阶",
+   "reading": "jie1",
+   "id": "jie1c",
+   "pinyin": "jiē",
+   "stage": 17
+  },
+  {
+   "rank": 832,
+   "char": "坏",
+   "reading": "huai4",
+   "id": "huai4",
+   "pinyin": "huài",
+   "stage": 17
+  },
+  {
+   "rank": 833,
+   "char": "讨",
+   "reading": "tao3",
+   "id": "tao3",
+   "pinyin": "tǎo",
+   "stage": 17
+  },
+  {
+   "rank": 834,
+   "char": "丽",
+   "reading": "li4",
+   "id": "li4f",
+   "pinyin": "lì",
+   "stage": 17
+  },
+  {
+   "rank": 835,
+   "char": "良",
+   "reading": "liang2",
+   "id": "liang2b",
+   "pinyin": "liáng",
+   "stage": 17
+  },
+  {
+   "rank": 836,
+   "char": "序",
+   "reading": "xu4",
+   "id": "xu4b",
+   "pinyin": "xù",
+   "stage": 17
+  },
+  {
+   "rank": 837,
+   "char": "升",
+   "reading": "sheng1",
+   "id": "sheng1c",
+   "pinyin": "shēng",
+   "stage": 17
+  },
+  {
+   "rank": 838,
+   "char": "监",
+   "reading": "jian1",
+   "id": "jian1c",
+   "pinyin": "jiān",
+   "stage": 17
+  },
+  {
+   "rank": 839,
+   "char": "临",
+   "reading": "lin2",
+   "id": "lin2",
+   "pinyin": "lín",
+   "stage": 17
+  },
+  {
+   "rank": 840,
+   "char": "亮",
+   "reading": "liang4",
+   "id": "liang4",
+   "pinyin": "liàng",
+   "stage": 17
+  },
+  {
+   "rank": 842,
+   "char": "永",
+   "reading": "yong3",
+   "id": "yong3",
+   "pinyin": "yǒng",
+   "stage": 17
+  },
+  {
+   "rank": 843,
+   "char": "呼",
+   "reading": "hu1",
+   "id": "hu1b",
+   "pinyin": "hū",
+   "stage": 17
+  },
+  {
+   "rank": 844,
+   "char": "味",
+   "reading": "wei4",
+   "id": "wei4d",
+   "pinyin": "wèi",
+   "stage": 17
+  },
+  {
+   "rank": 846,
+   "char": "架",
+   "reading": "jia4",
+   "id": "jia4b",
+   "pinyin": "jià",
+   "stage": 17
+  },
+  {
+   "rank": 847,
+   "char": "域",
+   "reading": "yu4",
+   "id": "yu4c",
+   "pinyin": "yù",
+   "stage": 17
+  },
+  {
+   "rank": 848,
+   "char": "沙",
+   "reading": "sha1",
+   "id": "sha1",
+   "pinyin": "shā",
+   "stage": 17
+  },
+  {
+   "rank": 849,
+   "char": "掉",
+   "reading": "diao4",
+   "id": "diao4",
+   "pinyin": "diào",
+   "stage": 17
+  },
+  {
+   "rank": 850,
+   "char": "括",
+   "reading": "kuo4",
+   "id": "kuo4",
+   "pinyin": "kuò",
+   "stage": 17
+  },
+  {
+   "rank": 851,
+   "char": "舰",
+   "reading": "jian4",
+   "id": "jian4d",
+   "pinyin": "jiàn",
+   "stage": 18
+  },
+  {
+   "rank": 852,
+   "char": "鱼",
+   "reading": "yu2",
+   "id": "yu2c",
+   "pinyin": "yú",
+   "stage": 18
+  },
+  {
+   "rank": 853,
+   "char": "杂",
+   "reading": "za2",
+   "id": "za2",
+   "pinyin": "zá",
+   "stage": 18
+  },
+  {
+   "rank": 854,
+   "char": "误",
+   "reading": "wu4",
+   "id": "wu4c",
+   "pinyin": "wù",
+   "stage": 18
+  },
+  {
+   "rank": 855,
+   "char": "湾",
+   "reading": "wan1",
+   "id": "wan1",
+   "pinyin": "wān",
+   "stage": 18
+  },
+  {
+   "rank": 856,
+   "char": "吉",
+   "reading": "ji2",
+   "id": "ji2g",
+   "pinyin": "jí",
+   "stage": 18
+  },
+  {
+   "rank": 857,
+   "char": "减",
+   "reading": "jian3",
+   "id": "jian3c",
+   "pinyin": "jiǎn",
+   "stage": 18
+  },
+  {
+   "rank": 858,
+   "char": "编",
+   "reading": "bian1",
+   "id": "bian1b",
+   "pinyin": "biān",
+   "stage": 18
+  },
+  {
+   "rank": 859,
+   "char": "楚",
+   "reading": "chu3",
+   "id": "chu3",
+   "pinyin": "chǔ",
+   "stage": 18
+  },
+  {
+   "rank": 860,
+   "char": "肯",
+   "reading": "ken3",
+   "id": "ken3",
+   "pinyin": "kěn",
+   "stage": 18
+  },
+  {
+   "rank": 861,
+   "char": "测",
+   "reading": "ce4",
+   "id": "ce4b",
+   "pinyin": "cè",
+   "stage": 18
+  },
+  {
+   "rank": 862,
+   "char": "败",
+   "reading": "bai4",
+   "id": "bai4",
+   "pinyin": "bài",
+   "stage": 18
+  },
+  {
+   "rank": 863,
+   "char": "屋",
+   "reading": "wu1",
+   "id": "wu1",
+   "pinyin": "wū",
+   "stage": 18
+  },
+  {
+   "rank": 864,
+   "char": "跑",
+   "reading": "pao3",
+   "id": "pao3",
+   "pinyin": "pǎo",
+   "stage": 18
+  },
+  {
+   "rank": 865,
+   "char": "梦",
+   "reading": "meng4",
+   "id": "meng4",
+   "pinyin": "mèng",
+   "stage": 18
+  },
+  {
+   "rank": 866,
+   "char": "散",
+   "reading": "san4",
+   "id": "san4",
+   "pinyin": "sàn",
+   "stage": 18
+  },
+  {
+   "rank": 867,
+   "char": "温",
+   "reading": "wen1",
+   "id": "wen1",
+   "pinyin": "wēn",
+   "stage": 18
+  },
+  {
+   "rank": 868,
+   "char": "困",
+   "reading": "kun4",
+   "id": "kun4",
+   "pinyin": "kùn",
+   "stage": 18
+  },
+  {
+   "rank": 869,
+   "char": "剑",
+   "reading": "jian4",
+   "id": "jian4e",
+   "pinyin": "jiàn",
+   "stage": 18
+  },
+  {
+   "rank": 870,
+   "char": "渐",
+   "reading": "jian4",
+   "id": "jian4f",
+   "pinyin": "jiàn",
+   "stage": 18
+  },
+  {
+   "rank": 871,
+   "char": "封",
+   "reading": "feng1",
+   "id": "feng1b",
+   "pinyin": "fēng",
+   "stage": 18
+  },
+  {
+   "rank": 872,
+   "char": "救",
+   "reading": "jiu4",
+   "id": "jiu4b",
+   "pinyin": "jiù",
+   "stage": 18
+  },
+  {
+   "rank": 873,
+   "char": "贵",
+   "reading": "gui4",
+   "id": "gui4",
+   "pinyin": "guì",
+   "stage": 18
+  },
+  {
+   "rank": 874,
+   "char": "枪",
+   "reading": "qiang1",
+   "id": "qiang1",
+   "pinyin": "qiāng",
+   "stage": 18
+  },
+  {
+   "rank": 875,
+   "char": "缺",
+   "reading": "que1",
+   "id": "que1",
+   "pinyin": "quē",
+   "stage": 18
+  },
+  {
+   "rank": 876,
+   "char": "楼",
+   "reading": "lou2",
+   "id": "lou2",
+   "pinyin": "lóu",
+   "stage": 18
+  },
+  {
+   "rank": 877,
+   "char": "县",
+   "reading": "xian4",
+   "id": "xian4d",
+   "pinyin": "xiàn",
+   "stage": 18
+  },
+  {
+   "rank": 878,
+   "char": "尚",
+   "reading": "shang4",
+   "id": "shang4b",
+   "pinyin": "shàng",
+   "stage": 18
+  },
+  {
+   "rank": 879,
+   "char": "毫",
+   "reading": "hao2",
+   "id": "hao2",
+   "pinyin": "háo",
+   "stage": 18
+  },
+  {
+   "rank": 880,
+   "char": "移",
+   "reading": "yi2",
+   "id": "yi2b",
+   "pinyin": "yí",
+   "stage": 18
+  },
+  {
+   "rank": 881,
+   "char": "娘",
+   "reading": "niang2",
+   "id": "niang2",
+   "pinyin": "niáng",
+   "stage": 18
+  },
+  {
+   "rank": 882,
+   "char": "朋",
+   "reading": "peng2",
+   "id": "peng2",
+   "pinyin": "péng",
+   "stage": 18
+  },
+  {
+   "rank": 883,
+   "char": "画",
+   "reading": "hua4",
+   "id": "hua4c",
+   "pinyin": "huà",
+   "stage": 18
+  },
+  {
+   "rank": 884,
+   "char": "班",
+   "reading": "ban1",
+   "id": "ban1b",
+   "pinyin": "bān",
+   "stage": 18
+  },
+  {
+   "rank": 885,
+   "char": "智",
+   "reading": "zhi4",
+   "id": "zhi4h",
+   "pinyin": "zhì",
+   "stage": 18
+  },
+  {
+   "rank": 886,
+   "char": "亦",
+   "reading": "yi4",
+   "id": "yi4h",
+   "pinyin": "yì",
+   "stage": 18
+  },
+  {
+   "rank": 887,
+   "char": "耳",
+   "reading": "er3",
+   "id": "er3b",
+   "pinyin": "ěr",
+   "stage": 18
+  },
+  {
+   "rank": 888,
+   "char": "恩",
+   "reading": "en1",
+   "id": "en1",
+   "pinyin": "ēn",
+   "stage": 18
+  },
+  {
+   "rank": 889,
+   "char": "短",
+   "reading": "duan3",
+   "id": "duan3",
+   "pinyin": "duǎn",
+   "stage": 18
+  },
+  {
+   "rank": 890,
+   "char": "掌",
+   "reading": "zhang3",
+   "id": "zhang3",
+   "pinyin": "zhǎng",
+   "stage": 18
+  },
+  {
+   "rank": 891,
+   "char": "恐",
+   "reading": "kong3",
+   "id": "kong3",
+   "pinyin": "kǒng",
+   "stage": 18
+  },
+  {
+   "rank": 892,
+   "char": "遗",
+   "reading": "yi2",
+   "id": "yi2c",
+   "pinyin": "yí",
+   "stage": 18
+  },
+  {
+   "rank": 893,
+   "char": "固",
+   "reading": "gu4",
+   "id": "gu4c",
+   "pinyin": "gù",
+   "stage": 18
+  },
+  {
+   "rank": 894,
+   "char": "席",
+   "reading": "xi2",
+   "id": "xi2b",
+   "pinyin": "xí",
+   "stage": 18
+  },
+  {
+   "rank": 895,
+   "char": "松",
+   "reading": "song1",
+   "id": "song1",
+   "pinyin": "sōng",
+   "stage": 18
+  },
+  {
+   "rank": 896,
+   "char": "秘",
+   "reading": "mi4",
+   "id": "mi4b",
+   "pinyin": "mì",
+   "stage": 18
+  },
+  {
+   "rank": 897,
+   "char": "谢",
+   "reading": "xie4",
+   "id": "xie4",
+   "pinyin": "xiè",
+   "stage": 18
+  },
+  {
+   "rank": 898,
+   "char": "鲁",
+   "reading": "lu3",
+   "id": "lu3",
+   "pinyin": "lǔ",
+   "stage": 18
+  },
+  {
+   "rank": 899,
+   "char": "遇",
+   "reading": "yu4",
+   "id": "yu4d",
+   "pinyin": "yù",
+   "stage": 18
+  },
+  {
+   "rank": 900,
+   "char": "康",
+   "reading": "kang1",
+   "id": "kang1",
+   "pinyin": "kāng",
+   "stage": 18
+  },
+  {
+   "rank": 901,
+   "char": "虑",
+   "reading": "lv4",
+   "id": "lv4c",
+   "pinyin": "lǜ",
+   "stage": 19
+  },
+  {
+   "rank": 902,
+   "char": "幸",
+   "reading": "xing4",
+   "id": "xing4b",
+   "pinyin": "xìng",
+   "stage": 19
+  },
+  {
+   "rank": 903,
+   "char": "均",
+   "reading": "jun1",
+   "id": "jun1b",
+   "pinyin": "jūn",
+   "stage": 19
+  },
+  {
+   "rank": 904,
+   "char": "销",
+   "reading": "xiao1",
+   "id": "xiao1b",
+   "pinyin": "xiāo",
+   "stage": 19
+  },
+  {
+   "rank": 905,
+   "char": "钟",
+   "reading": "zhong1",
+   "id": "zhong1c",
+   "pinyin": "zhōng",
+   "stage": 19
+  },
+  {
+   "rank": 906,
+   "char": "诗",
+   "reading": "shi1",
+   "id": "shi1d",
+   "pinyin": "shī",
+   "stage": 19
+  },
+  {
+   "rank": 907,
+   "char": "藏",
+   "reading": "cang2",
+   "id": "cang2",
+   "pinyin": "cáng",
+   "stage": 19
+  },
+  {
+   "rank": 908,
+   "char": "赶",
+   "reading": "gan3",
+   "id": "gan3c",
+   "pinyin": "gǎn",
+   "stage": 19
+  },
+  {
+   "rank": 909,
+   "char": "剧",
+   "reading": "ju4",
+   "id": "ju4d",
+   "pinyin": "jù",
+   "stage": 19
+  },
+  {
+   "rank": 910,
+   "char": "票",
+   "reading": "piao4",
+   "id": "piao4",
+   "pinyin": "piào",
+   "stage": 19
+  },
+  {
+   "rank": 911,
+   "char": "损",
+   "reading": "sun3",
+   "id": "sun3",
+   "pinyin": "sǔn",
+   "stage": 19
+  },
+  {
+   "rank": 912,
+   "char": "忽",
+   "reading": "hu1",
+   "id": "hu1c",
+   "pinyin": "hū",
+   "stage": 19
+  },
+  {
+   "rank": 913,
+   "char": "巨",
+   "reading": "ju4",
+   "id": "ju4e",
+   "pinyin": "jù",
+   "stage": 19
+  },
+  {
+   "rank": 914,
+   "char": "炮",
+   "reading": "pao4",
+   "id": "pao4",
+   "pinyin": "pào",
+   "stage": 19
+  },
+  {
+   "rank": 915,
+   "char": "旧",
+   "reading": "jiu4",
+   "id": "jiu4c",
+   "pinyin": "jiù",
+   "stage": 19
+  },
+  {
+   "rank": 916,
+   "char": "端",
+   "reading": "duan1",
+   "id": "duan1",
+   "pinyin": "duān",
+   "stage": 19
+  },
+  {
+   "rank": 917,
+   "char": "探",
+   "reading": "tan4",
+   "id": "tan4",
+   "pinyin": "tàn",
+   "stage": 19
+  },
+  {
+   "rank": 918,
+   "char": "湖",
+   "reading": "hu2",
+   "id": "hu2b",
+   "pinyin": "hú",
+   "stage": 19,
+   "families": [
+    "氵族"
+   ]
+  },
+  {
+   "rank": 919,
+   "char": "录",
+   "reading": "lu4",
+   "id": "lu4c",
+   "pinyin": "lù",
+   "stage": 19
+  },
+  {
+   "rank": 920,
+   "char": "叶",
+   "reading": "ye4",
+   "id": "ye4c",
+   "pinyin": "yè",
+   "stage": 19
+  },
+  {
+   "rank": 922,
+   "char": "乡",
+   "reading": "xiang1",
+   "id": "xiang1c",
+   "pinyin": "xiāng",
+   "stage": 19
+  },
+  {
+   "rank": 923,
+   "char": "附",
+   "reading": "fu4",
+   "id": "fu4g",
+   "pinyin": "fù",
+   "stage": 19
+  },
+  {
+   "rank": 924,
+   "char": "吸",
+   "reading": "xi1",
+   "id": "xi1d",
+   "pinyin": "xī",
+   "stage": 19
+  },
+  {
+   "rank": 925,
+   "char": "予",
+   "reading": "yu3",
+   "id": "yu3c",
+   "pinyin": "yǔ",
+   "stage": 19
+  },
+  {
+   "rank": 845,
+   "char": "野",
+   "reading": "ye3",
+   "id": "ye3b",
+   "pinyin": "yě",
+   "stage": 19
+  },
+  {
+   "rank": 926,
+   "char": "礼",
+   "reading": "li3",
+   "id": "li3d",
+   "pinyin": "lǐ",
+   "stage": 19
+  },
+  {
+   "rank": 927,
+   "char": "港",
+   "reading": "gang3",
+   "id": "gang3",
+   "pinyin": "gǎng",
+   "stage": 19
+  },
+  {
+   "rank": 928,
+   "char": "雨",
+   "reading": "yu3",
+   "id": "yu3d",
+   "pinyin": "yǔ",
+   "stage": 19
+  },
+  {
+   "rank": 841,
+   "char": "露",
+   "reading": "lu4",
+   "id": "lu4d",
+   "pinyin": "lù",
+   "stage": 19
+  },
+  {
+   "rank": 930,
+   "char": "板",
+   "reading": "ban3",
+   "id": "ban3b",
+   "pinyin": "bǎn",
+   "stage": 19
+  },
+  {
+   "rank": 931,
+   "char": "庭",
+   "reading": "ting2",
+   "id": "ting2b",
+   "pinyin": "tíng",
+   "stage": 19
+  },
+  {
+   "rank": 932,
+   "char": "妇",
+   "reading": "fu4",
+   "id": "fu4h",
+   "pinyin": "fù",
+   "stage": 19
+  },
+  {
+   "rank": 933,
+   "char": "归",
+   "reading": "gui1",
+   "id": "gui1b",
+   "pinyin": "guī",
+   "stage": 19
+  },
+  {
+   "rank": 934,
+   "char": "睛",
+   "reading": "jing1",
+   "id": "jing1e",
+   "pinyin": "jīng",
+   "stage": 19
+  },
+  {
+   "rank": 935,
+   "char": "饭",
+   "reading": "fan4",
+   "id": "fan4c",
+   "pinyin": "fàn",
+   "stage": 19
+  },
+  {
+   "rank": 936,
+   "char": "额",
+   "reading": "e2",
+   "id": "e2",
+   "pinyin": "é",
+   "stage": 19
+  },
+  {
+   "rank": 937,
+   "char": "含",
+   "reading": "han2",
+   "id": "han2",
+   "pinyin": "hán",
+   "stage": 19
+  },
+  {
+   "rank": 938,
+   "char": "顺",
+   "reading": "shun4",
+   "id": "shun4",
+   "pinyin": "shùn",
+   "stage": 19
+  },
+  {
+   "rank": 939,
+   "char": "输",
+   "reading": "shu1",
+   "id": "shu1b",
+   "pinyin": "shū",
+   "stage": 19
+  },
+  {
+   "rank": 940,
+   "char": "摇",
+   "reading": "yao2",
+   "id": "yao2",
+   "pinyin": "yáo",
+   "stage": 19
+  },
+  {
+   "rank": 941,
+   "char": "招",
+   "reading": "zhao1",
+   "id": "zhao1",
+   "pinyin": "zhāo",
+   "stage": 19
+  },
+  {
+   "rank": 942,
+   "char": "婚",
+   "reading": "hun1",
+   "id": "hun1",
+   "pinyin": "hūn",
+   "stage": 19
+  },
+  {
+   "rank": 943,
+   "char": "脱",
+   "reading": "tuo1",
+   "id": "tuo1b",
+   "pinyin": "tuō",
+   "stage": 19
+  },
+  {
+   "rank": 944,
+   "char": "补",
+   "reading": "bu3",
+   "id": "bu3",
+   "pinyin": "bǔ",
+   "stage": 19
+  },
+  {
+   "rank": 945,
+   "char": "谓",
+   "reading": "wei4",
+   "id": "wei4e",
+   "pinyin": "wèi",
+   "stage": 19
+  },
+  {
+   "rank": 946,
+   "char": "督",
+   "reading": "du1",
+   "id": "du1",
+   "pinyin": "dū",
+   "stage": 19
+  },
+  {
+   "rank": 947,
+   "char": "毒",
+   "reading": "du2",
+   "id": "du2c",
+   "pinyin": "dú",
+   "stage": 19
+  },
+  {
+   "rank": 948,
+   "char": "油",
+   "reading": "you2",
+   "id": "you2c",
+   "pinyin": "yóu",
+   "stage": 19
+  },
+  {
+   "rank": 949,
+   "char": "疗",
+   "reading": "liao2",
+   "id": "liao2",
+   "pinyin": "liáo",
+   "stage": 19
+  },
+  {
+   "rank": 950,
+   "char": "旅",
+   "reading": "lv3",
+   "id": "lv3",
+   "pinyin": "lǚ",
+   "stage": 19
+  },
+  {
+   "rank": 951,
+   "char": "泽",
+   "reading": "ze2",
+   "id": "ze2c",
+   "pinyin": "zé",
+   "stage": 20
+  },
+  {
+   "rank": 952,
+   "char": "材",
+   "reading": "cai2",
+   "id": "cai2c",
+   "pinyin": "cái",
+   "stage": 20
+  },
+  {
+   "rank": 953,
+   "char": "灭",
+   "reading": "mie4",
+   "id": "mie4",
+   "pinyin": "miè",
+   "stage": 20
+  },
+  {
+   "rank": 954,
+   "char": "逐",
+   "reading": "zhu2",
+   "id": "zhu2",
+   "pinyin": "zhú",
+   "stage": 20
+  },
+  {
+   "rank": 955,
+   "char": "莫",
+   "reading": "mo4",
+   "id": "mo4",
+   "pinyin": "mò",
+   "stage": 20
+  },
+  {
+   "rank": 956,
+   "char": "笔",
+   "reading": "bi3",
+   "id": "bi3",
+   "pinyin": "bǐ",
+   "stage": 20
+  },
+  {
+   "rank": 957,
+   "char": "亡",
+   "reading": "wang2",
+   "id": "wang2b",
+   "pinyin": "wáng",
+   "stage": 20
+  },
+  {
+   "rank": 827,
+   "char": "忙",
+   "reading": "mang2",
+   "id": "mang2",
+   "pinyin": "máng",
+   "stage": 20
+  },
+  {
+   "rank": 958,
+   "char": "鲜",
+   "reading": "xian1",
+   "id": "xian1b",
+   "pinyin": "xiān",
+   "stage": 20
+  },
+  {
+   "rank": 959,
+   "char": "词",
+   "reading": "ci2",
+   "id": "ci2",
+   "pinyin": "cí",
+   "stage": 20
+  },
+  {
+   "rank": 960,
+   "char": "圣",
+   "reading": "sheng4",
+   "id": "sheng4b",
+   "pinyin": "shèng",
+   "stage": 20
+  },
+  {
+   "rank": 961,
+   "char": "择",
+   "reading": "ze2",
+   "id": "ze2d",
+   "pinyin": "zé",
+   "stage": 20
+  },
+  {
+   "rank": 962,
+   "char": "寻",
+   "reading": "xun2",
+   "id": "xun2",
+   "pinyin": "xún",
+   "stage": 20
+  },
+  {
+   "rank": 963,
+   "char": "厂",
+   "reading": "chang3",
+   "id": "chang3b",
+   "pinyin": "chǎng",
+   "stage": 20
+  },
+  {
+   "rank": 964,
+   "char": "睡",
+   "reading": "shui4",
+   "id": "shui4b",
+   "pinyin": "shuì",
+   "stage": 20
+  },
+  {
+   "rank": 965,
+   "char": "博",
+   "reading": "bo2",
+   "id": "bo2b",
+   "pinyin": "bó",
+   "stage": 20
+  },
+  {
+   "rank": 966,
+   "char": "勒",
+   "reading": "le4",
+   "id": "le4b",
+   "pinyin": "lè",
+   "stage": 20
+  },
+  {
+   "rank": 967,
+   "char": "烟",
+   "reading": "yan1",
+   "id": "yan1",
+   "pinyin": "yān",
+   "stage": 20
+  },
+  {
+   "rank": 968,
+   "char": "授",
+   "reading": "shou4",
+   "id": "shou4b",
+   "pinyin": "shòu",
+   "stage": 20
+  },
+  {
+   "rank": 969,
+   "char": "诺",
+   "reading": "nuo4",
+   "id": "nuo4",
+   "pinyin": "nuò",
+   "stage": 20
+  },
+  {
+   "rank": 970,
+   "char": "伦",
+   "reading": "lun2",
+   "id": "lun2",
+   "pinyin": "lún",
+   "stage": 20
+  },
+  {
+   "rank": 971,
+   "char": "岸",
+   "reading": "an4",
+   "id": "an4d",
+   "pinyin": "àn",
+   "stage": 20
+  },
+  {
+   "rank": 972,
+   "char": "奥",
+   "reading": "ao4",
+   "id": "ao4",
+   "pinyin": "ào",
+   "stage": 20
+  },
+  {
+   "rank": 973,
+   "char": "唐",
+   "reading": "tang2",
+   "id": "tang2",
+   "pinyin": "táng",
+   "stage": 20
+  },
+  {
+   "rank": 974,
+   "char": "卖",
+   "reading": "mai4",
+   "id": "mai4",
+   "pinyin": "mài",
+   "stage": 20
+  },
+  {
+   "rank": 975,
+   "char": "俄",
+   "reading": "e2",
+   "id": "e2b",
+   "pinyin": "é",
+   "stage": 20
+  },
+  {
+   "rank": 976,
+   "char": "炸",
+   "reading": "zha2",
+   "id": "zha2",
+   "pinyin": "zhá",
+   "stage": 20
+  },
+  {
+   "rank": 977,
+   "char": "载",
+   "reading": "zai3",
+   "id": "zai3",
+   "pinyin": "zǎi",
+   "stage": 20
+  },
+  {
+   "rank": 978,
+   "char": "洛",
+   "reading": "luo4",
+   "id": "luo4b",
+   "pinyin": "luò",
+   "stage": 20
+  },
+  {
+   "rank": 979,
+   "char": "健",
+   "reading": "jian4",
+   "id": "jian4g",
+   "pinyin": "jiàn",
+   "stage": 20
+  },
+  {
+   "rank": 980,
+   "char": "堂",
+   "reading": "tang2",
+   "id": "tang2b",
+   "pinyin": "táng",
+   "stage": 20
+  },
+  {
+   "rank": 981,
+   "char": "旁",
+   "reading": "pang2",
+   "id": "pang2",
+   "pinyin": "páng",
+   "stage": 20
+  },
+  {
+   "rank": 982,
+   "char": "宫",
+   "reading": "gong1",
+   "id": "gong1f",
+   "pinyin": "gōng",
+   "stage": 20
+  },
+  {
+   "rank": 983,
+   "char": "喝",
+   "reading": "he1",
+   "id": "he1",
+   "pinyin": "hē",
+   "stage": 20
+  },
+  {
+   "rank": 984,
+   "char": "借",
+   "reading": "jie4",
+   "id": "jie4c",
+   "pinyin": "jiè",
+   "stage": 20
+  },
+  {
+   "rank": 985,
+   "char": "君",
+   "reading": "jun1",
+   "id": "jun1c",
+   "pinyin": "jūn",
+   "stage": 20
+  },
+  {
+   "rank": 986,
+   "char": "禁",
+   "reading": "jin4",
+   "id": "jin4d",
+   "pinyin": "jìn",
+   "stage": 20
+  },
+  {
+   "rank": 987,
+   "char": "阴",
+   "reading": "yin1",
+   "id": "yin1c",
+   "pinyin": "yīn",
+   "stage": 20
+  },
+  {
+   "rank": 988,
+   "char": "园",
+   "reading": "yuan2",
+   "id": "yuan2e",
+   "pinyin": "yuán",
+   "stage": 20
+  },
+  {
+   "rank": 989,
+   "char": "谋",
+   "reading": "mou2",
+   "id": "mou2",
+   "pinyin": "móu",
+   "stage": 20
+  },
+  {
+   "rank": 990,
+   "char": "宋",
+   "reading": "song4",
+   "id": "song4b",
+   "pinyin": "sòng",
+   "stage": 20
+  },
+  {
+   "rank": 991,
+   "char": "避",
+   "reading": "bi4",
+   "id": "bi4b",
+   "pinyin": "bì",
+   "stage": 20
+  },
+  {
+   "rank": 992,
+   "char": "抓",
+   "reading": "zhua1",
+   "id": "zhua1",
+   "pinyin": "zhuā",
+   "stage": 20
+  },
+  {
+   "rank": 993,
+   "char": "荣",
+   "reading": "rong2",
+   "id": "rong2b",
+   "pinyin": "róng",
+   "stage": 20
+  },
+  {
+   "rank": 994,
+   "char": "姑",
+   "reading": "gu1",
+   "id": "gu1",
+   "pinyin": "gū",
+   "stage": 20
+  },
+  {
+   "rank": 995,
+   "char": "孙",
+   "reading": "sun1",
+   "id": "sun1",
+   "pinyin": "sūn",
+   "stage": 20
+  },
+  {
+   "rank": 996,
+   "char": "逃",
+   "reading": "tao2",
+   "id": "tao2",
+   "pinyin": "táo",
+   "stage": 20
+  },
+  {
+   "rank": 997,
+   "char": "牙",
+   "reading": "ya2",
+   "id": "ya2",
+   "pinyin": "yá",
+   "stage": 20
+  },
+  {
+   "rank": 929,
+   "char": "呀",
+   "reading": "ya",
+   "id": "ya",
+   "pinyin": "ya",
+   "stage": 20
+  },
+  {
+   "rank": 998,
+   "char": "束",
+   "reading": "shu4",
+   "id": "shu4d",
+   "pinyin": "shù",
+   "stage": 20
+  }
+ ]
+}

@@ -5,7 +5,6 @@
 import { svg, FAST } from './util.js';
 import { say } from './audio.js';
 import { doneSet } from './progress.js';
-import { mountPicker } from './picker.js';
 
 const FLIP = 'translate(0 900) scale(1 -1)';
 const MAX_DONE_TILES = 16;
@@ -117,7 +116,6 @@ export async function showHome(lessons) {
 
   document.body.dataset.scene = 'home';
   fitShelf(shelf, tiles.length);
-  mountPicker({ index, done, next: next?.id });
   const refit = () => fitShelf(shelf, tiles.length);
   window.addEventListener('resize', refit);
 

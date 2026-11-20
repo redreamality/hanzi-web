@@ -2,3 +2,7 @@ node_modules/
 test-results/
 playwright-report/
 shots/
+shots-review/
+.review*.json
+.tmp-*
+data/sources/*.old.json
