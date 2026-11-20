@@ -1,0 +1,32 @@
+<!doctype html>
+<meta charset="utf-8">
+<style>
+  body { margin: 0; background: #fff; }
+  .grid { display: grid; grid-template-columns: repeat(4, 1fr); }
+  .cell { text-align: center; font: 12px sans-serif; }
+  img { width: 200px; height: 200px; image-rendering: auto; }
+</style>
+<div class="grid" id="g"></div>
+<script>
+  const files = [
+    ['zy_jiaguwen_42_ECBF.svg', '甲骨1'],
+    ['zy_jiaguwen_42_ECC1.svg', '甲骨2'],
+    ['zy_jiaguwen_42_ECC4.svg', '甲骨3'],
+    ['zy_jiaguwen_42_ECC5.svg', '甲骨4'],
+    ['zy_jiaguwen_42_ECCC.svg', '甲骨5'],
+    ['zy_jinwen_33_EB47.svg', '金文1'],
+    ['zy_jinwen_33_EB48.svg', '金文2'],
+    ['zy_jinwen_33_EB4A.svg', '金文3'],
+    ['zy_jinwen_33_EB4C.svg', '金文4'],
+    ['zy_jinwen_33_EB4D.svg', '金文5'],
+    ['swxz_5FC3.svg', '说文小篆拓片'],
+    ['zy_xiaozhuan_27_5FC3.svg', '小篆字形'],
+  ];
+  const g = document.getElementById('g');
+  for (const [f, label] of files) {
+    const c = document.createElement('div');
+    c.className = 'cell';
+    c.innerHTML = `<img src="${f}"><div>${label}</div>`;
+    g.appendChild(c);
+  }
+</script>

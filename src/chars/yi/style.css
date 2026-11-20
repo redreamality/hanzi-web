@@ -1,0 +1,8 @@
+/* 岸边的芦苇在风里轻轻摇（局部小摆动，不控流程） */
+.yi-reed { animation: yi-sway 4.6s ease-in-out infinite; }
+.yi-reed.r2 { animation-duration: 5.7s; animation-delay: -1.3s; }
+.yi-reed.r3 { animation-duration: 6.4s; animation-delay: -2.9s; }
+@keyframes yi-sway {
+  0%, 100% { transform: rotate(1.7deg); }
+  50% { transform: rotate(-1.7deg); }
+}

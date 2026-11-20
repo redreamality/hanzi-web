@@ -1,0 +1,21 @@
+/* 朵云在高天上慢慢漂 */
+.tian-cloud {
+  animation: tian-drift 9s ease-in-out infinite alternate;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+@keyframes tian-drift {
+  from { transform: translateX(-10px); }
+  to { transform: translateX(12px); }
+}
+
+/* 仰头看天的小朋友轻轻呼吸：从脚底起，身子微微起伏 */
+.tian-person.breathing {
+  animation: tian-breathe 4s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 96%;
+}
+@keyframes tian-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.012, 1.02); }
+}

@@ -1,0 +1,13 @@
+/* 两个小朋友轻轻呼吸：从脚底起，上身微微起伏（左右两人相位错开一点点） */
+.bei-pair .kid-inner.breathing {
+  animation: bei-breathe 3.8s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+.bei-pair .kid-inner.breathing-late {
+  animation-delay: -1.9s;
+}
+@keyframes bei-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.012, 1.02); }
+}

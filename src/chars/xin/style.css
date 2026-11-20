@@ -1,0 +1,22 @@
+/* 胸口的心怦怦跳：怦——怦怦的双跳节奏（lub-dub），安静心率的慢板 */
+.xin-heart.beating {
+  animation: xin-beat 1.5s ease-in-out infinite;
+  transform-origin: 512px 458px;
+}
+@keyframes xin-beat {
+  0%, 100% { transform: scale(1); }
+  9% { transform: scale(1.13); }
+  20% { transform: scale(1.01); }
+  30% { transform: scale(1.07); }
+  46% { transform: scale(1); }
+}
+
+/* 孩子轻轻呼吸：从胸口起，身子微微起伏 */
+.xin-figure.breathing {
+  animation: xin-breathe 3.8s ease-in-out infinite;
+  transform-origin: 512px 480px;
+}
+@keyframes xin-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(1.012, 1.02); }
+}

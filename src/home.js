@@ -1,76 +1,97 @@
-// 首页：一张宣纸上摆着学过的字，点哪个字就读一声、进哪一课；还没做的字淡淡地排在后面。
+// 首页：学过的字排成字卡（最新的在最后），下一课的字卡亮着等孩子来点，
+// 再往后要学的字淡淡排成一排。字卡先用楷体大字显示，滚进视野后再换成
+// 和课里写出来一模一样的笔画字形（按需拉 strokes.json，首屏只请求 index 一个文件）。
 // 孩子不认字，所以每张字卡只有字本身和拼音，写会了的盖一个小红印。
 import { svg, FAST } from './util.js';
 import { say } from './audio.js';
 import { doneSet } from './progress.js';
+import { mountPicker } from './picker.js';
 
 const FLIP = 'translate(0 900) scale(1 -1)';
+const MAX_DONE_TILES = 16;
+const MAX_SOON = 16;
 
 export const lessonUrl = (id) => `?c=${id}${FAST ? '&fast' : ''}`;
 
-async function loadTile(id) {
-  const [info, strokes] = await Promise.all(
-    [`data/chars/${id}.json`, `data/chars/${id}.strokes.json`].map((u) => fetch(u).then((r) => r.json())),
-  );
-  return { ...info, ...strokes };
-}
-
-// 田字格里的楷书：直接用笔画轮廓，和课里写出来的字一模一样
-function glyph(parent, data) {
+// 田字格 + 大字。先放楷体字，有需要再换成笔画轮廓
+function makeGlyph(parent, data) {
   const s = svg('svg', { viewBox: '0 0 1024 1024', class: 'glyph', 'aria-hidden': 'true' }, parent);
   const grid = svg('g', { stroke: '#c0392b', fill: 'none', opacity: 0.35 }, s);
   svg('rect', { x: 40, y: 40, width: 944, height: 944, 'stroke-width': 8 }, grid);
   for (const d of ['M512 40V984', 'M40 512H984']) svg('path', { d, 'stroke-width': 5, 'stroke-dasharray': '22 18' }, grid);
-  const ink = svg('g', { transform: FLIP, fill: '#221d1a', filter: 'url(#ink)' }, s);
-  data.strokes.forEach((d) => svg('path', { d }, ink));
+  const holder = svg('g', {}, s);
+  const t = svg('text', {
+    x: 512, y: 742, 'text-anchor': 'middle', 'font-size': 660,
+    'font-family': 'STKaiti, KaiTi, Kaiti SC, serif', fill: '#221d1a',
+  }, holder);
+  t.textContent = data.char;
+  let upgraded = false;
+  return {
+    el: s,
+    async upgrade() {
+      if (upgraded) return;
+      upgraded = true;
+      try {
+        const { strokes } = await fetch(`data/chars/${data.id}.strokes.json`).then((r) => r.json());
+        holder.replaceChildren();
+        const ink = svg('g', { transform: FLIP, fill: '#221d1a', filter: 'url(#ink)' }, holder);
+        for (const d of strokes) svg('path', { d }, ink);
+      } catch {
+        upgraded = false; // 网络抖动就下次再试，楷体字也够用
+      }
+    },
+  };
 }
 
-// 按可用宽高自适应列数与卡宽：11+ 张字卡也要一屏装下、不用滚动（横竖屏都算）
+// 字卡大小随数量自适应：一屏放下，不用滚动
 function fitShelf(shelf, n) {
+  if (!n) return;
   const home = document.getElementById('home');
-  const title = home.querySelector('.title');
-  const soon = home.querySelector('.soon-row');
-  const gap = 24; // 卡片间距（与 CSS clamp 的常用值一致即可，这里只是布局估算）
-  const availW = home.clientWidth - 96;
-  if (availW <= 0 || home.clientHeight <= 0) return; // 还没显示（display:none），保持 CSS 默认
-  const availH =
-    home.clientHeight - title.offsetHeight - 96 -
-    (soon.children.length ? soon.offsetHeight + 40 : 0);
-  let best = { cols: n, tile: 0 };
-  for (let cols = 1; cols <= n; cols++) {
+  const availW = (shelf.clientWidth || home.clientWidth * 0.94) - 8;
+  const availH = home.clientHeight * 0.52;
+  let tile = 76;
+  for (let t = 210; t >= 76; t -= 2) {
+    const cols = Math.max(1, Math.floor(availW / (t + 16)));
     const rows = Math.ceil(n / cols);
-    const tile = Math.min(
-      (availW - gap * (cols - 1)) / cols,
-      (availH - gap * (rows - 1)) / rows / 1.22,
-    );
-    if (tile > best.tile) best = { cols, tile };
+    if (rows * (t * 1.24 + 16) <= availH) {
+      tile = t;
+      break;
+    }
   }
-  const tile = Math.max(96, Math.min(200, Math.floor(best.tile)));
   shelf.style.setProperty('--tile', `${tile}px`);
-  shelf.style.gridTemplateColumns = `repeat(${best.cols}, var(--tile))`;
 }
 
 export async function showHome(lessons) {
+  void lessons; // 兼容旧签名；现在一律从 index.json 读
   document.title = '交互式汉字';
-  // 数据还没造好的字（注册了但 data/chars/<id>.json 缺失）不炸首页：降级留在「即将学」一排
-  const settled = await Promise.allSettled(lessons.map(loadTile));
-  const tiles = settled.filter((r) => r.status === 'fulfilled').map((r) => r.value);
-  const built = new Set(tiles.map((t) => t.char));
-  const upcoming = await fetch('data/upcoming.json').then((r) => r.json());
+  const [index, upcoming] = await Promise.all([
+    fetch('data/index.json').then((r) => r.json()),
+    fetch('data/upcoming.json').then((r) => r.json()),
+  ]);
   const done = doneSet();
+  const known = index.filter((x) => done.has(x.id));
+  const nextIdx = index.findIndex((x) => !done.has(x.id));
+  const next = nextIdx >= 0 ? index[nextIdx] : null;
 
   const home = document.getElementById('home');
   const shelf = home.querySelector('.shelf');
+  shelf.replaceChildren();
+  const glyphs = [];
+  const tiles = [...known.slice(-MAX_DONE_TILES)];
+  if (next) tiles.push(next);
   for (const data of tiles) {
-    const b = Object.assign(document.createElement('button'), { className: 'tile' });
+    const isNext = data === next;
+    const b = Object.assign(document.createElement('button'), { className: `tile${isNext ? ' next' : ''}` });
     b.dataset.testid = 'tile';
     b.dataset.char = data.id;
-    b.setAttribute('aria-label', `${data.char}，${data.meaning}`);
-    glyph(b, data);
+    b.setAttribute('aria-label', `${isNext ? '下一课：' : ''}${data.char}，${data.meaning}`);
+    glyphs.push({ glyph: makeGlyph(b, data), el: b });
     b.append(Object.assign(document.createElement('span'), { className: 'pinyin', textContent: data.pinyin }));
-    if (done.has(data.id)) {
+    if (!isNext) {
       b.dataset.done = '';
       b.append(Object.assign(document.createElement('span'), { className: 'seal', textContent: '会' }));
+    } else {
+      b.append(Object.assign(document.createElement('span'), { className: 'tag', textContent: '下一课' }));
     }
     b.addEventListener('click', async () => {
       if (home.dataset.leaving) return;
@@ -81,20 +102,33 @@ export async function showHome(lessons) {
     });
     shelf.append(b);
   }
-  for (const char of upcoming.filter((c) => !built.has(c))) {
+
+  const soonRow = home.querySelector('.soon-row');
+  soonRow.replaceChildren();
+  const soonChars = next
+    ? [...index.slice(nextIdx + 1).map((x) => x.char), ...upcoming].slice(0, MAX_SOON)
+    : upcoming.slice(0, MAX_SOON);
+  for (const char of soonChars) {
     const s = Object.assign(document.createElement('span'), { className: 'soon', textContent: char });
     s.dataset.testid = 'tile-soon';
     s.setAttribute('aria-hidden', 'true');
-    home.querySelector('.soon-row').append(s);
+    soonRow.append(s);
   }
+
   document.body.dataset.scene = 'home';
   fitShelf(shelf, tiles.length);
-  onResize(shelf, tiles.length);
-}
+  mountPicker({ index, done, next: next?.id });
+  const refit = () => fitShelf(shelf, tiles.length);
+  window.addEventListener('resize', refit);
 
-// 平板旋转时重排
-function onResize(shelf, n) {
-  if (onResize.bound) return;
-  onResize.bound = () => fitShelf(shelf, n);
-  window.addEventListener('resize', onResize.bound);
+  // 进视野的字卡才换笔画字形，一次最多补几张，首页始终秒开
+  const io = new IntersectionObserver((entries) => {
+    for (const en of entries) {
+      if (!en.isIntersecting) continue;
+      io.unobserve(en.target);
+      const g = glyphs.find((x) => x.el === en.target);
+      g?.glyph.upgrade();
+    }
+  }, { root: home, rootMargin: '120px' });
+  for (const { el } of glyphs) io.observe(el);
 }

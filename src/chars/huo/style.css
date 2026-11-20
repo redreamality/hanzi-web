@@ -1,0 +1,22 @@
+/* 火苗的呼吸：底部不动，梢头轻轻伸缩（点火/窜动在 JS 里，分层互不打架） */
+.huo-flame-body { animation: huo-breathe 3.2s ease-in-out infinite; transform-origin: 512px 742px; }
+@keyframes huo-breathe {
+  0%, 100% { transform: scale(1, 1); }
+  50% { transform: scale(0.988, 1.045); }
+}
+
+/* 星星眨眼（个别大星，错开节奏） */
+.huo-star { animation: huo-twinkle 4.2s ease-in-out infinite; }
+@keyframes huo-twinkle {
+  0%, 100% { opacity: 0.78; }
+  50% { opacity: 0.22; }
+}
+
+/* 一直往上飘的小火星：外层 g 定位，内层 path 只做升起动画 */
+.huo-spark { animation: huo-rise var(--d, 3.4s) linear var(--dl, 0s) infinite; opacity: 0; }
+@keyframes huo-rise {
+  0% { transform: translateY(0) scale(0.75); opacity: 0; }
+  10% { opacity: 0.95; }
+  75% { opacity: 0.6; }
+  100% { transform: translateY(-185px) scale(0.45); opacity: 0; }
+}

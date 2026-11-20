@@ -1,0 +1,10 @@
+/* 人群里的小朋友各自轻轻起伏，从脚底起，相位错开，像一群孩子站在一起说笑 */
+.zhong-kid {
+  animation: zhong-bob 3.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: 50% 100%;
+}
+@keyframes zhong-bob {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-4px); }
+}
