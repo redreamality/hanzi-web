@@ -78,6 +78,18 @@ for (const id of IDS) {
 
 const code = await page.evaluate(async ({ IDS, dataMap, S }) => {
   const { __MODS: MODS, __HUO: HUO } = window;
+  // 页面自检：画一个已知 SVG，确认 canvas 链路本身可用
+  {
+    const probe = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><path fill="#000" d="M10 10H90V90H10Z"/></svg>';
+    const img = new Image();
+    await new Promise((r) => { img.onload = r; img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(probe); });
+    const c = document.createElement('canvas'); c.width = 50; c.height = 50;
+    const ctx = c.getContext('2d', { willReadFrequently: true });
+    ctx.drawImage(img, 0, 0, 50, 50);
+    const dd = ctx.getImageData(0, 0, 50, 50).data;
+    let n = 0; for (let i = 0; i < 2500; i++) if (dd[i * 4 + 3] >= 128) n++;
+    console.log('DBG probe ink', n, 'img', img.width + 'x' + img.height);
+  }
   const out = {};
   const NS = 'http://www.w3.org/2000/svg';
   for (const id of IDS) {
@@ -103,6 +115,7 @@ const code = await page.evaluate(async ({ IDS, dataMap, S }) => {
     const bb = layer.getBBox();
     const pad = 4;
     holder.setAttribute('viewBox', `${bb.x - pad} ${bb.y - pad} ${bb.width + 2 * pad} ${bb.height + 2 * pad}`);
+    holder.removeAttribute('style'); // style 里的 visibility:hidden 会被序列化进图像、令整图不可见
     const xml = new XMLSerializer().serializeToString(holder);
     const img = new Image();
     await new Promise((res, rej) => { img.onload = res; img.onerror = () => rej(new Error('img fail ' + id)); img.src = 'data:image/svg+xml;charset=utf-8,' + encodeURIComponent(xml); });
@@ -120,7 +133,8 @@ const code = await page.evaluate(async ({ IDS, dataMap, S }) => {
       bits[i] = a >= 128 && lum <= 160 ? 1 : 0;
       dbgInk += bits[i];
     }
-    console.log('DBG', id, 'bb', bb.width.toFixed(0) + 'x' + bb.height.toFixed(0), 'img', img.width + 'x' + img.height, 'alphaPx', dbgAlpha, 'ink', dbgInk);
+    console.log('DBG', id, 'bb', bb.width.toFixed(0) + 'x' + bb.height.toFixed(0), 'img', img.width + 'x' + img.height, 'alphaPx', dbgAlpha, 'ink', dbgInk, 'px', d[0], d[1], d[2], d[3]);
+    if (id === 'ren') out.__XML = xml;
     out[id] = { w, h, bits: Array.from(bits) };
     holder.remove();
   }
