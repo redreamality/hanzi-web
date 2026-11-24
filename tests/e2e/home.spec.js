@@ -79,3 +79,27 @@ test('写完一个字，首页上它盖了「会」字印，下一课顺延', as
   await expect(page.locator('.tile.next')).toHaveAttribute('data-char', index[1].id);
   expect(await page.locator('[data-testid="tile"][data-done]').count()).toBe(1);
 });
+
+// 回归锁：shelf 从 grid 改成 flex-wrap 后，.tile 的百分比 padding 按整条书架宽解析，
+// 内容区被吃成 0，字卡上的汉字和田字格整个消失（2026-11-21 截图终审发现）。
+test('字卡上的汉字真的画出来：glyph 有尺寸，标题和预告都在屏幕里', async ({ page }) => {
+  const done = index.slice(0, 20).map((x) => x.id); // 字卡最多（16 张学会的＋1 张下一课）的挤压态
+  await page.addInitScript((d) => localStorage.setItem('hanzi.done', JSON.stringify(d)), done);
+  await page.goto('/?fast');
+  await expect(scene(page)).toHaveAttribute('data-scene', 'home');
+  const glyphs = await page.locator('[data-testid="tile"] svg.glyph').all();
+  expect(glyphs.length).toBeGreaterThan(0);
+  for (const g of glyphs) {
+    const b = await g.boundingBox();
+    expect(b, '汉字 SVG 不应是 0×0').toBeTruthy();
+    expect(b.width).toBeGreaterThan(30);
+    expect(b.height).toBeGreaterThan(30);
+  }
+  const vp = page.viewportSize();
+  for (const sel of ['#home .title', '#home .soon-row']) {
+    const b = await page.locator(sel).boundingBox();
+    expect(b, `${sel} 应在页面上`).toBeTruthy();
+    expect(b.y).toBeGreaterThanOrEqual(-1);
+    expect(b.y + b.height).toBeLessThanOrEqual(vp.height + 1);
+  }
+});

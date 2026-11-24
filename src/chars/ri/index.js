@@ -1,4 +1,4 @@
-// 「日」：朱砂太阳 → 甲骨文（圈里一点）→ 小篆（竖长圆框加短横）→ 楷书方框。
+// 「日」：朱砂太阳 → 甲骨文（扁圆圈里一短横）→ 小篆（竖长圆框加短横）→ 楷书方框。
 // 接口说明见 src/chars/README.md。
 import { createSun } from './sun.js';
 import { createMorph } from './morph.js';

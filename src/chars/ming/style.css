@@ -1,6 +1,6 @@
-/* 晨昏天际的太阳与月亮轻轻呼吸 */
-.ming-sun-body.breathing { animation: ming-sun-breathe 3.4s ease-in-out infinite; transform-origin: 330px 690px; }
-@keyframes ming-sun-breathe {
+/* 夜窗的灯与窗外的月亮轻轻呼吸 */
+.ming-win-body.breathing { animation: ming-win-breathe 3.4s ease-in-out infinite; transform-origin: 330px 600px; }
+@keyframes ming-win-breathe {
   0%, 100% { transform: scale(1); }
   50% { transform: scale(1.04); }
 }
@@ -10,7 +10,7 @@
   50% { transform: scale(1.03); }
 }
 
-/* 晨星一明一暗，各颗快慢错开（--d 时长、--o 延迟由 JS 写在元素上） */
+/* 夜星一明一暗，各颗快慢错开（--d 时长、--o 延迟由 JS 写在元素上） */
 .ming-star { animation: ming-twinkle var(--d, 3s) ease-in-out var(--o, 0s) infinite; }
 @keyframes ming-twinkle {
   0%, 100% { opacity: 0.92; }

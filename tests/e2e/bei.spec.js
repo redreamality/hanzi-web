@@ -101,6 +101,45 @@ test('北：画面和甲骨文的两个人都是背对背，手臂朝两边甩',
   assertBackToBack(oracle, '甲骨文');
 });
 
+// 返修锁定（audit-11-chars.md「北」条）：拓片 F60B～F60F 每人笔笔相连、各自连成一体——
+// 右人手臂（pie）的起笔要落在头身竖线（gou）的墨迹上，不再悬空成第三个独立域。
+// 在两笔外框交集里撒点，数同时落在两笔墨迹里的点（isPointInFill），相交才算相连。
+test('北：甲骨文右人的手臂连在身子上，不是悬空的一笔', async ({ page }) => {
+  await open(page, 'bei');
+  await page.evaluate(() => {
+    window.__hits = 0;
+    const sample = () => {
+      if (document.body.dataset.scene === 'oracle') {
+        const m = document.querySelector('#morph-layer .morph');
+        if (m && Number(m.getAttribute('opacity') ?? 0) >= 0.9) {
+          const pie = m.querySelector('[data-part="pie"]');
+          const gou = m.querySelector('[data-part="gou"]');
+          const bp = pie.getBBox();
+          const bg = gou.getBBox();
+          const x0 = Math.max(bp.x, bg.x), x1 = Math.min(bp.x + bp.width, bg.x + bg.width);
+          const y0 = Math.max(bp.y, bg.y), y1 = Math.min(bp.y + bp.height, bg.y + bg.height);
+          if (x1 > x0 && y1 > y0) {
+            let n = 0;
+            for (let x = x0; x <= x1; x += 3)
+              for (let y = y0; y <= y1; y += 3) {
+                const pt = new DOMPoint(x, y);
+                if (pie.isPointInFill(pt) && gou.isPointInFill(pt)) n++;
+              }
+            window.__hits = Math.max(window.__hits, n);
+          }
+        }
+      }
+      requestAnimationFrame(sample);
+    };
+    requestAnimationFrame(sample);
+  });
+  await page.getByTestId('start').click();
+  await tapPicture(page);
+  await page.waitForSelector('body[data-scene="trace"]', { timeout: 20_000 });
+  const hits = await page.evaluate(() => window.__hits);
+  expect(hits).toBeGreaterThan(3);
+});
+
 // 家族比较环节必点（任务卡 / hanzi-network spec）：人形族双人三式——
 // 「从是一前一后，比是肩并肩，北是背对背」，台词要点全。
 test('北：比较环节点出「从」「比」和「背对背」', async ({ page }) => {

@@ -1,17 +1,18 @@
-// 「明」从日月同空到楷书的组字与字形变形。
-// 整个字拆成两条部件骨架：日（左）四笔、月（右）四笔，与楷书的八画一一对应——
-// 甲骨文就是日、月并置：一个圈里一点，旁边一弯月牙。组字是这一课的重头戏，
-// 所以起笔先用「日」一课的朱砂描圆圈、「月」一课的月光金描月牙，再一起沉成墨。
+// 「明」从夜窗到楷书的组字与字形变形。
+// 整个字拆成两条部件骨架：囧（左）四笔、月（右）四笔，与楷书的八画一一对应——
+// 甲骨文从囧从月（拓片 4/4，从日 0 例）：左边一扇方格小窗，右边一弯月牙。
+// 组字是这一课的重头戏，所以起笔先用窗子的暖光描出囧框（赭石起笔）、
+// 「月」一课的月光金描月牙，再一起沉成墨。小篆囧左月右、月内一竖笔（拓片 EEF7 系）。
 // 楷书的骨架直接取笔画数据的中线，最后一步和真正的笔顺严丝合缝。
 import { svg, tween, lerp } from '../../util.js';
 
 const N = 40; // 每条骨架都重采样到同样多的点，插值时一一对应
-const INK = { ri: { r: 34, g: 29, b: 26 }, yue: { r: 34, g: 29, b: 26 } };
-// 组字起笔的颜料：日用朱砂（与「日」一课同色），月用月光金（与「月」一课同色）
-const PIGMENT = { ri: { r: 178, g: 52, b: 40 }, yue: { r: 204, g: 172, b: 100 } };
+const INK = { jiong: { r: 34, g: 29, b: 26 }, yue: { r: 34, g: 29, b: 26 } };
+// 组字起笔的颜料：囧（窗）用赭石（窗棂木色＋灯下暖光），月用月光金（与「月」一课同色）
+const PIGMENT = { jiong: { r: 168, g: 94, b: 50 }, yue: { r: 204, g: 172, b: 100 } };
 
-const KEYS = ['riLeft', 'riRight', 'riMid', 'riBot', 'yueBack', 'yueArm', 'yueIn1', 'yueIn2'];
-const COMP = Object.fromEntries(KEYS.map((k) => [k, k.startsWith('ri') ? 'ri' : 'yue']));
+const KEYS = ['jiongLeft', 'jiongRight', 'jiongMid', 'jiongBot', 'yueBack', 'yueArm', 'yueIn1', 'yueIn2'];
+const COMP = Object.fromEntries(KEYS.map((k) => [k, k.startsWith('jiong') ? 'jiong' : 'yue']));
 
 // ---- 采样工具（与 yue/morph.js 同款；共享文件不能动，这里各留一份） ----
 function pathLen(pts) {
@@ -69,56 +70,64 @@ function ringPts({ cx, cy, a, b, n, from, to, steps = 22 }) {
   });
 }
 
-// 日、月两个部件的字位（屏幕坐标，y 朝下）：各与楷书部件的外框中心对齐
-const RI_C = { cx: 271, cy: 406 };
+// 囧、月两个部件的字位（屏幕坐标，y 朝下）：各与楷书部件的外框中心对齐
+const JIONG_C = { cx: 271, cy: 406 };
 const YUE_C = [640, 484];
 
-// 甲骨文：日是圈里一点的圆（左、右两半弧合成一个圈），月是肚里一小笔的弯月。
-// 弯月两缘的形状沿用「月」一课甲骨文的骨架，平移到「明」里月的位置。
+// 甲骨文：囧是方格窗——外框两半弧合成一圈（超椭圆 n>2 是圆角方），窗格一笔竖、一笔横（拓片 EEF9 横格独立成域），
+// 月是肚里一小竖笔的弯月（拓片 EEF7 月内一竖笔）。弯月两缘沿用「月」一课甲骨文的骨架，平移到「明」里月的位置。
 const ORACLE = {
-  riLeft: ringPts({ ...RI_C, a: 112, b: 118, n: 2.05, from: -90, to: -270 }),
-  riRight: ringPts({ ...RI_C, a: 112, b: 118, n: 2.05, from: -90, to: 90 }),
-  riMid: [[265, 406], [278, 406]],
-  riBot: [[271, 521], [271, 521]],
+  // 外框 n=2.7：拓片（EEF7/EEF9/EEFA）的囧框都是圆角方，2026-11-21 前的 3.2 太方，
+  // 加上十字格贴框，整个构件读成「田」（用户终审指出）。
+  jiongLeft: ringPts({ ...JIONG_C, a: 100, b: 118, n: 2.7, from: -90, to: -270 }),
+  jiongRight: ringPts({ ...JIONG_C, a: 100, b: 118, n: 2.7, from: -90, to: 90 }),
+  // 窗格浮在框内、不与框相连。甲骨实证（2026-11-21 二修）：四件拓片没有一件是十字格——
+  // EEF6/EEF7 是与框粘连的网纹，EEF9/EEFA 是一根悬空横条。所以甲骨只画**一根浮横条**（循 EEF9/EEFA）；
+  // 竖格是零长的点、藏进横条墨里，小篆（swxz_6719 十字格上端悬空）才长出来。
+  // 横条中心线离框 42px：框笔半宽 13＋条笔半宽 13，可见空隙约 16px。
+  jiongMid: [[271, 406], [271, 406]],
+  jiongBot: [[213, 406], [329, 406]],
   yueBack: [[766, 204], [647, 244], [547, 339], [514, 459], [522, 579], [572, 684], [664, 751], [752, 764]],
   yueArm: [[766, 204], [670, 279], [630, 399], [632, 519], [660, 629], [712, 704], [752, 764]],
-  // 影子要落在月牙肚里（左缘 x≈514、右缘 x≈632 之间），否则会被右缘线盖住
+  // 小竖笔要落在月牙肚里（左缘 x≈514、右缘 x≈632 之间），否则会被右缘线盖住
   yueIn1: [[570, 434], [576, 549]],
   yueIn2: [[573, 491], [573, 491]],
-  width: { ri: 26, yue: 24 },
-  jitter: { ri: 0.3, yue: 0.22 },
+  width: { jiong: 26, yue: 24 },
+  jitter: { jiong: 0.3, yue: 0.22 },
 };
 
-// 小篆：日左月右定型——日是竖长的圆角框（中间一横），月是两缘匀称的弯月（里面两横）
+// 小篆囧（2026-11-22 三修，两件拓片像素剖析推翻「十字」）：竖长圆角框＋**中横棂贴左右框**
+// （swxz_6719 y0.35 横棂与框相连）＋**竖棂自横棂垂下、不抵底**（660E 中部浮空竖棂、swxz 下方竖笔）。
+// 两件拓片没有一件是四边封的十字——十字读作「田」，是把两件错误合并出来的形。
+// 月：拓片笔宽约占月高 6～13%（660E 约 6%），yue 笔宽 25→34（约 5.8%）；月内一竖笔维持（2/2 实证）。
 const SEAL = {
-  riLeft: ringPts({ ...RI_C, a: 99, b: 190, n: 3.6, from: -90, to: -270 }),
-  riRight: ringPts({ ...RI_C, a: 99, b: 190, n: 3.6, from: -90, to: 90 }),
-  riMid: [[209, 406], [333, 406]],
-  // 底边在甲骨文、小篆里都还是圈框的一部分（一个点），到楷书才长成底横
-  riBot: [[271, 590], [271, 590]],
+  jiongLeft: ringPts({ ...JIONG_C, a: 120, b: 165, n: 3.0, from: -90, to: -270 }),
+  jiongRight: ringPts({ ...JIONG_C, a: 120, b: 165, n: 3.0, from: -90, to: 90 }),
+  jiongMid: [[271, 356], [271, 480]],
+  jiongBot: [[150, 356], [392, 356]],
   yueBack: [[739, 197], [616, 249], [551, 379], [541, 519], [561, 649], [631, 734], [724, 771]],
   yueArm: [[739, 197], [678, 264], [658, 389], [661, 519], [684, 644], [716, 724], [724, 771]],
-  // 两横的右端收在右缘（x≈660）以内，不出头
-  yueIn1: [[568, 411], [644, 411]],
-  yueIn2: [[570, 541], [646, 541]],
-  width: { ri: 24, yue: 25 },
-  jitter: { ri: 0, yue: 0 },
+  // 月肚里一竖笔（拓片 swxz_6719 11×62、xiaozhuan_27_660E 18×89，约 0.36 月高），第二笔还是零长的点
+  yueIn1: [[600, 386], [600, 582]],
+  yueIn2: [[600, 484], [600, 484]],
+  width: { jiong: 24, yue: 34 },
+  jitter: { jiong: 0, yue: 0 },
 };
 
-// 楷书：八画全部照笔画数据的中线来（y 换成 900 - y）
+// 楷书：八画全部照笔画数据的中线来（y 换成 900 - y）；囧在楷书里已经变成日
 function kaishuForm(medians) {
   const flip = (m) => m.map(([x, y]) => [x, 900 - y]);
   return {
-    riLeft: flip(medians[0]),
-    riRight: flip(medians[1]),
-    riMid: flip(medians[2]),
-    riBot: flip(medians[3]),
+    jiongLeft: flip(medians[0]),
+    jiongRight: flip(medians[1]),
+    jiongMid: flip(medians[2]),
+    jiongBot: flip(medians[3]),
     yueBack: flip(medians[4]),
     yueArm: flip(medians[5]),
     yueIn1: flip(medians[6]),
     yueIn2: flip(medians[7]),
-    width: { ri: 40, yue: 44 },
-    jitter: { ri: 0, yue: 0 },
+    width: { jiong: 40, yue: 44 },
+    jitter: { jiong: 0, yue: 0 },
   };
 }
 
@@ -126,9 +135,9 @@ function kaishuForm(medians) {
 function mixForm(a, b, t) {
   const mixc = (x, y) => ({ r: lerp(x.r, y.r, t), g: lerp(x.g, y.g, t), b: lerp(x.b, y.b, t) });
   const out = {
-    width: { ri: lerp(a.width.ri, b.width.ri, t), yue: lerp(a.width.yue, b.width.yue, t) },
-    jitter: { ri: lerp(a.jitter.ri, b.jitter.ri, t), yue: lerp(a.jitter.yue, b.jitter.yue, t) },
-    colors: { ri: mixc(a.colors.ri, b.colors.ri), yue: mixc(a.colors.yue, b.colors.yue) },
+    width: { jiong: lerp(a.width.jiong, b.width.jiong, t), yue: lerp(a.width.yue, b.width.yue, t) },
+    jitter: { jiong: lerp(a.jitter.jiong, b.jitter.jiong, t), yue: lerp(a.jitter.yue, b.jitter.yue, t) },
+    colors: { jiong: mixc(a.colors.jiong, b.colors.jiong), yue: mixc(a.colors.yue, b.colors.yue) },
   };
   for (const k of KEYS) out[k] = a[k].map((p, i) => [lerp(p[0], b[k][i][0], t), lerp(p[1], b[k][i][1], t)]);
   return out;
@@ -187,14 +196,14 @@ export function createMorph(layer, data) {
 
   return {
     root,
-    // 日先来：天上的太阳挪到字位的同时，朱砂色把圆圈一笔描出来
-    async drawSun(check) {
+    // 窗先来：夜里的窗子挪到字位的同时，赭石色把囧的外框一笔描出来
+    async drawWindow(check) {
       root.setAttribute('opacity', 1);
       render(FORMS.oracle, PIGMENT);
       KEYS.forEach((k) => setDraw(lines[k], 0));
       await tween(1600, (t) => {
-        setDraw(lines.riLeft, t);
-        setDraw(lines.riRight, t);
+        setDraw(lines.jiongLeft, t);
+        setDraw(lines.jiongRight, t);
       }, { check });
     },
     // 月跟上：月牙挪过来，月光金把弯月的背和怀抱描出来
@@ -204,22 +213,30 @@ export function createMorph(layer, data) {
         setDraw(lines.yueArm, t);
       }, { check });
     },
-    // 中间的小笔长出来，朱砂和月光金慢慢一起沉成墨
+    // 窗格和月牙里的小笔长出来，赭石和月光金慢慢一起沉成墨
     async settle(check) {
-      await tween(500, (t) => {
-        setDraw(lines.riMid, t);
+      await tween(700, (t) => {
+        setDraw(lines.jiongMid, t);
+        setDraw(lines.jiongBot, t);
         setDraw(lines.yueIn1, t);
       }, { check });
       const mixc = (x, y, t) => ({ r: lerp(x.r, y.r, t), g: lerp(x.g, y.g, t), b: lerp(x.b, y.b, t) });
       await tween(
         1100,
-        (t) => render(FORMS.oracle, { ri: mixc(PIGMENT.ri, INK.ri, t), yue: mixc(PIGMENT.yue, INK.yue, t) }),
+        (t) => render(FORMS.oracle, { jiong: mixc(PIGMENT.jiong, INK.jiong, t), yue: mixc(PIGMENT.yue, INK.yue, t) }),
         { check },
       );
     },
     async to(name, ms, check) {
       const from = current;
       await tween(ms, (t) => render(mixForm(from, FORMS[name], t)), { check });
+      // 变形到位后摘掉描红起手时的隐藏状态——月内第二笔等「从零长出来」的笔画才看得见
+      for (const k of KEYS) {
+        if (pathLen(current[k]) > 3) {
+          lines[k].removeAttribute('stroke-dasharray');
+          lines[k].removeAttribute('stroke-dashoffset');
+        }
+      }
       if (name === 'kaishu') noteBox();
     },
     async fadeTo(opacity, ms, check) {

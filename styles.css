@@ -159,7 +159,9 @@ body[data-scene="home"] #controls { display: none; }
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  padding: 10%;
+  /* 百分比 padding 按 flex 书架整宽解析（shelf 是 flex-wrap 后不是 grid），
+     会把内容区吃成 0——必须相对字卡自身的 --tile */
+  padding: calc(var(--tile) * .1);
   border: 2px solid rgba(34, 29, 26, .35);
   border-radius: 14px;
   background: rgba(250, 244, 232, .9);

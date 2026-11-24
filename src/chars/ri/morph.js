@@ -8,8 +8,8 @@ const N = 160;
 const [cx, cy] = CENTER;
 
 export const FORMS = {
-  // 甲骨文：刀刻在龟甲上，圆圈不太圆，中间一个点
-  oracle: { a: 214, b: 222, n: 2.1, jitter: 0.06, half: 2, oy: 0, dy: 0, width: 24, inkR: 34, inkG: 29, inkB: 26 },
+  // 甲骨文：刀刻在龟甲上，圆圈略扁（拓片 5/5 环 W/H≥1.04），中间一短横（拓片 5/5 是横，中位 0.46 环宽）
+  oracle: { a: 214, b: 195, n: 2.1, jitter: 0.06, half: 100, oy: 0, dy: 0, width: 24, inkR: 34, inkG: 29, inkB: 26 },
   // 小篆：线条匀称，竖长的圆角框，中间短短一横
   seal: { a: 160, b: 290, n: 4.2, jitter: 0, half: 70, oy: 6, dy: -10, width: 24, inkR: 34, inkG: 29, inkB: 26 },
   // 楷书：方框，中横贴着两边；尺寸对齐笔画数据里「日」的外框，接笔顺动画时不跳
@@ -71,7 +71,7 @@ export function createMorph(layer) {
 
   return {
     root,
-    // 先用朱砂色沿着太阳画一圈，再点上中间的点，然后颜色慢慢沉成墨色
+    // 先用朱砂色沿着太阳画一圈，再画上中间的一横，然后颜色慢慢沉成墨色
     async drawOracle(check) {
       root.setAttribute('opacity', 1);
       const red = { ...FORMS.oracle, inkR: 178, inkG: 52, inkB: 40 };

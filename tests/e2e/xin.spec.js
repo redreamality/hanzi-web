@@ -4,6 +4,29 @@ import { lessonTests, enterTrace, drawStroke, scene, open } from './lesson.js';
 
 lessonTests('xin');
 
+// 返修锁定（audit-11-chars.md「心」条）：拓片心廓宽高比 0.50～0.82（中位 0.66），
+// 改前代码 0.35 偏瘦 30%——加宽后应落在 0.55～0.68。量甲骨文外廓（hook）一笔的外框；
+// 描红起手时外廓是从上往下一刀刀刻出来的，等宽度涨满再量。
+test('心：甲骨文的心廓是圆宽的，不是瘦长条', async ({ page }) => {
+  await open(page, 'xin');
+  await page.getByTestId('start').click();
+  await page.getByTestId('picture').click({ force: true });
+  // DOM 顺序即 PARTS 序（dotL、hook、dotM、dotR），外廓是第二笔
+  const ratio = await page
+    .waitForFunction(() => {
+      if (document.body.dataset.scene !== 'oracle') return null;
+      const m = document.querySelector('#morph-layer .morph');
+      if (!m || Number(m.getAttribute('opacity') ?? 0) < 0.9) return null;
+      const paths = m.querySelectorAll('path');
+      const b = paths[1].getBBox(); // hook
+      if (b.width < 330) return null; // 还没刻完整（左右两侧要都到位）
+      return b.width / b.height;
+    })
+    .then((r) => r.jsonValue());
+  expect(ratio).toBeGreaterThan(0.5);
+  expect(ratio).toBeLessThan(0.72);
+});
+
 // 楷书形态的最后一帧要和真实笔画外框对齐，不然切到笔顺动画会「跳」。
 // 「心」的变形是四条笔画的联合：左点、卧钩、中点、右点——
 // 卧钩和三点全部就位才算对上（fast 模式下一闪而过，轮询等到对上的那一刻）。
@@ -122,4 +145,40 @@ test('心：写完后孩子心回到字后，飘心收干净', async ({ page }) 
   expect(s.floatsOp).toBe(0);
   expect(s.floatsN).toBe(0);
   expect(s.stray).toBe(0);
+});
+
+// 2026-11-21 回归锁（用户终审指出）：拓片（ECBF/ECC1/ECC4/ECCC）的心廓顶部是大开口、
+// 左右双蒂上翘外伸——上一版两蒂收拢成窄缝，整个廓读作对称纺锤，不像心。
+// 锁两件事：顶部正中没有墨（开口）；蒂尖高过并伸到侧壁连线之外（上翘外伸）。
+test('心：甲骨文心廓顶部开大口，双蒂上翘外伸', async ({ page }) => {
+  await open(page, 'xin');
+  await page.getByTestId('start').click();
+  await page.getByTestId('picture').click({ force: true });
+  const s = await page
+    .waitForFunction(() => {
+      if (document.body.dataset.scene !== 'oracle') return null;
+      const m = document.querySelector('#morph-layer .morph');
+      if (!m || Number(m.getAttribute('opacity') ?? 0) < 0.9) return null;
+      const paths = m.querySelectorAll('path');
+      const hook = paths[1]; // DOM 序即 PARTS 序：dotL、hook、dotM、dotR
+      if (!hook || hook.getAttribute('d') === '') return null;
+      const inFill = (x, y) => hook.isPointInFill(new DOMPoint(x, y));
+      // 等外廓刻完整（bbox 涨满）再采样
+      const b = hook.getBBox();
+      if (b.width < 320 || b.height < 540) return null;
+      return {
+        // 顶部正中（两蒂之间）应是空的：开口没闭合
+        topCenterOpen: !inFill(b.x + b.width / 2, b.y + 12),
+        // 左右蒂尖：高过肩、伸到侧壁之外（旧纺锤形这里没有墨）
+        leftHorn: inFill(b.x + b.width * 0.3, b.y + 6),
+        rightHorn: inFill(b.x + b.width * 0.72, b.y + 6),
+        // 肩线以下是侧壁，不该空
+        wall: inFill(b.x + b.width * 0.07, b.y + b.height * 0.45),
+      };
+    })
+    .then((r) => r.jsonValue());
+  expect(s.topCenterOpen, '顶部两蒂之间应是开口').toBe(true);
+  expect(s.leftHorn, '左蒂上翘外伸').toBe(true);
+  expect(s.rightHorn, '右蒂上翘外伸').toBe(true);
+  expect(s.wall, '侧壁应有墨').toBe(true);
 });

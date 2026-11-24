@@ -1,16 +1,25 @@
-// 「明」的晨昏天际：东边一轮初升的太阳，西边一弯将落未落的月亮。
-// 日在左下、月在右上——和「明」字里日左月右的站位一样；组字时它们各自挪到字位上。
-// 天色从微明到放亮，放在背景层（layers.scenery，1600×1000 坐标）。
+// 「明」的夜窗：夜里一扇亮着灯的方格小窗，窗外挂着一弯月亮。
+// 窗在左、月在右——和「明」字里囧左月右的站位一样；组字时它们各自挪到字位上。
+// 月光从窗子照进来，屋里亮亮的，就是明。天色放在背景层（layers.scenery，1600×1000 坐标）。
 import { svg, tween, wait, ease, lerp } from '../../util.js';
 
-const SUN_AT = [330, 690];
-const SUN_R = 92;
+const WINDOW_AT = [330, 600];
+const WIN = { w: 300, h: 360, r: 30 };
 const MOON_AT = [700, 258];
 const MOON_GEO = { R: 150, r: 122, dx: 66, rot: (-14 * Math.PI) / 180 };
 
-// 组字时实物要挪到的字位（与 morph.js 里日、月的字位一致）
-export const RI_SPOT = [271, 406];
+// 组字时实物要挪到的字位（与 morph.js 里囧、月的字位一致）
+export const JIONG_SPOT = [271, 406];
 export const YUE_SPOT = [640, 484];
+
+// 圆角矩形 path（窗框、窗格底光、光晕圈都用它）
+function rrect({ x, y, w, h, r }) {
+  return (
+    `M${x + r} ${y}h${w - 2 * r}a${r} ${r} 0 0 1 ${r} ${r}v${h - 2 * r}a${r} ${r} 0 0 1 -${r} ${r}` +
+    `h${-(w - 2 * r)}a${r} ${r} 0 0 1 -${r} -${r}v${-(h - 2 * r)}a${r} ${r} 0 0 1 ${r} -${r}Z`
+  );
+}
+const winBox = (k = 1) => ({ x: WINDOW_AT[0] - (WIN.w * k) / 2, y: WINDOW_AT[1] - (WIN.h * k) / 2, w: WIN.w * k, h: WIN.h * k, r: WIN.r * k });
 
 // 两段圆弧相交出月牙（与「月」一课同款几何，参数自定）：背（外弧）+ 怀抱（内弧）
 function crescentEdges({ cx, cy, R, r, dx, rot }) {
@@ -58,22 +67,26 @@ export function createSky(pictureLayer, sceneryLayer) {
   const body = svg('g', { class: 'ming-bodies' }, root);
   svg('ellipse', { cx: 505, cy: 470, rx: 340, ry: 390, fill: '#000', 'fill-opacity': 0 }, body);
 
-  // —— 东边初升的太阳（晨光里暖而淡） ——
-  const sunG = svg('g', { opacity: 0 }, body);
-  const sunScaler = svg('g', {}, sunG);
-  const sunBody = svg('g', { class: 'ming-sun-body breathing' }, sunScaler);
-  const sdefs = svg('defs', {}, sunBody);
-  const score = svg('radialGradient', { id: 'ming-sun-core', cx: '.45', cy: '.4', r: '.65' }, sdefs);
-  svg('stop', { offset: '0', 'stop-color': '#f8cb92' }, score);
-  svg('stop', { offset: '.6', 'stop-color': '#efa05c' }, score);
-  svg('stop', { offset: '1', 'stop-color': '#dc7f38' }, score);
-  const [sx, sy] = SUN_AT;
-  svg('circle', { cx: sx, cy: sy, r: SUN_R * 1.5, fill: '#f2b46e', opacity: 0.22, filter: 'url(#glow)' }, sunBody);
-  svg('circle', { cx: sx, cy: sy, r: SUN_R * 1.03, fill: '#eda45f', opacity: 0.3, filter: 'url(#wash2)' }, sunBody);
-  svg('circle', { cx: sx, cy: sy, r: SUN_R, fill: 'url(#ming-sun-core)', opacity: 0.82, filter: 'url(#wash1)' }, sunBody);
-  svg('circle', { cx: sx - 14, cy: sy - 16, r: SUN_R * 0.66, fill: '#f9d8a4', opacity: 0.3, filter: 'url(#wash2)' }, sunBody);
-  svg('circle', { cx: sx, cy: sy, r: SUN_R * 0.97, fill: 'none', stroke: '#c4762f', 'stroke-width': 6, opacity: 0.28, filter: 'url(#wash1)' }, sunBody);
-  svg('circle', { cx: sx, cy: sy, r: SUN_R * 1.35, fill: '#000', 'fill-opacity': 0 }, sunG); // 摸得到太阳
+  // —— 左边一扇亮着灯的小窗（夜里屋里透出的暖光） ——
+  const winG = svg('g', { opacity: 0 }, body);
+  const winScaler = svg('g', {}, winG);
+  const winBody = svg('g', { class: 'ming-win-body breathing' }, winScaler);
+  const wdefs = svg('defs', {}, winBody);
+  const wcore = svg('radialGradient', { id: 'ming-win-core', cx: '.5', cy: '.42', r: '.75' }, wdefs);
+  svg('stop', { offset: '0', 'stop-color': '#f8e7bd' }, wcore);
+  svg('stop', { offset: '.55', 'stop-color': '#f0d49a' }, wcore);
+  svg('stop', { offset: '1', 'stop-color': '#dcb672' }, wcore);
+  const [wx, wy] = WINDOW_AT;
+  // 暖光先铺满窗洞（窗格后面的光），边上一圈更亮的水彩积色
+  svg('path', { d: rrect(winBox(1.12)), fill: '#f2dca4', opacity: 0.2, filter: 'url(#glow)' }, winBody);
+  const panes = svg('path', { d: rrect(winBox(0.94)), fill: 'url(#ming-win-core)', opacity: 0.8, filter: 'url(#wash1)' }, winBody);
+  svg('path', { d: rrect(winBox(0.94)), fill: 'none', stroke: '#c99b4e', 'stroke-width': 5, opacity: 0.3, filter: 'url(#wash1)' }, winBody);
+  // 木窗棂：外框两圈（深木色勾边＋淡的水彩边），中间一根竖棂、一根横棂——和囧的窗格一样
+  svg('path', { d: rrect(winBox()), fill: 'none', stroke: '#3e2f20', 'stroke-width': 24, 'stroke-linejoin': 'round', opacity: 0.22, filter: 'url(#wash2)' }, winBody);
+  const frame = svg('path', { d: rrect(winBox()), fill: 'none', stroke: '#5b4630', 'stroke-width': 16, 'stroke-linejoin': 'round', opacity: 0.92, filter: 'url(#wash1)' }, winBody);
+  const mullV = svg('line', { x1: wx, y1: wy - WIN.h / 2 + 8, x2: wx, y2: wy + WIN.h / 2 - 8, stroke: '#5b4630', 'stroke-width': 12, 'stroke-linecap': 'round', opacity: 0.9, filter: 'url(#wash1)' }, winBody);
+  const mullH = svg('line', { x1: wx - WIN.w / 2 + 8, y1: wy, x2: wx + WIN.w / 2 - 8, y2: wy, stroke: '#5b4630', 'stroke-width': 12, 'stroke-linecap': 'round', opacity: 0.9, filter: 'url(#wash1)' }, winBody);
+  svg('path', { d: rrect(winBox(1.18)), fill: '#000', 'fill-opacity': 0 }, winG); // 摸得到窗子
 
   // —— 西边淡淡的月牙 ——
   const moonG = svg('g', { opacity: 0 }, body);
@@ -99,31 +112,31 @@ export function createSky(pictureLayer, sceneryLayer) {
   paintMoon();
   svg('ellipse', { cx: 676, cy: 258, rx: 108, ry: 148, fill: '#000', 'fill-opacity': 0 }, moonG); // 摸得到月亮
 
-  // —— 位置状态：太阳、月亮都会「挪窝」（组字时挪到字位，收尾时挪回天上） ——
+  // —— 位置状态：窗子、月亮都会「挪窝」（组字时挪到字位，收尾时挪回原位） ——
   const place = (el, from, at, s) =>
     el.setAttribute('transform', `translate(${at[0].toFixed(1)} ${at[1].toFixed(1)}) scale(${s.toFixed(3)}) translate(${-from[0]} ${-from[1]})`);
-  const sun = { at: [...SUN_AT], s: 1 };
+  const win = { at: [...WINDOW_AT], s: 1 };
   const moon = { at: [...MOON_AT], s: 1 };
-  const setSun = () => place(sunScaler, SUN_AT, sun.at, sun.s);
+  const setWin = () => place(winScaler, WINDOW_AT, win.at, win.s);
   const setMoon = () => place(moonScaler, MOON_AT, moon.at, moon.s);
 
-  // —— 背景：晨色、晨星、放亮后的暖光 ——
+  // —— 背景：夜色、星星、屋里亮起的暖光 ——
   let scenery = null;
   let tint = null;
   let stars = null;
-  let morning = null;
+  let warm = null;
   function buildScenery() {
     sceneryLayer.replaceChildren();
     scenery = svg('g', { class: 'ming-scenery' }, sceneryLayer);
     const defs = svg('defs', {}, scenery);
-    const dawn = svg('linearGradient', { id: 'ming-dawn-grad', x1: '0', y1: '0', x2: '0', y2: '1' }, defs);
-    svg('stop', { offset: '0', 'stop-color': '#28304e', 'stop-opacity': '.85' }, dawn);
-    svg('stop', { offset: '.45', 'stop-color': '#4e4a6b', 'stop-opacity': '.5' }, dawn);
-    svg('stop', { offset: '.78', 'stop-color': '#a5714f', 'stop-opacity': '.3' }, dawn);
-    svg('stop', { offset: '1', 'stop-color': '#c98d55', 'stop-opacity': '0' }, dawn);
+    const night = svg('linearGradient', { id: 'ming-night-grad', x1: '0', y1: '0', x2: '0', y2: '1' }, defs);
+    svg('stop', { offset: '0', 'stop-color': '#10162b', 'stop-opacity': '.9' }, night);
+    svg('stop', { offset: '.45', 'stop-color': '#232a4d', 'stop-opacity': '.55' }, night);
+    svg('stop', { offset: '.78', 'stop-color': '#3d3a58', 'stop-opacity': '.3' }, night);
+    svg('stop', { offset: '1', 'stop-color': '#4a4157', 'stop-opacity': '0' }, night);
     tint = svg('g', { opacity: 0 }, scenery);
-    svg('rect', { x: 0, y: 0, width: 1600, height: 1000, fill: 'url(#ming-dawn-grad)' }, tint);
-    // 晨星不跟着晨色一起变暗，所以单独一组
+    svg('rect', { x: 0, y: 0, width: 1600, height: 1000, fill: 'url(#ming-night-grad)' }, tint);
+    // 星星不跟着夜色一起变淡，所以单独一组
     stars = svg('g', { opacity: 0 }, scenery);
     svg('circle', { cx: 262, cy: 128, r: 10, fill: '#f2e9cd', opacity: 0.24, filter: 'url(#glow)' }, stars);
     svg('circle', { cx: 1362, cy: 214, r: 9, fill: '#f2e9cd', opacity: 0.2, filter: 'url(#glow)' }, stars);
@@ -135,14 +148,14 @@ export function createSky(pictureLayer, sceneryLayer) {
         star.style.setProperty('--o', `${((i % 7) * 0.4).toFixed(1)}s`);
       }
     });
-    morning = svg('g', { opacity: 0 }, scenery);
-    const warm = svg('linearGradient', { id: 'ming-morning-grad', x1: '0', y1: '0', x2: '0', y2: '1' }, defs);
-    svg('stop', { offset: '0', 'stop-color': '#f6dca4', 'stop-opacity': '0' }, warm);
-    svg('stop', { offset: '.55', 'stop-color': '#f4cf8e', 'stop-opacity': '.26' }, warm);
-    svg('stop', { offset: '1', 'stop-color': '#f2c179', 'stop-opacity': '.42' }, warm);
-    svg('rect', { x: 0, y: 0, width: 1600, height: 1000, fill: 'url(#ming-morning-grad)' }, morning);
-    // 字写好了：一团暖光从字后面满开来
-    svg('ellipse', { cx: 770, cy: 460, rx: 430, ry: 300, fill: '#f6dda6', opacity: 0.28, filter: 'url(#glow)' }, morning);
+    warm = svg('g', { opacity: 0 }, scenery);
+    const warmg = svg('linearGradient', { id: 'ming-warm-grad', x1: '0', y1: '0', x2: '0', y2: '1' }, defs);
+    svg('stop', { offset: '0', 'stop-color': '#f6dca4', 'stop-opacity': '0' }, warmg);
+    svg('stop', { offset: '.55', 'stop-color': '#f4cf8e', 'stop-opacity': '.26' }, warmg);
+    svg('stop', { offset: '1', 'stop-color': '#f2c179', 'stop-opacity': '.42' }, warmg);
+    svg('rect', { x: 0, y: 0, width: 1600, height: 1000, fill: 'url(#ming-warm-grad)' }, warm);
+    // 字写好了：月光照进屋里，一团暖光从字后面满开来
+    svg('ellipse', { cx: 770, cy: 460, rx: 430, ry: 300, fill: '#f6dda6', opacity: 0.28, filter: 'url(#glow)' }, warm);
   }
 
   const skyFade = (tintTo, starTo, ms, check) => {
@@ -174,7 +187,7 @@ export function createSky(pictureLayer, sceneryLayer) {
   return {
     root,
     body,
-    // 晨色落下来，星星眨着眼；太阳从山边升上来，月亮慢慢显形
+    // 夜色落下来，星星眨着眼；窗子里的灯亮起来，窗外慢慢显出一弯月亮
     async appear(check) {
       root.setAttribute('opacity', 1);
       buildScenery();
@@ -186,13 +199,13 @@ export function createSky(pictureLayer, sceneryLayer) {
         },
         { check },
       );
-      const sunP = tween(
+      const winP = tween(
         2400,
         (t) => {
-          sunG.setAttribute('opacity', Math.min(1, t * 1.6));
-          sun.s = lerp(0.2, 1, t);
-          sun.at = [SUN_AT[0], lerp(SUN_AT[1] + 46, SUN_AT[1], t)];
-          setSun();
+          winG.setAttribute('opacity', Math.min(1, t * 1.6));
+          win.s = lerp(0.2, 1, t);
+          win.at = [WINDOW_AT[0], lerp(WINDOW_AT[1] - 46, WINDOW_AT[1], t)];
+          setWin();
         },
         { easing: ease.bloom, check },
       );
@@ -207,76 +220,78 @@ export function createSky(pictureLayer, sceneryLayer) {
           { check },
         ),
       );
-      await Promise.all([skyP, sunP, moonP]);
+      await Promise.all([skyP, winP, moonP]);
     },
-    // 摸一下：太阳和月亮一起轻轻一缩一弹，各荡开一圈光晕
+    // 摸一下：窗里的灯轻轻一亮，月牙一缩一弹，各荡开一圈光晕
     async pulse() {
-      const sring = svg('circle', { cx: sun.at[0], cy: sun.at[1], r: SUN_R, fill: 'none', stroke: '#eb9a4e', 'stroke-width': 9, filter: 'url(#wash2)', opacity: 0 }, root);
+      const wring = svg('path', { fill: 'none', stroke: '#e8c88a', 'stroke-width': 9, filter: 'url(#wash2)', opacity: 0 }, root);
       const mring = svg('path', { fill: 'none', stroke: '#e3cd8f', 'stroke-width': 8, filter: 'url(#wash2)', opacity: 0 }, root);
       await tween(
         900,
         (t) => {
-          place(sunScaler, SUN_AT, sun.at, sun.s * (1 - 0.07 * Math.sin(t * Math.PI)));
+          place(winScaler, WINDOW_AT, win.at, win.s * (1 - 0.07 * Math.sin(t * Math.PI)));
           place(moonScaler, MOON_AT, moon.at, moon.s * (1 - 0.06 * Math.sin(t * Math.PI)));
-          sring.setAttribute('r', SUN_R * lerp(1, 1.85, t));
-          sring.setAttribute('opacity', 0.5 * (1 - t));
+          const k = lerp(1.02, 1.5, t);
+          wring.setAttribute('d', rrect({ x: win.at[0] - (WIN.w * k) / 2, y: win.at[1] - (WIN.h * k) / 2, w: WIN.w * k, h: WIN.h * k, r: WIN.r * k }));
+          wring.setAttribute('opacity', 0.5 * (1 - t));
           mring.setAttribute('d', moonD({ cx: moon.at[0], cy: moon.at[1] }, lerp(1.15, 1.9, t)));
           mring.setAttribute('opacity', 0.5 * (1 - t));
         },
         { easing: ease.out },
       );
-      sring.remove();
+      wring.remove();
       mring.remove();
-      setSun();
+      setWin();
       setMoon();
     },
-    // 组字：太阳、月牙各自挪到字位上（尺寸也凑成字形的大小）
-    sunToGlyph: (check) => glide(sun, setSun, RI_SPOT, 1.18, 1600, check),
+    // 组字：窗子、月牙各自挪到字位上（尺寸也凑成字形的大小）
+    windowToGlyph: (check) => glide(win, setWin, JIONG_SPOT, 0.75, 1600, check),
     moonToGlyph: (check) => glide(moon, setMoon, YUE_SPOT, 1.72, 1600, check),
     // 字形刻好了，实物隐成淡淡的影子衬在字后
     fadePics(opacity, ms, check) {
-      const f1 = Number(sunG.getAttribute('opacity'));
+      const f1 = Number(winG.getAttribute('opacity'));
       const f2 = Number(moonG.getAttribute('opacity'));
       return tween(
         ms,
         (t) => {
-          sunG.setAttribute('opacity', lerp(f1, opacity, t));
+          winG.setAttribute('opacity', lerp(f1, opacity, t));
           moonG.setAttribute('opacity', lerp(f2, opacity, t));
         },
         { check },
       );
     },
-    // 天越来越亮：星星先退了
+    // 夜更深了：星星先退了
     starsOut: (check) => skyFade(Number(tint.getAttribute('opacity')), 0, 1400, check),
-    dawnFade: (v, ms, check) => skyFade(v, 0, ms, check),
-    // 要看清笔画了，晨色退成薄薄一层
+    nightFade: (v, ms, check) => skyFade(v, 0, ms, check),
+    // 要看清笔画了，夜色退成薄薄一层
     soften: (check) => skyFade(0.13, 0, 2400, check),
-    // 字写好了：晨色散尽，满屏暖光——天大亮了。
+    // 字写好了：夜色散尽，屋里亮了——月光照进来的暖光满开。
     // 描红前 reset 会把背景清掉，所以先看情况重建（与「月」的夜色 return 同款）
-    morningGlow(check) {
+    warmGlow(check) {
       if (!scenery) buildScenery();
       const f = Number(tint.getAttribute('opacity'));
-      const fm = Number(morning.getAttribute('opacity'));
+      const fm = Number(warm.getAttribute('opacity'));
       return tween(
         2400,
         (t) => {
           tint.setAttribute('opacity', lerp(f, 0, t));
-          morning.setAttribute('opacity', lerp(fm, 1, t));
+          warm.setAttribute('opacity', lerp(fm, 1, t));
         },
         { check },
       );
     },
-    // 收尾：太阳回到东边，升得更高、更暖；月亮淡淡挂回西边
-    async sunReturn(check) {
-      const f = Number(sunG.getAttribute('opacity'));
-      const from = { at: [...sun.at], s: sun.s };
+    // 收尾：窗子回到原位，灯更亮了；月亮淡淡挂回窗外
+    async windowReturn(check) {
+      const f = Number(winG.getAttribute('opacity'));
+      const from = { at: [...win.at], s: win.s };
       await tween(
         1900,
         (t) => {
-          sun.at = [lerp(from.at[0], SUN_AT[0], t), lerp(from.at[1], SUN_AT[1], t)];
-          sun.s = lerp(from.s, 1.14, t);
-          setSun();
-          sunG.setAttribute('opacity', lerp(f, 0.95, t));
+          win.at = [lerp(from.at[0], WINDOW_AT[0], t), lerp(from.at[1], WINDOW_AT[1], t)];
+          win.s = lerp(from.s, 1.06, t);
+          setWin();
+          winG.setAttribute('opacity', lerp(f, 1, t));
+          panes.setAttribute('opacity', (0.8 + 0.15 * t).toFixed(3));
         },
         { easing: ease.bloom, check },
       );
@@ -296,17 +311,18 @@ export function createSky(pictureLayer, sceneryLayer) {
       );
     },
     reset() {
-      sun.at = [...SUN_AT];
-      sun.s = 1;
-      setSun();
+      win.at = [...WINDOW_AT];
+      win.s = 1;
+      setWin();
+      panes.setAttribute('opacity', 0.8);
       moon.at = [...MOON_AT];
       moon.s = 1;
       setMoon();
-      sunG.setAttribute('opacity', 0);
+      winG.setAttribute('opacity', 0);
       moonG.setAttribute('opacity', 0);
       root.setAttribute('opacity', 0);
       sceneryLayer.replaceChildren();
-      scenery = tint = stars = morning = null;
+      scenery = tint = stars = warm = null;
     },
   };
 }
